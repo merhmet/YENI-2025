@@ -1,0 +1,1935 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+
+
+
+
+
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+
+<title>Abdussamed Podcast Listesi dinleyebilirsiniz – Vav Radyo</title> 
+        <link rel="canonical" href="abdussamed.html"> 
+
+
+
+
+ <script type="text/javascript" src="../../vavtv/site/v2/j/html5shiv.js?v=112.05"></script> 
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/bootsrap-grid.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/jquery.smartbanner.css?v=112.05">  <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/jquery-ui.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/fancybox.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/main.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/live-message-widget.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/header.css?v=112.05"> 
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/footer.css?v=112.05"> 
+
+ <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/swiper-bundle.css?v=112.05">  <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/programs-widget.css?v=112.05">  <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/prayer-widget.css?v=112.05"> 
+
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/jquery.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/jquery.smartbanner.js?v=112.05" charset="UTF-8"></script>  <script type="text/javascript" src="../../vavtv/site/v2/c/j/smartbanner.js?v=112.05" charset="UTF-8"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/jquery-ui.min.js?v=112.05"></script> 
+<script type="text/javascript" src="../../tmd-consent/j/tmdconsent-v2.2.js"></script>
+ <script type="text/javascript" src="../../vavtv/site/v2/j/jquery.cookie.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/j/jquery.pjax.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/j/global.js?v=112.05"></script> 
+<script>
+    iServer = "https://i.tmgrup.com.tr/vavtv/site/v2";
+</script>
+
+ <script type="text/javascript" src="../../vavtv/site/v2/j/ajaxLinkRadyolar.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/j/ajaxLink.js?v=112.05"></script> 
+
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/swiper-bundle.min.js?v=112.05"></script>  <script type="text/javascript" src="../../vavtv/site/v2/c/j/programs-slide.js?v=112.05"></script> 
+<script type="text/javascript"> var currentCategory = "abdussamed"; </script>
+<!-- end page style / scripts files -->
+
+
+
+
+
+                      
+          
+
+                             
+                                             
+                                                      
+                                                           
+                                                    
+                                                   
+                                            
+                                                   
+                                                   
+
+
+                                
+                                         
+                                            </span>
+                                        </a>
+                                    </div>
+                                  
+                                        <a href="javascript:;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../../videojs/js/lib/jwplayer-8.2.2/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key = "lAEHxPKncoKBhP9Z1NKg/CF7VZF8La81Q0kYzQ==";</script>
+
+<script type="text/javascript">
+
+    var mesaj = "start<br>" // geçici diagnostik amaçlı
+
+    $("#jwplayerHolder, #jwplayer1").css("filter", "alpha(opacity=0)");
+    $("#jwplayerHolder, #jwplayer1").css("opacity", 0);
+    $("#jwplayerHolder, #jwplayer1").css("overflow", "hidden");
+
+    var isiPad = navigator.userAgent.match(/(iPad)/) != null ? true : false;
+    var isiPhone = navigator.userAgent.match(/(iPhone)/) != null ? true : false;
+    var isAndroid = navigator.userAgent.match(/Android/i) != null ? true : false;
+    var isFirefox = navigator.userAgent.indexOf("Firefox") > -1;
+    var isMobile = isiPad || isAndroid || isiPhone;
+
+    var radioclass = "vavradyo", exradioclass = "vavradyo", port = "8550";
+    var dataReloadInterval = null;
+
+    function IsPlay() {
+        try { // ilk çalıştığında getstate methodu tanımsız oluyor.
+            return jwplayer().getState() == "playing";
+        }
+        catch (exception) {
+            return false;
+        }
+    }
+
+    function RadioStartProccess() {
+        sessionStorage.removeItem('podcastDb');
+
+        if (!IsPlay() || (IsPlay && currentMedia == 2))
+        {
+            
+
+                $("#volumePlayerMobile").removeClass('d-none');
+            
+            $('#radioSharing li a').attr('data-title', "Vav Radyo");
+            $('#radioSharing li a').attr('data-url', "/" );
+            // Bu current media için enum yapılalacak.
+            SetRadioInfo();                 // url play ediyor    Buranın içinde currentmedia = 1 olacak. (radyo yayını).  diğeri ajaxlinkradyoda podcasta tıklamada....
+
+            try {
+                 //google analytics
+                if ('True' == 'True') {
+                    if (typeof tmdCheckConsent === "undefined" || tmdCheckConsent('statistics')) {
+                        ga('send', {
+                            hitType: 'event',
+                            eventCategory: 'Radio',
+                            eventAction: 'play',
+                            eventLabel: 'Click to Left Play Button'
+                        })
+                    }
+                }
+                //google analytics
+            } catch (e) {
+
+            }
+
+        }
+        else {
+            jwplayer().pause();
+        }
+    }
+
+            
+                setTimeout(function () {
+                    GetSinger();
+                    GetJsonUpdate("8550");
+                    //RadioStartProccess();
+                }, 2000);
+            
+
+
+    function SwapHeadPlayButtonState(state) {
+        SetPlayState("#playerControlv2", state);
+    }
+
+    function SetPlayState(item, state) {
+
+        if (state) {
+            $(item).addClass("pause");
+            $(item).find('i').removeClass("fa-play");
+            $(item).find('i').addClass("fa-pause");
+            if ($(".podcastDetailList").length > 0) {
+                $(".podcastDetailList a").each(function () {
+                    if ($(this).attr("podcast-url") == lastPodcast) {
+                        $(this).find("i").removeClass("fa-play");
+                        $(this).find("i").addClass("fa-pause");
+                    }
+                });
+            }
+        } else {
+            $(item).removeClass("pause");
+            $(item).find('i').removeClass("fa-pause");
+            $(item).find('i').addClass("fa-play");
+            if ($(".podcastDetailList").length > 0) {
+                $(".podcastDetailList a").each(function () {
+                    if ($(this).attr("podcast-url") == lastPodcast) {
+                        $(this).find("i").removeClass("fa-pause");
+                        $(this).find("i").addClass("fa-play");
+                    }
+                });
+            }
+        }
+    }
+
+    $(function () {
+        $("#playerControlv2").click(function () {               //  HEADER PLAY BUTTONUNA TIKLAMA
+            if (currentMedia == 0) {
+                RadioStartProccess();
+                return;
+            }
+
+            var isPlay = IsPlay();
+            if (!isPlay) {
+                jwplayer().play();
+
+                try {
+                    //google analytics
+                    if ('True' == 'True') {
+                        if (typeof tmdCheckConsent === "undefined" || tmdCheckConsent('statistics')) {
+                            ga('send', {
+                                hitType: 'event',
+                                eventCategory: 'Radio',
+                                eventAction: 'play',
+                                eventLabel: 'Click to Header Play Button'
+                            })
+                        }
+                    }
+                    //google analytics
+                } catch (e) {
+
+                }
+            }
+            else {
+                jwplayer().pause();
+            }
+        });
+    });
+
+    function SetRadioTumb(objName, path, imgName) {
+        $(objName + ' img').remove();
+        $(objName).prepend('<img src="https://i.tmgrup.com.tr/vavtv/site/v2/c/i/' + path + '/' + imgName + '" class="img">')
+    }
+
+    function SetRadioTumbs(imgName) {
+        SetRadioTumb('.item.trackWrapper', 'player-thumb', imgName);
+        SetRadioTumb('.item.stationSelector .radioActive .img', 'radio', imgName);
+    }
+
+    function GetSinger() {
+        SetRadioTumbs('vav-radyo.png');
+
+        var title = "VAV RADYO";
+
+    }
+
+    function SetRadioInfo() {
+        var Id = "vavradyo";
+        port = "8550"; //"8550";
+        var url = "https://trkvz-radyolar.ercdn.net/radyovav/playlist.m3u8";
+
+        GetSinger();
+        GetJsonUpdate(port);
+        LoadPlayer(url);
+        currentMedia = 1;
+        CurrentRadio = Id;
+        //console.log("CurrentId", CurrentRadio);
+       /* setTimeout(function () { ProgramciTriger(1000); }, 1000);*/
+    }
+
+    dataReloadInterval = setInterval(function () {
+        if (currentPort != "0") GetJsonUpdate(currentPort);
+    }, 1000 * 5);
+
+    var previousCode = "A0";
+    var currentPort = "0";
+    function GetJsonUpdate(port) {
+        $.ajax({
+            url: "https://i.tmgrup.com.tr/rt/broadcast/trackFlag-" + port + ".js",
+            origin: true,
+            cache: false,
+            success: function (data) {
+
+                if (currentMedia == 2) {
+                    return;
+                }
+                if (data != null) {
+                    try {
+                        _code = data + port;
+                        if (_code != previousCode) {
+
+                            DataReload(port);
+                        }
+                        previousCode = data + port;
+                        currentPort = port;
+                    }
+                    catch (err) {
+                        //alert("HATA :" + err);
+                    }
+                }
+            }
+        });
+    }
+
+    function DataReload(port) {
+        $.ajax({
+            url: "https://i.tmgrup.com.tr/rt/broadcast/trackJson-" + port + ".json",
+            origin: true,
+            cache: false,
+            success: function (data) {
+                if (currentMedia == 2) {
+                    return;
+                }
+                if (data != null) {
+                    try {
+                        singer = data.SI;
+                        song = data.SO;
+                    }
+                    catch (err) {
+                        singer = "singer";
+                        song = "song";
+                    }
+                    $("#singer").html("");
+                    $("#song").html("");
+                    $('#singer').text(singer);
+                    $('#song').text(song);
+                }
+            }
+        });
+    }
+
+    function LoadPlayer(url) {
+        try {
+
+            jwplayer("jwplayer1").setup({
+                height: 1,
+                primary: "html5",
+                autostart: !isMobile,
+                androidhls: true,
+                playlist: [{
+                    sources: [
+                        { file: url }
+                    ]
+                }]
+            });
+
+
+            if (jwplayer("jwplayer1").getState() == "idle") {
+                    jwplayer("jwplayer1").play();
+            }
+
+            jwplayer("jwplayer1").on("firstFrame", function (event) {
+                SwapHeadPlayButtonState(true);
+                var duration = Math.ceil(this.getDuration());
+                $("#progressBar").slider({
+                    range: "min",
+                    min: 0,
+                    max: duration,
+                    slide: changeSeek
+                });
+                $("#soundDuration").html(getTimeFormat(duration));
+
+                if (isMobile) {
+                    $("#mobileprogressBar").slider({
+                        range: "min",
+                        min: 0,
+                        max: duration,
+                        slide: changeSeek
+                    });
+                    $("#mobileSoundDuration").html(getTimeFormat(duration));
+                }
+
+            });
+
+            jwplayer("jwplayer1").on("play", function (event) {
+                    SwapHeadPlayButtonState(true);
+                try {
+                    pauseVideo();
+                } catch (e) {
+
+                }
+            });
+
+            jwplayer("jwplayer1").on("pause", function (event) {
+                SwapHeadPlayButtonState(false);
+            });
+
+            jwplayer("jwplayer1").on("complete", function (event) {
+                SwapHeadPlayButtonState(false);
+            });
+
+            jwplayer("jwplayer1").on("time", function (event) {
+                var times = this.getPosition();
+                $("#progressBar").slider("option", 'value', Math.ceil(times));
+                $("#soundCurrentTime").html(getTimeFormat(times));
+                if (isMobile) {
+                    $("#mobileprogressBar").slider("option", 'value', Math.ceil(times));
+                    $("#mobileSoundCurrentTime").html(getTimeFormat(times));
+                }
+
+            });
+
+            if (currentMedia == 0) {
+                jwplayer().setVolume(50);
+                setTimeout(function () {
+                    if (jwplayer().getMute()) {
+                        jwplayer().setMute(false);
+                    }
+                    if (jwplayer().getState() == "paused") {
+                        jwplayer().play();
+                    }
+                }, 2000);
+            }
+
+            CheckProgressBarForTimeDurationStyle();
+        } catch (exeption) {
+            //mes("LoadPlayer ERROR!!  :" + exeption.toString());
+        }
+    }
+
+    function PodcastLoadPlayer(url, title, nameForUrl) { //  burası sadece podcast detaydan çağrılıyor. fakat detay sayfası iptal olduğundan şuan çağrılmıyor.
+        jwplayer().remove();
+        LoadPlayer(url);
+        clearInterval(dataReloadInterval);
+        $('#singer').text(nameForUrl);
+        $('#song').text(title);
+    }
+
+    // setup master volume
+    var vol = 0;
+    var volCtrl = true;
+    if (!isAndroid) {
+        $('.voice-control').click(function () {
+            if (volCtrl) {
+                jwplayer().setMute(true);
+                volCtrl = false;
+            } else {
+                jwplayer().setMute(false);
+                volCtrl = true;
+            }
+        });
+
+        $('#master').bind('slide', function (event, ui) {
+            vol = ui['value'];
+            if (IsPlay()) {
+                jwplayer().setVolume(vol);
+            }
+        })
+    }
+
+    function mes(mrj) {
+        mesaj = mesaj + mrj + "<br>";
+        document.getElementById("test").innerHTML = mesaj;
+    }
+    function changeSeek(event, ui) {
+        var seek = ui.value;
+        jwplayer().seek(seek);
+    }
+    function getTimeFormat(time) {
+        var sec_num = parseInt(time, 10);
+        var hours = Math.floor(sec_num / 3600);
+        var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+        var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+        if (hours < 10) { hours = "0" + hours; }
+        if (minutes < 10) { minutes = "0" + minutes; }
+        if (seconds < 10) { seconds = "0" + seconds; }
+        return hours + ':' + minutes + ':' + seconds;
+    }
+</script>
+<!-- player.END -->
+<script>
+    $(".header-menu li").click(function () {
+        if (window.innerWidth <= 768) {
+            $('body').toggleClass('menu-active')
+            $('.hamburger-menu').toggleClass('active')
+        }
+    });
+</script>
+    
+
+    <main class="main-wrapper" id="orta">
+        
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="../../vavtv/site/v2/c/c/podcast-table.css?v=112.05"> 
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="podcast-head-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="podcast-head-block d-flex align-items-end flex-wrap flex-md-nowrap justify-content-center ">
+                        <div class="podcast-owner-img">
+                            <span class="profile-pic">
+                                <img src="../../rt/2022/12/11/196x196/1671178933568.jpg" alt="Zeki Atlı" width="180" height="180">
+                            </span>
+                        </div>
+                        <div class="podcast-owner-detail">
+                            <h2 class="podcast-owner-name">
+                                Zeki Atlı 
+                            </h2>
+                            <div class="podcast-spot">
+                               Zeki Atlı 
+                            </div>
+                 
+                           
+
+                                            <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li class="twitter" onclick="tweet('')">
+                               
+                                            <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                             
+                                            <path d="M16.0794 2.08142C15.9852 1.74466 15.8057 1.43793 15.5581 1.19093C15.3106 0.943923 15.0035 0.76502 14.6665 0.671539C13.4016 0.33339 8.3167 0.33339 8.3167 0.33339C8.3167 0.33339 3.24143 0.325279 1.96335 0.671539C1.62693 0.76543 1.32041 0.944521 1.07343 1.1915C0.826452 1.43848 0.647361 1.745 0.55347 2.08142C0.313268 3.37634 0.194964 4.69091 0.200112 6.00791C0.197768 7.31856 0.316053 8.62666 0.55347 9.91563C0.647665 10.2522 0.826809 10.559 1.0737 10.8064C1.3206 11.0538 1.62695 11.2336 1.96335 11.3286C3.22824 11.6667 8.3167 11.6667 8.3167 11.6667C8.3167 11.6667 13.3889 11.6667 14.6665 11.3286C15.0034 11.234 15.3104 11.0544 15.5579 10.807C15.8053 10.5595 15.9849 10.2526 16.0794 9.91563C16.3121 8.62742 16.4257 7.31741 16.4176 6.00791C16.4257 4.68979 16.3147 3.37775 16.0794 2.08142ZM6.69237 8.43477V3.57039L10.9251 6.00791L6.69237 8.43477Z" fill="#BBC7CA"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                           
+                                            <path d="M8.1978 3.92934C5.94524 3.92934 4.12731 5.74727 4.12731 7.99984C4.12731 10.2524 5.94524 12.0703 8.1978 12.0703C10.4504 12.0703 12.2683 10.2524 12.2683 7.99984C12.2683 5.74727 10.4504 3.92934 8.1978 3.92934ZM8.1978 10.6454C6.74108 10.6454 5.55228 9.45656 5.55228 7.99984C5.55228 6.54311 6.74108 5.35431 8.1978 5.35431C9.65453 5.35431 10.8433 6.54311 10.8433 7.99984C10.8433 9.45656 9.65453 10.6454 8.1978 10.6454ZM12.435 2.81398C11.9091 2.81398 11.4844 3.23869 11.4844 3.76462C11.4844 4.29055 11.9091 4.71526 12.435 4.71526C12.9609 4.71526 13.3856 4.29253 13.3856 3.76462C13.3858 3.63974 13.3613 3.51605 13.3136 3.40064C13.2659 3.28523 13.1959 3.18037 13.1076 3.09207C13.0193 3.00376 12.9144 2.93374 12.799 2.88602C12.6836 2.8383 12.5599 2.81382 12.435 2.81398ZM16.1324 7.99984C16.1324 6.90432 16.1423 5.81872 16.0808 4.72518C16.0193 3.45502 15.7295 2.32774 14.8007 1.39893C13.8699 0.468137 12.7446 0.180365 11.4744 0.118841C10.3789 0.0573175 9.29332 0.0672407 8.19979 0.0672407C7.10427 0.0672407 6.01867 0.0573175 4.92514 0.118841C3.65497 0.180365 2.52769 0.470122 1.59888 1.39893C0.668089 2.32973 0.380316 3.45502 0.318792 4.72518C0.257269 5.8207 0.267192 6.9063 0.267192 7.99984C0.267192 9.09337 0.257269 10.181 0.318792 11.2745C0.380316 12.5447 0.670073 13.6719 1.59888 14.6007C2.52968 15.5315 3.65497 15.8193 4.92514 15.8808C6.02066 15.9424 7.10625 15.9324 8.19979 15.9324C9.29531 15.9324 10.3809 15.9424 11.4744 15.8808C12.7446 15.8193 13.8719 15.5295 14.8007 14.6007C15.7315 13.6699 16.0193 12.5447 16.0808 11.2745C16.1443 10.181 16.1324 9.09536 16.1324 7.99984ZM14.3859 12.6796C14.241 13.0408 14.0664 13.3107 13.7865 13.5886C13.5067 13.8684 13.2388 14.0431 12.8776 14.1879C11.8337 14.6027 9.35485 14.5094 8.1978 14.5094C7.04076 14.5094 4.55996 14.6027 3.51604 14.1899C3.15484 14.045 2.88493 13.8704 2.60708 13.5906C2.32725 13.3107 2.1526 13.0428 2.00772 12.6816C1.59491 11.6357 1.68819 9.15688 1.68819 7.99984C1.68819 6.84279 1.59491 4.362 2.00772 3.31808C2.1526 2.95687 2.32725 2.68696 2.60708 2.40911C2.88691 2.13126 3.15484 1.95463 3.51604 1.80975C4.55996 1.39695 7.04076 1.49023 8.1978 1.49023C9.35485 1.49023 11.8356 1.39695 12.8796 1.80975C13.2408 1.95463 13.5107 2.12928 13.7885 2.40911C14.0684 2.68895 14.243 2.95687 14.3879 3.31808C14.8007 4.362 14.7074 6.84279 14.7074 7.99984C14.7074 9.15688 14.8007 11.6357 14.3859 12.6796Z" fill="#BBC7CA"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="podcast-list-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list podcastDetailList" data-area="itemPodcast" id="article-frame">
+                        
+
+ 
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/asri-serif/abdussamed/2019/05/03/fatiha-suresi" data-title="fatiha suresi" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/asri-serif/abdussamed/2019/05/03/fatiha-suresi" data-title="fatiha suresi" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="podcast-list-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list podcastDetailList" data-area="itemPodcast" id="article-frame">
+                        
+
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645701561992.mp3', 'podZeki Atlı', '1.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    1.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Birinci c&#252;z Fatiha Suresi ile başlar ve Bakara Suresi 141.ayete kadar devam eder.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/1cuz" data-title="1cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/1cuz" data-title="1cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645701760509.mp3', 'podZeki Atlı', '2.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    2.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    İkinci c&#252;z 141 - 252 ayetler arası olup, Bakara Suresi&#39;nin devamıdır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/2cuz" data-title="2cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/2cuz" data-title="2cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645702666764.mp3', 'podZeki Atlı', '3.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    3.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    &#220;&#231;&#252;nc&#252; c&#252;z Bakara Suresi 253. Ayetle başlar ve 286. ayetle sure biter. Ardından &#194;li İmran Suresi ile devam eder ve 91. ayetle c&#252;z biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/3cuz" data-title="3cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/3cuz" data-title="3cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645702922231.mp3', 'podZeki Atlı', '4.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    4.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    D&#246;rd&#252;nc&#252; c&#252;z &#194;li İmran Suresi 92.ayet ile başlayıp 200 &#226;yet ile sure sonlanır. Daha sonra Nisa Suresi ile devam eder ve 23.ayet ile c&#252;z biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/4cuz" data-title="4cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/4cuz" data-title="4cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645703130278.mp3', 'podZeki Atlı', '5.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    5.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Beşinci c&#252;z Nisa Suresi 24. ayetle başlar ve aynı surenin 147. ayeti ile biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/5cuz" data-title="5cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/5cuz" data-title="5cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645704886823.mp3', 'podZeki Atlı', '6.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    6.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Altıncı c&#252;z Nisa Suresi 148 - 176 ve Maide Suresi 82. ayetler arasıdır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/6cuz" data-title="6cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/6cuz" data-title="6cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645705812272.mp3', 'podZeki Atlı', '7.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    7.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yedinci c&#252;zde Maide Suresi 83-120 ayetler ile Enam Suresi 1-110 ayetleri vardır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/7cuz" data-title="7cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/7cuz" data-title="7cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645710026352.mp3', 'podZeki Atlı', '8.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    8.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Sekizinci c&#252;z En&#39;am Suresi 111 ile başlar ve 165. ayet ile sure biter. Ardından Araf Suresi başlar 87. ayetle c&#252;z biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/8cuz" data-title="8cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/8cuz" data-title="8cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645710593448.mp3', 'podZeki Atlı', '9.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    9.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Dokuzuncu c&#252;z  A&#39;raf Suresi 88.ayetten Enfal Suresi 40.ayete kadardır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/9cuz" data-title="9cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/9cuz" data-title="9cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645712543093.mp3', 'podZeki Atlı', '10.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    10.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Onuncu c&#252;z Enfal Suresi 41.ayetten Tevbe Suresi 93.ayete kadardır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/10cuz" data-title="10cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/10cuz" data-title="10cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645712895381.mp3', 'podZeki Atlı', '11.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    11.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    On birinci c&#252;z Tevbe S&#251;resi 94. ayetle başlar Hud S&#251;resi 5. ayetle biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/11cuz" data-title="11cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/11cuz" data-title="11cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645712958638.mp3', 'podZeki Atlı', '12.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    12.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    On ikinci c&#252;zde Hud S&#251;resi&#39;nin 1-123 ayetleri ve Yusuf S&#251;resi&#39;nin 1- 52 ayetleri bulunur.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/12cuz" data-title="12cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/12cuz" data-title="12cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713061380.mp3', 'podZeki Atlı', '13.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    13.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    On &#252;&#231;&#252;nc&#252; c&#252;z Yusuf S&#251;resi 53. ayetle başlayıp İbrahim S&#251;resi 52. ayetle biter. Arada Ra&#39;d S&#251;resi de vardır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/13cuz" data-title="13cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/13cuz" data-title="13cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713292045.mp3', 'podZeki Atlı', '14.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    14.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Bu c&#252;zde Hicr S&#251;resi&#39;nin ve Nahl S&#251;resi&#39;nin b&#252;t&#252;n ayetleri bulunur.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/14cuz" data-title="14cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/14cuz" data-title="14cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713372260.mp3', 'podZeki Atlı', '15.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    15.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Bu c&#252;zde İsra S&#251;resi&#39;nin tamamı ve Kehf S&#251;resi&#39;nin 82.ayetine kadar olan b&#246;l&#252;m&#252; bulunur.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/15cuz" data-title="15cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/15cuz" data-title="15cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713433548.mp3', 'podZeki Atlı', '16.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    16.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Kehf Suresi 75.ayetten Taha Suresi 135.ayete kadar
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/16cuz" data-title="16cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/16cuz" data-title="16cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713601201.mp3', 'podZeki Atlı', '17.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    17.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Bu c&#252;zde Kehf S&#251;resi&#39;nin devamıyla beraber Meryem ve Taha S&#251;resi bulunur.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/17cuz" data-title="17cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/17cuz" data-title="17cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713674904.mp3', 'podZeki Atlı', '18.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    18.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    M&#252;&#39;minun Suresi 1.ayetten Furkan Suresi 20.ayete kadar
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/18cuz" data-title="18cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/18cuz" data-title="18cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713803954.mp3', 'podZeki Atlı', '19.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    19.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    On dokuzuncu c&#252;z Furkan S&#251;resi 21.ayetle başlar. Sonrasında Şuara S&#251;resi&#39;nin tamamı gelir ve Neml S&#251;resi 55. ayetle c&#252;z biter.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/19cuz" data-title="19cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/19cuz" data-title="19cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645713870237.mp3', 'podZeki Atlı', '20.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    20.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirminci c&#252;z, Neml Suresi, Kasas Suresi ve Ankebut Suresi&#39;nden oluşmaktadır. Bu c&#252;z, 381&#39;inci, 382&#39;inci, 383&#39;&#252;nc&#252; ve 384&#39;&#252;nc&#252; sayfalar Neml Suresi&#39;nin son sayfalarını, 384 ile 395 arasındaki sayfalar Kasas Suresi&#39;ni ve 395&#39;ten itibaren Ankebut Suresi&#39;nin ilk sayfalarını kapsamaktadır. 20. c&#252;z 20 sayfadan oluşmaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/20cuz" data-title="20cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/20cuz" data-title="20cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714561538.mp3', 'podZeki Atlı', '21.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    21.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi birinci c&#252;z, Ankebut Suresi, Rum Suresi, Lokman Suresi, Secde Suresi ve Ahzap Suresi&#39;nden oluşmaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/21cuz" data-title="21cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/21cuz" data-title="21cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714635006.mp3', 'podZeki Atlı', '22.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    22.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi ikinci c&#252;zde Ahzab Suresi, Sebe Suresi, Fatır Suresi ve Yasin Suresi yer almaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/22cuz" data-title="22cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/22cuz" data-title="22cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714700870.mp3', 'podZeki Atlı', '23.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    23.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi &#252;&#231;&#252;nc&#252; c&#252;zde Yasin Suresi, Saffat Suresi, Sad Suresi ve Z&#252;mer Suresi yer almaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/23cuz" data-title="23cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/23cuz" data-title="23cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714776676.mp3', 'podZeki Atlı', '24.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    24.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi d&#246;rd&#252;nc&#252; c&#252;zde Z&#252;mer Suresi, M&#252;&#39;min Suresi ve Fussilet Suresi yer almaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/24cuz" data-title="24cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/24cuz" data-title="24cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714827407.mp3', 'podZeki Atlı', '25.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    25.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi beşinci c&#252;zde Fussilet Suresi, Şura Suresi, Zuhruf Suresi, Duhan Suresi ve Casiye Suresi yer almaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/25cuz" data-title="25cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/25cuz" data-title="25cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714901915.mp3', 'podZeki Atlı', '26.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    26.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi altıncı c&#252;zde Casiye Suresi, Ahkaf Suresi, Muhammed Suresi, Fetih Suresi, Hucurat Suresi, Kaf Suresi ve Zariyat Suresi yer almaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/26cuz" data-title="26cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/26cuz" data-title="26cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645714965538.mp3', 'podZeki Atlı', '27.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    27.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi yedinci c&#252;z Zariyat Suresi&#39;nin son sayfalarını, Tur Suresi, Necm Suresi, Kamer Suresi, Rahman Suresi, Vakıa Suresi, ve Hadid Suresi&#39;nin ilk sayfalarını kapsamaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/27cuz" data-title="27cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/27cuz" data-title="27cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645715094853.mp3', 'podZeki Atlı', '28.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    28.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    M&#252;c&#226;dele Suresi 1.ayetten Tahr&#238;m Suresi 12.ayete kadar
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/28cuz" data-title="28cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/28cuz" data-title="28cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645715154567.mp3', 'podZeki Atlı', '29.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    29.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Yirmi dokuzuncu c&#252;zde M&#252;lk Suresi, Kalem Suresi, Hakka Suresi, Me’aric Suresi, N&#251;h Suresi, Cin Suresi, M&#252;ezzemmil Suresi,  Muddesir Suresi, Kıyamet Suresi, İnsan Suresi, Murselat Suresi bulunmaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/29cuz" data-title="29cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/29cuz" data-title="29cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="lnk_Podcast_Selection('https://audios.tmgrup.com.tr/rt/2022/02/24/f3abfb16-b741-4489-a1b2-1d0cb27b7179/1645715243326.mp3', 'podZeki Atlı', '30.C&#252;z', 'https://i.tmgrup.com.tr/vavtv/site/v2', true, 'podcast/meal/zeki-atli'); SetVavRadioStatus(false);" class="d-flex align-items-center justify-content-between">
+            <div class="podcast-icon d-none d-md-flex">
+                <svg width="56" height="56" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27" stroke="#3D4C76" stroke-width="2"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5355 32.5355C30.5979 33.4732 29.3261 34 28 34C26.6739 34 25.4021 33.4732 24.4645 32.5355C23.5268 31.5979 23 30.3261 23 29V19C23 17.6739 23.5268 16.4021 24.4645 15.4645C25.4021 14.5268 26.6739 14 28 14C29.3261 14 30.5979 14.5268 31.5355 15.4645C32.4732 16.4021 33 17.6739 33 19V29C33 30.3261 32.4732 31.5979 31.5355 32.5355ZM35 29V26H37V29C36.9989 31.2131 36.1825 33.3482 34.7068 34.9973C33.231 36.6465 31.1994 37.6941 29 37.94V40H33V42H23V40H27V37.94C24.8006 37.6941 22.769 36.6465 21.2932 34.9973C19.8175 33.3482 19.0011 31.2131 19 29V26H21V29C21 30.8565 21.7375 32.637 23.0503 33.9497C24.363 35.2625 26.1435 36 28 36C29.8565 36 31.637 35.2625 32.9497 33.9497C34.2625 32.637 35 30.8565 35 29Z" fill="#3D4C76"></path>
+                </svg>
+            </div>
+            <div class="podcast-list-info">
+                <h3 class="podcast-list-name">
+                    30.C&#252;z
+                </h3>
+                <div class="podcast-list-detail text-orient text-orient-2 text-orient-md-2">
+                    Otuzuncu c&#252;zde Nebe’ Suresi, Nazi’at Suresi,  Abese Suresi, Tekvir Suresi, İnfitar Suresi, Mutaffifin Suresi, İnşikak Suresi, B&#252;r&#252;&#231; Suresi, Tarık Suresi, A’la Suresi, Ğaşiye Suresi, Fecr Suresi, Beled Suresi, Şems Suresi, Leyl Suresi,  Duha Suresi, İnşirah Suresi, Tin Suresi, Alak Suresi, Kadr Suresi, Beyyine Suresi , Zilzal Suresi , Adiyat Suresi , Karia Suresi, Tekas&#252;r Suresi,  Asr Suresi, H&#252;meze Suresi, Fil Suresi, Kureyş Suresi, Maun Suresi, Kevser Suresi, Kafirun Suresi, Nasr Suresi, Tebbet Suresi, İhlas Suresi, Felak Suresi, Nas Suresi bulunmaktadır.
+                </div>
+            </div>
+            <div class="ux-icons d-flex align-items-center">
+                <div class="item podcast-play">
+                    <span class="icon"></span>
+                </div>
+                <div class="item podcast-social">
+                    <span class="icon"></span>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="facebook" data-type="facebook" data-url="/podcast/meal/zeki-atli/2022/02/24/30cuz" data-title="30cuz" onclick="SocialMediaShare($(this));">
+                            <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.75544 8.75554H7.64433L8.39989 5.73332H5.75544V4.22221C5.75544 3.44398 5.75544 2.71109 7.26655 2.71109H8.39989V0.172428C8.15357 0.139939 7.22349 0.0666504 6.24126 0.0666504C4.18993 0.0666504 2.73322 1.31861 2.73322 3.61776V5.73332H0.466553V8.75554H2.73322V15.1778H5.75544V8.75554Z" fill="#BBC7CA"></path>
+                            </svg>
+                        </li>
+                        <li class="twitter" data-type="twitter" data-url="/podcast/meal/zeki-atli/2022/02/24/30cuz" data-title="30cuz" onclick="SocialMediaShare($(this));">
+                                <svg width="17" height="14" viewbox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.904 2.34429C15.6215 1.91535 16.1584 1.23992 16.4144 0.444125C15.7402 0.844185 15.0025 1.12599 14.2333 1.27735C13.7145 0.72855 13.0296 0.36562 12.2842 0.244505C11.5387 0.12339 10.7742 0.250813 10.1083 0.607133C9.44244 0.963452 8.91226 1.52889 8.59949 2.21628C8.28671 2.90366 8.20871 3.67485 8.3775 4.41094C7.01191 4.34238 5.67599 3.98743 4.45647 3.36912C3.23695 2.75081 2.16108 1.88297 1.29869 0.821917C0.860121 1.57838 0.725918 2.47342 0.923341 3.32525C1.12076 4.17708 1.63501 4.92183 2.36163 5.40825C1.81632 5.39072 1.28311 5.24308 0.806443 4.97763V5.02085C0.806596 5.81404 1.08109 6.58275 1.58337 7.19663C2.08565 7.81051 2.7848 8.23177 3.56225 8.38897C3.05644 8.52658 2.52588 8.54684 2.01106 8.4482C2.23095 9.1304 2.65835 9.72693 3.2336 10.1545C3.80886 10.5821 4.50326 10.8195 5.21989 10.8334C4.00314 11.7884 2.50049 12.3063 0.953718 12.3038C0.679179 12.3038 0.405439 12.2878 0.133301 12.2565C1.70403 13.2658 3.53213 13.8016 5.39918 13.7997C6.68512 13.8086 7.95999 13.5618 9.14975 13.0737C10.3395 12.5857 11.4204 11.866 12.3297 10.9567C13.239 10.0473 13.9585 8.96636 14.4465 7.77657C14.9344 6.58678 15.1811 5.31188 15.1722 4.02595C15.1722 3.87707 15.169 3.729 15.1617 3.58172C15.8345 3.09557 16.4151 2.4933 16.8762 1.80322C16.2495 2.081 15.5847 2.26338 14.904 2.34429Z" fill="#BBC8CA"></path>
+                                </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </li>
+
+<script>
+    $(document).ready(function () {
+        if ($(".onlyVolume")[0] != undefined && window.innerWidth <= 768) {
+            $(".onlyVolume").removeClass("onlyVolume")
+        }
+    })
+</script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $(document).ready(function () {
+        $.getScript("https://i.tmgrup.com.tr/vavtv/site/v2/c/j/podcast-table.js", function () { });
+    })
+</script>
+
+
+        
+    </main>
+
+    <div class="jump-btn">
+        <a href="javascript:;" class="d-flex align-items-center justify-content-center">
+            <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#3D4C76"></circle>
+                <path d="M11.306 29.6884C11.506 29.8881 11.7745 30 12.0541 30C12.3337 30 12.6022 29.8881 12.8023 29.6884L24 18.5264L35.1955 29.6884C35.3955 29.8881 35.664 30 35.9436 30C36.2233 30 36.4918 29.8881 36.6918 29.6884C36.7893 29.5912 36.8669 29.4751 36.9198 29.3469C36.9727 29.2186 37 29.0808 37 28.9416C37 28.8024 36.9727 28.6646 36.9198 28.5364C36.8669 28.4081 36.7893 28.292 36.6918 28.1949L24.7818 16.3251C24.5726 16.1167 24.2921 16 24 16C23.7079 16 23.4274 16.1167 23.2182 16.3251L11.3082 28.1949C11.2107 28.292 11.1331 28.4081 11.0802 28.5364C11.0273 28.6646 11 28.8024 11 28.9416C11 29.0808 11.0273 29.2186 11.0802 29.3469C11.1331 29.4751 11.2107 29.5912 11.3082 29.6884L11.306 29.6884Z" fill="#DFDEDE"></path>
+            </svg>
+        </a>
+    </div>
+
+
+
+ 
+         
+ 
+                                
+     
+                          
+                                       
+  
+         
+            
+
+
+
+
+<div class="fGeneral">
+    <script>
+
+     var f = document.getElementsByClassName("fGeneral")[0],
+         fctrl = true;
+
+     function isHidden(el) {
+         var style = window.getComputedStyle(el);
+         return ((style.display === 'none') || (style.visibility === 'hidden'))
+     }
+
+     window.addEventListener("scroll", function () {
+
+         var o = (f.getBoundingClientRect().top + window.scrollY),
+             t = window.pageYOffset !== undefined ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
+             n = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+         if (isHidden(f) || !fctrl) return;
+
+         else if ((t + 10) > (o - n)) {
+
+             fctrl = false;
+
+             var ajax = new XMLHttpRequest();
+
+    
+
+             ajax.send();
+
+             ajax.onreadystatechange = function () {
+
+                 if (ajax.readyState == 4 && ajax.status == 200) {
+
+                     var data = ajax.responseText,
+                         el = document.getElementsByClassName("fGeneral")[0],
+                         elChild = document.createElement('div');
+
+                     data = data.replace(/{copyrightYear}/g, "2024");
+
+                     elChild.innerHTML = data;
+                     el.appendChild(elChild);
+                 }
+             }
+
+         }
+
+     });
+
+    </script>
+</div>
+
+        </div>
+    </div>
+</footer>
+<div class="header-top main">
+    <div class="header-top-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="stationControl"> <div id="jwplayerHolder" style="width: 1px; height: 1px; position: absolute; top: -9999px; left: -9999px;"><div id="jwplayer1"></div></div></div>
+                    <div class="player-wrapper">
+                        <a onclick="lnkHomePage()" href="javascript:void(0)" class="logo d-none d-md-flex">
+                       
+                        </a>
+                        <div class="header-top-left-title">
+                            <span id="singer" class="brand"></span>
+                            <span id="song"></span>
+                        </div>
+                        <div class="vavradyo-live">
+                            <a href="javascript:;" data-fancybox="" data-src="#livebroadcast" class="d-flex align-items-center justify-content-center">
+                             
+          
+                                </em>
+                            </a>
+                        </div>
+                        <div class="header-top-middle-play" id="playerControl">
+                            <a href="javascript:;" class="on-status" id="playerControlv2"></a>
+                            <div id="player">
+                                <div class="item progressBar" id="progressBarForTimeDuration" style="display:none">
+                                    <span class="timeDuration" id="soundCurrentTime">00:00</span>
+                                    <div class="volProgress" id="progressBar"></div>
+                                    <span class="timeDuration" id="soundDuration">00:00</span>
+                                </div>
+
+                                <div class="item volumeControl onlyVolume" id="">
+                                    <div class="" id="volume">
+                                        <a href="javascript:;" class="voice-control volume">
+                                            <i class="volume-icon"></i>
+                                        </a>
+                                        
+                                        <div class="volProgress" id="volumePlayer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-player-area out-podcast-player d-flex d-md-none">
+                        <!-- PODCAST SAYFALARI DIŞINDAKİ SAYFALARDA out-podcast-player classı eklenecek ekstra -->
+                        <div class="close-icon">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                                    <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.46997 10.6396L12 14.1596L15.53 10.6396" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="player-img">
+          
+
+                              
+                               
+                                </div>
+                                <div class="ux-buttons-item d-flex align-items-center justify-content-center">
+                                    <a href="#" class="ux-sharing-button d-flex align-items-center justify-content-center">
+
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                                                <path d="M16.44 8.90039C20.04 9.21039 21.51 11.0604 21.51 15.1104V15.2404C21.51 19.7104 19.72 21.5004 15.25 21.5004H8.73998C4.26998 21.5004 2.47998 19.7104 2.47998 15.2404V15.1104C2.47998 11.0904 3.92998 9.24039 7.46998 8.91039" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M12 15.0001V3.62012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15.3499 5.85L11.9999 2.5L8.6499 5.85" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                    
+
+
+
+ 
+
+
+
+
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/touch-punch.min.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/ls.unveilhooks.min.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/ls.include.min.js?v=112.05"></script>  
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/lazysizes.min.js?v=112.05"></script> 
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/fancybox.umd.js?v=112.05"></script> 
+
+
+
+<!-- global js -->
+<!-- page js -->
+    
+
+ <script type="text/javascript" src="../../vavtv/site/v2/c/j/base-vavradyo.js?v=112.05"></script> 
+
+
+
+    
+    
+
+    
+</body>
+</html>
