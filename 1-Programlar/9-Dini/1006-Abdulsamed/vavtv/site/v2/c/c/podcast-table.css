@@ -1,0 +1,342 @@
+.podcast-head-area {
+    background: radial-gradient(99.69% 897.26% at 0.31% 2%, rgb(36, 44, 72) 0%, rgb(25, 104, 118) 66.56%, rgb(7, 138, 162) 100%);
+    padding: 20px 0px;
+    position: relative;
+}
+
+.podcast-owner-img .img {
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.podcast-owner-img {
+    position: relative;
+}
+
+.podcast-owner-name {
+    font-size: 25px;
+    line-height: 35px; 
+    letter-spacing: 0.02em;
+    color: rgb(217, 199, 116);
+    font-family: montserrat-medium;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.podcast-owner-detail {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.podcast-spot {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto 20px;
+}
+
+.podcast-share li a {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36, 44, 72);
+    border-radius: 100%;
+    transition: all 0.25s ease 0s;
+}
+
+.podcast-share {
+    gap: 10px;
+    position: relative;
+    z-index: 9;
+}
+
+    .podcast-share li a:hover svg path {
+        fill: rgb(255, 255, 255);
+    }
+
+    .podcast-share li.facebook a:hover {
+        background: rgb(56, 94, 171);
+    }
+
+    .podcast-share li.twitter a:hover {
+        background: rgb(61, 163, 243);
+    }
+
+    .podcast-share li.youtube a:hover {
+        background: rgb(255, 0, 0);
+    }
+
+    .podcast-share li.instagram a:hover {
+        background: rgb(205, 78, 126);
+    }
+
+.podcast-head-area::after {
+    background: url("../i/mask.png");
+    opacity: 0.15;
+    filter: brightness(0) invert(1);
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.podcast-list-table {
+    padding: 24px 0px 0;
+}
+
+    .podcast-list-table .list li a {
+        background: rgb(255, 255, 255);
+        padding: 8px 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+.ux-icons .item .icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: 100%;
+}
+
+.podcast-social ul {
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    width: 90px;
+    height: 36px;
+    background: #3D4C76;
+    border-radius: 30px;
+    top: 0;
+    gap: 5px;
+    padding-right: 20px;
+    pointer-events: none;
+}
+
+.podcast-social {
+    position: relative;
+    z-index: 9;
+    display: none;
+}
+
+.ux-icons {
+    flex: 0 0 32px;
+    max-width: 32px;
+    order: 1;
+    margin-right: 15px;
+}
+
+.podcast-social .icon {
+    background: url("../i/podcast-share.svg") no-repeat;
+}
+
+.podcast-play .icon {
+    background: url("../i/podcast-play.svg") no-repeat;
+}
+
+.podcast-list-name {
+    letter-spacing: 0.04em;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'montserrat-bold';
+}
+
+.podcast-list-detail {
+    font-size: 13px;
+    line-height: 19px;
+    font-family: 'montserrat-medium';
+    letter-spacing: 0.04em;
+}
+
+.podcast-list-info {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    order: 2;
+    flex-wrap: wrap;
+}
+
+.podcast-list-table .list li {
+    margin-bottom: 12px;
+}
+
+    .podcast-list-table .list li.listened a {
+        background: #DFDEDE;
+    }
+
+.profile-pic img {
+    border-radius: 100%;
+}
+
+.profile-pic {
+    display: flex;
+    width: 192px;
+    height: 192px;
+    background: linear-gradient(0deg, #D7B26C 0%, #B2934D 10%, #A18348 15%, #876B40 24%, #7E623D 29%, #8A7046 39%, #AB965D 60%, #DFD381 87%, #F9F294 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.podcast-list-table .list li.active > a {
+    background: #00A3C0;
+}
+
+.podcast-list-table .list li.active .podcast-icon {
+    filter: brightness(0) invert(1);
+}
+
+.podcast-list-table .list li.active .podcast-list-name, .podcast-list-table .list li.active .podcast-list-detail {
+    color: #fff;
+}
+
+.podcast-list-table .list li.active .podcast-play span {
+    background: url(../i/podcast-pause-icon.svg) no-repeat;
+    background-size: 100%;
+}
+
+.shareActive .podcast-social ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: -1;
+    pointer-events: auto;
+}
+
+.podcast-social ul li {
+    margin-bottom: 0 !important;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.shareActive .podcast-social > .icon {
+    position: relative;
+}
+
+.podcast-list-table .list li.shareActive .podcast-social .icon {
+    background: url(../i/podcast-close.svg) no-repeat;
+    right: -1px;
+    background-size: 100%;
+    top: 2px;
+}
+
+.podcast-social ul li.facebook svg path {
+    fill: #385eab;
+}
+
+.podcast-social ul li.twitter svg path {
+    fill: #3DA3F3;
+}
+
+.podcast-list-table .list li.active .podcast-social .icon {
+    filter: brightness(0) invert(1);
+}
+
+.podcast-list-table .list li.active.shareActive .podcast-social .icon {
+    filter: inherit;
+}
+
+@media (min-width:768px) {
+    .podcast-list-info {
+        flex-flow: column;
+        align-items: start;
+        flex-wrap: nowrap;
+    }
+
+    .podcast-owner-name {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    .podcast-spot {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 40px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .podcast-owner-detail {
+        padding-left: 24px;
+        flex: 1 1 auto;
+        max-width: inherit;
+    }
+
+    .profile-pic {
+        margin-bottom: 0;
+    }
+
+    .podcast-list-table .list li a {
+        padding: 26px 29px;
+    }
+
+    .podcast-list-info {
+        margin-left: 24px;
+    }
+
+    .ux-icons {
+        flex: 0 0 136px;
+        gap: 24px;
+        max-width: 136px;
+        order: 3;
+        margin-right: 0;
+    }
+
+        .ux-icons .item .icon {
+            width: 56px;
+            height: 56px;
+            position: relative;
+        }
+
+    .podcast-list-detail {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .podcast-list-name {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .podcast-social ul {
+        width: 150px;
+        height: 56px;
+        gap: 10px;
+        padding-right: 40px;
+    }
+
+        .podcast-social ul li {
+            width: 36px;
+            height: 36px;
+        }
+
+    .podcast-social {
+        display: block;
+    }
+
+    .podcast-list-table .list li {
+        margin-bottom: 24px;
+    }
+}

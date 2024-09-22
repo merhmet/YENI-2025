@@ -1,0 +1,1678 @@
+.header-block {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    left: 0;
+    right: 0;
+}
+
+    .header-block.type-02 {
+        position: sticky;
+    }
+
+.menu-right {
+    width: 100%;
+    height: 70px;
+}
+
+.vavradyo-logo img {
+    max-height: 52px;
+}
+
+.mobile-logo {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.header-menu {
+    height: calc(100% - 283px);
+    display: flex;
+    z-index: 99;
+    padding-bottom: 3rem;
+}
+
+.header-top {
+    height: 60px;
+    z-index: 2;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #00A3C0;
+}
+
+body.homepage .header-top {
+    bottom: 0;
+}
+
+body.smartBann .header-block {
+    top: 78px;
+}
+
+body.smartBann.menu-active #smartbanner {
+    display: none;
+}
+
+body.smartBann.menu-active .header-block {
+    top: 0;
+    position: absolute;
+}
+
+.smartBann.mobile-player-active #smartbanner {
+    display: none;
+}
+
+#smartbanner {
+    position: fixed !important;
+}
+
+.header-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top-left-title {
+    font-family: 'montserrat-regular';
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    flex: 0 0 48%;
+    max-width: 48%;
+    overflow: hidden;
+}
+
+    .header-top-left-title span {
+        display: block;
+        max-width: 100%;
+        text-align: left;
+        font-size: 16px;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.vavradyo-live {
+    position: absolute;
+    top: -17px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    min-height: 21px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    font-family: 'montserrat-bold';
+    display: flex;
+    align-items: center;
+    left: 90px;
+}
+
+    .vavradyo-live > a {
+        height: 100%;
+    }
+
+    .vavradyo-live .icon {
+        display: flex;
+        align-items: center;
+        width: 52px;
+        height: 21px;
+        background: #013E61;
+        border: 1px solid #013E61;
+        border-radius: 6px;
+        padding-left: 20px;
+        margin-left: -10px;
+        z-index: -1;
+    }
+
+    .vavradyo-live .title {
+        height: 18px;
+        background: #fff;
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        /* Vav Radyo */
+        color: #00A3C0;
+        padding: 0 5px;
+        background: #FFFFFF;
+        border: 1px solid #013E61;
+        border-radius: 6px;
+        height: 21px;
+    }
+
+.header-top-left-title .brand {
+    font-family: 'montserrat-bold';
+}
+
+.header-top-middle-play {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+    .header-top-middle-play > a {
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+.header-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.twitter-head > a:hover {
+    background: #1da1f2;
+}
+
+.youtube-head > a:hover {
+    background: #fe0000;
+}
+
+.prayer-time:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 16px;
+    width: 1px;
+    background: rgb(255 255 255 / 40%);
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#player {
+    flex: 0 0 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    align-items: center;
+    display: none;
+}
+
+    #player .progressBar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+.timeDuration {
+    font-size: 12px;
+    color: #fff;
+    font-family: 'montserrat-medium';
+    margin: 8px 0;
+}
+
+#volumePlayer, #progressBar {
+    width: 100%;
+    height: 0.5px;
+}
+
+.on-status {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: url(../i/play.svg) no-repeat;
+    transition: none !important;
+}
+
+    .on-status.pause {
+        background: url(../i/pause.svg) no-repeat;
+        filter: brightness(0) invert(1);
+        opacity: 1;
+    }
+
+.header-bottom {
+    height: auto;
+    z-index: 999;
+    background: linear-gradient(90deg, #131A2E 0%, #282828 100%);
+}
+
+.header-bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    height: 100%;
+}
+
+body.homepage .header-block .header-bottom {
+    transition: all 0.3s ease;
+}
+
+.header-menu > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+    .header-menu > ul > li > a {
+        color: #fff;
+        font-size: 15px;
+        font-family: 'montserrat-bold';
+        transition: all 0.25s ease;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+    }
+
+.live-broadcast-item > a:before {
+    content: "";
+    background: url(../i/live-icon.svg) no-repeat;
+    width: 16px;
+    height: 17px;
+    margin-right: 7px;
+    flex-shrink: 0;
+}
+
+.header-menu > ul > li > a > svg {
+    margin-left: 10px;
+}
+
+.header-menu ul li a:hover, .header-menu ul li.active a {
+    color: #00a3c0;
+}
+
+.header-menu > ul > li:first-child > a {
+    margin-left: 0;
+}
+
+.open-menu {
+    position: absolute;
+    font-size: 14px;
+    line-height: 17px;
+    background: #191F38;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.25s ease;
+    left: -15px;
+}
+
+    .open-menu li a {
+        color: rgb(187 199 202 / 90%);
+        font-family: 'montserrat-medium';
+        display: block;
+        padding: 10px 25px;
+        opacity: 1;
+        transition: all 0.25s ease;
+    }
+
+    .open-menu li:first-child a {
+        padding-top: 0;
+    }
+
+    .open-menu li:last-child a {
+        padding-bottom: 20px;
+    }
+
+.header-menu > ul > li {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+    .header-menu > ul > li:hover .open-menu {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
+
+.prayer-time .icon {
+    margin-right: 6px;
+    display: block;
+}
+
+.prayer-time .pr-text span {
+    display: block;
+}
+
+.pr-text {
+    color: #fff;
+    font-size: 10px;
+    font-family: 'montserrat-medium';
+    line-height: 12px;
+}
+
+    .pr-text span:last-child {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+.social-list ul {
+    display: flex;
+}
+
+    .social-list ul li a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
+    }
+
+    .social-list ul li + li {
+        margin-left: 4px;
+    }
+
+.social-list {
+    margin-right: 10px;
+    position: relative;
+}
+
+    .social-list ul li a {
+        top: 0;
+        position: relative;
+    }
+
+        .social-list ul li a:hover {
+            top: -3px;
+        }
+
+
+
+.ui-widget-content {
+    border: none;
+    background: #ffffff;
+    color: #222222;
+    height: 1px;
+    position: relative;
+}
+
+    .ui-widget-content:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0;
+        top: -4px;
+        position: absolute;
+    }
+
+    .ui-widget-content:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -4px;
+        position: absolute;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        border: none;
+        background: #fff;
+        font-weight: normal;
+        color: #555555;
+    }
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.2em;
+    margin-left: 0;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    cursor: default;
+}
+
+#volume {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.volume-icon {
+    width: 20px;
+    height: 16px;
+    display: block;
+}
+
+.volume-icon-off {
+    background: url(../i/sound-off.svg) no-repeat;
+    width: 20px;
+}
+
+.volume-icon-down {
+    background: url(../i/voice.svg) no-repeat;
+}
+
+.volume-icon-up {
+    background: url(../i/sound-on.svg) no-repeat;
+}
+
+.voice-control {
+    margin: 0 10px;
+}
+
+.item.volumeControl {
+    width: 100%;
+    display: none;
+}
+
+    .item.volumeControl.onlyVolume {
+        display: block;
+    }
+
+#city {
+    border: none;
+    background: none;
+    font-family: montserrat-medium;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+    width: 75px;
+    cursor: pointer;
+    font-size: 10px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.weather-area {
+    font-family: montserrat-medium;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.select-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+    .select-area svg {
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+    }
+
+select#city option {
+    color: #000;
+}
+
+.weather-area a svg {
+    margin-right: 7px;
+}
+
+.weather-area img {
+    margin: 0 6px 0 7px;
+}
+
+.header-info-block {
+    height: 44px;
+    background: #242C48;
+    padding: 0 5px 0 10px;
+    border-radius: 10px;
+}
+
+.prayer-time .pr-text span:first-child {
+    color: #00a3c0;
+}
+
+
+.prayer-time {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+}
+
+    .prayer-time > a:hover img {
+        opacity: 1;
+    }
+
+    .prayer-time img {
+        opacity: 0.6;
+        margin: 0 6px 0 14px;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .prayer-time > a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 85px;
+    }
+
+        .prayer-time > a > div {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .prayer-time > a > div > span:first-child {
+                font-family: montserrat-medium;
+                font-size: 9px;
+                color: #000000;
+            }
+
+            .prayer-time > a > div > span:last-child {
+                font-family: montserrat-semibold;
+                font-size: 12px;
+                color: #9F2015;
+            }
+
+.header-seperator {
+    width: 1px;
+    height: 16px;
+    opacity: 0.2;
+    background: #000000;
+    margin-left: 14px;
+}
+
+.social-li {
+    margin-left: 5px;
+}
+
+.player-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.social-li > ul {
+    display: flex;
+    align-items: center;
+}
+
+    .social-li > ul > li {
+        margin-left: 12px;
+    }
+
+        .social-li > ul > li > a {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3A3F51;
+            border-radius: 100%;
+        }
+
+        .social-li > ul > li:first-child > a {
+            background: #9f2015 url(../i/tff.png) no-repeat center;
+        }
+
+            .social-li > ul > li:first-child > a:hover {
+                background: #ffffff url(../i/tff-hover.png) no-repeat center;
+            }
+
+.ui-widget-header {
+    border: 2px solid #022842 !important;
+    color: #222222;
+    font-weight: bold;
+    border-radius: 0 !important;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: -1px;
+    height: 100%;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    height: 13px;
+    cursor: default;
+    border-radius: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -6px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+.logo {
+    position: relative;
+}
+
+.header-top-left-title h1 {
+}
+
+
+.player-wrapper .logo img {
+    filter: brightness(0) invert(1);
+}
+
+.mobile-menu > a > img {
+    filter: brightness(0) invert(1);
+}
+
+.mobile-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.hamburger-menu {
+    background-color: #171D2E;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-active .hamburger-menu {
+    background: #00A3C0;
+}
+
+.with-fancybox .hamburger-menu {
+    background: #171D2E;
+}
+
+.hamburger-menu a {
+    display: block;
+    background: url(../i/hamburger-menu.svg) no-repeat;
+    width: 26px;
+    height: 22px;
+    background-size: 100%;
+}
+
+.hamburger-menu.active a {
+    background: url(../i/close.svg) no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.social-list ul {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    height: 44px;
+    background: #242c48;
+    border-radius: 10px 0 10px 10px;
+    padding: 0 14px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.social-share-area {
+    height: 44px;
+    background: #242c48;
+    width: 44px;
+    border-radius: 10px;
+}
+
+.social-list.share-active .social-share-area {
+    border-radius: 10px 10px 0 0;
+}
+
+.social-list.share-active ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+}
+
+.social-list.share-active .social-share-area svg path {
+    fill: #00a3c0;
+}
+
+.header-mobile-info {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.live-message {
+    margin: 0 -20px;
+    background: rgb(2 127 140 / 10%);
+    border-top: 1px solid #105467;
+}
+
+.live-title strong {
+    display: block;
+    font-family: 'montserrat-bold';
+}
+
+.live-message > a {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0;
+    height: 60px;
+}
+
+    .live-message > a span {
+        margin-right: 15px;
+    }
+
+.social-platform {
+    background: #fff;
+    margin: 0 -20px;
+    padding: 10px 16px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .social-platform ul {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+.social-link .item {
+    width: 50%;
+}
+
+.social-link {
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.mobil-app-links {
+    width: 100%;
+    gap: 8px;
+}
+
+    .mobil-app-links img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.social-platform ul li svg rect {
+    fill: #1A1F2D;
+    transition: all 0.3s ease;
+}
+
+.social-platform ul li.facebook a:hover svg rect {
+    fill: #385EAB;
+}
+
+.social-platform ul li.twitter a:hover svg rect {
+    fill: #000;
+}
+
+.social-platform ul li.youtube a:hover svg rect {
+    fill: #f00;
+}
+
+.social-platform ul li.instagram a:hover svg rect {
+    fill: #b94439;
+}
+
+.social-platform ul li a {
+    display: flex;
+}
+
+.social-platform .social-title {
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'montserrat-semibold';
+}
+
+    .social-platform .social-title img {
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+.mobile-platform img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-platform a {
+    margin: 0 5px;
+}
+
+.mobile-platform {
+    margin: 0 -5px;
+}
+
+.social-platform ul li a svg {
+    width: 33px;
+    height: 33px;
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .social-platform {
+        height: 150px;
+        padding: 0 16px;
+    }
+
+    .header-menu {
+        height: calc(100% - 240px);
+        padding-bottom: 0;
+    }
+
+    .social-platform ul {
+        width: auto;
+        justify-content: start !important;
+        gap: 21px;
+    }
+
+    .mobil-app-links {
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    .menu-block {
+        padding-top: 65px;
+    }
+}
+
+@media (min-width:768px) {
+    .vavradyo-logo img {
+        max-height: 100%;
+    }
+
+    .item.volumeControl {
+        width: auto;
+        display: block;
+    }
+
+    #player .progressBar {
+        width: 220px;
+    }
+
+    .header-mobile-info .vavtv-logo {
+        margin-bottom: 10px;
+    }
+
+    #player {
+        display: flex;
+    }
+
+    #volume {
+        width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu {
+        height: auto;
+        margin: 0;
+        padding-bottom: 0;
+        overflow: inherit;
+    }
+
+    .timeDuration {
+        font-size: 14px;
+    }
+
+    .header-menu > ul > li {
+        padding-bottom: 0;
+    }
+
+        .header-menu > ul > li > a {
+            margin: 0 2px;
+            font-size: 9px;
+            line-height: 13px;
+            height: 80px;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 0;
+        }
+
+    .header-top-left-title h1 {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .header-top-left-title {
+        flex: 1 1 auto;
+        position: relative;
+        width: auto;
+        top: 0;
+        margin-right: auto;
+        margin-left: 20px;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .header-top-middle-play {
+        padding: 0;
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: auto;
+    }
+
+
+    .header-top-left-title span:not(.brand) {
+        font-size: 14px;
+    }
+
+    .header-bottom {
+        height: 80px;
+    }
+
+
+
+    .voice-control {
+        margin: 0 10px 0 20px;
+    }
+
+    .header-menu > ul {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        justify-content: start;
+        width: auto;
+        overflow: inherit;
+    }
+
+    .header-top {
+        height: 80px;
+        bottom: 0;
+        z-index: 9999999;
+    }
+
+    .player-wrapper > a {
+        display: flex;
+    }
+
+    .mobile-show {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .select-area {
+        max-width: 60px;
+    }
+
+    .weather-area {
+        margin-right: 5px;
+    }
+
+        .weather-area .icon {
+            display: none;
+        }
+
+    .prayer-time > a {
+        flex-direction: column;
+        width: 45px;
+    }
+
+    .prayer-time .pr-text span {
+        text-align: center;
+    }
+
+    .pr-text span:last-child {
+        font-size: 11px;
+        line-height: 10px;
+    }
+
+    .prayer-time .icon svg {
+        max-height: 23px;
+    }
+
+    span.pr-text {
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .social-list, .header-info-block {
+        margin-right: 5px;
+        height: 54px;
+    }
+
+    .prayer-time {
+        padding: 0 5px;
+    }
+
+    .social-share-area {
+        height: 54px;
+    }
+
+    .header-menu > ul > li > a {
+        font-size: 10px;
+        margin: 0 4px;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-info-block {
+        margin-right: 10px;
+    }
+
+    .item.volumeControl.onlyVolume #volume {
+        width: 400px;
+    }
+
+    .item.volumeControl:not(.onlyVolume) #volume {
+        width: 230px;
+    }
+
+    .prayer-time > a > div > span:first-child {
+        font-size: 10px;
+    }
+
+    .prayer-time > a > div > span:last-child {
+        font-size: 13px;
+    }
+
+    #player .progressBar {
+        width: 210px;
+    }
+
+    .social-li > ul > li {
+        margin-left: 7px;
+    }
+
+    .header-top-middle-play {
+    }
+
+    .header-menu > ul > li > a {
+        margin: 0 4px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .select-area {
+        margin-right: 23px;
+    }
+
+    .weather-area {
+        margin-right: 20px;
+    }
+
+    .header-top-left-title {
+        max-width: 40%;
+        margin-left: 40px;
+    }
+
+    .vavradyo-live {
+        left: 110px;
+    }
+}
+
+@media (min-width:1400px) {
+    .header-menu > ul > li > a {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 12px;
+    }
+
+    .prayer-time {
+        padding: 0 0 0 20px;
+    }
+
+    .header-info-block {
+        padding: 0 20px;
+    }
+
+    .social-list {
+        margin-right: 22px;
+    }
+}
+
+
+@media (min-width:1560px) {
+    .header-menu > ul > li > a {
+        margin: 0 14.5px;
+    }
+
+    .prayer-time {
+        padding: 0 0 0 20px;
+    }
+}
+
+@media (max-width:767px) {
+
+    body {
+        overflow-x: hidden;
+        min-height: 100vh;
+        padding-bottom: 70px;
+    }
+
+    .header-top-left-title h1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .mobile-menu {
+        z-index: 9999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 220px;
+        height: 100%;
+        overflow-y: scroll;
+        background: linear-gradient(212deg, #191F38 0%, #00A3C0 53.04%, #191F38 100%);
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: translateX(-220px);
+        -moz-transform: translateX(-220px);
+        transform: translateX(-220px);
+        display: block;
+        padding: 20px;
+        z-index: -1;
+    }
+
+    .menu-active .mobile-menu {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+        z-index: 1;
+    }
+
+
+
+    body.menu-active {
+        overflow: hidden;
+    }
+
+    .mobile-menu > a {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .mobile-menu ul li a {
+        color: #fff;
+        font-family: 'montserrat-semibold';
+        border-bottom: 1px solid rgb(255 255 255 / 26%);
+        padding: 10px 0;
+        display: block;
+    }
+
+    .mobile-menu ul li:last-child a {
+        border: 0;
+    }
+
+    .menu-active .footer-fixed {
+        z-index: 9;
+    }
+
+    .header-menu > ul::-webkit-scrollbar {
+        width: 5px;
+        display: block !important;
+    }
+
+    /* Track */
+    .header-menu > ul::-webkit-scrollbar-track {
+        background: #242529;
+    }
+
+    /* Handle */
+    .header-menu > ul::-webkit-scrollbar-thumb {
+        background: #00a3c0;
+    }
+
+    .menu-block {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        transform: translate(-100%,0);
+        transition: all 0.5s ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        padding: 85px 20px 0 20px;
+        height: 100%;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #131A2E 0%, #282828 100%);
+    }
+
+    .menu-active .header-info-block {
+        display: none !important;
+    }
+
+    .menu-active .vavradyo-logo, body.menu-active .hamburger-menu {
+        z-index: 99;
+    }
+
+    .menu-active .menu-block {
+        transform: translate(0,0);
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+        overflow-y: auto;
+    }
+
+    .menu-active:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgb(25 31 56 / 60%);
+        z-index: 9999;
+        pointer-events: none;
+    }
+
+    .volume-type-02 {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .player-wrapper .logo img {
+        display: none;
+    }
+
+    .player-wrapper .logo {
+        flex: 0 0 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        margin-right: 17px;
+        background: url(../i/vav-radyo-bg.svg) no-repeat;
+        max-width: 45px;
+        border-radius: 5px;
+        background-position: center;
+    }
+
+    .header-top-left-title {
+        flex: 0 0 162px;
+        max-width: 162px;
+        line-height: 20px;
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .vavradyo-live {
+        top: -12px;
+        z-index: 9;
+        left: 0px;
+    }
+
+    .menu-active .live-broadcast-item {
+        position: relative;
+        z-index: 22;
+    }
+
+    .header-top {
+        background: #323f63;
+        height: 70px;
+        position: fixed;
+    }
+
+        .header-top:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(270.01deg, #00A3C0 0.01%, rgba(0, 163, 192, 0) 118.71%);
+            z-index: -1;
+        }
+
+    .with-fancybox .menu-block {
+        transform: translate(-100%,0) !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        z-index: -1 !important;
+    }
+
+    .with-fancybox .hamburger-menu a {
+        background: url(../i/hamburger-menu.svg) no-repeat;
+        width: 26px;
+        height: 22px;
+        background-size: 100%;
+    }
+
+    .with-fancybox .menu-active:before {
+        display: none;
+    }
+
+    .header-top-left-title span {
+        color: #fff;
+        font-family: 'montserrat-regular';
+        font-size: 10px;
+        line-height: 14px;
+        text-overflow: inherit;
+        overflow: inherit;
+    }
+
+    .header-top-left-title .brand {
+        color: #fff;
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .on-status {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        flex-shrink: 0;
+    }
+
+        .on-status.pause {
+            background: url(../i/pause-mobile.svg) no-repeat;
+            filter: inherit;
+            background-size: 100%;
+        }
+
+    .player-wrapper {
+        height: 70px;
+    }
+
+    .mobile-player-area {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(93.22deg, #191F38 -1.14%, #3C4A73 102.29%);
+        z-index: 99999;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.5s ease;
+        height: 0;
+        padding: 50px 22px 50px 22px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile-player-active .mobile-player-area {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        z-index: 999;
+    }
+
+    .mobile-player-active .header-block {
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .close-icon {
+        text-align: right;
+    }
+
+        .close-icon a {
+            display: inline-flex;
+            justify-content: flex-end;
+        }
+
+    .player-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #player {
+        display: block;
+    }
+
+    .header-top-middle-play {
+        flex: 0 0 calc(100% - 172px);
+        max-width: calc(100% - 172px);
+    }
+
+    #player .progressBar {
+        width: calc(100% - 20px);
+    }
+
+    .mobile-player-area .header-top-left-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        max-height: 70px;
+        display: block;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .mobile-player-active .vavradyo-live {
+        display: none;
+    }
+
+    .mobile-player-area .header-top-left-title span {
+        text-align: center;
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    .player-img {
+        position: relative;
+        text-align: center;
+        height: 45%;
+    }
+
+        .player-img:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            mix-blend-mode: normal;
+            filter: blur(23px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            height: 100%;
+            background: url(../i/vav-icon.png) no-repeat;
+            pointer-events: none;
+        }
+
+    .mobile-player-area .volProgress {
+        height: 3px !important;
+    }
+
+    .mobile-player-area .ui-slider-horizontal .ui-slider-handle {
+        top: -6px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .mobile-player-area .ui-slider-horizontal .ui-slider-range {
+        height: 3px;
+        background: #00A3C0;
+        border: 0 !important;
+        top: 0;
+    }
+
+    .durations span {
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: #A8ACBB;
+        margin: 0;
+    }
+
+    .direction-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
+    }
+
+    .next-icon {
+        transform: rotate(180deg);
+    }
+
+    .ux-player-area {
+        width: 250px;
+        margin: 0 auto 20px;
+    }
+
+    .ux-buttons-item {
+        position: relative;
+    }
+
+    .ux-sharing {
+        display: none;
+    }
+
+        .ux-sharing.active {
+            position: absolute;
+            bottom: calc(100% + 10px);
+            right: 0;
+            width: 150px;
+            height: 40px;
+            background: #404663;
+            display: flex;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            z-index: 9;
+        }
+
+            .ux-sharing.active:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid #404663;
+                position: absolute;
+                right: 15px;
+                top: 100%;
+            }
+
+        .ux-sharing ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+            .ux-sharing ul li {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .ux-sharing ul li a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.15);
+                }
+
+
+    .direction-icon:active {
+        background: #33b8cd;
+    }
+
+    #mobilePlayer .on-status {
+        width: 64px;
+        height: 64px;
+    }
+
+    .ux-buttons-item a {
+        height: 44px;
+        background: #191F38;
+        border-radius: 24px;
+        padding: 0 15px;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'montserrat-medium';
+    }
+
+    .ux-buttons {
+        gap: 20px;
+    }
+
+        .ux-buttons .icon {
+            margin-right: 12px;
+        }
+
+    #mobilePlayer {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile-player-active .footer-fixed {
+        display: none;
+    }
+
+    .out-podcast-player .progressBar {
+        display: none;
+    }
+
+    .out-podcast-player .direction-icon {
+        opacity: 0.4;
+        pointer-events: none;
+        filter: blur(1px);
+    }
+
+    .live-broadcast-item {
+        font-size: 11px;
+        line-height: 13px;
+        margin-right: 10px;
+        gap: 20px;
+    }
+
+        .live-broadcast-item strong {
+            font-family: 'montserrat-bold';
+            width: 100%;
+            display: block;
+        }
+
+    .header-area .vavradyo-logo {
+        margin-right: auto;
+    }
+}
+
+@media (max-width:320px) {
+    .social-platform ul li a svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .live-broadcast-item {
+        gap: 7px;
+        font-size: 9px;
+    }
+}
