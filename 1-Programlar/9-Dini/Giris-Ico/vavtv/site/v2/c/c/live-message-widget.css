@@ -1,0 +1,193 @@
+.headline-form {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #191F38;
+    border-radius: 10px;
+    height: 100%;
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.headline-form-title {
+    padding: 0;
+    border-radius: 10px 10px 0px 10px;
+    position: relative;
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 14px;
+    font-family: montserrat-bold;
+    width: 189px;
+    text-align: right;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 17px;
+    background: #131A2E;
+    line-height: 21px;
+}
+
+    .headline-form-title span {
+        background: #9F2015;
+        background: -webkit-linear-gradient(to top, #9F2015 0%, #3A3F51 100%);
+        background: -moz-linear-gradient(to top, #9F2015 0%, #3A3F51 100%);
+        background: linear-gradient(to top, #9F2015 0%, #3A3F51 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .headline-form-title span {
+        color: linear-gradient(180deg, #9F2015 12.5%, #3A3F51 100%);
+    }
+
+    .headline-form-title:after {
+        content: '';
+        position: absolute;
+        width: 43px;
+        height: 19px;
+        right: 0;
+        top: 100%;
+        background: url(../i/form-title-after.png);
+        filter: brightness(0.1);
+    }
+
+.headline-form-area {
+    text-align: right;
+    width: 100%;
+}
+
+.headline-form-name {
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background: #131A2E;
+    font-size: 14px;
+    font-family: 'montserrat-semibold';
+    color: #fff;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.headline-form-textarea {
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 100%;
+    height: 70px;
+    resize: none;
+    background: #131A2E;
+    font-size: 14px;
+    font-family: 'montserrat-semibold';
+    margin-bottom: 10px;
+    color: #fff;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+    .headline-form-name::-webkit-input-placeholder, .headline-form-textarea::-webkit-input-placeholder { /* Edge */
+        font-family: 'montserrat-semibold';
+        color: rgb(249 248 248 / 60%);
+    }
+
+    .headline-form-name:-ms-input-placeholder, .headline-form-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-family: 'montserrat-semibold';
+        color: rgb(249 248 248 / 60%);
+    }
+
+    .headline-form-name::placeholder, .headline-form-textarea::placeholder {
+        font-family: 'montserrat-semibold';
+        color: rgb(249 248 248 / 60%);
+    }
+
+    .headline-form-name:focus, .headline-form-textarea:focus {
+        box-shadow: 1px 1px 10px #00a3c07a !important;
+        outline: none !important;
+    }
+
+.send-form-button {
+    width: 136px;
+    height: 35px;
+    background: #131A2E;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: montserrat-bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .send-form-button:hover {
+        background-color: #00a3c0;
+        color: #ffffff;
+    }
+
+.headline-form.innerHeadlineForm {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .headline-form-title {
+        height: 47px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .headline-form-textarea {
+        height: 45px;
+    }
+
+    .headline-form {
+        padding: 8px 15px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .with-fancybox .headline-form {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .headline-form-title {
+        height: 35px;
+    }
+}
+
+@media (min-width:1400px) {
+    .headline-form {
+        padding: 20px 30px;
+    }
+
+    .headline-form-textarea {
+        height: 70px;
+    }
+
+    .send-form-button {
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .headline-form-title {
+        width: 189px;
+        font-size: 18px;
+        height: 60px;
+    }
+}
+
+@media (min-width:1560px) {
+    .headline-form {
+        padding: 30px 30px;
+    }
+}
