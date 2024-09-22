@@ -1,0 +1,47 @@
+a{
+    text-decoration: none;
+}
+#wrapper1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: max-content;
+    margin-top: 15vh;
+    overflow: hidden;
+}
+.tvbox{
+    background-color: rgb(114, 114, 114);
+    width: 25vh;
+    height: 33vh;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8vh;
+    border-radius: 4px;
+}  
+.tvbox-image{
+    height: 24vh;
+    width: 25vh;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.tvbox-image:hover{
+    transform: scale(1.1);
+    
+}
+.tvbox-image-wrapper{
+    width: 100%;
+    height: 24vh;
+    overflow: hidden;
+}
+.tvbox-title{
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 5vh;
+    cursor: pointer;
+    transition:color 0.3s;
+}
+.tvbox-title:hover{
+    color: rgb(255, 142, 166);
+}
