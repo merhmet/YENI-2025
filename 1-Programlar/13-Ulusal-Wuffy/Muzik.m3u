@@ -1,0 +1,62 @@
+#EXTM3U
+
+
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/vJ8VaZi.png" group-title="|TR|🇹🇷 GENEL",Dream Türk
+https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
+ 
+#EXTINF:0 tvg-logo="https://i.imgur.com/ch365lh.png" group-title="|TR|🇹🇷 GENEL",Kral Pop
+https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/lEIFDwo.png" group-title="|TR|🇹🇷 GENEL",Miljon Tv
+https://sosyoapp-live.cdnnew.com/sosyo/buraya-bir-isim-verin.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/rYtbAGZ.png" group-title="|TR|🇹🇷 GENEL",Number 1 Damar
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/ZM4PSyq.png" group-title="|TR|🇹🇷 GENEL",Number 1 Dance
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/QpPteBO.png" group-title="|TR|🇹🇷 GENEL",Power Dance
+https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/0RzUswR.png" group-title="|TR|🇹🇷 GENEL",Power Love
+https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/9OPoXQG.png" group-title="|TR|🇹🇷 GENEL",Power Turk
+https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/driabBO.png" group-title="|TR|🇹🇷 GENEL",Power Türk Akustik
+https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/tQSoQXW.png" group-title="|TR|🇹🇷 GENEL",Power Türk Slow
+https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/a5nW3HU.png" group-title="|TR|🇹🇷 GENEL",Power Türk Taptaze
+https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/XSL1gd7.png" group-title="|TR|🇹🇷 GENEL",Power TV
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/et1sbyq.png" group-title="|TR|🇹🇷 GENEL",Tatlises TV
+https://live.artidijitalmedya.com/artidijital_tatlisestv/tatlisestv/playlist.m3u8
+
+#EXTINF:0 tvg-logo="https://i.imgur.com/JgUzRH8.png" group-title="|TR|🇹🇷 GENEL",TRT Müzik
+https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
