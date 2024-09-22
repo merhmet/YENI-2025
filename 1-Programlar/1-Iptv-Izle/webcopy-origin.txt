@@ -1,0 +1,256 @@
+Uri: https://ad01.tmgrup.com.tr/bd/hb/prebid_v14.js?v=4223321
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\bd\hb\prebid_v14.js
+Content Type: application/javascript
+
+Uri: https://cdn-native.pigeoon.com/v13/pgn-native.js?v=6
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\v13\pgn-native.js
+Content Type: application/javascript
+
+Uri: https://cdn-native.pigeoon.com/v13/pgnNativeStyle.css
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\v13\pgnNativeStyle.css
+Content Type: text/css
+
+Uri: https://i.tmgrup.com.tr/a2tv/site/v1/i/a2/imaj_a2tv.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\a2tv\site\v1\i\a2\imaj_a2tv.png
+Content Type: image/png
+
+Uri: https://i.tmgrup.com.tr/contactus/j/contactus.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\contactus\j\contactus.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/editor-menu/menu2.js?v= 20240322
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\editor-menu\menu2.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/egazete/ilk-sayfalar/2024/03/21/219x313/21TKV01.jpg?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\egazete\ilk-sayfalar\2024\03\21\219x313\21TKV01.jpg
+Content Type: image/jpeg
+
+Uri: https://i.tmgrup.com.tr/prayertimes/tmdprayercounter/tmdprayercounter.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\prayertimes\tmdprayercounter\tmdprayercounter.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/tmd-consent/c/tmd-kvkk.css
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmd-consent\c\tmd-kvkk.css
+Content Type: text/css
+
+Uri: https://i.tmgrup.com.tr/tmd-consent/j/tmd-kvkk.js
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmd-consent\j\tmd-kvkk.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/tmd-consent/j/tmdconsent-v2.2.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmd-consent\j\tmdconsent-v2.2.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/tmd/mobile-detect/md.min.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmd\mobile-detect\md.min.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/tmd/tmdbr.min.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmd\tmdbr.min.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/tmdwebpush/tmdwebpush.js?v=649
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tmdwebpush\tmdwebpush.js
+Content Type: application/javascript
+
+Uri: https://i.tmgrup.com.tr/uyelik/popupauth/j/popupauthentication.js?v=2024-03-22
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\uyelik\popupauth\j\popupauthentication.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/blocker-style.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\blocker-style.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/bootstrap-grid.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\bootstrap-grid.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-bold.woff
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-bold.woff
+Content Type: font/x-woff
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-bold.woff2
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-bold.woff2
+Content Type: font/woff2
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-medium.woff
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-medium.woff
+Content Type: font/x-woff
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-medium.woff2
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-medium.woff2
+Content Type: font/woff2
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-regular.woff
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-regular.woff
+Content Type: font/x-woff
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-regular.woff2
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-regular.woff2
+Content Type: font/woff2
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-semibold.woff
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-semibold.woff
+Content Type: font/x-woff
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/fonts/Inter-semibold.woff2
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\fonts\Inter-semibold.woff2
+Content Type: font/woff2
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/footer.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\footer.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/header.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\header.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/live-broadcast-page.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\live-broadcast-page.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/ramadan-band-widget-2024-v2.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\ramadan-band-widget-2024-v2.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/streaming-slider.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\streaming-slider.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/c/swiper.min.css?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\c\swiper.min.css
+Content Type: text/css
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/a-haber-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\a-haber-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/a2-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\a2-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/anews-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\anews-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/apara.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\apara.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/aspor.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\aspor.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/atv-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\atv-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/minika-cocuk.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\minika-cocuk.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/minika-go.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\minika-go.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/channel/vavtv.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\channel\vavtv.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/footer-appgallery.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\footer-appgallery.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/footer-appstore.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\footer-appstore.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/footer-googleplay.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\footer-googleplay.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/footer-sprite.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\footer-sprite.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/mobile-takvim-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\mobile-takvim-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/ramazan-2024-ttnet-320x50-v2.jpg
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\ramazan-2024-ttnet-320x50-v2.jpg
+Content Type: image/jpeg
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/ramazan-2024-ttnet-970x90-v2.jpg
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\ramazan-2024-ttnet-970x90-v2.jpg
+Content Type: image/jpeg
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/ramazan-imsakiye-btn.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\ramazan-imsakiye-btn.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/right-arrow.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\right-arrow.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/takvim-dummy.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\takvim-dummy.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/takvim-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\takvim-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/takvim-tv.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\takvim-tv.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/takvim_logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\takvim_logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/i/vav-logo.png
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\i\vav-logo.png
+Content Type: image/png
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/base.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\base.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/jquery-3.6.0.min.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/jquery.cookie.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\jquery.cookie.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/main.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\main.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/register-manager.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\register-manager.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/swiper-bundle.min.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://itkv.tmgrup.com.tr/site/v3/j/tag-widget-slider.js?v=133.3
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\site\v3\j\tag-widget-slider.js
+Content Type: application/javascript
+
+Uri: https://securepubads.g.doubleclick.net/tag/js/gpt.js
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\tag\js\f.txt
+Content Type: text/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=G-RM5FFY8H5X
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\gtag\js
+Content Type: application/javascript
+
+Uri: https://www.takvim.com.tr/a2tv-canli-yayin-izle
+File Name: C:\Users\mulay\Pictures\TTTTTTMulayim\Nieuwe map (22)\www.takvim.com.tr\a2tv-canli-yayin-izle.html
+Content Type: text/html
+
