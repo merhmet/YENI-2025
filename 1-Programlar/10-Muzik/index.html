@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<head><title></title></head>
+<body>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet" />
+<title>Turis Tv</title>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+
+<!---------------------
+
+تصميم : شريف حمدي 
+اسم التصميم : ياسين تيفي 
+رقم التواصل : +201507788455 
+رابط يوتيوب لمزيد من الشروحات واكواد html
+https://www.youtube.com/c/Androidsh
+نتمني عدم حذف هذه البيانات 
+بتوفيق لجميع ♥
+
+---------------------->
+
+<!----------  اكواد استايل القنوات  ------------>
+<style type="text/css">
+.grid-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px 5px;
+padding: 10px;
+}
+.grid1-container {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 10px;
+
+color: white;
+padding: px;
+}
+h1 {
+text-align: center;
+margin-top: 1px;
+font-weight: bold;
+font-family: "Readex Pro", sans-serif;
+
+}
+
+h2 {
+text-align: center;
+margin-top: 0.2px;
+font-size: 12px;
+color: #8d8daa;
+font-family: "Readex Pro", sans-serif;
+font-weight: bold;
+}
+
+button {
+border-radius: 8px;
+background-image: linear-gradient(to right, #ffffff, #ffffff);
+border-color: #990000;
+padding: 0px;
+margin: 3px;
+height: 140px;
+width: 110px;
+cursor: pointer;
+}
+
+.button {
+text-align: center;
+}
+ {
+display: block;
+}
+button:active {
+border: 2px solid #f00;
+}
+
+</style>
+
+<!----------  اكواد استايل التطبيق شامل  ------------>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap");
+body {
+padding: 0;
+margin: 0;
+user-select: none;
+list-style: none;
+background: #ffffff;
+background-size: cover;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+margin: auto;
+/* position: relative; */
+direction: ltr;
+
+/**  تغير  خلفيه التطبيق **/
+background-image: url(https://t4.ftcdn.net/jpg/02/40/63/55/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg);
+/**  تغير  خلفيه التطبيق **/
+}
+h3 {
+text-align: center;
+/* text-align: right; */
+/* padding-right: 65px; */
+/* padding-top: 2px;
+    font-size: medium; */
+font-weight: 200;
+font-family: "Readex Pro", sans-serif;
+}
+
+header {
+/**  تغير الون خلفيه اللوجو   **/
+background: rgba(188, 17, 21, 255);
+/**  تغير الون خلفيه اللوجو   **/
+padding: 2px;
+color: #fff;
+margin-bottom: 10px;
+position: fixed;
+top: 0;
+height: 100px;
+width: 100%;
+box-shadow: 0px 0px 7px black;
+z-index: 1;
+}
+
+#i1 {
+position: fixed;
+top: 21px;
+
+right: 17px;
+font-size: 40px;
+}
+#i2 {
+position: fixed;
+top: 21px;
+left: 14px;
+font-size: 40px;
+}
+#i3 {
+position: fixed;
+top: 16px;
+left: 40px;
+font-size: 40px;
+}
+
+#page:hover {
+background: none;
+}
+#page {
+margin-top: 25px;
+width: 100%;
+}
+
+#page a:hover {
+background: #fff;
+}
+#page a {
+height: 50px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-bottom: 11px;
+border: 2px solid rgba(188, 17, 21, 255);
+border-radius: 15px;
+width: 91%;
+display: inline-block;
+margin-right: 14px;
+margin-left: 14px;
+background: white;
+}
+#page a img {
+/*height:50px;
+margin-right:10px;
+width:50px;
+padding-bottom:4px;
+*/
+height: 50px;
+margin-right: 10px;
+width: 50px;
+padding-bottom: 4px;
+}
+#page a p {
+text-align: center;
+font-family: "Readex Pro", sans-serif;
+/* position: absolute; */
+/* margin-right: 20px; */
+/* margin-top: -40px; */
+display: inline-block;
+font-weight: 550;
+color: rgba(188, 17, 21, 255);
+}
+</style>
+
+<!----------  اكواد استايل القائمة  ------------>
+<style>
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+/**  تغير  لون القائمة **/
+background-color: #6f0100;
+/**  تغير  لون القائمة **/
+
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 15px;
+color: #fff;
+display: block;
+transition: 0.3s;
+text-align: center;
+font-family: "Readex Pro", sans-serif;
+}
+
+.sidenav a:hover {
+color: #d9c9c9;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 5px;
+right: 0;
+font-size: 15px;
+margin-left: 0px;
+}
+
+@media screen and (max-height: 200px) {
+.sidenav {
+padding-top: 15px;
+}
+.sidenav a {
+font-size: 18px;
+}
+}
+
+/* .ازالة شريط التمرير اسفل المدونة*/
+html {
+overflow-x: hidden;
+}
+
+/* ازالة تغيير شكل السكرول بار Scroll.Bar */
+::-webkit-scrollbar {
+width: 7px;
+}
+::-webkit-scrollbar-thumb {
+-webkit-shadow: inset 0 0 0 #000;
+-webkit-border-radius: 0;
+background-image: -webkit-linear-gradient(top, #bc1115 100%, #000 100%);
+}
+::-webkit-scrollbar-track {
+-webkit-shadow: inset 0 0 0 #000;
+-webkit-border-radius: 100px;
+}
+</style>
+</head>
+
+
+
+
+
+
+</div>
+
+</header>
+<div id="page">
+<div class="grid1-container">
+<div align="center" class="button">
+<div id="buttons-list">
+<!--- اقسام التطبيق --->
+
+<button onclick="window.open('Muzik-player/Rahmi-Aydin/index.html')">
+<img src="https://ucretsizmuzikmp3.com/compressed/ef4b983639754cdae250589253106d1d.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>Rahmi Aydin</h2>
+</button> 
+
+<button onclick="window.open('Muzik-player/index.html')">
+<img src="https://jetfilmizle.de/wp-content/posterler/2024/04/cam-perde-cam-perde-izle.jpg" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>Tebessüm</h2>
+</button>
+
+<button onclick="window.open('Muzik-player/index.html')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS3_PREMIUM_Digital_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN PREMIU3</h2>
+</button>
+
+<button onclick="window.open('Muzik-player/index.html')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS1_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS1</h2>
+</button>
+
+<button onclick="window.open('Muzik-player/index.html')">
+<img src="https://assets.bein.com/mena/sites/4/2021/02/beIN_SPORTS2_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>2</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS3_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS 3</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS4_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS 4</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS5_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS 5</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2021/02/SPORTS_6-1.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS 6</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS7_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="80px" vspace="5px" />
+<h2>beIN SPORTS 7</h2>
+</button>
+
+<button onclick="window.open('رابط القناة')">
+<img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS7_DIGITAL_Mono.png" style="border-radius: 2px;" height="80px" width="100%" vspace="5px" />
+<h2>beIN SPORTS 7</h2>
+</button>
+</div>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</div>
+</div>
+</div>
+</header>
+</body>
+
+
+</body>
+</html>
