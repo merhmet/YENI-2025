@@ -1,0 +1,936 @@
+Uri: https://fonts.googleapis.com/css?family=Open+Sans:700,600,400&subset=latin,latin-ext
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\s\opensans\v36\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\s\opensans\v36\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\s\opensans\v36\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf
+Content Type: font/ttf
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\font-awesome\4.5.0\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5388842447885893
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\pagead\js\f.txt
+Content Type: text/javascript
+
+Uri: https://platform-api.sharethis.com/js/sharethis.js
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\js\sharethis.js
+Content Type: text/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-81697871-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\gtag\js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\index.htm
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/360-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\360-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/a-haber-canli-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\a-haber-canli-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/a-spor-canli-izle-2
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\a-spor-canli-izle-2.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/aljazeera-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\aljazeera-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/atv-azad-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\atv-azad-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/atv-canli-izle-4
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\atv-canli-izle-4.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/az-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\az-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/beinsports-haber
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\beinsports-haber.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/besiktas-tv-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\besiktas-tv-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/beyaz-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\beyaz-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/bloomberg-ht-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\bloomberg-ht-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/bursaspor-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\bursaspor-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/cartoon-network-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cartoon-network-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/cbc-az-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cbc-az-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/cdn-cgi/l/email-protection
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/cdn-cgi/styles/cf.errors.css
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://www.ocanlitv.live/cnn-turk-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\cnn-turk-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/css/jquery.mCustomScrollbar.css
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\css (1)\jquery.mCustomScrollbar.css
+Content Type: text/css
+
+Uri: https://www.ocanlitv.live/css/style.css?v=1.1.1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\css (1)\style.css
+Content Type: text/css
+
+Uri: https://www.ocanlitv.live/d-max
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\d-max.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/disney-channel-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\disney-channel-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/dost-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\dost-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/euro-star-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\euro-star-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/fanatik-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\fanatik-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/fb-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\fb-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/fil-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\fil-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/flash-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\flash-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/gs-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\gs-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/haberturk-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\haberturk-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/halk-tv-euro-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\halk-tv-euro-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/halk-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\halk-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/hilal-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\hilal-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/ictimai-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\ictimai-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/iletisim
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\iletisim.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/360-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\360-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/a-haber-canli-izle-1.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\a-haber-canli-izle-1.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/a-spor-canli-izle-2.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\a-spor-canli-izle-2.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/atv-canli-izle-2.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\atv-canli-izle-2.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/az-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\az-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/beinsports-haber.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\beinsports-haber.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/besiktas-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\besiktas-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/beyaz-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\beyaz-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/cartoon-network-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\cartoon-network-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/cnn-turk-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\cnn-turk-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/d-max.jpg
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\d-max.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/disney-channel-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\disney-channel-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/fb-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\fb-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/flash-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\flash-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/gs-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\gs-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/haberturk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\haberturk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/halk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\halk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/kanal-24-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\kanal-24-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/kanal-7-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\kanal-7-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/kanal-d-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\kanal-d-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/kral-pop-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\kral-pop-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/lifetime-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\lifetime-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/ntv-spor-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\ntv-spor-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/ntv-zle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\ntv-zle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/powerturk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\powerturk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/show-tv-izle-1.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\show-tv-izle-1.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/space-tv.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\space-tv.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/star-tv-zle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\star-tv-zle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/tgrt-haber-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\tgrt-haber-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/tjk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\tjk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/trt-1-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\trt-1-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/trt-cocuk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\trt-cocuk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/trt-haber-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\trt-haber-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/trt-spor-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\trt-spor-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/tv-8-5-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\tv-8-5-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/tv8-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\tv8-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/ulusal-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\ulusal-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/100/93/kanallar/xezer-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\100\93\kanallar\xezer-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/360-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\360-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/a-haber-canli-izle-1.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\a-haber-canli-izle-1.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/a-spor-canli-izle-2.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\a-spor-canli-izle-2.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/aljazeera-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\aljazeera-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/atv-azad-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\atv-azad-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/atv-canli-izle-2.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\atv-canli-izle-2.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/az-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\az-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/beinsports-haber.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\beinsports-haber.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/besiktas-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\besiktas-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/beyaz-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\beyaz-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/bloomberg-ht-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\bloomberg-ht-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/bursaspor-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\bursaspor-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/cartoon-network-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\cartoon-network-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/cbc-az-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\cbc-az-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/cnn-turk-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\cnn-turk-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/d-max.jpg
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\d-max.jpg
+Content Type: image/jpeg
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/disney-channel-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\disney-channel-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/dost-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\dost-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/euro-star-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\euro-star-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/fanatik-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\fanatik-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/fb-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\fb-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/fil-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\fil-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/flash-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\flash-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/gs-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\gs-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/haberturk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\haberturk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/halk-tv-euro-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\halk-tv-euro-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/halk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\halk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/hilal-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\hilal-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/ictimai-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\ictimai-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kanal-24-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kanal-24-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kanal-7-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kanal-7-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kanal-a-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kanal-a-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kanal-d-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kanal-d-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kral-pop-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kral-pop-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/kral-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\kral-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/lalegul-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\lalegul-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/lifetime-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\lifetime-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/medeniyet-tv.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\medeniyet-tv.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/medine-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\medine-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/mekke-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\mekke-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/ntv-spor-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\ntv-spor-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/ntv-zle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\ntv-zle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/planet-cocuk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\planet-cocuk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/planet-turk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\planet-turk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/powerturk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\powerturk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/semerkand-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\semerkand-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/show-max-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\show-max-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/Show-turk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\Show-turk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/show-tv-izle-1.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\show-tv-izle-1.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/space-tv.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\space-tv.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/star-tv-zle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\star-tv-zle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tbmm-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tbmm-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tgrt-haber-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tgrt-haber-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tjk-tv-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tjk-tv-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tjk-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tjk-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tlc-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tlc-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-1-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-1-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-4-k-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-4-k-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-arapca-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-arapca-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-avaz-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-avaz-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-belgesel-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-belgesel-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-cocuk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-cocuk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-diyanet-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-diyanet-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-haber-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-haber-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-kurdi-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-kurdi-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-muzik-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-muzik-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-okul-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-okul-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-spor-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-spor-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-turk-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-turk-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/trt-world-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\trt-world-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/turkel-az-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\turkel-az-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tv-8-5-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tv-8-5-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tv5-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tv5-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tv8-canli.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tv8-canli.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/tvnet-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\tvnet-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/ulke-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\ulke-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/ulusal-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\ulusal-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/xezer-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\xezer-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/img/40/37/kanallar/yaban-tv-izle.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\img\40\37\kanallar\yaban-tv-izle.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/js/jquery-1.11.3.min.js
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\js\jquery-1.11.3.min.js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/js/jquery.mCustomScrollbar.concat.min.js
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\js\jquery.mCustomScrollbar.concat.min.js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/js/site.js?v=1.0.1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\js\site.js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/jwplayer/jwplayer-7.12.6/jwplayer.js
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\jwplayer\jwplayer-7.12.6\jwplayer.js
+Content Type: application/javascript
+
+Uri: https://www.ocanlitv.live/kanal-24-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kanal-24-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/kanal-7-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kanal-7-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/kanal-a-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kanal-a-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/kanal-d-canli-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kanal-d-canli-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/kral-pop-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kral-pop-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/kral-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\kral-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/lalegul-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\lalegul-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/lifetime-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\lifetime-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/medeniyet-tv
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\medeniyet-tv.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/medine-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\medine-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/mekke-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\mekke-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/ntv-spor-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\ntv-spor-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/ntv-zle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\ntv-zle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/planet-cocuk-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\planet-cocuk-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/planet-turk-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\planet-turk-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/powerturk-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\powerturk-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/resim/favicon.ico
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\resim\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://www.ocanlitv.live/resim/logo.png
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\resim\logo.png
+Content Type: image/png
+
+Uri: https://www.ocanlitv.live/resim/yayinyok.JPG
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\resim\yayinyok.JPG
+Content Type: image/jpeg
+
+Uri: https://www.ocanlitv.live/semerkand-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\semerkand-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/show-max-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\show-max-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/show-turk-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\show-turk-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/show-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\show-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/space-tv
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\space-tv.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/star-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\star-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tbmm-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tbmm-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tgrt-haber-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tgrt-haber-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tjk-tv-canli-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tjk-tv-canli-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tjk-tv-izle-1
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tjk-tv-izle-1.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tlc-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tlc-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-1-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-1-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-4-k-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-4-k-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-arapca-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-arapca-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-avaz-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-avaz-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-belgesel-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-belgesel-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-cocuk-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-cocuk-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-diyanet-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-diyanet-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-haber-canli
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-haber-canli.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-kurdi-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-kurdi-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-muzik-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-muzik-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-okul-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-okul-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-spor-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-spor-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-turk-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-turk-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/trt-world-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\trt-world-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/turkel-az-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\turkel-az-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tv-8-5-izle-3
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tv-8-5-izle-3.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tv5-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tv5-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tv8-canli-9
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tv8-canli-9.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/tvnet-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\tvnet-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/ulke-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\ulke-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/ulusal-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\ulusal-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/xezer-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\xezer-tv-izle.html
+Content Type: text/html
+
+Uri: https://www.ocanlitv.live/yaban-tv-izle
+File Name: C:\Users\mulay\Pictures\TTuris100\mulayim26\www.ocanlitv.live\yaban-tv-izle.html
+Content Type: text/html
+
