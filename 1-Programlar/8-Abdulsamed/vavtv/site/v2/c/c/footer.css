@@ -1,0 +1,882 @@
+.footer-top {
+    padding: 20px 0;
+    background: linear-gradient(90deg, #282828 0%, #131A2E 45.83%, #282828 100%);
+}
+
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+
+
+.footer-menu > li:last-child {
+    padding-right: 0;
+}
+
+.footer-menu > li:first-child {
+    padding-left: 0;
+}
+
+.footer-menu > li > a {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: montserrat-medium;
+    transition: all 0.25s ease;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-family: montserrat-medium;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-app-menu > a {
+    margin-right: 12px;
+}
+
+.footer-app-menu {
+    display: flex;
+}
+
+.footer-bottom {
+    background: #191f38;
+    padding: 20px 0 55px 0;
+    display: none;
+}
+
+.tekFooter {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000;
+}
+
+.tekFooter .tekFooter a {
+    text-decoration: none;
+    color: #362f2d;
+    cursor: pointer;
+}
+
+.cls {
+    font-size: 0;
+    line-height: 1px;
+    display: block;
+    clear: both;
+    height: 1px;
+}
+
+.tekFooter .top {
+    min-height: 165px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 10px 9px 10px;
+}
+
+.tekFooter .top .after, .tekFooter .top:after, .tekFooter .top .before, .tekFooter .top:before {
+    content: " ";
+    width: 4px;
+    height: 165px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.tekFooter .top .after, .tekFooter .top:after {
+    left: auto;
+    right: 100px;
+}
+
+.tekFooter .bottom {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    color: #000;
+}
+
+.tekFooter .left, .tekFooter .right {
+    position: absolute;
+    top: 48%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.tekFooter .right {
+    top: 105px;
+}
+
+.tekFooter .left a {
+    display: block;
+     width: 83px;
+    height: 74px;
+}
+
+.tekFooter .right a {
+    display: block;
+    background: url('../i/tekFooter-v4.png') no-repeat 0 -3082px;
+    width: 70px;
+    height: 55px;
+}
+
+.tekFooter .social {
+    width: 78px;
+    position: absolute;
+    top: 48%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.tekFooter .social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tekFooter .social ul li {
+    width: 78px;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.tekFooter .social ul li a {
+    width: 78px;
+    height: 28px;
+    display: block;
+    background: url('../i/tekFooter-v4.png') no-repeat;
+}
+
+.tekFooter .social ul li.appStore a {
+    background-position: -3px -3222px;
+}
+
+.tekFooter .social ul li.googlePlay a {
+    background-position: -3px -3280px;
+}
+
+.tekFooter .social ul li.huaweiPhone a {
+    background-position: -3px -3339px;
+}
+
+.tekFooter .social ul li.faceTwt a {
+    width: 27px;
+    margin: 0 5px;
+    float: right;
+    background-position: -50px -175px;
+}
+
+.tekFooter .social ul li.faceTwt a:first-child {
+    float: left;
+    background-position: 0 -175px;
+}
+
+.tekFooter .list {
+    margin: 0 110px;
+}
+
+.tekFooter .list ul {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.tekFooter .list li {
+    display: inline-block;
+    *zoom: 1; *display: inline;
+    margin: 0 5px 3px;
+}
+
+/* beyaz Footer */
+.tekFooter .list li a {
+    background: url('../i/tekFooter-v4.png') no-repeat;
+    display: block;
+    height: 42px;
+}
+
+.tekFooter .list li.sabah a {
+    width: 70px;
+    background-position: left 7px;
+}
+
+.tekFooter .list li.fotomac a {
+    width: 81px;
+    background-position: left -189px;
+}
+
+.tekFooter .list li.takvim a {
+    width: 72px;
+    background-position: left -252px;
+}
+
+.tekFooter .list li.yeniAsir a {
+    width: 74px;
+    background-position: left -319px;
+}
+
+.tekFooter .list li.dailyS a {
+    width: 93px;
+    background-position: left -446px;
+}
+
+.tekFooter .list li.sabahAvr a {
+    width: 72px;
+    background-position: left -127px;
+}
+
+.tekFooter .list li.sabahUSA a {
+    width: 66px;
+    background-position: left -59px;
+}
+
+.tekFooter .list li.sariSayfalar a {
+    width: 76px;
+    background-position: left -383px;
+}
+
+.tekFooter .list li.teknokulis a {
+    width: 83px;
+    background-position: left -1106px;
+}
+
+.tekFooter .list li.atv a {
+    width: 46px;
+    background-position: left -527px;
+}
+
+.tekFooter .list li.a2 a {
+    width: 34px;
+    background-position: left -2557px;
+}
+
+.tekFooter .list li.aHbr a {
+    width: 38px;
+    background-position: left -725px;
+}
+
+.tekFooter .list li.aHbrRadyo a {
+    width: 34px;
+    background-position: left -593px;
+}
+
+.tekFooter .list li.aSpor a {
+    width: 40px;
+    background-position: left -791px;
+}
+
+.tekFooter .list li.aNews a {
+    width: 40px;
+    background-position: left -2735px;
+}
+
+.tekFooter .list li.minikaCocuk a {
+    width: 76px;
+    background-position: left -916px;
+}
+
+.tekFooter .list li.minikaGo a {
+    width: 42px;
+    background-position: left -659px;
+}
+
+.tekFooter .list li.atvAvr a {
+    width: 57px;
+    background-position: left -854px;
+}
+
+.tekFooter .list li.cafeRuj a {
+    width: 44px;
+    background-position: left -1050px;
+}
+
+.tekFooter .list li.otoHaber a {
+    width: 65px;
+    background-position: left -2232px;
+}
+
+.tekFooter .list li.yAsirIlan a {
+    width: 100px;
+    background-position: left -2356px;
+}
+
+.tekFooter .list li.turMblMdy a {
+    width: 59px;
+    background-position: left -988px;
+}
+
+.tekFooter .list li.home a {
+    width: 61px;
+    background-position: left -1966px;
+}
+
+.tekFooter .list li.sofra a {
+    width: 60px;
+    background-position: left -2033px;
+}
+
+.tekFooter .list li.forbes a {
+    width: 63px;
+    background-position: left -1306px;
+}
+
+.tekFooter .list li.samdan a {
+    width: 84px;
+    background-position: left -2294px;
+}
+
+.tekFooter .list li.cosmopolitan a {
+    width: 78px;
+    background-position: left -1700px;
+}
+
+.tekFooter .list li.para a {
+    width: 68px;
+    background-position: left -2163px;
+}
+
+.tekFooter .list li.globalEnerji a {
+    width: 81px;
+    background-position: left -1438px;
+}
+
+.tekFooter .list li.houseBeau a {
+    width: 80px;
+    background-position: left -2096px;
+}
+
+.tekFooter .list li.lacivert a {
+    width: 36px;
+    background-position: left -2435px;
+}
+
+.tekFooter .list li.turMat a {
+    width: 60px;
+    background-position: left -1845px;
+}
+
+.tekFooter .list li.tmd a {
+    width: 60px;
+    background-position: left -4786px;
+}
+
+.tekFooter .list li.turDag a {
+    width: 58px;
+    background-position: left -2676px;
+}
+
+.tekFooter .list li.bazaar a {
+    width: 74px;
+    background-position: left -1569px;
+}
+
+.tekFooter .list li.cosmopolitanBride a {
+    width: 71px;
+    background-position: left -1771px;
+}
+
+.tekFooter .list li.aktuel a {
+    width: 98px;
+    background-position: left -1171px;
+}
+
+.tekFooter .list li.bebegim a {
+    width: 85px;
+    background-position: left -4739px;
+}
+
+.tekFooter .list li.sabitfikir a {
+    width: 77px;
+    background-position: left -3690px;
+}
+
+.tekFooter .list li.turkuvazkitap a {
+    width: 37px;
+    background-position: left -3738px;
+    height: 53px;
+}
+
+.tekFooter .list li.esquire a {
+    width: 100px;
+    background-position: left -1373px;
+}
+
+.tekFooter .list li.cosmoGirl a {
+    width: 50px;
+    background-position: left -1645px;
+}
+
+.tekFooter .list li.aboneTur a {
+    width: 62px;
+    background-position: left -1911px;
+}
+
+.tekFooter .list li.chinaToday a {
+    width: 73px;
+    background-position: left -1241px;
+}
+
+.tekFooter .list li.minika a {
+    width: 73px;
+    background-position: left -2504px;
+}
+
+.tekFooter .list li.turkuvazRadyolar a {
+    width: 85px;
+    background-position: left -2622px;
+}
+
+.tekFooter .list li.radyoTurkuvaz a {
+    width: 66px;
+    background-position: left -3597px;
+}
+
+.tekFooter .list li.turkuvazKirtasiye a {
+    width: 60px;
+    background-position: left -3020px;
+}
+
+.tekFooter .list li.vavRadyo a {
+    width: 36px;
+    background-position: left -2841px;
+}
+
+.tekFooter .list li.vavTv a {
+    width: 36px;
+    background-position: left -4883px;
+}
+
+.tekFooter .list li.fikriyat a {
+    width: 101px;
+    background-position: left -2888px;
+}
+
+.tekFooter .list li.asporRadyo a {
+    width: 34px;
+    background-position: left -2951px;
+}
+
+.tekFooter .list li.dr a {
+    width: 56px;
+    background-position: left -2784px;
+}
+
+.tekFooter .list li.apara a {
+    width: 37px;
+    background-position: left -3644px;
+}
+
+.tekFooter .list li.sabahEge a {
+    width: 66px;
+    background-position: left -3820px;
+}
+
+.tekFooter .list li.sabahAnkara a {
+    width: 66px;
+    background-position: left -3873px;
+}
+
+.tekFooter .list li.sabahAkdeniz a {
+    width: 66px;
+    background-position: left -3926px;
+}
+
+.tekFooter .list li.sabahGuney a {
+    width: 66px;
+    background-position: left -3978px;
+}
+
+.tekFooter .list li.sabahGunaydin a {
+    width: 66px;
+    background-position: left -4031px;
+}
+
+.tekFooter .list li.sabahCtesi a {
+    width: 66px;
+    background-position: left -4078px;
+}
+
+.tekFooter .list li.sabahPazar a {
+    width: 66px;
+    background-position: left -4130px;
+}
+
+.tekFooter .list li.idefix a {
+    width: 65px;
+    background-position: left -4185px;
+}
+
+.tekFooter .list li.prefix a {
+    width: 60px;
+    background-position: left -4228px;
+}
+
+.tekFooter .list li.sabahcomtr a {
+    width: 102px;
+    background-position: left -4268px;
+}
+
+.tekFooter .list li.weekend a {
+    width: 65px;
+    background-position: left -4312px;
+}
+
+.tekFooter .list li.minikaGoDergi a {
+    width: 38px;
+    background-position: left -4368px;
+}
+
+.tekFooter .list li.minikaCocukDergi a {
+    width: 64px;
+    background-position: left -4421px;
+}
+
+.tekFooter .list li.gq a {
+    width: 50px;
+    background-position: left -4468px;
+}
+
+.tekFooter .list li.vouge a {
+    width: 73px;
+    background-position: left -4518px;
+}
+
+.tekFooter .list li.muhit a {
+    width: 64px;
+    background-position: left -4564px;
+}
+
+.tekFooter .list li.muhitKitap a {
+    width: 102px;
+    background-position: left -2621px;
+}
+
+.tekFooter .list li.sahiKitap a {
+    width: 42px;
+    background-position: left -1306px;
+}
+
+.tekFooter .list li.sinehane a {
+    width: 97px;
+    background-position: left -1436px;
+}
+
+.tekFooter .list li.inbusiness a {
+    width: 85px;
+    background-position: left -1631px;
+}
+
+.tekFooter .list li.tcocuk a {
+    width: 54px;
+    height: 53px;
+    background-position: left -1041px;
+}
+
+.tekFooter .list li.kargomsende a {
+    width: 102px;
+    background-position: left -1503px;
+}
+
+.tekFooter .list li.dinle724 a {
+    width: 47px;
+    background-position: left -1697px;
+}
+
+.tekFooter .list li.minika a {
+    width: 64px;
+    background-position: left -1769px;
+}
+
+.tekFooter .list li.kukuli a {
+    width: 62px;
+    background-position: left -3024px;
+}
+
+.tekFooter .list li.briko a {
+    width: 70px;
+    background-position: left -4612px;
+}
+
+.tekFooter .list li.turAkdm a {
+    width: 54px;
+    background-position: left -4680px;
+}
+
+.tekFooter .list li.fcocuk a {
+    width: 62px;
+    background-position: left -5054px;
+}
+
+.footer-fixed {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.footer-fixed-contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-fixed-contact a {
+    position: relative;
+    background: rgb(223 222 222 / 60%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    width: 114px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat-semibold';
+    color: #000;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.footer-menu > li > a:hover {
+    color: #00a3c0;
+}
+ 
+
+.footer-fixed-bottom {
+    height: 46px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background: #191F38;
+}
+
+.frekance-content > ul {
+    display: flex;
+}
+
+.frekance-content > ul > li {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.frekance-content > ul > li > i {
+    margin-right: 11px;
+    background: url(../i/frekance.svg) no-repeat;
+    width: 13px;
+    height: 15px;
+}
+
+.frekance-content > ul > li > span {
+    font-family: montserrat-semibold;
+    margin-left: 7px;
+}
+
+.footer-fixed-bottom > span {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'montserrat-regular';
+    height: 26px;
+    line-height: 26px;
+    padding-right: 17px;
+    border-right: 1px solid rgb(255 255 255 / 30%);
+    margin-right: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-app {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 -10px;
+    padding: 10px 20px;
+    background: #018fa9;
+    width: calc(100% + 20px);
+}
+
+.footer-fixed-top {
+    position: absolute;
+    bottom: 152px;
+    right: 5px;
+}
+.footer .social-platform {
+    background: none;
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+.footer-social-links {
+    background: #fff;
+    padding: 25px 0;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer {
+        margin-bottom: 0;
+    }
+
+    .footer-menu > li {
+        margin-right: 16px;
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer-app {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        background: none;
+    }
+
+    .footer-title {
+        margin: 0;
+    }
+
+    .footer-fixed-top {
+        right: 30px;
+        bottom: 46px;
+        display: flex;
+    }
+
+    .footer-top {
+        padding: 26px 0;
+        background: linear-gradient(90deg, #282828 0%, #131A2E 45.83%, #282828 100%);
+    }
+
+    .footer-fixed {
+        bottom: 0;
+        top: auto;
+    }
+
+    .footer-fixed-bottom {
+        padding-left: 10%;
+        background: linear-gradient(90deg, #191F38 0%, #00A3C0 53.04%, #191F38 100%);
+    }
+
+    .footer-fixed-bottom > span {
+        font-size: 14px;
+        line-height: 17px;
+        font-family: 'montserrat-bold';
+    }  
+    .footer .social-link .item,.footer .mobil-app-links,.footer .social-link,.footer .social-platform ul  {
+        width: auto;
+        flex-shrink: 0;
+    }
+    .footer .social-platform {
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        gap: 20px;
+    }
+    .footer .mobil-app-links {
+        gap: 14px;
+    }
+    .footer .social-link .item {
+        max-width: 254px;
+    }
+    .footer .social-platform ul {
+        gap: 8px;
+    }
+    .footer .social-link {
+        gap: 10px;
+    }
+    .footer-social-links {
+        background: #EDEDED;
+    }
+}
+
+@media(min-width:1200px){
+    
+}
+
+@media (min-width: 1400px) {
+    .footer-menu > li {
+        margin-bottom: 0;
+        margin-right: 42px;
+    }
+    .footer .social-platform {
+        gap: 40px;
+    }
+    
+    .footer .mobil-app-links {
+        gap: 32px;
+    }
+    .footer .social-link .item {
+        max-width: 314px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .footer-fixed-contact a {
+        margin: 0;
+        width: 76px;
+        height: 30px;
+        text-align: center;
+        font-size: 10px;
+        border-radius: 8px;
+    }
+
+    .footer-fixed-contact a:after {
+        display: none;
+    }
+    .footer .social-platform .social-title img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+    
+    .footer .social-platform .social-title {
+        align-items: start !important;
+        font-size: 14px;
+    }
+    .footer .social-link .item {
+        width: 50%;
+        margin-bottom: 25px;
+        flex-shrink: 0;
+    }
+     
+    .footer .social-link {gap: 0;}
+
+
+}
+
+@media (max-width:567px){
+    .footer .social-platform ul {
+        width: calc(100% + 60px);
+        margin-left: -60px;
+        justify-content: start !important;
+        gap: 4px;
+    }
+}
+
+@media (max-width:320px){
+    .footer .social-platform .social-title {
+        font-size: 12px;
+    }
+}
