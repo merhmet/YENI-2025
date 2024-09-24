@@ -64,8 +64,7 @@ function createTrackItem(index,name,duration){
     },
  {
       name:"♫ Yanlış Yaptın",
-      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-yanlis-yaptin.mp3
-",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-yanlis-yaptin.mp3",
       duration:""
     },
  {
