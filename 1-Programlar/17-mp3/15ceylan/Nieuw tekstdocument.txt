@@ -1,0 +1,60 @@
+ {
+      name:"♫  Adaletsiz Seçim ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/82e1fe82e4923bb8dfbc037d259b4903.mp3 ",
+      duration:""
+    },
+ {
+      name:"♫ Sende Kaldı Yüreğim  ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/c7dff51761834977014a4f87ea003904.mp3 ",
+      duration:""
+    },
+ {
+      name:"♫  Minnoş ",
+      file:" https://cdn.muzikmp3indir.com/mp3_files/acbc8e13165e3567cd60c008e29b87e5.mp3  ",
+      duration:""
+    },
+ {
+      name:"♫  Minnoş - Remix ",
+      file:" https://cdn.muzikmp3indir.com/mp3_files/b87e0362c20a27134bef42f7bcca9ed2.mp3  ",
+      duration:""
+    },
+ {
+      name:"♫ Mahkeme  ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/6386bd1cb9b697be51f8ccd302692f53.mp3" ",
+      duration:""
+    },
+
+
+
+
+
+ {
+      name:"♫  Sonsuz Aşkım  ",
+      file:" https://cdn.muzikmp3indir.com/mp3_files/e484abd7140242ff08bcd4c7a162f604.mp3  ",
+      duration:""
+    },
+ {
+      name:"♫  Gelsene ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/0cdde304accc9ccb873c53c6f4b3fb36.mp3 ",
+      duration:""
+    },
+ {
+      name:"♫  Gönül Yarası ",
+      file:" https://cdn.muzikmp3indir.com/mp3_files/ac3fe4b3158a55e02d23d780e72c901a.mp3  ",
+      duration:""
+    },
+ {
+      name:"♫ Diyarbekiri Görmeyesen  ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/f4757990665a92335b663883698e0b35.mp3 ",
+      duration:""
+    },
+ {
+      name:"♫  Kal Benim İçin ",
+      file:" https://cdn.muzikmp3indir.com/mp3_files/f2e22d915ca64f15d607a6d736329b76.mp3  ",
+      duration:""
+    },
+ {
+      name:"♫  Kiremitte Buz Musun ",
+      file:"  https://cdn.muzikmp3indir.com/mp3_files/df3030d7990382646fc7662fe5a60934.mp3 ",
+      duration:""
+    }

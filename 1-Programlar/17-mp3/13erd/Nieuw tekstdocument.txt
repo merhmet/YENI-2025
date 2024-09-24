@@ -1,0 +1,40 @@
+    {'icon': iconImage, 'title': 'Osman Gökcek', 'file': 'https://od.lk/s/OTFfMjc3ODIyODNf/osman-gokcek-den-recep-tayyip-erdogan-a-tugef-konusmasi-tuyler-diken-d.mp3'},
+   
+    {'icon': iconImage, 'title': 'Ey Oğul Şiiri', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/3974f7093ed19e72e268a7e8a9dec717.mp3'},
+
+    {'icon': iconImage, 'title': 'Diriliş Şiiri', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/4535d146766bdc8887b6249fbb0e5b46.mp3'},
+
+    {'icon': iconImage, 'title': 'Bizi Sensiz Bırakma', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/6a8cebc4ef6be703a9e0c4280a543a28.mp3'},
+
+    {'icon': iconImage, 'title': 'Bil Oğlum', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/708891216e0014a38d9a8fe93f6e8906.mp3'},
+
+    {'icon': iconImage, 'title': 'Şarkımız Bizim', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/c2778115b2df78789218688cec0fda47.mp3'},
+
+    {'icon': iconImage, 'title': 'Bizim de Yaşadığımız Hayattır', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/f9ad19a55c4d9441872403425bfcdfff.mp3'},
+
+    {'icon': iconImage, 'title': 'Göklerden Gelen Karar Vardır', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/220ec872a91dac99f7da455b3cf62dcb.mp3'},
+
+    {'icon': iconImage, 'title': 'Zindandan Mehmete Mektup', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/a9d5c58168d1e32819e4668ae06a2809.mp3'},
+
+    {'icon': iconImage, 'title': 'Filistin Şiiri', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/9e6fda3f63b8d8218f88040f6e9f9ecd.mp3'},
+
+    {'icon': iconImage, 'title': 'Ben Bitti Demeden Bitmez Üzülmeyin', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/4671746e620b5a83021796e52f6a8d5f.mp3'},
+
+    {'icon': iconImage, 'title': '15 Temmuz Şiiri', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/c8c0d6d55d4820a4bdf37e5f993966c4.mp3'},
+
+    {'icon': iconImage, 'title': 'Bu Vatan Senin', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/f9f56ef94cd6986591f613336cd22a22.mp3'},
+
+    {'icon': iconImage, 'title': 'Sürgün Şiiri', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/bcaf60c7ea5c6523b5717daefda77e55.mp3'},
+
+    {'icon': iconImage, 'title': 'İncitme Gönül', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/485b67028c8ff342b62593c5f3dc9b79.mp3'},
+
+    {'icon': iconImage, 'title': 'Sevgili Ey Sevgili', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/18f0aa985b7edd030186227decc2bf04.mp3'},
+
+    {'icon': iconImage, 'title': 'Biz Kısık Sesleriz', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/728e646a0e98ebc6779558223c307a82.mp3'},
+
+    {'icon': iconImage, 'title': 'Canım İstanbul', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/eac9f7c519f0999d8bf720c585e26323.mp3'},
+
+    {'icon': iconImage, 'title': 'Zümrüdü Anka', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/9c80e3e811cf0a9aebe6971ced79195f.mp3'},
+
+    {'icon': iconImage, 'title': 'Vakit Türkiye Vakti', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/37f4a8a6d51c9dc2984000387fbb0c36.mp3'}
+
