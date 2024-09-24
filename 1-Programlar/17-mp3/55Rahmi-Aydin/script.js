@@ -35,6 +35,14 @@ function createTrackItem(index,name,duration){
       duration:""
     },
 
+
+
+    {
+      name:"♫ Yıllara Sor",
+      file:"https://cs1.mp3.pm/listen/140464805/Q1BQZWQyTHhNME5DeVB0SGdDSk82UTZQcWN5cmFVdmRCRlI5TjZwYWMwWSthTTFVMzhZZHluR1VjTHJLZHduV3ZmNGJHRTJOMEF0VmlJSStKa3piTC92MmNwYXgzbjV3ODhNNTNUaHJGSVdrQlpNODVud01SWklra1VkUW9xRVE/Rahmi_Ayd_n_-_Ezanlar_Bizim_in_(mp3.pm).mp3  ",
+      duration:""
+    },
+
     {
       name:"♫ Aşığın Aşıkları İçin",
       file:"https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Asigin-Asiklari-Icin.mp3  ",
