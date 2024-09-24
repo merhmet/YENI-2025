@@ -37,7 +37,7 @@ function createTrackItem(index,name,duration){
 
     {
       name:"♫ Bana Neler Vadettin",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/902c08ee9fdd6e29344ae63b5665dbc8.mp3",
+      file:"https://mp3kulisi.mobi/indir/farah-zeynep-abdullah/bana-neler-vadettin-2022/farah-zeynep-abdullah-bana-neler-vadettin.mp3",
       duration:""
     },
 
@@ -68,108 +68,108 @@ function createTrackItem(index,name,duration){
       duration:""
     },
  {
+      name:"♫  Askerde Şimdi",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Askerde-Simdi.mp3",
+      duration:""
+    },
+ {
       name:"♫ Tutkun Olurum",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/66b2d59be7ea0fbd488e2a069123f19f.mp3",
-      duration:""
-    },
- {
-      name:"♫ Yanlış Yaptın",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/60662ad45761e0e65550298f32414e60.mp3",
-      duration:""
-    },
- {
-      name:"♫ Bilmiyorum",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/079c2f21682d36c8b81b31df36e3d1e3.mp3",
-      duration:""
-    },
- {
-      name:"♫ İstemedimki",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/7e035bef24bc4171d1befb981284ecc8.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Tutkun-Olurum.mp3",
       duration:""
     },
  {
       name:"♫ Aman Başım",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/bca7a685610029be0c90a7be7414514e.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-aman-basim.mp3",
+      duration:""
+    },
+ {
+      name:"♫ İstemedimki",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-istemedimki.mp3",
+      duration:""
+    },
+ {
+      name:"♫ Aman Başım",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-aman-basim.mp3",
       duration:""
     },
  {
       name:"♫ Allah",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/169793c6a63f11a35ec69e1c67f243bc.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-allah.mp3",
       duration:""
     },
  {
       name:"♫ Nasıl Unutayım ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/687c86013810b70a97d5f7ce81042973.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-nasil-unutayim.mp3",
       duration:""
     },
  {
       name:"♫ Sevdalım",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/06d5e446cb45bfe42a0cfac276e3a075.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-sevdalim.mp3",
       duration:""
     },
  {
       name:"♫ Gelde Kurtar",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/cf88cf746843dcc7f6669a0f6a6eed6b.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-gelde-kurtar.mp3",
       duration:""
     },
  {
       name:"♫ Vay Başına Gelenler",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/8f6d0e8bd3793ee9fa6dcd33bc029854.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-vay-basina-gelenler.mp3",
       duration:""
     },
  {
       name:"♫ Alışkınım Fırtınaya",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/747bb11ce4b297987d8e0cf5fb23f52f.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-aliskinim-firtinaya.mp3",
       duration:""
     },
  {
       name:"♫ Korktuğum Başıma Geldi",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/f7a984e969c3753c5682fca5b5430143.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-korktugum-basima-geldi.mp3",
       duration:""
     },
  {
       name:"♫ Eller Çaldı",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/70b715edb33502998bd49c9c1dbc4c07.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-eller-caldi-kocayi.mp3",
       duration:""
     },
  {
       name:"♫ Ayırmayın Yari Benden",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/eb16cf00ef66793fdb6666e09dba8e6a.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-ayirmayin-yari-benden.mp3",
       duration:""
     },
  {
       name:"♫ Oh Canıma Deysin",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/695d64ba6554d0aa63ecde677a3e15ba.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-oh-canima-deysin.mp3",
       duration:""
     },
  {
       name:"♫ Askerim ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/1c4d935b14a3875aac52dc53727853ca.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Askerim.mp3",
       duration:""
     },
  {
       name:"♫ Annem",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/50e55f4f8171a094e884848b3d68deae.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Annem.mp3",
       duration:""
     },
  {
       name:"♫ Askerde Şimdi",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/3f38ec667b6c86086127d012ea0268a7.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Askerde-Simdi.mp3",
       duration:""
     },
  {
       name:"♫ Yalnızım Anne",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/7b46d608463251875dc5a365101ba538.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Yalnizim-Anne.mp3",
       duration:""
     },
  {
       name:"♫ Yalanmış (Ufuk Kaplan Remix)",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/195c2cf44f778d15d43b3b97b485efc8.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/annem-askerim-2007/bahar-yalanmis-ufuk-kaplan-remix.mp3",
       duration:""
     },
  {
-      name:"♫ Yalan ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/ac0c8e78de09092a6e7e9a47a29cf76d.mp3",
+      name:"♫ Eller Çaldı Kocayı ",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-eller-caldi-kocayi.mp3",
       duration:""
     }
 
