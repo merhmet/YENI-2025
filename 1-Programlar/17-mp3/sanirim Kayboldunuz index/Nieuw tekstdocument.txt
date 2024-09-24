@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+<meta charset='UTF-8'>
+<title>404.</title>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<style class="cp-pen-styles">
+
+
+
+</center>
+<div class="card-body row">
+<div class="col-md-9 text-center audioplayer">
+<audio id="player2" style="width:100%;display:block;" src="https://cdn.muzikmp3indir.com/mp3_files/1f3f6aea6ba82e0772844aa37b0d8ecd.mp3" type="audio/mp3" controls autoplay></audio>
