@@ -30,41 +30,127 @@ function createTrackItem(index,name,duration){
 
   var listAudio = [
     {
-      name:"♫  Mahsup  Kralları",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/1f67408b7f569bb2594b5ea1fcd5e942.mp3 ",
+      name:"♫  Alyanaklı Sevdiğim",
+      file:"https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Alyanakli-Sevdigim.mp3 ",
       duration:""
     },
 
     {
-      name:"♫ Mashup Halaylar",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/43db1cc813fde52e263b7fb0aa037df0.mp3  ",
+      name:"♫ Aşığın Aşıkları İçin",
+      file:"https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Asigin-Asiklari-Icin.mp3  ",
       duration:""
     },
 
 
     {
-      name:"♫ Mashup",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/29351675362fbc6db159d10d66c979af.mp3  ",
+      name:"♫ Bir Bilene Soralım",
+      file:"https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Bir-Bilene-Soralim.mp3  ",
       duration:""
     },
  {
-      name:"♫  Mashup Bahar",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/696bae807bdb6690bfb46aceacd88a36.mp3 ",
+      name:"♫  Bir Gelin Ağlar",
+      file:" https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Bir-Gelin-Aglar.mp3 ",
       duration:""
     },
  {
-      name:"♫ Mashup Kadr Esraworld",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/9445a5f31a8dfbf4d2f9decd4146d327.mp3 ",
+      name:"♫ Bir Görüşte Aşık Oldum",
+      file:" https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Bir-Goruste-Asik-Oldum.mp3 ",
       duration:""
     },
  {
-      name:"♫ Mashup Ayda ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/2a7058422f5f8828f3817cc806dcc8a0.mp3  ",
+      name:"♫ Canımın içi ",
+      file:"https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Canimin-ici.mp3  ",
       duration:""
     },
+
  {
-      name:"♫ Mashup  Agit Aykut Ahsen Almaz",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/75090c4b587d5edf1ac66d431c9d3d55.mp3'}",
+      name:"♫ Doldurun Kadehimi ",
+      file:"  https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Doldurun-Kadehimi.mp3  ",
+      duration:""
+    },
+
+
+ {
+      name:"♫ Düşenin Dostu Yokmuş ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Dusenin-Dostu-Yokmus.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Ela Gözlüm ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Ela-Gozlum.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Sami Aslan-Babam ",
+      file:"  https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-feat-Sami-Aslan-Babam.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Geceler ",
+      file:"  https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Geceler.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Gidecekmisin ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Gidecekmisin.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Gidemem Köyüme ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Gidemem-Koyume.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Kıyamam Sana Ben ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Kiyamam-Sana-Ben.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Sen Uyurken Gideceğim ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Sen-Uyurken-Gidecegim.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Senin Hasretin Varken Bu Şehirde Yaşanmaz ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Senin-Hasretin-Varken-Bu-Sehirde-Yasanmaz.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Sevda Yüklü Kervanlar ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Sevda-Yuklu-Kervanlar.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Taş Yürekli ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Tas-Yurekli.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Vazgeç Gönlüm ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Vazgec-Gonlum.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫ Yıkıla Yıkıla Yaşayan Benim ",
+      file:"   https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Yikila-Yikila-Yasayan-Benim.mp3  ",
+      duration:""
+    },
+
+ {
+      name:"♫   Çilekeş",
+      file:" https://mp3kulisi.mobi/indir/Rahmi-Aydin/Rahmi-Aydinla-Arabesk-2000/Rahmi-Aydin-Cilekes.mp3'}",
       duration:""
     }
 
