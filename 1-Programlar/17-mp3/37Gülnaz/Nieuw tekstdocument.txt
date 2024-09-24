@@ -1,0 +1,37 @@
+  {'icon': iconImage, 'title': 'Aman Tertip Can Tertip', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/b4691b38c93cca8c7bc2ca72a397107b.mp3'},
+   
+    {'icon': iconImage, 'title': 'Beni Muhammede Götürün', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/8202c5af3cadbf67975e99f1b70a51df.mp3'},
+
+    {'icon': iconImage, 'title': 'Bir Ayrılık Bir Yoksulluk Bir Ölüm', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/d7f294198025f8fd30442fd3ec62f610.mp3'},
+
+    {'icon': iconImage, 'title': 'Bugün Bana Yarın Sana', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/366c6982c9af77e384ae08b1a0fde2c6.mp3'},
+
+    {'icon': iconImage, 'title': 'Çalın Davulları', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/9c2763695bd6f2b5668d5b652b7bb056.mp3'},
+
+    {'icon': iconImage, 'title': 'Dağlar Seni Delik Delik Delerim', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/f3acf832124182e614a35443da3256f5.mp3'},
+
+    {'icon': iconImage, 'title': 'Dere Boyu Kavaklar', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/9fd1cb3a08e350493491086c63218126.mp3'},
+
+    {'icon': iconImage, 'title': 'Dostlar Beni Hatırlasın', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/857e80b35d2002b17971dd3d5e960cae.mp3'},
+
+    {'icon': iconImage, 'title': 'Eklemedir Koca Konak', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/04969072b93387ae5d3ec77f004818a6.mp3'},
+
+    {'icon': iconImage, 'title': 'Garip Gönlüm', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/5ccc2f9a9eca4f7e56b41aa49392668c.mp3'},
+
+    {'icon': iconImage, 'title': 'Geçmiyor Günler', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/d0201d1f3f216cabadd154e9f25bce43.mp3'},
+
+    {'icon': iconImage, 'title': 'Güneşe Dön Çiçeğim', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/41541634094931d65abf41bf3d2f7866.mp3'},
+
+    {'icon': iconImage, 'title': 'Kirpiklerin Ok Ok Eyle', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/6fef6ab77ce9d44a197f6a74dcf5a5c2.mp3'},
+
+    {'icon': iconImage, 'title': 'Kozan Dağı', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/8e467eb40e17b85a285b865dabc556b5.mp3'},
+
+    {'icon': iconImage, 'title': 'Nalına Da Vur', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/e189e3d174b4360ebec9ca49e34b69fa.mp3'},
+
+    {'icon': iconImage, 'title': 'Niye Çattın Kaşlarını', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/23fef19bca977514236023dd82a28227.mp3'},
+
+    {'icon': iconImage, 'title': 'Ömür Biter Yollar Bitmez', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/57eddae2d180f6bc969aec7f17f1c305.mp3'},
+
+    {'icon': iconImage, 'title': 'Paşa Gönlün Bilir', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/8daafdfad4c329829e9504f27c60a053.mp3'},
+
+    {'icon': iconImage, 'title': 'Polis Haydar', 'file': 'https://cdn.muzikmp3indir.com/mp3_files/451240b6b7b1c20a860b7d85e3ca6a11.mp3'}
