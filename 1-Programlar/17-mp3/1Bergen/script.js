@@ -3,43 +3,43 @@ var songsToAdd = [
     "name": "Ayrılık Aşkımın Çilesi",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054141.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Ayrilik-Askimin-Cilesi-Oldu.mp3",
+    "cover_art_url": "Turis1.jpg"
   },
   {
     "name": "Bitirdin Beni",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054142.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/bergen/karisik/bergen-bitirdin-beni-beatmallow-remix.mp3",
+    "cover_art_url": "Turis1.jpg"
   },
   {
     "name": "Emret Güzelim",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054143.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Emret-Guzelim.mp3",
+    "cover_art_url": "Turis1.jpg"
   },
   {
     "name": "Kul Feryadı",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054144.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Kul-Feryadi.mp3",
+    "cover_art_url": "Turis1.jpg"
   },
   {
     "name": "Nasıl Aşık Olmam Sana",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054145.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Nasil-Asik-Olmam-Sana.mp3",
+    "cover_art_url": "Turis1.jpg"
   },
   {
     "name": "Sen Yanarsın Ben Yanarım",
     "artist": "Bergen",
     "album": "Bergen",
-    "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054146.mp3",
-    "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+    "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Sen-Yanarsin-Ben-Yanarim.mp3",
+    "cover_art_url": "Turis1.jpg"
   }
 
   
@@ -59,36 +59,36 @@ Amplitude.init({
       "name": "♫  Bana Neler Vadettin",
       "artist": "Bergen",
       "album": "Bergen",
-      "url": "https://cdn.muzikmp3indir.com/mp3_files/902c08ee9fdd6e29344ae63b5665dbc8.mp3",
-      "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+      "url": "https://mp3kulisi.mobi/indir/bergen/saygi-albumu-2022/bergen-bana-neler-vadettin.mp3",
+      "cover_art_url": "Turis1.jpg"
     },
     {
       "name": "♫  Sev Yeter",
       "artist": "Bergen",
       "album": "Bergen",
-      "url": "https://cdn.muzikmp3indir.com/mp3_files/b6d61d4f562162f97e20c42fb1ed97d9.mp3",
-      "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+      "url": "https://mp3kulisi.mobi/indir/Bergen/Karisik/Bergen-Sev-Yeter.mp3",
+      "cover_art_url": "Turis1.jpg"
     },
     {
       "name": "♫  Geceler",
       "artist": "Bergen",
       "album": "Bergen",
-      "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054178.mp3",
-      "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+      "url": "https://mp3kulisi.mobi/indir/Bergen/Sevgimin-Bedeli-1988/Bergen-Geceler.mp3",
+      "cover_art_url": "Turis1.jpg"
     },
     {
       "name": "♫  Acıların Kadını",
       "artist": "Bergen",
       "album": "Bergen",
-      "url": "https://cdn.muzikmp3indir.com/mp3_files/4523433fe1c6431e45d8b5a910eba9c4.mp3",
-      "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+      "url": "https://mp3kulisi.mobi/indir/Bergen/Acilarin-Kadini-1986/Bergen-Acilarin-Kadini.mp3",
+      "cover_art_url": "Turis1.jpg"
     },
     {
       "name": "♫  Seveceksen Gel",
       "artist": "Bergen",
       "album": "Bergen",
-      "url": "https://audios.tmgrup.com.tr/724_dinle/songs/S_054170.mp3",
-      "cover_art_url": "https://muzikmp3indir.com/compressed/1aa46243cd0880994d23d4df7e332a7a.png"
+      "url": "https://mp3kulisi.mobi/indir/bergen/karisik/bergen-geleceksen-bugun-gel.mp3",
+      "cover_art_url": "Turis1.jpg"
     }
   ]
 });
