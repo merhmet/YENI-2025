@@ -31,7 +31,7 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Ayırmayın Yari Benden ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/eb16cf00ef66793fdb6666e09dba8e6a.mp3 ",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-ayirmayin-yari-benden.mp3 ",
       duration:""
     },
 
@@ -44,27 +44,28 @@ function createTrackItem(index,name,duration){
 
     {
       name:"♫ Yalanmiş",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/403fb29d90144de826afed7b9e85c4c0.mp3",
+      file:"https://mp3kulisi.mobi/indir/Arabesk-Damar/Turkce-Damar/Arabesk-Damar-Bahar-Yalanmis.mp3",
       duration:""
     },
  {
       name:"♫ Hayırsız",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/0ec7475bee001e0656f50c16b5f68756.mp3",
+      file:"https://mp3kulisi.mobi/indir/Bahar/Annem-Askerim-2007/Bahar-Hayirsiz.mp3",
       duration:""
     },
  {
       name:"♫ Gelde Kurtar",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/cf88cf746843dcc7f6669a0f6a6eed6b.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/tutkun-olurum-2000/bahar-gelde-kurtar.mp3",
       duration:""
     },
  {
       name:"♫ Bilmiyorum",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/079c2f21682d36c8b81b31df36e3d1e3.mp3",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-bilmiyorum.mp3",
       duration:""
     },
  {
-      name:"♫ Kör Olası",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/60252acd1ba5bad891a746fb42b3d526.mp3",
+      name:"♫ Yanlış Yaptın",
+      file:"https://mp3kulisi.mobi/indir/bahar/yanlis-yaptin-2003/bahar-yanlis-yaptin.mp3
+",
       duration:""
     },
  {
