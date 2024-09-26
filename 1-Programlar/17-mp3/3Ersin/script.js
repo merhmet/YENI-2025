@@ -31,100 +31,108 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"♫  Aman Tertip Can Tertip ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/b4691b38c93cca8c7bc2ca72a397107b.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Aman-Tertip-Can-Tertip.mp3  ",
       duration:""
     },
 
     {
       name:"♫ Beni Muhammede Götürün",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/8202c5af3cadbf67975e99f1b70a51df.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Beni-Muhammede-Goturun.mp3  ",
       duration:""
     },
 
 
     {
       name:"♫ Bir Ayrılık Bir Yoksulluk Bir Ölüm",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/d7f294198025f8fd30442fd3ec62f610.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Bir-Ayrilik-Bir-Yoksulluk-Bir-Olum.mp3  ",
       duration:""
     },
  {
       name:"♫ Bugün Bana Yarın Sana",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/366c6982c9af77e384ae08b1a0fde2c6.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Bugun-Bana-Yarin-Sana.mp3 ",
       duration:""
     },
  {
       name:"♫ Çalın Davulları",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/9c2763695bd6f2b5668d5b652b7bb056.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Calin-Davullari.mp3 ",
       duration:""
     },
  {
       name:"♫ Dağlar Seni Delik Delik Delerim",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/f3acf832124182e614a35443da3256f5.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Daglar-Seni-Delik-Delik-Delerim.mp3 ",
       duration:""
     },
  {
       name:"♫ Dere Boyu Kavaklar ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/9fd1cb3a08e350493491086c63218126.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Dere-Boyu-Kavaklar.mp3  ",
       duration:""
     },
  {
       name:"♫  Dostlar Beni Hatırlasın",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/857e80b35d2002b17971dd3d5e960cae.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Dostlar-Beni-Hatirlasin.mp3 ",
       duration:""
     },
+
+ {
+      name:"♫  Ömür Biter Yollar Bitmez",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Omur-Biter-Yollar-Bitmez.mp3 ",
+      duration:""
+    },
+
+
  {
       name:"♫ Eklemedir Koca Konak ",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/04969072b93387ae5d3ec77f004818a6.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Eklemedir-Koca-Konak.mp3 ",
       duration:""
     },
  {
       name:"♫  Garip Gönlüm",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/5ccc2f9a9eca4f7e56b41aa49392668c.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Garip-Gonlum.mp3  ",
       duration:""
     },
  {
       name:"♫ Geçmiyor Günler",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/d0201d1f3f216cabadd154e9f25bce43.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Gecmiyor-Gunler.mp3 ",
       duration:""
     },
  {
       name:"♫ Güneşe Dön Çiçeğim ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/41541634094931d65abf41bf3d2f7866.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Gunese-Don-Cicegim.mp3  ",
       duration:""
     },
  {
       name:"♫ Kirpiklerin Ok Eyle ",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/6fef6ab77ce9d44a197f6a74dcf5a5c2.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Kirpiklerin-Ok-Ok-Eyle.mp3 ",
       duration:""
     },
  {
       name:"♫ Kozan Dağı ",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/8e467eb40e17b85a285b865dabc556b5.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Kozan-Dagi.mp3  ",
       duration:""
     },
  {
       name:"♫ Nalına Da Vur ",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/e189e3d174b4360ebec9ca49e34b69fa.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Nalina-Da-Vur.mp3 ",
       duration:""
     },
  {
       name:"♫  Niye Çattın Kaşlarını",
-      file:"https://cdn.muzikmp3indir.com/mp3_files/23fef19bca977514236023dd82a28227.mp3  ",
+      file:"https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Niye-Cattin-Kaslarini.mp3  ",
       duration:""
     },
  {
       name:"♫ Ömür Biter Yollar Bitmez ",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/57eddae2d180f6bc969aec7f17f1c305.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Omur-Biter-Yollar-Bitmez.mp3 ",
       duration:""
     },
  {
       name:"♫ Paşa Gönlün Bilir",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/8daafdfad4c329829e9504f27c60a053.mp3 ",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Pasa-Gonlun-Bilir.mp3 ",
       duration:""
     },
  {
       name:"♫ Polis Haydar ",
-      file:" https://cdn.muzikmp3indir.com/mp3_files/451240b6b7b1c20a860b7d85e3ca6a11.mp3'}",
+      file:" https://mp3kulisi.mobi/indir/Ersen-Dadaslar/Anadolu-Sevdamiz-2018/Ersen-Dadaslar-Polis-Haydar.mp3'}",
       duration:""
     }
  
