@@ -91,13 +91,6 @@ function createTrackItem(index,name,duration){
       duration:""
     },
 
- {
-      name:"♫  TTTTTTT",
-      file:"https://www.dailymotion.com/cdn/manifest/video/x6qww5t.m3u8?sec=rBVlT4lkeHmn4KoGFM4G9-rBTFXvwSEFV9Ks0HzChgUWwCs66A7fKhSyV5YKgPh5&dmTs=874503&dmV1st=b1beb1d9-0117-4604-b70e-fe56fee1dfa3  ",
-      duration:""
-    },
-
-
 
 
       
