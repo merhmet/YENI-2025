@@ -1,0 +1,196 @@
+Uri: https://aussadroach.net/btag.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\btag.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\ajax\libs\normalize\3.0.3\normalize.css
+Content Type: text/css
+
+Uri: https://connect.facebook.net/en_GB/sdk.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\en_GB\sdk.js
+Content Type: application/x-javascript
+
+Uri: https://mc.yandex.ru/watch/53596315
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\watch\53596315
+Content Type: image/gif
+
+Uri: https://phumtoub.net/btag.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\btag.min-1.js
+Content Type: application/javascript
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/css/all.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\css\all.css
+Content Type: text/css
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-brands-400.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900.svg
+Content Type: image/svg+xml
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900.ttf
+Content Type: font/ttf
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900.woff
+Content Type: font/woff
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-duotone-900.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-duotone-900.woff2
+Content Type: font/woff2
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300.svg
+Content Type: image/svg+xml
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300.ttf
+Content Type: font/ttf
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300.woff
+Content Type: font/woff
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-light-300.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-light-300.woff2
+Content Type: font/woff2
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400.ttf
+Content Type: font/ttf
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900.ttf
+Content Type: font/ttf
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://pro.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\releases\v5.10.0\webfonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\bootstrap\4.1.3\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://vipotv.com/fenerbahce-tv/
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\fenerbahce-tv\index.htm
+Content Type: text/html
+
+Uri: https://vipotv.com/wp-content/litespeed/css/cfa5cc6ceeae7b5a569b36e32019447e.css?ver=6f67c
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\litespeed\css\cfa5cc6ceeae7b5a569b36e32019447e.css
+Content Type: text/css
+
+Uri: https://vipotv.com/wp-content/plugins/lh-zero-spam/scripts/lh-zero-spam.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\plugins\lh-zero-spam\scripts\lh-zero-spam.js
+Content Type: application/javascript
+
+Uri: https://vipotv.com/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\plugins\litespeed-cache\assets\js\instant_click.min.js
+Content Type: application/javascript
+
+Uri: https://vipotv.com/wp-content/themes/livetv/assets/img/favicon.ico
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\themes\livetv\assets\img\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://vipotv.com/wp-content/uploads/2020/11/cropped-favicon-180x180.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\uploads\2020\11\cropped-favicon-180x180.png
+Content Type: image/png
+
+Uri: https://vipotv.com/wp-content/uploads/2020/11/cropped-favicon-192x192.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\uploads\2020\11\cropped-favicon-192x192.png
+Content Type: image/png
+
+Uri: https://vipotv.com/wp-content/uploads/2020/11/cropped-favicon-32x32.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-content\uploads\2020\11\cropped-favicon-32x32.png
+Content Type: image/png
+
+Uri: https://vipotv.com/wp-json/
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://vipotv.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fvipotv.com%2Ffenerbahce-tv%2F
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://vipotv.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fvipotv.com%2Ffenerbahce-tv%2F&format=xml
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://vipotv.com/wp-json/wp/v2/posts/1464
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (106)\vipotv.com\wp-json\wp\v2\posts\1464
+Content Type: application/json
+
