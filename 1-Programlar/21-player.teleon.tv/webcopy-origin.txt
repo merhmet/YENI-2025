@@ -1,0 +1,616 @@
+Uri: https://analytics.teleon.tv/script.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\script.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/@silvermine/videojs-chromecast@1.2.0/dist/images/ic_cast_connected_white_24dp.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\@silvermine\videojs-chromecast@1.2.0\dist\images\ic_cast_connected_white_24dp.png
+Content Type: image/png
+
+Uri: https://cdn.jsdelivr.net/npm/@silvermine/videojs-chromecast@1.2.0/dist/images/ic_cast_white_24dp.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\@silvermine\videojs-chromecast@1.2.0\dist\images\ic_cast_white_24dp.png
+Content Type: image/png
+
+Uri: https://cdn.jsdelivr.net/npm/@silvermine/videojs-chromecast@1.2.0/dist/silvermine-videojs-chromecast.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\@silvermine\videojs-chromecast@1.2.0\dist\silvermine-videojs-chromecast.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\bootstrap-icons@1.4.1\font\bootstrap-icons.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/fonts/bootstrap-icons.woff2?231ce25e89ab5804f9a6c427b8d325c9
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\bootstrap-icons@1.4.1\font\fonts\bootstrap-icons.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/fonts/bootstrap-icons.woff?231ce25e89ab5804f9a6c427b8d325c9
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\bootstrap-icons@1.4.1\font\fonts\bootstrap-icons.woff
+Content Type: font/woff
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\bootstrap@5.1.3\dist\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\silvermine-videojs-quality-selector@1.1.2\dist\css\quality-selector.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\npm\vanilla-lazyload@10.19.0\dist\lazyload.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.teleon.tv/cookieconsent.min.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\cookieconsent.min.css
+Content Type: text/css
+
+Uri: https://cdn.teleon.tv/cookieconsent.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\cookieconsent.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.teleon.tv/flags/uk.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\flags\uk-1.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/flags/uk.png?v1
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\flags\uk.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/icons/email.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\icons\email.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/icons/facebook.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\icons\facebook.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/icons/linkedin.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\icons\linkedin.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/icons/reddit.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\icons\reddit.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/icons/twitter.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\icons\twitter.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo/24-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo\24-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/24-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\24-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/360_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\360_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/a-para-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\a-para-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/afyon-turk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\afyon-turk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/akilli_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\akilli_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/akit_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\akit_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/aksu-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\aksu-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/altas_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\altas_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/al_qanat_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\al_qanat_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/aras_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\aras_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/art_amasya_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\art_amasya_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/as_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\as_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/atv-alanya-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\atv-alanya-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/atv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\atv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/atv_tr_2.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\atv_tr_2.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/atv_tr_avrupa.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\atv_tr_avrupa.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/av-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\av-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/a_haber_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\a_haber_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/a_news_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\a_news_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/a_spor_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\a_spor_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/bbn-turk-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\bbn-turk-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/bein-sports-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\bein-sports-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/bloomberg-ht-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\bloomberg-ht-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/blt-turk-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\blt-turk-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/booba-tr.jpg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\booba-tr.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.teleon.tv/logo50/bursa_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\bursa_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/cartoon_network_global.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\cartoon_network_global.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/cine5-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\cine5-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/cnn-turk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\cnn-turk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/diyanet-tv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\diyanet-tv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/dmax_us_transparent_white.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\dmax_us_transparent_white.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ekoturk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ekoturk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ert_sah_tr_tv.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ert_sah_tr_tv.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/fox-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\fox-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ftv-turk-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ftv-turk-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/haber-turk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\haber-turk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/halk-tv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\halk-tv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal-23-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal-23-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal-34-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal-34-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal-d-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal-d-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal-urfa-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal-urfa-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal15_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal15_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal_26_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal_26_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal_5_tr2.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal_5_tr2.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kanal_t.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kanal_t.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/koy-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\koy-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kral-pop-tv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kral-pop-tv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/krt-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\krt-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/kudus_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\kudus_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/mar_tv_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\mar_tv_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/minika-cocuk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\minika-cocuk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/minika-go-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\minika-go-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ntr-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ntr-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ntv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ntv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/number-1-damar-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\number-1-damar-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/number1-ask-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\number1-ask-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/number1-dance-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\number1-dance-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/number1_tr_tv.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\number1_tr_tv.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/number1_tr_tv_turk.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\number1_tr_tv_turk.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/nur_tv.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\nur_tv.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/on-4-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\on-4-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/on-6-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\on-6-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/pamukkale-tr-translate.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\pamukkale-tr-translate.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/power-turk-tv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\power-turk-tv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/power_tr_tv.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\power_tr_tv.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/show-max-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\show-max-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/show-turk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\show-turk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/srt_sivas_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\srt_sivas_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/star-tv-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\star-tv-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tele1-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tele1-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tempo-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tempo-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/teve_2_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\teve_2_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tgrt-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tgrt-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/thaqalayn-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\thaqalayn-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tivibu_tr_spor.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tivibu_tr_spor.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tlc-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tlc-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-arabi-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-arabi-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-avaz-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-avaz-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-belgesel-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-belgesel-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-cocuk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-cocuk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-haber-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-haber-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-kurdi-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-kurdi-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-muzik-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-muzik-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-spor-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-spor-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-spor-yildiz-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-spor-yildiz-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-turk-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-turk-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt-world-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt-world-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt1-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt1-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/trt2-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\trt2-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tv-100-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tv-100-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tv1-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tv1-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tv8_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tv8_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tvnet-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tvnet-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/tv_41_tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\tv_41_tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/ucankus-tv-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\ucankus-tv-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/vatan-tr-transparent.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\vatan-tr-transparent.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/logo50/virgin-radio-tr.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\logo50\virgin-radio-tr.png
+Content Type: image/png
+
+Uri: https://cdn.teleon.tv/video-js.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\video-js.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\css\all.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400-1.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-brands-400.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-brands-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400-1.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-regular-400.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.eot
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.eot?
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900-1.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.svg
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.ttf
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.woff
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/webfonts/fa-solid-900.woff2
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\ajax\libs\font-awesome\5.8.2\webfonts\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://code.jquery.com/jquery-3.5.1.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\jquery-3.5.1.min.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/assets/26bb9114/css/bootstrap.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\assets\26bb9114\css\bootstrap.css
+Content Type: text/css
+
+Uri: https://player.teleon.tv/assets/282e6e82/yii.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\assets\282e6e82\yii.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/assets/9dedc1db/jquery.pjax.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\assets\9dedc1db\jquery.pjax.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/assets/c344d157/jquery.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\assets\c344d157\jquery.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/css/custom.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\css\custom.css
+Content Type: text/css
+
+Uri: https://player.teleon.tv/css/custom3.css?v24
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\css\custom3.css
+Content Type: text/css
+
+Uri: https://player.teleon.tv/css/styles.css
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\css\styles.css
+Content Type: text/css
+
+Uri: https://player.teleon.tv/en/channel/24tv-tr
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\en\channel\24tv-tr.html
+Content Type: text/html
+
+Uri: https://player.teleon.tv/img/apple-touch-icon.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\img\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://player.teleon.tv/img/favicon-16x16.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\img\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://player.teleon.tv/img/favicon-32x32.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\img\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://player.teleon.tv/img/site.webmanifest
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\img\site.webmanifest
+Content Type: application/octet-stream
+
+Uri: https://player.teleon.tv/img/teleon-logo-2020.png
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\img\teleon-logo-2020.png
+Content Type: image/png
+
+Uri: https://player.teleon.tv/js/playerjs_en.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\js\playerjs_en.js
+Content Type: application/javascript
+
+Uri: https://player.teleon.tv/js/scripts.js
+File Name: C:\Users\mulay\Pictures\SITE KOPYA\Nieuwe map (108)\player.teleon.tv\js\scripts.js
+Content Type: application/javascript
+
