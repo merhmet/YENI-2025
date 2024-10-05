@@ -1,0 +1,1410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr" lang="tr">
+	<head>
+        <style type="text/css">
+            <!--
+                #webme_sky_ad {
+                    position: absolute;
+                    right: 5px;
+                    top: 0px;
+                    z-index: 1000000000000000000; 
+                }
+            //-->
+        </style>    
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+		        <script type="text/javascript">
+        var dateTimeOffset = new Date().getTimezoneOffset();
+        
+        function getElementsByClassNameLocalTimeWrapper() {
+            return document.getElementsByClassName("localtime");
+        }
+        
+        (function () {
+            var onload = function () {
+                var elementArray = new Array();
+                
+                if (document.getElementsByClassName) {
+                    elementArray = getElementsByClassNameLocalTimeWrapper();
+                } else {
+                    var re = new RegExp('(^| )localtime( |$)');
+                    var els = document.getElementsByTagName("*");
+                    for (var i=0,j=els.length; i<j; i++) {
+                        if (re.test(els[i].className))
+                            elementArray.push(els[i]);
+                    }
+                }
+                
+                for (var i = 0; i < elementArray.length; i++) {    
+                    var timeLocal = new Date(parseInt(elementArray[i].getAttribute("data-timestamp")));
+                    var hour = timeLocal.getHours();
+                    var ap = "am";
+                    if (hour > 11) {
+                        ap = "pm";
+                    }
+                    else if (hour > 12) {
+                        hour = hour - 12;
+                    }
+                    
+                    var string = elementArray[i].getAttribute("data-template");
+                    string = string.replace("[Y]", timeLocal.getFullYear());
+                    string = string.replace("[m]", ('0' + (timeLocal.getMonth() + 1)).slice(-2));
+                    string = string.replace("[d]", ('0' + timeLocal.getDate()).slice(-2));
+                    string = string.replace("[H]", ('0' + timeLocal.getHours()).slice(-2));
+                    string = string.replace("[g]", ('0' + hour).slice(-2));
+                    string = string.replace("[i]", ('0' + timeLocal.getMinutes()).slice(-2));
+                    string = string.replace("[s]", ('0' + timeLocal.getSeconds()).slice(-2));
+                    string = string.replace("[a]", ap);
+                    elementArray[i].childNodes[0].nodeValue = string;
+                }
+            };
+            
+            if (window.addEventListener)
+                window.addEventListener("DOMContentLoaded", onload);
+            else if (window.attachEvent)
+                window.attachEvent("onload", onload);
+        })();
+        </script><link rel="icon" href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG">
+<link type="image/x-icon" href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG">
+<link href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG" rel="apple-touch-icon">
+<link href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG" rel="apple-touch-icon" sizes="76x76">
+<link href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG" rel="apple-touch-icon" sizes="120x120">
+<link href="../pic/t/torco/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1%203.PNG" rel="apple-touch-icon" sizes="152x152">
+<meta name="description" content="Arama motoru, di&#287;er &#231;okca kullan&#305;lan siteler ve ara&#231;lara h&#305;zlaca ula&#351;&#305;m sa&#287;layan site. >> Ak&#305;lda Kal&#305;r <<
+
+
+">
+<meta name="keywords" content="torco.tr.gg, ak&#305;lda kal&#305;r, arama motor&#305;, google,  Multi-Medya, Program ve Oyun, Film ve Dizi, TV ve Radyo, Forum, Kuran-&#305; Kerim, Program indir, &#350;ehirleri Gez, Kas Geli&#351;tirme, Dil &#214;&#287;ren, Programlama, Ge&#231;ici Mail, Instagram Gizli Hesap G&#246;r, HTML KODLARI,  Sitenize ekleyebilece&#287;iniz &#231;e&#351;itli kodlar, Oyunlarda kullan&#305;lan hileler ve kodlar&#305;, Ak&#305;ll&#305; telefonlar de&#287;erlendirme ve sorun &#231;&#246;z&#252;mleri,
+Al&#305;&#351;veri&#351; Siteleri
+Kampanyalar&#305;, s&#305;cak f&#305;rsatlar ve merak edilen her &#351;ey, 
+Mobil ile ilgili bilgiler, Sosyal medya hakk&#305;nda her &#351;ey, takip edilmesi gerekenler, 
+&#220;lkemizdeki konular&#305;na bu kategoride yer verece&#287;iz. Tan&#305;t&#305;n, ele&#351;tiri al&#305;n, yorum yap&#305;n, Kripto Para
+Son durum ve g&#252;ncel verileri, Spor ile ilgili bilgiler, Site Yapma,
+Sende B&#246;yle Bir Site Yapmak &#304;stiyormusun?, Bilgisayar kullan&#305;m&#305; ve &#231;e&#351;itli sorunlar&#305;n &#231;&#246;z&#252;m&#252;, Nas&#305;l yap&#305;l&#305;r?, Nedir, Nas&#305;l yap&#305;l&#305;r?, son dakika haberleri, piyasalar, namaz vakitleri, hava durumu, &#231;eviri, radyo dinle, televizyon izle, kuran &#246;&#287;ren, g&#252;nl&#252;k dua ve hadis, oyun oyna, santra&#231;, namaz &#246;&#287;ren, abdest nas&#305;l al&#305;n&#305;r, paint, dj, trend twettler, g&#252;ld&#252;m, mp3 dinle, m&#252;zik dinle, mp3 indir, bing, arama motoru, oyun indir, program indir, video, &#351;ark&#305; dinle, say&#305;sal loto, porno, yemek tarifleri, facebook, instagram, whatssapp, twitter, telegram, youtube, izlesene, tumblr, n&#246;bet&#231;i eczaneler, puan durumu, ma&#231; sonucu, bilet, ego, ma&#231; izle, earth, gmail, google hizmetler, e-tablolar, haritalar, dok&#252;manlar, classroom, drive, formlar, play, g&#246;rseller, Mustafa TOR, saat ve tarih, 
+
+">
+<meta name="author" content="Mustafa TOR">
+<meta name="robots" content="index,follow">
+<!-- Remove the noindex-tag by booking any premium package on https://www.bedava-sitem.com/Premium/PackageSelection/. Only premium websites can be indexed by Google and other search engines -->
+<meta name="robots" content="noindex">
+<meta property="og:title" content="TORCO - Forum">
+<meta property="og:image" content="https://theme.webme.com/designs/css-only/screen.jpg">
+<meta name="google-site-verification" content="5t-J6KGtw3Xgnkyg924ZVn5vMgxVPfV6g4njitySWHI">
+
+<meta name="google-site-verification" content="ng5fTCjQHzRHQ7N9i6qSidyNAfdcbH93bx2gpNqE_X0">
+<meta name="msvalidate.01" content="F24AD7F33E21F57B41179B63BC114A7C">
+<head>
+<script data-ad-client="ca-pub-2300515980006504" async="" src="../pagead/js/f.txt"></script>
+</head>
+
+<meta name="yandex-verification" content="d055b39d07743909">
+
+<meta name="msvalidate.01" content="F24AD7F33E21F57B41179B63BC114A7C">
+<meta name="google-site-verification" content="ng5fTCjQHzRHQ7N9i6qSidyNAfdcbH93bx2gpNqE_X0">
+<meta name="yandex-verification" content="749a837fc70cd51a">
+
+<meta name="msvalidate.01" content="F24AD7F33E21F57B41179B63BC114A7C">
+
+<script type='text/javascript' src='../js/sharethis.js#property=617eb491e35b180013fb2b43&product=sticky-share-buttons' async='async'></script>
+<meta name="google-adsense-platform-account" content="ca-host-pub-1483906849246906">
+<meta name="google-adsense-account" content="ca-pub-8088283442278784">
+
+<script>
+    function WebmeLoadAdsScript() {
+        if (!document.querySelector('script[src*="pagead2.googlesyndication.com"]')) {
+            let script = document.createElement('script');
+            script.async = true;
+            script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8088283442278784&host=ca-host-pub-1483906849246906";
+            script.setAttribute('data-ad-host', 'ca-host-pub-1483906849246906');
+            script.setAttribute('data-ad-client', 'ca-pub-8088283442278784');
+            script.crossOrigin = 'anonymous';
+            document.body.appendChild(script);
+        }
+    }
+</script><script>
+    window.dataLayer = window.dataLayer || [];
+
+    function WebmeGtag() {
+        dataLayer.push(arguments);
+    }
+
+    document.addEventListener('CookieScriptLoaded', function () {
+        const cookieChoice = CookieScript.instance.currentState();
+        if (cookieChoice.action === 'accept') {
+            WebmeGtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+        if (cookieChoice.action === 'reject') {
+            WebmeGtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied'
+            });
+        }
+        WebmeLoadAdsScript();
+    });
+
+</script>
+<script type="text/javascript" charset="UTF-8" src="../s/d8f339851b4baf4aa1eff845c3ca0c41.js"></script>
+		<title>TORCO - Forum</title>
+				<style type="text/css">
+			<!--
+			
+
+.cat:link,.cat:visited {
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.cat:hover {
+	text-decoration:underline;
+}
+.cat:active {
+	text-decoration:underline;
+}
+.forumueberschrift {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.forumtabelle {
+ background-color: #efefe7;
+ border-style:solid;
+ border-color:#C0C0C0;
+ border-width:1px;
+}
+
+.forumtabelle td, .forumtabelle td a {
+ color: #373737;
+}
+
+#helpbox {
+    background-color: #efefe7;
+    border: none;
+    border-width: 0px;
+    box-shadow: none;
+}
+
+.quote {
+ background-color: #dedfc6;
+ border-style:solid;
+ border-color:#C0C0C0;
+ border-width:1px;
+}
+
+.hilfe {
+ background-color: #efefe7;
+ border-width:0px;
+}
+
+.forumtrenner {
+ background-color:#C0C0C0;
+}
+
+
+			table {margin-left: auto;margin-right: auto}  h1#title{display: none;} h2#title span {display: none;}    div.header{display: none;} li.nav_element{list-style-type: none;} li.nav_element{display: none;} body {  margin:0;  padding:0;  width:100%;  color:#000000;  font:normal 13px/1.8em Arial, Helvetica, sans-serif;  background:#ffffff url(../uwp/uwp1355504.png)fixed bottom left; } html, .main {  padding:0;  margin:0; } .main { } .clr {  clear:both;  padding:0;  margin:0;  width:100%;  font-size:0;  line-height:0; } .logo {  margin:0;  padding:0;  float:left;  width:auto; } h1 {  margin:0;  padding:36px 0 36px 40px;  color:#077fff;  font:bold 40px/1.2em Arial, Helvetica, sans-serif;  letter-spacing:-2px; } h1 a, h1 a:hover {  color:#077fff;  text-decoration:none; } h1 small {  display:block;  padding-left:80px;  font:normal 12px/1.2em Arial, Helvetica, sans-serif;  color:#edf3f6;  letter-spacing:normal; } h2 {  font:normal 24px/1.5em Arial, Helvetica, sans-serif;  padding:8px 0;  margin:8px 0;  color:#323a3f; } p {  margin:8px 0;  padding:0 0 8px 0;  font:normal 12px/1.8em Arial, Helvetica, sans-serif; } p.spec {  text-align:left; } a {  color:#0E16F0;  text-decoration:underline; } a.com { }    #taarim {  margin-left: auto; margin-right: auto; width: 975px; height:30pxmargin-top: -20px; padding-top: 20px; padding-bottom: 20px; padding-left:20px; padding-right: 20px; }  .logo{  border: 0px solid #ffffff; margin-top: 10px; margin-left: ; }    a {    font-size: 13px;    color:#009cff;    text-decoration: none;     }   a:visited {    font-size: 12px;    text-decoration: none;   }   a:hover {    font-size: 13px;                              color:#077FFF;    text-decoration: crosses the cut;   }    #tasarim{margin-left:auto;  width:975px; margin-right:auto;   padding-top: 0px; padding-left: px; opacity: 0.9; filter:alpha(opacity=100)  }          #ust{margin-top:-2px;  width:;  height:70px; border: px solid #077FFF; border-radius:5px 5px 5px 5px; background:  #ffffff url)repeat;  color:white; text-align:right; font-size:14px; font-family:verdana; box-shadow: 0px 0px 0px #000000;   }      #ust a{ font-size:14px; font-family:;color:white; text-shadow: 3px 2px 1px #000000; }   #ust a:hover{ font-size:14px;  color:lightblue; text-shadow: 2px 2px 1px #000000;  }    #ust02{margin-top:-1px;  width:975px; height:30px; border: px solid #077FFF; border-radius:0px 0px 5px 5px; background:  #ffffff  nonerepeat;  color:white; text-align:center; font-size:11px; font-family:verdana; text-shadow: 2px 2px 1px #000000;  margin-left:auto;  margin-right:auto;   }        #yanmenu{margin-top:5px;  width:190px;  height:auto; border: px solid #077FFF; border-radius:5px 5px 1px 1px;background:  #ffffff  none repeat-x;  color:#077fff; text-align:; font-size:22px; font-family:nyala; float:left; box-shadow: 0px 0px 5px #077FFF;  }       #yanmenu2{margin-top:5px;  width:190px;  height:auto; border: px solid #BBBBBB; border-radius:5px 5px 1px 1px;background:  #ffffff  none repeat-x;  color:#077fff; text-align:; font-size:22px; font-family:nyala; float:left; box-shadow: 0px 0px 5px #077FFF;  }       #yanmenu2 a{font-weight:bold; font-size:12px; font-family:Arial;color:black }   #yanmenu2 a:hover{ font-size:12px;  color:blue;  }    #yanmenu3{margin-top:5px;  width:190px;  height:auto; border: px solid #000000; border-radius:5px 5px 1px 1px;background:  #ffffff  none repeat-x;  color:#077fff; text-align:; font-size:22px; font-family:nyala; float:left; box-shadow: 0px 0px 5px #000000;  }      #yanmenu3 a{ font-size:13px; font-family:Arial;color:lightblue; text-shadow: 1px 1px 1px #077fff; }   #yanmenu3 a:hover{ font-size:13px;  color:red; text-shadow: 1px 1px 1px #000000;  }    #icerik{margin-top:5px;  width:775px;  height:auto; border: px solid #077FFF; border-radius:5px 6px 1px 1px;background:  #ffffff  none repeat-x;  color: #000000; text-align:; font-size:12px; font-family:Arial; float:right; padding-top:5px; float:right; box-shadow: 0px 0px 5px #5F5D5D;  }       #icerik a{ font-size:12px; font-family:Arial;color:#67B4EE; }   #icerik a:hover{  font-size:12px;  color:#077fff;  }     #icerik0{margin-top:5px;  width:850px;  height:auto; border: 3px solid #6ABCE2;  background:  #ffffff  none no-repeat bottom right; padding-top: 0px; padding-left: px; color:grey;   }       #webme_footer_textlink_dont_hide { color: white;     width:545px; text-align:center; background:none;  float:right; margin-top:-49px; margin-right:400px; clear:both; display:block; opacity: 1; filter:alpha(opacity=100) }   #alt{margin-top:5px;  width:975px;  height:34px; border: px solid #000000; border-radius:5px;   background:  #ffffff url(../pic/b/belenmedia/alt_arka.jpg) repeat; padding-top: 0px; padding-left: px; color: rgb(51, 153, 102);  float:left; font-size:16px; font-family:nyala; text-shadow: 2px 2px 1px #000000;  padding-top:px;  }        #alt a{ font-size:17px; font-family:nyala;color:lightblue; text-shadow: 2px 2px 1px #000000; }   #alt a:hover{ font-size:17px;  color:orange; text-shadow: 2px 2px 1px #000000;  }     #alt2{margin-top:-1px;  width:930px;  height:28px; border: px solid #BBBBBB; border-radius:1px 1px 5px 5px;   background:  #ffffff  none repeat; padding-top: 0px; padding-left: px; color:white;  text-align:center; font-size:16px; font-family:nyala; text-shadow: 2px 2px 1px #000000;  padding-top:px; margin-left: auto;margin-right: auto; clear:both; display:block;  }         #webme_sky_ad {                     position: absolute;                     right: 5px;                     top: 190px;                     z-index: 1000000000000000000;                  }   #cssmenu {   margin: 0;   padding: 0;   font-family: Arial, sans-serif; } #cssmenu {    width: 151px; } #cssmenu ul {   list-style: none;   text-indent: 0px;  list-style: none;   margin: 0;   padding: 0;   border: 0; } #cssmenu li {   margin-top: 5px; } #cssmenu a {  border-radius:3px 3px 3px 3px;  font-weight:bold;   font: 15px arial;  padding-top:5px;   color: #000000;   display: block; padding-left:22px;   height: 22px;   text-decoration: none;   background: #ffffff url(../pic/b/belenmedia/ok1.png)no-repeat left; -webkit-transition: all 0.4s ease-in-out 0s;     -moz-transition: all 0.4s ease-in-out 0s;     -o-transition: all 0.4s ease-in-out 0s;     -ms-transition: all 0.4s ease-in-out 0s; } #cssmenu a:hover { border-radius:3px 3px 3px 3px;    color: #ffffff;   background: #077fff url(../pic/b/belenmedia/ok2.png)no-repeat left;  padding-left:30px;  padding-top:5px; }   ::-moz-selection {     background:#077fff;     color:#ffffff; } ::selection {     background:#077fff;     color:#ffffff;    }  #linksov {    -webkit-transition: all 0.4s ease-in-out 0s;     -moz-transition: all 0.4s ease-in-out 0s;     -o-transition: all 0.4s ease-in-out 0s;     -ms-transition: all 0.4s ease-in-out 0s; }   #linksov:hover {   padding-left:10px;  }   input[type="text"]  { resize:none; font-family : "Trebuchet MS"; font-size : 11px; font-weight : normal; color : #000000; border : 1px solid #000000; background : #ffffff url(../pic/o/osmantalay/style1_txt_bgot.gif) repeat-x top; } input[type="text"]:focus, input[type="text"]:active { border-color : #777; } input[type="submit"] { cursor : pointer; font-family : "Trebuchet MS"; font-size : 11px; font-weight : normal; color : #077fff; border : 1px solid #000000; background : #000000 url(../pic/o/osmantalay/style1_btn_bgot.gif) repeat-x top; } textarea { font-family : "Trebuchet MS"; font-size : 11px; font-weight : normal; color : #077fff; border : 1px solid #cccccc; background : #ffffff url(../pic/o/osmantalay/style1_txt_bgott.gif) repeat-x top; }  .input { resize:none; }
+
+
+
+ ::-webkit-scrollbar {width:5px;} ::-webkit-scrollbar-track {background-color:transparent;} ::-webkit-scrollbar-thumb {background-color: #000080;border-radius:5px} ::-webkit-scrollbar-thumb:hover {box-shadow:0 0 30px 0 #000;}			//-->
+		</style>
+			</head>
+	<body id="hpb_cssonly">
+		<div id="tasarim"> <div id="ust"><table width="825" height="50" cellspacing="1" cellpadding="1" border="0" align="center">     <tbody>         <tr>             <td style="text-align: left;"><a href="#" _fcksavedurl="#"><img src="" _fcksavedurl="" alt=""></a></td>             <td style="text-align: right;"><a href="#" _fcksavedurl="#"><img width="16" height="12"></a></td>         </tr>     </tbody> </table></div>  <div id="ust02"><strong></strong>   <center>      <div style="height:25px;background:url(../resimler/diger/bottom_bar_background.png)"><iframe src="https://www.ensonhaber.com/sondakika/index10.php" width="600" height="25" scrolling="no"></iframe></div>      </center></div> <table width="200" cellspacing="1" cellpadding="1" border="0" align="left">     <tbody>         <tr>             <td><div id="yanmenu">   <table width="200" cellspacing="1" cellpadding="1" border="0">     <tbody>         <tr>   <td height="36">&#160;<u>Ana Men&#252;</u></td>         </tr>         <tr>             <td>          <div id="cssmenu">             <ul>                 <li class="active"><a href="../index.htm" _fcksavedurl="https://torco.tr.gg/"><span>Ana Sayfa</span></a></li>                 <li><a href="../Multi_Medya.htm" _fcksavedurl="https://torco.tr.gg/Multi_Medya.htm"><span>Multi-Medya</span></a></li><li class="last"><a href="../Program-ve-Oyun.htm" _fcksavedurl="https://torco.tr.gg/Program-ve-Oyun.htm"><span>Program ve Oyun</span></a></li>  <li class="last"><a href="../Film-ve-Dizi.htm" _fcksavedurl="https://torco.tr.gg/Film-ve-Dizi.htm"><span>Film ve Dizi</span></a></li>                       <li><a href="../Televizyon-ve-Radyo.htm" _fcksavedurl="https://torco.tr.gg/Televizyon-ve-Radyo.htm"><span>TV ve Radyo</span>
+
+<li class="last"><a href="index.htm" _fcksavedurl="https://torco.tr.gg/forum.htm"><span>Forum</span></a></li>
+
+
+
+<li class="last"><a href="../index.htm?forceVersion=mobile" _fcksavedurl="https://torco.tr.gg/?forceVersion=mobile"><span>Mobil G&#246;r&#252;n&#252;m</span></a></li>
+ 
+
+
+
+</a></li>                            </ul>  </div>             </td>         </tr>     </tbody> </table>   </div> </td>         </tr>         <tr>             <td><div id="yanmenu2"><table width="200" align="left" cellspacing="1" cellpadding="1" border="0" height="180">     <tbody>         <tr>             <td height="40" colspan="2"><u> Siteler</u></td>         </tr>         <tr>             <td style="text-align: left;" width="10"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td><div id="linksov">
+<a href="https://kuran.diyanet.gov.tr/mushaf" _fcksavedurl="https://ninite.com/" target="_blank" rel="noopener noreferrer">Kuran-&#305; Kerim</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td><div id="linksov">
+
+
+
+
+<a href="https://ninite.com/" _fcksavedurl="https://ninite.com/" target="_blank" rel="noopener noreferrer">Program indir</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td><div id="linksov">
+
+<a href="https://www.thripy.com/" _fcksavedurl="https://www.thripy.com/" target="_blank" rel="noopener noreferrer">&#350;ehirleri Gez</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td> <div id="linksov">
+
+
+<a href="https://musclewiki.com/" _fcksavedurl="https://musclewiki.com/" target="_blank" rel="noopener noreferrer">Kas Geli&#351;tirme</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td> <div id="linksov"><a href="https://www.duolingo.com/learn" _fcksavedurl="https://www.duolingo.com/learn" target="_blank" rel="noopener noreferrer">Dil &#214;&#287;ren</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td> <div id="linksov"><a href="https://www.freecodecamp.org/" _fcksavedurl="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Programlama</a></div></td>         </tr>         <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td> <div id="linksov"><a href="https://tempail.com/tr/fake-mail/" _fcksavedurl="https://tempail.com/tr/fake-mail/" target="_blank" rel="noopener noreferrer">Ge&#231;ici Mail</a></div></td>         </tr> <tr>             <td style="text-align: left;"><img src="../pic/b/belenmedia/tasarimkurdupluss.png" _fcksavedurl="https://img.webme.com/pic/b/belenmedia/tasarimkurdupluss.png" alt=""></td>             <td> <div id="linksov"><a href="https://f.github.io/wordle-tr/" _fcksavedurl="https://f.github.io/wordle-tr/" target="_blank" rel="noopener noreferrer">Wordle T&#252;rk&#231;e</a></div></td>         </tr>     </tbody> </table></div> </td>         </tr>         <tr>             <td><div id="yanmenu3"><table width="150" cellspacing="1" cellpadding="1" border="0" height="109">     <tbody>         <tr>             <td height="30"><u>&#304;leti&#351;im</u></td>         </tr>         <tr>             <td><span style="font-size: small;"><a href="#" _fcksavedurl="#"></a><a href="#" _fcksavedurl="#"></a><br>             <a href="#" _fcksavedurl="#"></a><a href="#" _fcksavedurl="#"></a>
+
+<a>Twitter'dan Mesaj At</a>
+<!--Author:https://torco.tr.gg/-->
+<!--Licence: GNU GPL V2.0-->
+<!--Name: Site ve Bloglar &#304;&#231;in Twitter Mesaj At D&#252;&#287;mesi-->
+<div id="kd-twitter"></div><script>
+var kullanici_ismi = "mustftor" ;
+var skf5a = document.createElement("script");skf5a.type = "text/javascript";
+skf5a.src = "https://www.koddostu.com/twitterid.php?kullanici_ismi=" + kullanici_ismi;
+document.getElementsByTagName('HEAD')[0].appendChild(skf5a);
+</script>
+<br>                     </span></td>         </tr>     </tbody> </table><br><br></div> </td>         </tr>     </tbody> </table>   <div id="icerik"><div style="text-align: right;"><img src="" _fcksavedurl="" alt="" style="margin: 0px; padding: 0px;"></div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=0">
+
+<!--Author: https://torco.tr.gg/-->
+<!--Licence: GNU GPL V2.0-->
+<!--Name: Yeni Google Men&#252;s&#252;n&#252; Sitene Ekle!-->
+
+<!--Bu &#231;al&#305;&#351;ma Creative Commons Attribution-Gayriticari-NoDerivs 3.0 Unported Lisans&#305; ile lisanslanm&#305;&#351;t&#305;r.-->
+<!--Telif sahibi:https://torco.tr.gg/-->
+<style type="text/css">div.koddostu-go{position:fixed;z-index:10;background:#fff;}div.ogle-koddostu{top:15px;left:0px;width:100%;height:20px;padding:15px 0px;border:none;text-align:right !important;font-family:Arial, sans-serif;font-size:13px;color:#404040;}.sodz{font-family:Arial, sans-serif;font-size:13px;color:#404040;display:inline-block;margin-right:12px;vertical-align:middle;line-height:35px;height:30px;white-space:nowrap;text-decoration:none;}.sodz:link:hover{text-decoration:underline;}.sozd{background:transparent url(../-ggpI4Fo8jJY/Uj1O27rU1FI/AAAAAAAAd8o/zl6NpkiPQpU/s1600/vde.png) no-repeat top left;display:inline-block;width:30px;height:30px;vertical-align:-11px;margin-right:12px;opacity:0.55;color:#444;}.sozd:hover, .sozd:active, .sozd:focus{outline:0;opacity:1;}.pyl{display:inline-block;background:#f5f5f5;color:#444;text-decoration:none;width:60px;height:30px;text-align:center;line-height:30px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;margin-right:20px;}.pyl:hover,.pyl:active,.pyl:focus{outline:0;background:#ebebeb;}.appd{background-position:-3px -2px;}.noti{background-position:-3px -37px;}#duyurular{display:none;width:400px;height:400px;overflow: scroll;background:#e5e5e5;position:absolute;top:55px;right:20px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;box-shadow:0px 2px 10px rgba(0, 0, 0, 0.2);border:1px solid #ccc;}</style><style>#duyurular span{display:block;width:340px;height:400px;background:#fff;margin-top:40px;padding:30px 15px;box-shadow:0px 2px 2px rgba(0, 0, 0, 0.2);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#404040}#menum{display:none;width:320px;height:350px;padding-top:30px;overflow: scroll;background:#fff;box-shadow:0px 2px 10px rgba(0, 0, 0, 0.2);position:absolute;right:20px;top:55px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#404040;border:1px solid #ccc;text-align:center;}.brav{display:inline-block;margin:10px;width:64px;height:28px;padding-top:64px;color:#404040;text-decoration:none;text-align:center;line-height:28px;}
+
+.h7h{background:transparent 
+url(../icons/graphicloads/flat-finance/48/person-icon.png) no-repeat top center;}
+
+
+.r7r{background:transparent 
+url(../icons/papirus-team/papirus-apps/48/google-icon.png) no-repeat top center;}
+
+.i7i{background:transparent 
+url(../icons/alecive/flatwoken/48/Apps-Google-Maps-icon.png) no-repeat top center;}
+
+.b7b{background:transparent 
+url(../icons/dakirby309/simply-styled/48/Google-Play-Store-alt-icon.png) no-repeat top center;}
+
+.a7a{background:transparent 
+url(../icons/dtafalonso/android-lollipop/48/News-And-Weather-icon.png) no-repeat top center;}
+
+.p7p{background:transparent 
+url(../icons/dakirby309/simply-styled/48/YouTube-icon.png) no-repeat top center;}
+
+.c7c{background:transparent 
+url(../icons/papirus-team/papirus-apps/48/gmail-offline-icon.png) no-repeat top center;}
+
+
+.d7d{background:transparent 
+url(../icons/limav/flat-gradient-social/48/Meet-Me-icon.png) no-repeat top center;}
+
+.e7e{background:transparent 
+url(../icons/marcus-roberto/google-play/48/Google-Translate-icon.png) no-repeat top center;}
+
+.f7f{background:transparent 
+url(../icons/dtafalonso/android-lollipop/48/Earth-icon.png) no-repeat top center;}
+
+.j7j{background:transparent 
+url(../icons/marcus-roberto/google-play/48/Google-Drive-icon.png) no-repeat top center;}
+
+.g7g{background:transparent 
+url(../icons/vectorizeimages/iconpack/48/date-icon.png) no-repeat top center;}
+
+
+.k7k{background:transparent 
+url(../icons/dtafalonso/android-lollipop/48/Docs-icon.png) no-repeat top center;}
+
+.l7l{background:transparent 
+url(../icons/icons8/ios7/48/Science-Classroom-icon.png) no-repeat top center;}
+
+.m7m{background:transparent 
+url(../images/branding/product/1x/sheets_2020q4_48dp.png) no-repeat top center;}
+
+
+.n7n{background:transparent 
+url(../images/branding/product/1x/forms_2020q4_48dp.png) no-repeat top center;}
+
+.o7o{background:transparent 
+url(../icons/dtafalonso/android-l/48/Hangouts-icon.png) no-repeat top center;}
+
+.y7y{background:transparent 
+url(../icons/papirus-team/papirus-apps/48/google-photos-icon.png) no-repeat top center;}
+
+
+
+</style><style type="text/css">div.koddostu-go{_position:absolute;}div.ogle-koddostu{_bottom:auto;_top:expression(ie6=(document.documentElement.scrollTop+document.documentElement.clientHeight - 52+"px") );}</style>
+<div class="koddostu-go ogle-koddostu">
+<a href="https://mail.google.com/" class="sodz" target="_blank" rel="noopener noreferrer"><img src="../icons/marcus-roberto/google-play/16/Gmail-icon.png" border="0" title="https://mail.google.com/">&nbsp;Gmail</a>
+<a href="https://www.google.com.tr/imghp?hl=tr&tab=ri&ogbl" class="sodz" target="_blank" rel="noopener noreferrer"><img src="../icons/gakuseisean/aire/16/Search-Images-icon.png" border="0" title="https://www.google.com.tr/imghp?hl=tr&tab=ri&ogbl">&nbsp;G&#246;rseller</a>
+<a href="javascript:void(0)" onclick="document.getElementById('menum').style.display='block';document.getElementById('duyurular').style.display='none';" class="sozd appd" alt="Men&#252;"></a>
+<a onclick="document.getElementById('duyurular').style.display='block';document.getElementById('menum').style.display='none';" href="javascript:void(0)" class="sozd noti" alt="Duyuru"></a>
+<div id="menum">
+<a class="brav h7h" href="https://www.google.com/account/about/?hl=tr">Hesap</a> 
+<a class="brav r7r" href="https://google.com.tr" target="_blank" rel="noopener noreferrer">Arama</a> 
+<a class="brav i7i" href="https://www.google.com.tr/maps/" target="_blank" rel="noopener noreferrer">Haritalar</a> 
+<a class="brav p7p" href="https://youtube.com.tr" target="_blank" rel="noopener noreferrer">Youtube</a> 
+<a class="brav b7b" href="https://play.google.com/store?hl=tr" target="_blank" rel="noopener noreferrer">Play</a> 
+<a class="brav a7a" href="https://news.google.com/" target="_blank" rel="noopener noreferrer">Haberler</a>
+<a class="brav c7c" href="https://accounts.google.com/" target="_blank" rel="noopener noreferrer">Gmail</a> 
+<a class="brav d7d" href="https://apps.google.com/meet/" target="_blank" rel="noopener noreferrer">Meet</a> 
+<a class="brav e7e" href="https://translate.google.com.tr/" target="_blank" rel="noopener noreferrer">&#199;eviri</a>
+<a class="brav f7f" href="https://earth.google.com/" target="_blank" rel="noopener noreferrer">Earth</a>
+<a class="brav j7j" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">Drive</a>
+<a class="brav g7g" href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">Takvim</a>
+<a class="brav k7k" href="https://docs.google.com/" target="_blank" rel="noopener noreferrer">Dokumanlar</a>
+<a class="brav l7l" href="https://classroom.google.com/" target="_blank" rel="noopener noreferrer">Classroom</a>
+<a class="brav m7m" href="https://docs.google.com/" target="_blank" rel="noopener noreferrer">E-tablolar</a>
+<a class="brav n7n" href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer">Formlar</a>
+<a class="brav o7o" href="https://hangouts.google.com/" target="_blank" rel="noopener noreferrer">Hangouts</a>
+<a class="brav y7y" href="https://photos.google.com/" target="_blank" rel="noopener noreferrer">Foto&#287;raflar</a>
+
+
+
+
+
+<a href="javascript:void(0)" style="position:absolute;top:5px;right:10px;font-size:22px;color:#222;text-decoration:none;" onclick="document.getElementById('menum').style.display='none'">x</a>
+</div>
+<koddostu>
+<div id="duyurular" onmouseout="this.style.display='none'">
+
+<a href="javascript:void(0)" style="position:absolute;top:5px;left:10px;font-size:22px;color:#222;text-decoration:none;" onclick="document.getElementById('duyurular').style.display='none'">X</a>
+
+<center><span onmouseover="document.getElementById('duyurular').style.display='block';">
+<iframe src="https://www.islamiyet.gen.tr/webmaster/dualar.php" width="360" height="200" frameborder="0" scrolling="yes"></iframe><iframe src="https://www.islamiyet.gen.tr/webmaster/hadis.php" width="360" height="250" frameborder="0" scrolling="yes"></iframe>
+</span></center>
+
+</div></koddostu></div>
+<!--Bu &#231;al&#305;&#351;ma Creative Commons Attribution-Gayriticari-NoDerivs 3.0 Unported Lisans&#305; ile lisanslanm&#305;&#351;t&#305;r.-->
+
+<!--Yeni Google Men&#252;s&#252; Html Kodu STOP-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--Licence: GNU GPL V2.0--><style type="text/css">div.saymbrayt{position:fixed;z-index:99900;}div.lakedaymnd{top:0px;left:0px;width:100%;height:33px;background-color:#FFFFFF;border-bottom:1px solid #000;}</style><style type="text/css">div.saymbrayt{_position:absolute;}div.lakedaymnd{_bottom:auto;_top:expression(ie6=(document.documentElement.scrollTop+document.documentElement.clientHeight - 52+"px") );}</style>
+<div class="saymbrayt lakedaymnd"><a class="uuubeybi" href="https://tr-tr.facebook.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/yootheme/social-bookmark/32/social-facebook-box-blue-icon.png" border="0" title="Facebook"></strong></span></a><a class="uuubeybi" href="https://www.instagram.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/limav/flat-gradient-social/32/Instagram-icon.png" border="0" title="&#304;nstagram"></strong></span></a>
+<a class="uuubeybi" href="https://twitter.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/limav/flat-gradient-social/32/Twitter-icon.png" border="0" title="Twitter"></strong></span></a>
+<a class="uuubeybi" href="https://youtube.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/dakirby309/simply-styled/32/YouTube-icon.png" border="0" title="Youtube"></strong></span></a>
+
+<a class="uuubeybi" href="https://web.whatsapp.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/alecive/flatwoken/32/Apps-Whatsapp-icon.png" border="0" title="WhatsApp"></strong></span></a><a class="uuubeybi" href="https://www.tumblr.com/" target="_blank"><span style="font-size: small;"><strong><img src="../icons/iconshots/social-media-network/32/tumbler-icon.png" border="0" title="Tumblr"></strong></span></a><a class="uuubeybi" href="https://web.telegram.org/" target="_blank"><img src="../icons/bokehlicia/captiva/32/web-telegram-icon.png" border="0" title="Telegram"></a><div id="koddostu-materyalmenu">
+<p>
+
+<a href="https://www.fullprogramlarindir.net/" target="_blank" rel="noopener noreferrer"><img src="../icons/papirus-team/papirus-mimetypes/24/app-x-msdos-program-icon.png" border="0" title="https://www.fullprogramlarindir.net/">&nbsp;Programlar</a>&nbsp; <a href="https://www.ensonhaber.com/" target="_blank" rel="noopener noreferrer"><img src="../icons/pelfusion/long-shadow-ios7/24/News-icon.png" border="0" title="https://www.ensonhaber.com/">&nbsp;Haber</a>&nbsp; 
+
+
+<a href="https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Ankara" target="_blank" rel="noopener noreferrer"><img src="../icons/papirus-team/papirus-apps/24/weather-icon.png" border="0" title="https://www.mgm.gov.tr">&nbsp;Hava Durumu</a>&nbsp; 
+
+<a href="https://namazvakitleri.diyanet.gov.tr/tr-TR" target="_blank" rel="noopener noreferrer"><img src="../icons/designbolts/religious-symbol/24/Islam-Crescent-icon.png" border="0" title="https://namazvakitleri.diyanet.gov.tr">&nbsp;Namaz Vakitleri</a>&nbsp; 
+
+<a href="https://www.eczaneler.gen.tr/" target="_blank" rel="noopener noreferrer"><img src="../icons/iconarchive/red-orb-alphabet/24/Letter-E-icon.png" border="0" title="N&#246;bet&#231;i Eczaneler">&nbsp;N&#246;bet&#231;i Eczaneler</a>
+&nbsp;
+
+
+
+
+
+<a href="https://www.google.com/search?rlz=1C1CHZN_trTR952TR952&q=selÃ§uk+sports&spell=1&sa=X&ved=2ahUKEwiggsrD797zAhUd_rsIHf5pACMQBSgAegQIARA1&cshid=1634935110086485&biw=1366&bih=625&dpr=1" target="_blank" rel="noopener noreferrer"><img src="../icons/uriy1966/wooden-sports/24/Soccer-icon.png" border="0" title="Sel&#231;ukSports">&nbsp;Sel&#231;ukSports Ma&#231;</a>
+&nbsp;
+
+<a href="https://yandex.com.tr/video/search?from=morda_new&text=video" target="_blank" rel="noopener noreferrer"><img src="../icons/hadezign/hobbies/24/Movies-icon.png" border="0" title="https://yandex.com.tr/video">&nbsp;Video</a>&nbsp; 
+
+<a href="https://canlidoviz.com/yaani/" target="_blank" rel="noopener noreferrer"><img src="../icons/custom-icon-design/pretty-office-11/24/cash-icon.png" border="0" title="https://canlidoviz.com/yaani/">&nbsp;Canl&#305; D&#246;viz</a>&nbsp;  
+
+<a href="https://0.yaani.com.tr/sport?target=yaani&stand" target="_blank" rel="noopener noreferrer"><img src="../icons/dakirby309/windows-8-metro/24/Apps-Live-Sync-Metro-icon.png" border="0" title="https://0.yaani.com.tr/sport?target=yaani&stand">&nbsp;Canl&#305; Skor</a>&nbsp;
+
+<a href="https://www.obilet.com/" target="_blank" rel="noopener noreferrer"><img src="../icons/sonya/swarm/24/Ticket-icon.png" border="0" title="https://www.obilet.com/">&nbsp;Bilet</a>&nbsp;
+
+
+<a href="https://www.ego.gov.tr/tr/otobusnerede" target="_blank" rel="noopener noreferrer"><img src="../icons/graphicloads/polygon/24/bus-icon.png" border="0" title="https://www.ego.gov.tr">&nbsp;EGO</a></p> 
+<b onclick="this.parentNode.className='';"><svg fill="#5677fc" fit="" height="100%" preserveaspectratio="" style="pointer-events: none; display: block;" viewbox="" width="100%"><g>
+<polygon points="19,6.4 17.6,5 12,10.6 6.4,5 5,6.4 10.6,12 5,17.6 6.4,19 12,13.4 17.6,19 19,17.6 13.4,12 "></polygon>
+</g></svg></b>
+<div onclick="this.parentNode.className='acbakalim';"><svg fill="#5677fc" fit="" height="60" preserveaspectratio="" style="pointer-events: none; display: block;" viewbox="" width="100%"><g>
+<path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"></path>
+</g></svg></div>
+</div>
+<style type="text/css"> #koddostu-materyalmenu{position:relative;width:32px;height:35px;overflow:visible;z-index:999000;transition:all 0.25s ease-in;text-align:left;} #koddostu-materyalmenu div, #koddostu-materyalmenu b{cursor:pointer;margin:0 0 0 0;padding:0 0 0 0;position:absolute;top:4px;right:4px;display:inline-block;width:24px;height:24px;transform:rotate(0deg);-webkit-transform:rotate(0deg);transition:all 0.25s ease-in;-webkit-transition:all 0.25s ease-in;} #koddostu-materyalmenu b{width:24px;height:24px;opacity:0;} #koddostu-materyalmenu p{ display:inline-block; overflow:hidden;width:0px;height:0px;position:absolute;top:0px;left:0px;background:#fff; margin:0 0 0 0; padding:0 0 0 0; transition:all 0.25s ease-in; } .acbakalim p{ width:200px !important; height:350px !important; padding:30px 0 0 0 !important; box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.26) !important; } #koddostu-materyalmenu p a{text-decoration:none !important; font-family:Arial, sans-serif; font-size:14px; color:#455ede; padding-left:15px; display:block; height:10px; line-height:40px; width:200px; } #koddostu-materyalmenu p a:hover{ background:#d0d9ff; } .acbakalim b{ transform:rotate(270deg) !important; -webkit-transform:rotate(270deg) !important; opacity:1 !important; } .acbakalim div{ transform:rotate(360deg) !important; -webkit-transform:rotate(360deg) !important; opacity:1; width:1px !important; height:1px !important; } </style><style type="text/css">.uuubeybi{display:inline-block;padding-left:15px;line-height:29px;font-family:Arial, sans-serif;font-size:15px;font-weight:bold;color:#077fff;text-decoration:none !important;}
+.uuubeybi:hover{color:#077fff !important;}</style></div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../js/sharethis.js#property=617eb491e35b180013fb2b43&product=sticky-share-buttons" async="async"></script><div class="sharethis-sticky-share-buttons"></div>		<div id="container">
+			<div id="header_container">
+				<div id="pre_header"></div>
+				<div class="header"><h1 id="header"><span>TORCO</span></h1></div>
+				<div id="post_header"></div>
+			</div>
+			<div id="nav_container">
+			<h2 id="nav_heading"><span></span></h2>
+				<ul id="nav">
+<li class="nav_element" id="nav_AnaSayfa">
+<a href="../index.htm" class="menu"><b>Ana Sayfa</b></a></li>
+<li class="nav_element" id="nav_MultiMedya">
+<a href="../Multi_Medya.htm" class="menu"><b>Multi-Medya</b></a></li>
+<li class="nav_element" id="nav_ProgramveOyun">
+<a href="../Program-ve-Oyun.htm" class="menu"><b>Program ve Oyun</b></a></li>
+<li class="nav_element" id="nav_FilmveDizi">
+<a href="../Film-ve-Dizi.htm" class="menu"><b>Film ve Dizi</b></a></li>
+<li class="nav_element" id="nav_TelevizyonveRadyo">
+<a href="../Televizyon-ve-Radyo.htm" class="menu"><b>Televizyon ve Radyo</b></a></li>
+<li class="nav_element checked_menu" id="nav_Forum">
+<a href="index.htm" class="menu"><b>Forum</b></a></li>
+				</ul>
+			</div>
+			<div id="content_container">
+				<div id="pre_content"></div>
+				<div id="content">
+					<h2 id="title"><span>Forum</span></h2>
+					<form action="topic-1-1-Apple.htm" method="post"><table class="forumtabelle"><tr><td><input type="text" name="modulenter[nick]" value="Kullan&#305;c&#305; ad&#305;" style="width:100px;"></td><td><input type="password" name="modulenter[pwd]" value="&#350;ifre" style="width:100px;"></td><td><input type="submit" value="Sitene Giri&#351;"><input type="hidden" name="mode" value="login"></td></tr></table></form>
+<a href="register.htm" style="font-size:15px; font-weight:bold;">=&gt; Daha kay&#305;t olmad&#305;n m&#305;?</a><br><hr style="border:solid 0px;background-color:#C0C0C0;height:1px;"><div class="forumueberschrift">Forum - Apple</div><br><table width="100%"><tr><td width="70%">Burdas&#305;n:<br><a href="index.htm">Forum</a> =&gt; <a href="cat-1-1-Ak%C4%B1ll%C4%B1-Telefonlar.htm">Ak&#305;ll&#305; Telefonlar</a> =&gt; <a href="topic-1-1-Apple.htm">Apple</a></td><td width="30%" style="text-align:right"><table width="100%"><tr><td width="33%" align="left"><p style="color:#999999">&lt;-Geri</p></td><td width="33%" align="center"><b>&nbsp;1</b>&nbsp;</td><td width="33%" align="right"><p style="color:#999999">Devam-&gt;</p></td></tr></table></td></tr></table><br><table width="100%" class="forumtabelle" cellspacing="0" cellpadding="0"><tr onmouseover="this.bgColor = '#dedfc6'" onmouseout="this.bgColor = '#efefe7'" bgcolor="#efefe7" valign="top"><td width="123"><b><a href="profile-1.htm">torco</a></b><br>(&#351;imdiye kadar 100 posta)</td><td class="forumtrenner" width="1" style="width:1px"></td><td height="105"><table width="100%" cellpadding="0" cellspacing="0" height="25"><tr valign="top"><td style="font-size:10px;padding-top:2px;"><span class="localtime" data-template="[d].[m].[Y] [H]:[i]" data-timestamp="1636806402000">13.11.2021 12:26 (UTC)</span><input type="hidden" id="post1" value="[quote=&quot;torco&quot;]iPhone 13 mini, iPhone 13, iPhone 13 Pro, iPhone 13 Pro Max, iPhone 12, iPhone 12 Mini, iPhone 12 Pro, iPhone 12 Pro Max, iPhone 11 ailesi, iPhone SE, iPhone XR ve di&#287;er modeller hakk&#305;nda detaylar, iPhone uygulamalar&#305;, fiyat ve &ouml;nemli bilgiler.[/quote]"></td><td align="right"><a href="#1" onclick="
+                     if(typeof addtext == 'function') {
+                         addtext(document.getElementById('post1').value);
+                     }
+                ">[al&#305;nt&#305; yap]</a></td></tr></table><div style="padding-left:10px;">iPhone 13 mini, iPhone 13, iPhone 13 Pro, iPhone 13 Pro Max, iPhone 12, iPhone 12 Mini, iPhone 12 Pro, iPhone 12 Pro Max, iPhone 11 ailesi, iPhone SE, iPhone XR ve di&#287;er modeller hakk&#305;nda detaylar, iPhone uygulamalar&#305;, fiyat ve &ouml;nemli bilgiler.</div></td></tr><tr class="forumtrenner" height="1" style="height:1px"><td></td><td></td><td></td></tr><tr onmouseover="this.bgColor = '#dedfc6'" onmouseout="this.bgColor = '#edede8'" bgcolor="#edede8" valign="top"><td width="123"><b><a href="profile-1.htm">torco</a></b><br>(&#351;imdiye kadar 100 posta)</td><td class="forumtrenner" width="1" style="width:1px"></td><td height="105"><table width="100%" cellpadding="0" cellspacing="0" height="25"><tr valign="top"><td style="font-size:10px;padding-top:2px;"><span class="localtime" data-template="[d].[m].[Y] [H]:[i]" data-timestamp="1636882267000">14.11.2021 09:31 (UTC)</span><input type="hidden" id="post33" value="[quote=&quot;torco&quot;]2021 Y&#305;l&#305;nda Hangi iPhone Al&#305;n&#305;r?
+
+
+Malum 2020 y&#305;l&#305;n&#305; bitirdik art&#305;k 2021 y&#305;l&#305;nday&#305;z. Bu sene hangi iPhonelar&#305; alal&#305;m peki? En eski olarak hangisi al&#305;n&#305;r? Ne kadar kullan&#305;m &ouml;mr&uuml; sunar?
+5c1KrB.jpg
+Son model iPhone 12 serisi her b&uuml;t&ccedil;eye uygun olmayabiliyor.
+Bu nedenle alternatif arayan telefon al&#305;c&#305;lar&#305; eski iPhonelar&#305;n s&#305;f&#305;r fiyat&#305;n&#305;n ucuz oldu&#287;unu g&ouml;r&uuml;p &quot;Ne de olsa iPhone&quot; diyerekten eski cihazlara para vermeyi d&uuml;&#351;&uuml;n&uuml;yor. Forumumuzda son zamanlarda &ccedil;ok s&#305;k iPhone 6 al&#305;n&#305;r m&#305;? 7 al&#305;n&#305;r m&#305;? Ne kadar g&ouml;t&uuml;r&uuml;r gibi sorular soruluyor.
+Ben de bunun cevab&#305;n&#305; elimden geldi&#287;ince vermeye &ccedil;al&#305;&#351;aca&#287;&#305;m.
+
+Eskiden yeniye do&#287;ru hangi iPhone al&#305;n&#305;r m&#305;, al&#305;nmaz ise neden ve ne kadar kullan&#305;m &ouml;mr&uuml; sunar? Gibi sorulara cevap verece&#287;iz.
+
+1. iPhone SE (1):
+1611749447590.png
+iPhone SE art&#305;k &ouml;mr&uuml;n&uuml; doldurmu&#351; bir cihaz. S&#305;f&#305;r veya ikinci el hi&ccedil;bir &#351;ekilde al&#305;nmas&#305;n&#305; &ouml;nermiyorum. Hi&ccedil;bir anlamda memnun etmeyecektir.
+
+2. iPhone 6/6s/6 Plus:
+1611749614639.png
+
+iPhone 6 serisi de art&#305;k al&#305;nmamal&#305;. Neden mi? Ald&#305;&#287;&#305; g&uuml;ncellemeler ile cihaz&#305;n batarya ve performans anlam&#305;nda geri kalmas&#305;, 7 senelik olmas&#305; gibi etkenler cihaz&#305;n al&#305;nabilir olmas&#305;n&#305; imkans&#305;z k&#305;l&#305;yor.
+
+3. iPhone 7 ve 7 Plus:
+1611750826031.jpeg
+iPhone 7 ve 7 Plus kullan&#305;p da de&#287;i&#351;tirmek isteyenler var ise 1 y&#305;l daha bekleyebilirler. 1 y&#305;l daha g&ouml;t&uuml;rebilir sizi.
+Ama yeni telefon olarak 0 veya ikinci el olarak 7 ve 7 Plus al&#305;nmas&#305; &ouml;nermem. iPhone 7 nin batarya performans&#305; g&uuml;n&uuml;m&uuml;z i&ccedil;in yeterli de&#287;il.
+
+Peki 0 olarak neden al&#305;nmaz? Sebebi &#351;u: iPhone 7 neredeyse 5 y&#305;ll&#305;k bir cihaz. 3500-4000 b&uuml;t&ccedil;esi olanlar bu telefonu g&ouml;r&uuml;nce iPhone oldu&#287;u i&ccedil;in mant&#305;kl&#305; oldu&#287;unu d&uuml;&#351;&uuml;n&uuml;yorlar ama o fiyatlarda alabilecekleri bir M51 veya Realme 7 Pro, onlar&#305; en az 3-4 y&#305;l g&ouml;t&uuml;recektir, 7 ise &#351;uan bile iyi de&#287;il.
+
+
+iPhone 8 ve 8 Plus:
+
+&Ccedil;ok ilgin&ccedil; bir &#351;ekilde s&#305;f&#305;r&#305; 6200 TL den sat&#305;lan iPhone 8...
+
+
+Opera Anl&#305;k G&ouml;r&uuml;nt&uuml;_2021-01-27_152413_www.hepsiburada.com.png
+hi&ccedil; mant&#305;kl&#305; de&#287;il. 6200 b&uuml;t&ccedil;eyi 1500 TL azalt&#305;p SE2020 ya da 100-200 tl artt&#305;r&#305;p XR var iken 6200 tl yi bu telefona vermek &ouml;nerim de&#287;ildir.
+
+Ayn&#305; sitede 8 Plus ise 7200 TL den sat&#305;l&#305;yor. Bu fiyata iPhone 11 var??
+8 serisi 0 olarak al&#305;nmaz. Fiyatlar&#305; mant&#305;kl&#305; de&#287;il. 2.el cihaz &ouml;nermiyorum ama yak&#305;n&#305;n&#305;z ise alabilirsiniz . 2.El &ouml;nermiyorum.
+
+iPhone 8 k&ouml;t&uuml; cihaz de&#287;il yanl&#305;&#351; anla&#351;&#305;lmas&#305;n, ama fiyatlar&#305; pahal&#305;. Bu fiyata daha iyi ve g&uuml;ncel iPhone cihazlar var iken 8 al&#305;nmas&#305; mant&#305;kl&#305; de&#287;il.
+
+
+iPhone XR
+1611751288770.png
+
+iPhone XR al&#305;nabilir ve benim de &ouml;nerdi&#287;im bir cihaz. Gayet al&#305;nabilir ve sizi 4 y&#305;l boyunca &uuml;zmeyece&#287;ini d&uuml;&#351;&uuml;n&uuml;yorum.
+G&ouml;ster: Link
+iPhone SE (2020)
+1611750822502.png
+
+iPhone SE al&#305;nabilir bir cihaz. &Ouml;zellikle k&uuml;&ccedil;&uuml;k ekran deneyimi ve m&uuml;kemmel performans (A13 Bionic) isteyen ki&#351;iler i&ccedil;in &ccedil;ok uygun. Tek kameraya sahip olmas&#305;na ra&#287;men rakiplerine g&ouml;re &ccedil;ok ba&#351;ar&#305;l&#305; video ve foto&#287;raf deneyimi sunuyor.
+Batarya konusunda &ccedil;ok ba&#351;ar&#305;l&#305; oldu&#287;u s&ouml;ylenemez ama g&uuml;n&uuml; &ccedil;&#305;karabilecek d&uuml;zeyde. 5 y&#305;l sorunsuz g&ouml;t&uuml;rebilece&#287;ini d&uuml;&#351;&uuml;n&uuml;yorum.
+G&ouml;ster: Link
+
+Bunlardan sonra da 11 serisi geliyor. Onlar &ccedil;ok g&uuml;ncel olduklar&#305; i&ccedil;in al&#305;n&#305;p al&#305;nmayaca&#287;&#305;n&#305; konu&#351;mam&#305;za gerek yok.
+12 serisi de ayn&#305; &#351;ekilde.
+
+Rehberimiz bu kadard&#305;. &#304;stek ve sorular&#305;n&#305;z&#305; yazmay&#305; unutmay&#305;n.
+[/quote]"></td><td align="right"><a href="#1" onclick="
+                     if(typeof addtext == 'function') {
+                         addtext(document.getElementById('post33').value);
+                     }
+                ">[al&#305;nt&#305; yap]</a></td></tr></table><div style="padding-left:10px;">2021 Y&#305;l&#305;nda Hangi iPhone Al&#305;n&#305;r?<br>
+<br>
+<br>
+Malum 2020 y&#305;l&#305;n&#305; bitirdik art&#305;k 2021 y&#305;l&#305;nday&#305;z. Bu sene hangi iPhonelar&#305; alal&#305;m peki? En eski olarak hangisi al&#305;n&#305;r? Ne kadar kullan&#305;m &ouml;mr&uuml; sunar?<br>
+5c1KrB.jpg<br>
+Son model iPhone 12 serisi her b&uuml;t&ccedil;eye uygun olmayabiliyor.<br>
+Bu nedenle alternatif arayan telefon al&#305;c&#305;lar&#305; eski iPhonelar&#305;n s&#305;f&#305;r fiyat&#305;n&#305;n ucuz oldu&#287;unu g&ouml;r&uuml;p &quot;Ne de olsa iPhone&quot; diyerekten eski cihazlara para vermeyi d&uuml;&#351;&uuml;n&uuml;yor. Forumumuzda son zamanlarda &ccedil;ok s&#305;k iPhone 6 al&#305;n&#305;r m&#305;? 7 al&#305;n&#305;r m&#305;? Ne kadar g&ouml;t&uuml;r&uuml;r gibi sorular soruluyor.<br>
+Ben de bunun cevab&#305;n&#305; elimden geldi&#287;ince vermeye &ccedil;al&#305;&#351;aca&#287;&#305;m.<br>
+<br>
+Eskiden yeniye do&#287;ru hangi iPhone al&#305;n&#305;r m&#305;, al&#305;nmaz ise neden ve ne kadar kullan&#305;m &ouml;mr&uuml; sunar? Gibi sorulara cevap verece&#287;iz.<br>
+<br>
+1. iPhone SE (1):<br>
+1611749447590.png<br>
+iPhone SE art&#305;k &ouml;mr&uuml;n&uuml; doldurmu&#351; bir cihaz. S&#305;f&#305;r veya ikinci el hi&ccedil;bir &#351;ekilde al&#305;nmas&#305;n&#305; &ouml;nermiyorum. Hi&ccedil;bir anlamda memnun etmeyecektir.<br>
+<br>
+2. iPhone 6/6s/6 Plus:<br>
+1611749614639.png<br>
+<br>
+iPhone 6 serisi de art&#305;k al&#305;nmamal&#305;. Neden mi? Ald&#305;&#287;&#305; g&uuml;ncellemeler ile cihaz&#305;n batarya ve performans anlam&#305;nda geri kalmas&#305;, 7 senelik olmas&#305; gibi etkenler cihaz&#305;n al&#305;nabilir olmas&#305;n&#305; imkans&#305;z k&#305;l&#305;yor.<br>
+<br>
+3. iPhone 7 ve 7 Plus:<br>
+1611750826031.jpeg<br>
+iPhone 7 ve 7 Plus kullan&#305;p da de&#287;i&#351;tirmek isteyenler var ise 1 y&#305;l daha bekleyebilirler. 1 y&#305;l daha g&ouml;t&uuml;rebilir sizi.<br>
+Ama yeni telefon olarak 0 veya ikinci el olarak 7 ve 7 Plus al&#305;nmas&#305; &ouml;nermem. iPhone 7 nin batarya performans&#305; g&uuml;n&uuml;m&uuml;z i&ccedil;in yeterli de&#287;il.<br>
+<br>
+Peki 0 olarak neden al&#305;nmaz? Sebebi &#351;u: iPhone 7 neredeyse 5 y&#305;ll&#305;k bir cihaz. 3500-4000 b&uuml;t&ccedil;esi olanlar bu telefonu g&ouml;r&uuml;nce iPhone oldu&#287;u i&ccedil;in mant&#305;kl&#305; oldu&#287;unu d&uuml;&#351;&uuml;n&uuml;yorlar ama o fiyatlarda alabilecekleri bir M51 veya Realme 7 Pro, onlar&#305; en az 3-4 y&#305;l g&ouml;t&uuml;recektir, 7 ise &#351;uan bile iyi de&#287;il.<br>
+<br>
+<br>
+iPhone 8 ve 8 Plus:<br>
+<br>
+&Ccedil;ok ilgin&ccedil; bir &#351;ekilde s&#305;f&#305;r&#305; 6200 TL den sat&#305;lan iPhone 8...<br>
+<br>
+<br>
+Opera Anl&#305;k G&ouml;r&uuml;nt&uuml;_2021-01-27_152413_www.hepsiburada.com.png<br>
+hi&ccedil; mant&#305;kl&#305; de&#287;il. 6200 b&uuml;t&ccedil;eyi 1500 TL azalt&#305;p SE2020 ya da 100-200 tl artt&#305;r&#305;p XR var iken 6200 tl yi bu telefona vermek &ouml;nerim de&#287;ildir.<br>
+<br>
+Ayn&#305; sitede 8 Plus ise 7200 TL den sat&#305;l&#305;yor. Bu fiyata iPhone 11 var??<br>
+8 serisi 0 olarak al&#305;nmaz. Fiyatlar&#305; mant&#305;kl&#305; de&#287;il. 2.el cihaz &ouml;nermiyorum ama yak&#305;n&#305;n&#305;z ise alabilirsiniz . 2.El &ouml;nermiyorum.<br>
+<br>
+iPhone 8 k&ouml;t&uuml; cihaz de&#287;il yanl&#305;&#351; anla&#351;&#305;lmas&#305;n, ama fiyatlar&#305; pahal&#305;. Bu fiyata daha iyi ve g&uuml;ncel iPhone cihazlar var iken 8 al&#305;nmas&#305; mant&#305;kl&#305; de&#287;il.<br>
+<br>
+<br>
+iPhone XR<br>
+1611751288770.png<br>
+<br>
+iPhone XR al&#305;nabilir ve benim de &ouml;nerdi&#287;im bir cihaz. Gayet al&#305;nabilir ve sizi 4 y&#305;l boyunca &uuml;zmeyece&#287;ini d&uuml;&#351;&uuml;n&uuml;yorum.<br>
+G&ouml;ster: Link<br>
+iPhone SE (2020)<br>
+1611750822502.png<br>
+<br>
+iPhone SE al&#305;nabilir bir cihaz. &Ouml;zellikle k&uuml;&ccedil;&uuml;k ekran deneyimi ve m&uuml;kemmel performans (A13 Bionic) isteyen ki&#351;iler i&ccedil;in &ccedil;ok uygun. Tek kameraya sahip olmas&#305;na ra&#287;men rakiplerine g&ouml;re &ccedil;ok ba&#351;ar&#305;l&#305; video ve foto&#287;raf deneyimi sunuyor.<br>
+Batarya konusunda &ccedil;ok ba&#351;ar&#305;l&#305; oldu&#287;u s&ouml;ylenemez ama g&uuml;n&uuml; &ccedil;&#305;karabilecek d&uuml;zeyde. 5 y&#305;l sorunsuz g&ouml;t&uuml;rebilece&#287;ini d&uuml;&#351;&uuml;n&uuml;yorum.<br>
+G&ouml;ster: Link<br>
+<br>
+Bunlardan sonra da 11 serisi geliyor. Onlar &ccedil;ok g&uuml;ncel olduklar&#305; i&ccedil;in al&#305;n&#305;p al&#305;nmayaca&#287;&#305;n&#305; konu&#351;mam&#305;za gerek yok.<br>
+12 serisi de ayn&#305; &#351;ekilde.<br>
+<br>
+Rehberimiz bu kadard&#305;. &#304;stek ve sorular&#305;n&#305;z&#305; yazmay&#305; unutmay&#305;n.<br>
+</div></td></tr><tr class="forumtrenner" height="1" style="height:1px"><td></td><td></td><td></td></tr><tr onmouseover="this.bgColor = '#dedfc6'" onmouseout="this.bgColor = '#efefe7'" bgcolor="#efefe7" valign="top"><td width="123"><b><a href="profile-1.htm">torco</a></b><br>(&#351;imdiye kadar 100 posta)</td><td class="forumtrenner" width="1" style="width:1px"></td><td height="105"><table width="100%" cellpadding="0" cellspacing="0" height="25"><tr valign="top"><td style="font-size:10px;padding-top:2px;"><span class="localtime" data-template="[d].[m].[Y] [H]:[i]" data-timestamp="1636882341000">14.11.2021 09:32 (UTC)</span><input type="hidden" id="post34" value="[quote=&quot;torco&quot;]Iphone Kullan&#305;m Rehberi - Iphone Hakk&#305;nda Her&#351;ey - Iphone Nas&#305;l Kullan&#305;l&#305;r ?
+
+itunes1.jpg
+&#8203;
+Iphone Kredi Kart&#305; Kullanmadan Nas&#305;l &Uuml;cretli Uygulama Sat&#305;n Alabilirim ?: Baz&#305; arkada&#351;lar&#305;m&#305;z internet ortam&#305;nda payla&#351;mak istemeyenler oluyor bu y&uuml;zden uygulama sat&#305;n al&#305;m&#305; yapam&#305;yorsunuz kredi kart&#305; bilgilerinizi girmedi&#287;iniz de &ccedil;o&#287;u arkada&#351;lar&#305;m&#305;z bilmemekte fakat Al&#305;&#351;veri&#351; merkezlerinde Carrefour gibi b&uuml;y&uuml;k al&#305;&#351;veri&#351; merkezlerinde iTunes Hediye Kart&#305; sat&#305;lmaktad&#305;r. &#304;ki se&ccedil;enek bulunmaktad&#305;r 25 TL ve 50 TL Olmak &uuml;zere iki adet hediye kart&#305; sunulmaktad&#305;r. Hediye kart&#305;n&#305;z&#305; sat&#305;n ald&#305;ktan sonra App Store uygulamas&#305;na giri&#351; yap&#305;n altta kodu kullan butonuna bas&#305;n sizden istenilen kodu giri&#351; yap&#305;n ve ard&#305;ndan indirmek istedi&#287;iniz i&ccedil;eri&#287;i indirin. ayr&#305;ca bunun ile film kiralayabilir izleyebilirsiniz.
+
+Virus-on-Iphone-and-Ipad.jpg &#8203;
+
+Iphone Telefonuma Vir&uuml;s Bula&#351;&#305;r M&#305; ?: Bu konu hakk&#305;nda hi&ccedil; bir zaman endi&#351;elenmeyin, APP Store&#039;de payla&#351;&#305;lan uygulamalar&#305;n hepsi g&uuml;venilirdir. Sizin herhangi bilginizi veya telefon i&ccedil;ersindeki bilgilerinizi &ccedil;ekebilme ihtimali yoktur. uygulama yap&#305;mc&#305;lar&#305;n&#305;n yay&#305;nlad&#305;klar&#305; uygulamalar teker teker apple m&uuml;hendisleri taraf&#305;ndan kontrol edilmektedir. android de ise uygulamalar&#305; sistem onaylar bu y&uuml;zden dolay&#305; androidde endi&#351;elenebilirsiniz.
+
+
+
+setup_ios_free_icloud.jpg &#8203;
+
+
+Iphone Icloud Hesab&#305; Nas&#305;l Olu&#351;turabilirim ?: Icloud hesab&#305; neden gereklidir ? &ccedil;&uuml;nk&uuml; telefonunuzun ba&#351; yap&#305;t&#305;d&#305;r, e&#287;er &#305;cloud hesab&#305;n&#305;z bulunmuyorsa &#305;phone telefonunuza uygulama indiremez, ve telefonunuzda bulunan verileri yedekleyemezsiniz bu y&uuml;zden dolay&#305; &#305;cloud hesab&#305;n&#305;n &ouml;nemi &ccedil;oktur.
+Icloud hesab&#305; olu&#351;turmak i&ccedil;in Ayarlar &gt; iCloud alan&#305;ndan olu&#351;turabilir veya https://appleid.apple.com/account#!&amp;page=create bu adrese girerek olu&#351;turabilir telefonunuzda aktif edebilirsiniz.
+
+
+Iphone Cihaz&#305;ma Bilgisayardan Telefona Nas&#305;l G&ouml;r&uuml;nt&uuml;,M&uuml;zik ve Video Y&uuml;klerim ?: Biliyorsunuz ki Iphone cihazlarda Bluetooth ile veri aktar&#305;ma izin verilmemektedir. Bu y&uuml;zden dolay&#305; Telefondan bilgisayara veya bilgisayardan televizyona veri aktarabilmek i&ccedil;in Apple taraf&#305;ndan haz&#305;rlanm&#305;&#351; iTunes program&#305;n&#305; kullanman&#305;z gerekmektedir. E&#287;er mac bilgisayar kullan&#305;c&#305;s&#305; iseniz kurulu olarak bulunmaktad&#305;r e&#287;er windows cihaz kullan&#305;yorsan&#305;z iTunes - Download iTunes Now bu adresten program&#305; &uuml;cretsiz indirebilirsiniz.
+
+
+
+Iphone Telefonumun Yede&#287;ini Nas&#305;l Al&#305;r&#305;m / Iphone Telefonumu Nas&#305;l Yedeklerim ?: Bazen telefonumuzda yaln&#305;&#351;l&#305;klar ya&#351;anabiliyor bu y&uuml;zden s&uuml;rekli yedek alman&#305;z &ccedil;ok iyi olacakt&#305;r. telefonunuzu 1) telefon &uuml;zerinden 2) iTunes &uuml;zerinden yedekleyebilirsiniz. Telefon &uuml;zerinden yedeklemek i&ccedil;in Ayarlar &gt; iCloud &gt; Yedekleme &gt; &#350;imdi Yedekle diyerek yedekleyebilirsiniz veya iTunes program&#305;na ba&#287;lanarak telefonunuzun yede&#287;ini alabilirsiniz.
+
+
+iTunes &Uuml;zerinden Iphone/Ipad Cihaz&#305;m&#305;n Yede&#287;ini Nas&#305;l Al&#305;r&#305;m ?: iTunes - iTunes&#146;u Hemen &#304;ndirin - Apple (TR) bu adrese giri&#351; yaparak iTunes program&#305;n en g&uuml;ncel s&uuml;r&uuml;m&uuml;n&uuml; edinin. Her zaman telefonunnuzun yede&#287;ini almak i&ccedil;in yedek y&uuml;klemek i&ccedil;in mutlaka iTunes program&#305;n&#305; kullanmaya &ouml;zen g&ouml;sterin. &Ccedil;&uuml;nk&uuml; iTunes&#146;la yedek almak i&ccedil;in internet ba&#287;lant&#305;s&#305;na ihtiya&ccedil; duyulmaz ve yedekleme i&#351;lemi &ccedil;ok daha h&#305;zl&#305; olur. Ayr&#305;ca yede&#287;iniz bilgisayar&#305;n&#305;zda kalaca&#287;&#305; i&ccedil;in bilgilerinizin ba&#351;kalar&#305;n&#305;n eline ge&ccedil;me korkusu ya&#351;amazs&#305;n&#305;z. &#304;tunes progarm&#305;na giri&#351; yapt&#305;kan sonra a&#351;a&#287;&#305;daki ad&#305;mlar&#305; uygulay&#305;n;
+yedek.png
+
+
+
+iTunes &Uuml;zerinden Yedeklerim Hangi Klas&ouml;re Kay&#305;t Ediliyor ?: iTunes yedekleme dosyalar&#305; a&#351;a&#287;&#305;daki konumlarda bulundurmaktad&#305;r.
+Mac: ~/Kitapl&#305;k/Uygulama Deste&#287;i/MobileSync/Yedekleme/
+&#147;~&#148; i&#351;areti Ana klas&ouml;r&uuml;n&uuml;z&uuml; temsil eder. Ana klas&ouml;r&uuml;n&uuml;z&uuml;n alt&#305;nda Kitapl&#305;k klas&ouml;r&uuml;n&uuml; g&ouml;rm&uuml;yorsan&#305;z, Option tu&#351;una basarak Git men&uuml;s&uuml;n&uuml; t&#305;klay&#305;n.
+Windows XP: Documents and Settings(kullan&#305;c&#305;_ad&#305;)Application DataApple ComputerMobileSyncBackup
+Application Data klas&ouml;r&uuml;ne h&#305;zl&#305; bir &#351;ekilde eri&#351;mek i&ccedil;in Ba&#351;lat&#146;&#305; t&#305;klay&#305;n ve &Ccedil;al&#305;&#351;t&#305;r&#146;&#305; se&ccedil;in. %appdata% yaz&#305;n ve Tamam&#146;&#305; t&#305;klay&#305;n.
+Windows Vista, Windows 7 ve Windows 8: Users(kullan&#305;c&#305;_ad&#305;)AppDataRoamingApple ComputerMobileSyncBackup
+AppData klas&ouml;r&uuml;ne kolayca eri&#351;mek i&ccedil;in Ba&#351;lat&#146;&#305; t&#305;klay&#305;n. Arama &ccedil;ubu&#287;una %appdata% yaz&#305;n ve Return tu&#351;una bas&#305;n.
+
+Iphone Telefonumun G&uuml;ncellemesi Geldi Nas&#305;l G&uuml;ncellerim ?: Telefonunuza yeni bir IOS s&uuml;r&uuml;m g&uuml;ncellemesi geldi diyelim ki e&#287;er bulundu&#287;unuz alanda bilgisayar varsa her zaman mutlaka g&uuml;ncellemelerinizi iTunes &uuml;zerinden yapmaya &ouml;zen g&ouml;sterin. &Ccedil;&uuml;nk&uuml; telefon &uuml;zerinden yap&#305;lan g&uuml;ncellemeler eski dosyalar&#305; silmemektedir ve yeni g&uuml;ncellemeyi eski g&uuml;ncellemelere eklemektedir. Bu y&uuml;zden dolay&#305; iTunes - iTunes&#146;u Hemen &#304;ndirin - Apple (TR) bu adresten iTunes program&#305;n&#305; indirin. &uuml;stte yedek almay&#305; anlatm&#305;&#351;t&#305;m yedek almay&#305; unutmay&#305;n. Herhangi bir ihtimale kar&#351;&#305;. ard&#305;ndan arac&#305; kablo ile bilgisayara ba&#287;lay&#305;n ve &Ouml;zet&#039;i t&#305;klayarak g&uuml;ncellemeleri denetle diyin. &#304;ndir ve G&uuml;ncelle&#039;yi t&#305;klay&#305;n.
+
+macos-itunes12-5-device-summary-update.jpg &#8203;
+
+
+Yeni Iphone Telefon Sat&#305;n Ald&#305;m Eski Iphone Yedeklerimi Nas&#305;l Y&uuml;klerim ?: &#304;lk &ouml;nce iTunes program&#305; indirin. &ouml;nceki &#305;phone telefonunuzu bilgisayara ba&#287;lay&#305;n. Alttaki resimdeki gibi icloudu se&ccedil;in ve &#351;imdi yedekle diyin.
+
+2 resim.jpg &#8203;
+
+
+&#304;&#351;lem bittikten sonra, yedeklemenizin iTunes Tercihleri &gt; Ayg&#305;tlar&#039;da ba&#351;ar&#305;l&#305; bir &#351;ekilde tamamland&#305;&#287;&#305;ndan emin olun. Ayg&#305;t&#305;n&#305;z&#305;n ad&#305;n&#305;, iTunes&#039;un yedeklemeyi olu&#351;turdu&#287;u tarih ve saatle birlikte g&ouml;rmeniz gerekir. Yedeklemenizi &#351;ifrelediyseniz, ayg&#305;t&#305;n&#305;z&#305;n ad&#305;n&#305;n yan&#305;nda lock_inline_icon.png de g&ouml;rmeniz gerekir.
+
+3 resim.jpg &#8203;
+
+Yedeklerinizi yeni cihaza aktarmak i&ccedil;in Yeni ayg&#305;t&#305;n&#305;z&#305; a&ccedil;&#305;n. &quot;Merhaba&quot; ekran&#305; g&ouml;r&uuml;necektir. Yeni ayg&#305;t&#305;n&#305;z&#305; daha &ouml;nce ayarlad&#305;ysan&#305;z bu ad&#305;mlar&#305; uygulamadan &ouml;nce ayg&#305;t&#305; silmeniz gerekir.* &quot;Merhaba&quot; ekran&#305;n&#305; g&ouml;rd&uuml;&#287;&uuml;n&uuml;zde Ana Ekran d&uuml;&#287;mesine bas&#305;n, Uygulamalar ve Veriler ekran&#305;n&#305; g&ouml;rene kadar belirtilen ad&#305;mlar&#305; izleyin, ard&#305;ndan iTunes Yedeklemesinden Geri Y&uuml;kle &gt; Sonraki&#039;ye dokunun.Yeni ayg&#305;t&#305;n&#305;z&#305;, &ouml;nceki ayg&#305;t&#305;n&#305;z&#305; yedeklerken kulland&#305;&#287;&#305;n&#305;z bilgisayara ba&#287;lay&#305;n.Bilgisayar&#305;n&#305;zda iTunes&#039;u a&ccedil;&#305;n ve ayg&#305;t&#305;n&#305;z&#305; se&ccedil;in.Yedeklemeyi Geri Y&uuml;kle&#039;yi se&ccedil;in. Ard&#305;ndan bir yedekleme se&ccedil;in. Yedeklemelerin tarihine ve boyutuna bakarak do&#287;ru yedeklemeyi se&ccedil;ti&#287;inizden emin olun. Geri y&uuml;kleme i&#351;leminin tamamlanmas&#305;n&#305; bekleyin ve kurulumun kalan ad&#305;mlar&#305;n&#305; iOS ayg&#305;t&#305;n&#305;zda tamamlay&#305;n. M&uuml;mk&uuml;nse ayg&#305;t&#305;n&#305;z&#305; Wi-Fi a&#287;&#305;na ba&#287;l&#305; ve g&uuml;&ccedil; kayna&#287;&#305;na tak&#305;l&#305; tutun. Bu i&#351;lem, iCloud&#039;da depolanan foto&#287;raflar&#305;n&#305;z, m&uuml;zikleriniz ve uygulamalar&#305;n&#305;z gibi i&ccedil;eriklerin otomatik olarak ayg&#305;t&#305;n&#305;za geri y&uuml;klenmesine olanak sa&#287;lar.
+
+
+iCloud Nedir ve Nas&#305;l Kullan&#305;l&#305;r ?:
+IPhone 4 ile birlikte hayat&#305;m&#305;za giren ve Apple kullan&#305;c&#305;lar&#305; sebebi ile ta&#351;&#305;nabilir depolama ayg&#305;t&#305; olarak g&ouml;r&uuml;len iCloud, son zamanlarda daha yayg&#305;n olarak kullan&#305;lmaya ba&#351;land&#305;. Kullan&#305;c&#305;lar bu benzeri yedeklemeleri iTunes &uuml;zerinden yap&#305;l&#305;r ve bilgisayara format at&#305;ld&#305;&#287;&#305;nda yada yeni bir bilgisayar ald&#305;&#287;&#305;n&#305;zda iTunes&#146;u da yedeklemeniz gerekir. Bilgisayar&#305;n&#305;za vir&uuml;s bula&#351;mas&#305; ve kullan&#305;lmayacak duruma gelmesi durumda iTunes yedeklemeleri siliniyor. oysa ki telefonunuz &uuml;st&uuml;nde iCloud hesab&#305; olu&#351;turdu&#287;unuzda takvimler, notlar, safari verileri, mailler, ki&#351;i listeleri ve an&#305;msat&#305;c&#305;lar otomatik olarak yedeklenir ve format sonras&#305;nda geri kurulur.
+
+&#350;ah&#305;s listeleri ve mailler gibi bilgilerinizi hem iTunes hemde iCloud &uuml;st&uuml;nden yedekledi&#287;iniz taktirde ki&#351;i listenizde t&#305;pk&#305; ki&#351;iden 2 tane olu&#351;abilir, bu nedenle bilgilerinizi iTunes &uuml;zerinden yedekliyorsan&#305;z iCloud hesab&#305;n&#305;z&#305; silin.
+
+iCloud Hesab&#305;mda Neleri Yedekleyebilirim ?:
+
+Mail: Cihaz&#305;n&#305;za tan&#305;ml&#305; olan E-Posta adresinizde ki mail dosyalar&#305;, taslaklar ve adres bilgilerinizi saklayabilirsiniz.
+
+Ki&#351;iler: Ki&#351;i listenizde bulanan b&uuml;t&uuml;n kay&#305;tlar&#305; yedekler.
+
+Takvim: Takviminizde i&#351;aretledi&#287;iniz notlar&#305; ve &ouml;zel g&uuml;nleri yedekler.
+
+An&#305;msat&#305;c&#305;lar: Hesaplamalar vb yer imlerinizi kaydeder.
+
+Safari: Taray&#305;c&#305; ge&ccedil;mi&#351;inizi ve internet gezintilerinizi adreslerinizi yedekler.
+
+Notlar: Not defterinizde kay&#305;tl&#305; olan notlar&#305;n&#305;z&#305; yedekler
+
+Passbook: Passbook kullan&#305;m&#305;n&#305;zda ki teferruatlar&#305; yedekler.
+
+Foto&#287;raf Yay&#305;n&#305;: Cihaz&#305;n&#305;zla &ccedil;ekti&#287;iniz b&uuml;t&uuml;n foto&#287;raflar&#305; kaydeder ve arzulad&#305;&#287;&#305;n&#305;z zaman diledi&#287;iniz cihaza aktarabilir.
+
+IPhone Bulun: Bu &ouml;zellik yard&#305;m&#305; ile iPhone veya iOS cihaz&#305;n&#305;z kay&#305;psa ve ula&#351;am&#305;yorsan&#305;z cihaz&#305;n&#305;z&#305;n tekrar bulunmas&#305;n&#305; olanakl&#305; k&#305;lar. oturum a&ccedil;t&#305;&#287;&#305;n&#305;z s&uuml;re cihaz&#305;n&#305;z&#305;n yerini hartita &uuml;zerinde g&ouml;rebilir, k&#305;sa mesaj g&ouml;nderebilir veya tamamen kilitlenmesini sa&#287;layabilirsiniz. Uzaktan eri&#351;imle t&uuml;m verilerinizi de silebilirsiniz.
+
+iPhoneda-Batarya-Kalibre-Etme1.png &#8203;
+Iphone Telefonun Pilini Nas&#305;l Kalibre Edebilirim ?:
+
+Batarya kalibrasyonunun faydas&#305; nedir ?
+
+&#350;u anda kulland&#305;&#287;&#305;m&#305;z iPhone&#146;lar y&uuml;ksek teknoloji &uuml;r&uuml;n&uuml; Lityum &#304;yon bataryaya sahipler. Bu bataryalarda kullan&#305;ma g&ouml;re zaman zaman kalibrayon gereken durumlar ortaya &ccedil;&#305;kabilir. &#350;arj etme al&#305;&#351;kanl&#305;klar&#305; ve iOS y&uuml;kseltmeleri bunda ba&#351; etkenlerdir. Pili kalibre etmek onun mekanik performans&#305;n&#305; ve &ouml;mr&uuml;n&uuml; artt&#305;r&#305;r. Apple Store &ccedil;al&#305;&#351;anlar&#305; da pil sorunlar&#305; ile gelen m&uuml;&#351;terilerin &ccedil;o&#287;unun sorununun kalibrasyon ile &ccedil;&ouml;z&uuml;ld&uuml;&#287;&uuml;n&uuml; s&ouml;yl&uuml;yorlar. Bataryan&#305;z&#305; kalibre etmek i&ccedil;in a&#351;a&#287;&#305;daki ad&#305;mlar&#305; uygulay&#305;n.
+
+1.ad&#305;m : Pilinizi tamamen bitirin.
+
+Telefon kapanana kadar kullanarak pilinizi tamamen bitirin.
+
+2.ad&#305;m : iPhone&#146;u bir s&uuml;re kullanmay&#305;n.
+
+iPhone&#146;u m&uuml;mk&uuml;nse sabaha kadar hi&ccedil; &#351;arj etmeyin. Bu m&uuml;mk&uuml;n de&#287;ilse en az&#305;ndan 3-4 saat kapal&#305; &#351;ekilde cihaz&#305; b&#305;rak&#305;n. Hi&ccedil; &#351;arj etmeyin. B&ouml;ylece pil tamamen bo&#351;alacak.
+
+3.ad&#305;m : iPhone&#146;u &#351;arj edin
+
+
+
+iPhone&#146;u %100 olana kadar &#351;arj edin. iPhone&#146;u kapal&#305; olarak &#351;arj etmek daha iyi. &Ccedil;&uuml;nk&uuml; hem daha h&#305;zl&#305; &#351;arj olur hem de daha az &#305;s&#305; yayar. iPhone&#146;u toplam 5 saat kadar &#351;arj edin.
+
+4.ad&#305;m: Kalibre Etme
+
+
+
+E&#287;er telefonu kapal&#305; &#351;arj ettiyseniz &#351;arjda iken telefonu a&ccedil;&#305;n. Yine telefon &#351;arjda iken Apple logosunu g&ouml;r&uuml;nen kadar kadar g&uuml;&ccedil; ve home butonlar&#305;na bas&#305;l&#305; tutarak cihaza reset at&#305;n. iPhone a&ccedil;&#305;ld&#305;&#287;&#305;nda &#351;arjdan &ccedil;&#305;kar&#305;n.
+
+Kalibrasyon i&#351;lemi bu kadar. &#304;&#351;lemi ayda bir kez yapman&#305;z tavsiye edilir.
+
+
+
+iPhone-restore.jpg &#8203;
+Iphone Telefonumu Nas&#305;l Restore Edebilirim ?:
+
+
+
+
+Bilgisayar&#305;n&#305;za iTunes kurun. Buradan indirebilirsiniz.
+Bilgisayardan iTunes&#146;i a&ccedil;&#305;n ve iPhone&#146;u bilgisayar&#305;n&#305;za ba&#287;lay&#305;n. Bu i&#351;lemden sonra iTunes otomatik olarak iPhone&#146;u tan&#305;yacakt&#305;r.
+iTunes&#146;da sol &uuml;st k&ouml;&#351;ede iPhone simgesi g&ouml;receksiniz, iPhone simgesine t&#305;klay&#305;n.
+Geri y&uuml;kleme i&#351;lemini ba&#351;latmadan &ouml;nce iPhone&#146;umu Bul uygulamas&#305;n&#305; kapatman&#305;z gerekiyor.Bunun i&ccedil;in Ayarlar -&gt; iCloud -&gt; iPhone&#146;umu Bul se&ccedil;ene&#287;inden kapatabilirsiniz.
+&#350;imdi iTunes&#146;da iPhone simgesinin &uuml;zerine t&#305;klad&#305;&#287;&#305;n&#305;zda a&ccedil;&#305;lan ekrandan &#147;iPhone&#146;a Geri Y&uuml;kle&#148; butonuna bas&#305;n.
+iTunes size yedekleme konusunda bilgilendirme yapacak. E&#287;er yedekleme yapmak isterseniz &#147;Yedekle&#148; d&uuml;&#287;mesine bas&#305;n.
+Yedekleme i&#351;lemi bittikten sonra kar&#351;&#305;n&#305;za &ccedil;&#305;kan uyar&#305;da &#147;Geri Y&uuml;kle&#148; d&uuml;&#287;mesine bas&#305;n.
+iPhone restore i&#351;lemi ba&#351;layacakt&#305;r. Bu s&uuml;re biraz zaman alabilir. L&uuml;tfen bu i&#351;lem devam ederken cihaz&#305;n ba&#287;lant&#305;s&#305;n&#305; kesmeyin.
+Restore i&#351;lemi bittikten hemen sonra cihaz yeniden ba&#351;layacakt&#305;r.
+iPhone&#146;u ilk ald&#305;&#287;&#305;n&#305;z zaman ki kurulum ekran&#305; kar&#351;&#305;n&#305;za gelecektir. Burada kurulumu yapt&#305;ktan sonra iPhone&#146;u daha sa&#287;l&#305;kl&#305; bir &#351;ekilde kullanabilirsiniz.
+NOT: Rehber Konumuz Zaman &#304;&ccedil;ersinde G&uuml;ncellenecektir![/quote]"></td><td align="right"><a href="#1" onclick="
+                     if(typeof addtext == 'function') {
+                         addtext(document.getElementById('post34').value);
+                     }
+                ">[al&#305;nt&#305; yap]</a></td></tr></table><div style="padding-left:10px;">Iphone Kullan&#305;m Rehberi - Iphone Hakk&#305;nda Her&#351;ey - Iphone Nas&#305;l Kullan&#305;l&#305;r ?<br>
+<br>
+itunes1.jpg<br>
+&#8203;<br>
+Iphone Kredi Kart&#305; Kullanmadan Nas&#305;l &Uuml;cretli Uygulama Sat&#305;n Alabilirim ?: Baz&#305; arkada&#351;lar&#305;m&#305;z internet ortam&#305;nda payla&#351;mak istemeyenler oluyor bu y&uuml;zden uygulama sat&#305;n al&#305;m&#305; yapam&#305;yorsunuz kredi kart&#305; bilgilerinizi girmedi&#287;iniz de &ccedil;o&#287;u arkada&#351;lar&#305;m&#305;z bilmemekte fakat Al&#305;&#351;veri&#351; merkezlerinde Carrefour gibi b&uuml;y&uuml;k al&#305;&#351;veri&#351; merkezlerinde iTunes Hediye Kart&#305; sat&#305;lmaktad&#305;r. &#304;ki se&ccedil;enek bulunmaktad&#305;r 25 TL ve 50 TL Olmak &uuml;zere iki adet hediye kart&#305; sunulmaktad&#305;r. Hediye kart&#305;n&#305;z&#305; sat&#305;n ald&#305;ktan sonra App Store uygulamas&#305;na giri&#351; yap&#305;n altta kodu kullan butonuna bas&#305;n sizden istenilen kodu giri&#351; yap&#305;n ve ard&#305;ndan indirmek istedi&#287;iniz i&ccedil;eri&#287;i indirin. ayr&#305;ca bunun ile film kiralayabilir izleyebilirsiniz.<br>
+<br>
+Virus-on-Iphone-and-Ipad.jpg &#8203;<br>
+<br>
+Iphone Telefonuma Vir&uuml;s Bula&#351;&#305;r M&#305; ?: Bu konu hakk&#305;nda hi&ccedil; bir zaman endi&#351;elenmeyin, APP Store&#039;de payla&#351;&#305;lan uygulamalar&#305;n hepsi g&uuml;venilirdir. Sizin herhangi bilginizi veya telefon i&ccedil;ersindeki bilgilerinizi &ccedil;ekebilme ihtimali yoktur. uygulama yap&#305;mc&#305;lar&#305;n&#305;n yay&#305;nlad&#305;klar&#305; uygulamalar teker teker apple m&uuml;hendisleri taraf&#305;ndan kontrol edilmektedir. android de ise uygulamalar&#305; sistem onaylar bu y&uuml;zden dolay&#305; androidde endi&#351;elenebilirsiniz.<br>
+<br>
+<br>
+<br>
+setup_ios_free_icloud.jpg &#8203;<br>
+<br>
+<br>
+Iphone Icloud Hesab&#305; Nas&#305;l Olu&#351;turabilirim ?: Icloud hesab&#305; neden gereklidir ? &ccedil;&uuml;nk&uuml; telefonunuzun ba&#351; yap&#305;t&#305;d&#305;r, e&#287;er &#305;cloud hesab&#305;n&#305;z bulunmuyorsa &#305;phone telefonunuza uygulama indiremez, ve telefonunuzda bulunan verileri yedekleyemezsiniz bu y&uuml;zden dolay&#305; &#305;cloud hesab&#305;n&#305;n &ouml;nemi &ccedil;oktur.<br>
+Icloud hesab&#305; olu&#351;turmak i&ccedil;in Ayarlar &gt; iCloud alan&#305;ndan olu&#351;turabilir veya https://appleid.apple.com/account#!&amp;page=create bu adrese girerek olu&#351;turabilir telefonunuzda aktif edebilirsiniz.<br>
+<br>
+<br>
+Iphone Cihaz&#305;ma Bilgisayardan Telefona Nas&#305;l G&ouml;r&uuml;nt&uuml;,M&uuml;zik ve Video Y&uuml;klerim ?: Biliyorsunuz ki Iphone cihazlarda Bluetooth ile veri aktar&#305;ma izin verilmemektedir. Bu y&uuml;zden dolay&#305; Telefondan bilgisayara veya bilgisayardan televizyona veri aktarabilmek i&ccedil;in Apple taraf&#305;ndan haz&#305;rlanm&#305;&#351; iTunes program&#305;n&#305; kullanman&#305;z gerekmektedir. E&#287;er mac bilgisayar kullan&#305;c&#305;s&#305; iseniz kurulu olarak bulunmaktad&#305;r e&#287;er windows cihaz kullan&#305;yorsan&#305;z iTunes - Download iTunes Now bu adresten program&#305; &uuml;cretsiz indirebilirsiniz.<br>
+<br>
+<br>
+<br>
+Iphone Telefonumun Yede&#287;ini Nas&#305;l Al&#305;r&#305;m / Iphone Telefonumu Nas&#305;l Yedeklerim ?: Bazen telefonumuzda yaln&#305;&#351;l&#305;klar ya&#351;anabiliyor bu y&uuml;zden s&uuml;rekli yedek alman&#305;z &ccedil;ok iyi olacakt&#305;r. telefonunuzu 1) telefon &uuml;zerinden 2) iTunes &uuml;zerinden yedekleyebilirsiniz. Telefon &uuml;zerinden yedeklemek i&ccedil;in Ayarlar &gt; iCloud &gt; Yedekleme &gt; &#350;imdi Yedekle diyerek yedekleyebilirsiniz veya iTunes program&#305;na ba&#287;lanarak telefonunuzun yede&#287;ini alabilirsiniz.<br>
+<br>
+<br>
+iTunes &Uuml;zerinden Iphone/Ipad Cihaz&#305;m&#305;n Yede&#287;ini Nas&#305;l Al&#305;r&#305;m ?: iTunes - iTunes&#146;u Hemen &#304;ndirin - Apple (TR) bu adrese giri&#351; yaparak iTunes program&#305;n en g&uuml;ncel s&uuml;r&uuml;m&uuml;n&uuml; edinin. Her zaman telefonunnuzun yede&#287;ini almak i&ccedil;in yedek y&uuml;klemek i&ccedil;in mutlaka iTunes program&#305;n&#305; kullanmaya &ouml;zen g&ouml;sterin. &Ccedil;&uuml;nk&uuml; iTunes&#146;la yedek almak i&ccedil;in internet ba&#287;lant&#305;s&#305;na ihtiya&ccedil; duyulmaz ve yedekleme i&#351;lemi &ccedil;ok daha h&#305;zl&#305; olur. Ayr&#305;ca yede&#287;iniz bilgisayar&#305;n&#305;zda kalaca&#287;&#305; i&ccedil;in bilgilerinizin ba&#351;kalar&#305;n&#305;n eline ge&ccedil;me korkusu ya&#351;amazs&#305;n&#305;z. &#304;tunes progarm&#305;na giri&#351; yapt&#305;kan sonra a&#351;a&#287;&#305;daki ad&#305;mlar&#305; uygulay&#305;n;<br>
+yedek.png<br>
+<br>
+<br>
+<br>
+iTunes &Uuml;zerinden Yedeklerim Hangi Klas&ouml;re Kay&#305;t Ediliyor ?: iTunes yedekleme dosyalar&#305; a&#351;a&#287;&#305;daki konumlarda bulundurmaktad&#305;r.<br>
+Mac: ~/Kitapl&#305;k/Uygulama Deste&#287;i/MobileSync/Yedekleme/<br>
+&#147;~&#148; i&#351;areti Ana klas&ouml;r&uuml;n&uuml;z&uuml; temsil eder. Ana klas&ouml;r&uuml;n&uuml;z&uuml;n alt&#305;nda Kitapl&#305;k klas&ouml;r&uuml;n&uuml; g&ouml;rm&uuml;yorsan&#305;z, Option tu&#351;una basarak Git men&uuml;s&uuml;n&uuml; t&#305;klay&#305;n.<br>
+Windows XP: Documents and Settings(kullan&#305;c&#305;_ad&#305<img src="../smiles/icon_wink.gif" border="0" width="15" height="15" alt="">Application DataApple ComputerMobileSyncBackup<br>
+Application Data klas&ouml;r&uuml;ne h&#305;zl&#305; bir &#351;ekilde eri&#351;mek i&ccedil;in Ba&#351;lat&#146;&#305; t&#305;klay&#305;n ve &Ccedil;al&#305;&#351;t&#305;r&#146;&#305; se&ccedil;in. %appdata% yaz&#305;n ve Tamam&#146;&#305; t&#305;klay&#305;n.<br>
+Windows Vista, Windows 7 ve Windows 8: Users(kullan&#305;c&#305;_ad&#305<img src="../smiles/icon_wink.gif" border="0" width="15" height="15" alt="">AppDataRoamingApple ComputerMobileSyncBackup<br>
+AppData klas&ouml;r&uuml;ne kolayca eri&#351;mek i&ccedil;in Ba&#351;lat&#146;&#305; t&#305;klay&#305;n. Arama &ccedil;ubu&#287;una %appdata% yaz&#305;n ve Return tu&#351;una bas&#305;n.<br>
+<br>
+Iphone Telefonumun G&uuml;ncellemesi Geldi Nas&#305;l G&uuml;ncellerim ?: Telefonunuza yeni bir IOS s&uuml;r&uuml;m g&uuml;ncellemesi geldi diyelim ki e&#287;er bulundu&#287;unuz alanda bilgisayar varsa her zaman mutlaka g&uuml;ncellemelerinizi iTunes &uuml;zerinden yapmaya &ouml;zen g&ouml;sterin. &Ccedil;&uuml;nk&uuml; telefon &uuml;zerinden yap&#305;lan g&uuml;ncellemeler eski dosyalar&#305; silmemektedir ve yeni g&uuml;ncellemeyi eski g&uuml;ncellemelere eklemektedir. Bu y&uuml;zden dolay&#305; iTunes - iTunes&#146;u Hemen &#304;ndirin - Apple (TR) bu adresten iTunes program&#305;n&#305; indirin. &uuml;stte yedek almay&#305; anlatm&#305;&#351;t&#305;m yedek almay&#305; unutmay&#305;n. Herhangi bir ihtimale kar&#351;&#305;. ard&#305;ndan arac&#305; kablo ile bilgisayara ba&#287;lay&#305;n ve &Ouml;zet&#039;i t&#305;klayarak g&uuml;ncellemeleri denetle diyin. &#304;ndir ve G&uuml;ncelle&#039;yi t&#305;klay&#305;n.<br>
+<br>
+macos-itunes12-5-device-summary-update.jpg &#8203;<br>
+<br>
+<br>
+Yeni Iphone Telefon Sat&#305;n Ald&#305;m Eski Iphone Yedeklerimi Nas&#305;l Y&uuml;klerim ?: &#304;lk &ouml;nce iTunes program&#305; indirin. &ouml;nceki &#305;phone telefonunuzu bilgisayara ba&#287;lay&#305;n. Alttaki resimdeki gibi icloudu se&ccedil;in ve &#351;imdi yedekle diyin.<br>
+<br>
+2 resim.jpg &#8203;<br>
+<br>
+<br>
+&#304;&#351;lem bittikten sonra, yedeklemenizin iTunes Tercihleri &gt; Ayg&#305;tlar&#039;da ba&#351;ar&#305;l&#305; bir &#351;ekilde tamamland&#305;&#287;&#305;ndan emin olun. Ayg&#305;t&#305;n&#305;z&#305;n ad&#305;n&#305;, iTunes&#039;un yedeklemeyi olu&#351;turdu&#287;u tarih ve saatle birlikte g&ouml;rmeniz gerekir. Yedeklemenizi &#351;ifrelediyseniz, ayg&#305;t&#305;n&#305;z&#305;n ad&#305;n&#305;n yan&#305;nda lock_inline_icon.png de g&ouml;rmeniz gerekir.<br>
+<br>
+3 resim.jpg &#8203;<br>
+<br>
+Yedeklerinizi yeni cihaza aktarmak i&ccedil;in Yeni ayg&#305;t&#305;n&#305;z&#305; a&ccedil;&#305;n. &quot;Merhaba&quot; ekran&#305; g&ouml;r&uuml;necektir. Yeni ayg&#305;t&#305;n&#305;z&#305; daha &ouml;nce ayarlad&#305;ysan&#305;z bu ad&#305;mlar&#305; uygulamadan &ouml;nce ayg&#305;t&#305; silmeniz gerekir.* &quot;Merhaba&quot; ekran&#305;n&#305; g&ouml;rd&uuml;&#287;&uuml;n&uuml;zde Ana Ekran d&uuml;&#287;mesine bas&#305;n, Uygulamalar ve Veriler ekran&#305;n&#305; g&ouml;rene kadar belirtilen ad&#305;mlar&#305; izleyin, ard&#305;ndan iTunes Yedeklemesinden Geri Y&uuml;kle &gt; Sonraki&#039;ye dokunun.Yeni ayg&#305;t&#305;n&#305;z&#305;, &ouml;nceki ayg&#305;t&#305;n&#305;z&#305; yedeklerken kulland&#305;&#287;&#305;n&#305;z bilgisayara ba&#287;lay&#305;n.Bilgisayar&#305;n&#305;zda iTunes&#039;u a&ccedil;&#305;n ve ayg&#305;t&#305;n&#305;z&#305; se&ccedil;in.Yedeklemeyi Geri Y&uuml;kle&#039;yi se&ccedil;in. Ard&#305;ndan bir yedekleme se&ccedil;in. Yedeklemelerin tarihine ve boyutuna bakarak do&#287;ru yedeklemeyi se&ccedil;ti&#287;inizden emin olun. Geri y&uuml;kleme i&#351;leminin tamamlanmas&#305;n&#305; bekleyin ve kurulumun kalan ad&#305;mlar&#305;n&#305; iOS ayg&#305;t&#305;n&#305;zda tamamlay&#305;n. M&uuml;mk&uuml;nse ayg&#305;t&#305;n&#305;z&#305; Wi-Fi a&#287;&#305;na ba&#287;l&#305; ve g&uuml;&ccedil; kayna&#287;&#305;na tak&#305;l&#305; tutun. Bu i&#351;lem, iCloud&#039;da depolanan foto&#287;raflar&#305;n&#305;z, m&uuml;zikleriniz ve uygulamalar&#305;n&#305;z gibi i&ccedil;eriklerin otomatik olarak ayg&#305;t&#305;n&#305;za geri y&uuml;klenmesine olanak sa&#287;lar.<br>
+<br>
+<br>
+iCloud Nedir ve Nas&#305;l Kullan&#305;l&#305;r ?:<br>
+IPhone 4 ile birlikte hayat&#305;m&#305;za giren ve Apple kullan&#305;c&#305;lar&#305; sebebi ile ta&#351;&#305;nabilir depolama ayg&#305;t&#305; olarak g&ouml;r&uuml;len iCloud, son zamanlarda daha yayg&#305;n olarak kullan&#305;lmaya ba&#351;land&#305;. Kullan&#305;c&#305;lar bu benzeri yedeklemeleri iTunes &uuml;zerinden yap&#305;l&#305;r ve bilgisayara format at&#305;ld&#305;&#287;&#305;nda yada yeni bir bilgisayar ald&#305;&#287;&#305;n&#305;zda iTunes&#146;u da yedeklemeniz gerekir. Bilgisayar&#305;n&#305;za vir&uuml;s bula&#351;mas&#305; ve kullan&#305;lmayacak duruma gelmesi durumda iTunes yedeklemeleri siliniyor. oysa ki telefonunuz &uuml;st&uuml;nde iCloud hesab&#305; olu&#351;turdu&#287;unuzda takvimler, notlar, safari verileri, mailler, ki&#351;i listeleri ve an&#305;msat&#305;c&#305;lar otomatik olarak yedeklenir ve format sonras&#305;nda geri kurulur.<br>
+<br>
+&#350;ah&#305;s listeleri ve mailler gibi bilgilerinizi hem iTunes hemde iCloud &uuml;st&uuml;nden yedekledi&#287;iniz taktirde ki&#351;i listenizde t&#305;pk&#305; ki&#351;iden 2 tane olu&#351;abilir, bu nedenle bilgilerinizi iTunes &uuml;zerinden yedekliyorsan&#305;z iCloud hesab&#305;n&#305;z&#305; silin.<br>
+<br>
+iCloud Hesab&#305;mda Neleri Yedekleyebilirim ?:<br>
+<br>
+Mail: Cihaz&#305;n&#305;za tan&#305;ml&#305; olan E-Posta adresinizde ki mail dosyalar&#305;, taslaklar ve adres bilgilerinizi saklayabilirsiniz.<br>
+<br>
+Ki&#351;iler: Ki&#351;i listenizde bulanan b&uuml;t&uuml;n kay&#305;tlar&#305; yedekler.<br>
+<br>
+Takvim: Takviminizde i&#351;aretledi&#287;iniz notlar&#305; ve &ouml;zel g&uuml;nleri yedekler.<br>
+<br>
+An&#305;msat&#305;c&#305;lar: Hesaplamalar vb yer imlerinizi kaydeder.<br>
+<br>
+Safari: Taray&#305;c&#305; ge&ccedil;mi&#351;inizi ve internet gezintilerinizi adreslerinizi yedekler.<br>
+<br>
+Notlar: Not defterinizde kay&#305;tl&#305; olan notlar&#305;n&#305;z&#305; yedekler<br>
+<br>
+Passbook: Passbook kullan&#305;m&#305;n&#305;zda ki teferruatlar&#305; yedekler.<br>
+<br>
+Foto&#287;raf Yay&#305;n&#305;: Cihaz&#305;n&#305;zla &ccedil;ekti&#287;iniz b&uuml;t&uuml;n foto&#287;raflar&#305; kaydeder ve arzulad&#305;&#287;&#305;n&#305;z zaman diledi&#287;iniz cihaza aktarabilir.<br>
+<br>
+IPhone Bulun: Bu &ouml;zellik yard&#305;m&#305; ile iPhone veya iOS cihaz&#305;n&#305;z kay&#305;psa ve ula&#351;am&#305;yorsan&#305;z cihaz&#305;n&#305;z&#305;n tekrar bulunmas&#305;n&#305; olanakl&#305; k&#305;lar. oturum a&ccedil;t&#305;&#287;&#305;n&#305;z s&uuml;re cihaz&#305;n&#305;z&#305;n yerini hartita &uuml;zerinde g&ouml;rebilir, k&#305;sa mesaj g&ouml;nderebilir veya tamamen kilitlenmesini sa&#287;layabilirsiniz. Uzaktan eri&#351;imle t&uuml;m verilerinizi de silebilirsiniz.<br>
+<br>
+iPhoneda-Batarya-Kalibre-Etme1.png &#8203;<br>
+Iphone Telefonun Pilini Nas&#305;l Kalibre Edebilirim ?:<br>
+<br>
+Batarya kalibrasyonunun faydas&#305; nedir ?<br>
+<br>
+&#350;u anda kulland&#305;&#287;&#305;m&#305;z iPhone&#146;lar y&uuml;ksek teknoloji &uuml;r&uuml;n&uuml; Lityum &#304;yon bataryaya sahipler. Bu bataryalarda kullan&#305;ma g&ouml;re zaman zaman kalibrayon gereken durumlar ortaya &ccedil;&#305;kabilir. &#350;arj etme al&#305;&#351;kanl&#305;klar&#305; ve iOS y&uuml;kseltmeleri bunda ba&#351; etkenlerdir. Pili kalibre etmek onun mekanik performans&#305;n&#305; ve &ouml;mr&uuml;n&uuml; artt&#305;r&#305;r. Apple Store &ccedil;al&#305;&#351;anlar&#305; da pil sorunlar&#305; ile gelen m&uuml;&#351;terilerin &ccedil;o&#287;unun sorununun kalibrasyon ile &ccedil;&ouml;z&uuml;ld&uuml;&#287;&uuml;n&uuml; s&ouml;yl&uuml;yorlar. Bataryan&#305;z&#305; kalibre etmek i&ccedil;in a&#351;a&#287;&#305;daki ad&#305;mlar&#305; uygulay&#305;n.<br>
+<br>
+1.ad&#305;m : Pilinizi tamamen bitirin.<br>
+<br>
+Telefon kapanana kadar kullanarak pilinizi tamamen bitirin.<br>
+<br>
+2.ad&#305;m : iPhone&#146;u bir s&uuml;re kullanmay&#305;n.<br>
+<br>
+iPhone&#146;u m&uuml;mk&uuml;nse sabaha kadar hi&ccedil; &#351;arj etmeyin. Bu m&uuml;mk&uuml;n de&#287;ilse en az&#305;ndan 3-4 saat kapal&#305; &#351;ekilde cihaz&#305; b&#305;rak&#305;n. Hi&ccedil; &#351;arj etmeyin. B&ouml;ylece pil tamamen bo&#351;alacak.<br>
+<br>
+3.ad&#305;m : iPhone&#146;u &#351;arj edin<br>
+<br>
+<br>
+<br>
+iPhone&#146;u %100 olana kadar &#351;arj edin. iPhone&#146;u kapal&#305; olarak &#351;arj etmek daha iyi. &Ccedil;&uuml;nk&uuml; hem daha h&#305;zl&#305; &#351;arj olur hem de daha az &#305;s&#305; yayar. iPhone&#146;u toplam 5 saat kadar &#351;arj edin.<br>
+<br>
+4.ad&#305;m: Kalibre Etme<br>
+<br>
+<br>
+<br>
+E&#287;er telefonu kapal&#305; &#351;arj ettiyseniz &#351;arjda iken telefonu a&ccedil;&#305;n. Yine telefon &#351;arjda iken Apple logosunu g&ouml;r&uuml;nen kadar kadar g&uuml;&ccedil; ve home butonlar&#305;na bas&#305;l&#305; tutarak cihaza reset at&#305;n. iPhone a&ccedil;&#305;ld&#305;&#287;&#305;nda &#351;arjdan &ccedil;&#305;kar&#305;n.<br>
+<br>
+Kalibrasyon i&#351;lemi bu kadar. &#304;&#351;lemi ayda bir kez yapman&#305;z tavsiye edilir.<br>
+<br>
+<br>
+<br>
+iPhone-restore.jpg &#8203;<br>
+Iphone Telefonumu Nas&#305;l Restore Edebilirim ?:<br>
+<br>
+<br>
+<br>
+<br>
+Bilgisayar&#305;n&#305;za iTunes kurun. Buradan indirebilirsiniz.<br>
+Bilgisayardan iTunes&#146;i a&ccedil;&#305;n ve iPhone&#146;u bilgisayar&#305;n&#305;za ba&#287;lay&#305;n. Bu i&#351;lemden sonra iTunes otomatik olarak iPhone&#146;u tan&#305;yacakt&#305;r.<br>
+iTunes&#146;da sol &uuml;st k&ouml;&#351;ede iPhone simgesi g&ouml;receksiniz, iPhone simgesine t&#305;klay&#305;n.<br>
+Geri y&uuml;kleme i&#351;lemini ba&#351;latmadan &ouml;nce iPhone&#146;umu Bul uygulamas&#305;n&#305; kapatman&#305;z gerekiyor.Bunun i&ccedil;in Ayarlar -&gt; iCloud -&gt; iPhone&#146;umu Bul se&ccedil;ene&#287;inden kapatabilirsiniz.<br>
+&#350;imdi iTunes&#146;da iPhone simgesinin &uuml;zerine t&#305;klad&#305;&#287;&#305;n&#305;zda a&ccedil;&#305;lan ekrandan &#147;iPhone&#146;a Geri Y&uuml;kle&#148; butonuna bas&#305;n.<br>
+iTunes size yedekleme konusunda bilgilendirme yapacak. E&#287;er yedekleme yapmak isterseniz &#147;Yedekle&#148; d&uuml;&#287;mesine bas&#305;n.<br>
+Yedekleme i&#351;lemi bittikten sonra kar&#351;&#305;n&#305;za &ccedil;&#305;kan uyar&#305;da &#147;Geri Y&uuml;kle&#148; d&uuml;&#287;mesine bas&#305;n.<br>
+iPhone restore i&#351;lemi ba&#351;layacakt&#305;r. Bu s&uuml;re biraz zaman alabilir. L&uuml;tfen bu i&#351;lem devam ederken cihaz&#305;n ba&#287;lant&#305;s&#305;n&#305; kesmeyin.<br>
+Restore i&#351;lemi bittikten hemen sonra cihaz yeniden ba&#351;layacakt&#305;r.<br>
+iPhone&#146;u ilk ald&#305;&#287;&#305;n&#305;z zaman ki kurulum ekran&#305; kar&#351;&#305;n&#305;za gelecektir. Burada kurulumu yapt&#305;ktan sonra iPhone&#146;u daha sa&#287;l&#305;kl&#305; bir &#351;ekilde kullanabilirsiniz.<br>
+NOT: Rehber Konumuz Zaman &#304;&ccedil;ersinde G&uuml;ncellenecektir!</div></td></tr><tr class="forumtrenner" height="1" style="height:1px"><td></td><td></td><td></td></tr><tr onmouseover="this.bgColor = '#dedfc6'" onmouseout="this.bgColor = '#edede8'" bgcolor="#edede8" valign="top"><td width="123"><b><a href="profile-1.htm">torco</a></b><br>(&#351;imdiye kadar 100 posta)</td><td class="forumtrenner" width="1" style="width:1px"></td><td height="105"><table width="100%" cellpadding="0" cellspacing="0" height="25"><tr valign="top"><td style="font-size:10px;padding-top:2px;"><span class="localtime" data-template="[d].[m].[Y] [H]:[i]" data-timestamp="1636882415000">14.11.2021 09:33 (UTC)</span><input type="hidden" id="post35" value="[quote=&quot;torco&quot;]Merhaba arkada&#351;lar.
+
+&#304;phone 7 ve 7 plus&#039;&#305;n &ccedil;&#305;kmas&#305; ile birlikte ve &uuml;lkemizde de vergini dilimin &ccedil;ok olmas&#305; sebebiyle imkan&#305; olan yurtd&#305;&#351;&#305;ndan cihaz almaya y&ouml;neliyor.
+Yurtd&#305;&#351;&#305;ndan cihaz alman&#305;n art&#305;lar&#305;n&#305; ve eksilerini sizler i&ccedil;in s&#305;ralayay&#305;m...
+
+iphone7-gallery1-2016
+
+Yurt D&#305;&#351;&#305;ndan &#304;phone Alman&#305;n Art&#305;lar&#305;;
+
++ &Uuml;cret olarak &ccedil;ok tatminkar. &Ouml;rnegim ABD&#039;den bir &#304;phone 7 plus almak istedi&#287;imiz de $769 buda &#351;uan ki kur&#039;a g&ouml;re 2.230 tl k&uuml;s&uuml;r bir fiyata denk geliyor. Bu cihaz &uuml;lkemiz de 3899 tl band&#305;nda sat&#305;&#351;a sunulaca&#287;&#305;n&#305; d&uuml;&#351;&uuml;n&uuml;rsek.3899-2230: 1669 tl gibi ciddi bir &uuml;cret cebimizde kal&#305;yor. Bu sayede Yurt D&#305;&#351;&#305;ndan &#304;phone Almak mant&#305;kl&#305; bir hal al&#305;yor.
+
++ &#304;kinci el asl&#305;nda bu b&uuml;y&uuml;k bi soru i&#351;areti onuda kendi yorumumla sizlere &#351;&ouml;yle &ouml;zetliyim;
+&#350;imdi &ouml;rne&#287;in 3899 tl &uuml;cret &ouml;deyerek &#304;phone 7 plus 32gb sat&#305;n ald&#305;k. Bu cihaz&#305; 1 sene sonra satmak istedi&#287;imizde 7s &ccedil;&#305;kt&#305;&#287;&#305;nda 3200-3100 tl gibi bir fiyat band&#305;nda satabiliyoruz. 700-600 tl zarar ediyoruz. Fakat 2230 tl ald&#305;&#287;&#305;m&#305;z cihaz&#305; da&#351; &ccedil;atlas&#305;n en d&uuml;&#351;&uuml;k 2400&#039;e sat&#305;yoruz hatta 2700 2600 bu civarlara bile rahatl&#305;kla sat&#305;labiliyor kar bile ediyoruz.ine Bu sayede Yurt D&#305;&#351;&#305;ndan &#304;phone Almak mant&#305;kl&#305; bir hal al&#305;yor. Buradaki p&uuml;f nokta dolar kurunda ve ucuz olan &uuml;lkelerden almaken iyi &ouml;rnek abd.&Ccedil;&uuml;nk&uuml; almanyadan ald&#305;&#287;&#305;m&#305;z zaman 899&#128; &#351;uanki kur ile 3,020 tl geliyor. E&#287;er b&ouml;yle al&#305;p 2500 tl satarsak yine ayn&#305; zarar&#305; etmi&#351; oluruz fakat dedi&#287;im gibi abd den al&#305;p bu fiyatlara satarsak kar&#039;a bile ge&ccedil;iyoruz.
+
++ Son olarak da erken ula&#351;&#305;m cihaz &uuml;lkemizde sat&#305;&#351;a sunulmadan siz alm&#305;&#351; kullanmaya ba&#351;lam&#305;&#351; oluyorsuz.
+
+Yurt D&#305;&#351;&#305;ndan &#304;phone Alman&#305;n Eksileri;
+
+- &Uuml;r&uuml;nde uluslararas&#305; 1 y&#305;l garantisi oluyor ve bu cihaz&#305; t&uuml;rkiye garantili alacak olsan&#305;z 2 y&#305;l garnati s&uuml;reniz olacakt&#305;r.
+
+- Ma&#287;aza da al&#305;r almaz cihaz&#305; herzaman cihaz&#305; a&ccedil;ma taraftar&#305;y&#305;m bir s&#305;k&#305;nt&#305; olabilir diye ama yurtd&#305;&#351;&#305;ndan ba&#351;ka sizin yerinize ald&#305;&#287;&#305; zaman cihaz&#305; bu m&uuml;mk&uuml;n olmuyor az da olsa burada sorun &ccedil;&#305;kabiliyor.
+
+- Satarken ayn&#305; cihaz olmas&#305;na ra&#287;men dandik k&ouml;t&uuml; cihaz muamelesi g&ouml;r&uuml;yor malasef daha zor sat&#305;l&#305;yor.
+
+- Pasaport i&#351;lemleri &uuml;creti Ime&#305; kayd&#305;.
+
+Kay&#305;t i&#351;lemleriyle ilgili gerekli bilgilere buradan ula&#351;abirsiniz;
+.:MCKS-Mobil Cihaz Kayt Sistemi:.
+
+
+iphone7-gallery2-2016
+
+
+Siz yurtd&#305;&#351;&#305;ndan alma imkan&#305;n&#305;z olsa cihaz al&#305;rm&#305;yd&#305;n&#305;z ?
+
+Sizce yurtd&#305;&#351;&#305;ndan cihaz almak mant&#305;kl&#305;m&#305;.. ?
+
+( bu konu rehber olmas&#305; i&ccedil;in a&ccedil;&#305;lm&#305;&#351;t&#305;r l&uuml;tfen konuyu ba&#351;ka taraflara sapt&#305;rmayal&#305;m ki herkese yard&#305;mc&#305; olal&#305;m )
+
+iPhone 7&#039;nin resmi BAE fiyatlari burada: Buy iPhone 7 and iPhone 7 Plus - Apple (AE) Dubai&#039;de (Mall of the Emirates) ve Abu Dabi&#039;de (Yas Mall) birer adet Apple Store mevcut. Buralarda satilan cihazlar AE/A kodludur ve Facetime icermez. Ama cihazlar GSM oldugu icin garantileri Turkiye&#039;de gecerli. Resmi Dubai fiyatlari asagidaki gibi:
+
+iPhone 7 32GB 2599AED= 2125TL
+iPhone 7 128GB 2999AED= 2450TL
+iPhone 7 Plus 32GB 3099AED= 2530 TL
+
+Basliga giren ve son sayfada disinda hicbir sayfayi okumayanlar icin bir kez daha gelsin:
+
+1. ABD&#039;den al&#305;nan iPhone 7 i&ccedil;in A1778, iPhone 7 Plus icin A1784 model kodlu GSM cihazlar&#305;n garantisi T&uuml;rkiye&#039;de ge&ccedil;erli. Cihaz&#305;n sim free olmas&#305; &#351;art de&#287;il (ki &#351;u anda SIM free cihaz mevcut de&#287;il), full price/unlocked olarak al&#305;nmas&#305; yeterli. &#304;&ccedil;indeki AT&amp;T/T-mobile SIM kart&#305; &ccedil;&#305;kar&#305;p kendi SIM kart&#305;nla etkinle&#351;tirmelisin. Bu durum ABD &ccedil;&#305;k&#305;&#351;l&#305; LL/A par&ccedil;a nolu cihazlara &ouml;zel.
+
+2. ABD&#039;de sat&#305;lan A1660 ve A1661 model kodlu CDMA cihazlar ise T&uuml;rkiye&#039;de garanti d&#305;&#351;&#305; oluyor. Bu cihazlar ABD, &Ccedil;in, Porto Riko, Hong Kong, G.Kore, Japonya pazarlar&#305;ndaki operat&ouml;rlere y&ouml;nelik. Cihazlar T&uuml;rkiye&#039;de de &ccedil;al&#305;&#351;&#305;r ama garanti hizmeti alamazs&#305;n. Ayr&#305;ca Apple&#039;&#305;n sitesinde bu GSM/CDMA model ayr&#305;m&#305; i&ccedil;in &uuml;lke &uuml;lke kodlar mevcut. Her sene de yeni cihazlar i&ccedil;in g&uuml;ncelleniyor: View countries with supported LTE networks
+
+3. Arap cihazlar&#305;nda Facetime bulunmaz, suudi krall&#305;&#287;&#305;n&#305;n emriyle yasak (part nosu AB/A ve AE/A ile biten cihazlar). Ama cihazlar GSM&#039;dir, dolay&#305;s&#305;yla garantisi T&uuml;rkiye&#039;de ge&ccedil;erli. Arap &uuml;lkelerindeki telefoncularda &ccedil;ok ciddi seviyede karaborsa avrupa ve ABD cihaz&#305; da bulunuyor. Yani Dubai&#039;den Arabistan&#039;dan Facetime&#039;l&#305; cihaz da alabilirsiniz. Sadece koduna ve model numaras&#305;na dikkat edin. Avrupa &uuml;lkelerinden iPhone al&#305;rken model koduna bakmaya gerek yok. Avrupa cihazlar&#305;n&#305;n hepsinin garantisi TR&#039;de ge&ccedil;erli.
+
+4. Bir iPhone&#039;un hangi &uuml;lke &ccedil;&#305;k&#305;&#351;l&#305; oldu&#287;unu nas&#305;l anlar&#305;z? Kutunun alt&#305;ndaki etikete bakar&#305;z. Etikette seri no, IMEI no ve model no&#039;nun oldu&#287;u yerde bir de Part No vard&#305;r. Her iPhone modelinin part nosu ayn&#305; olmakla birlikte, son k&#305;s&#305;mdaki harfler cihaz&#305;n &uuml;lkesini g&ouml;sterir. LL/A ise ABD cihaz&#305;d&#305;r. TU/A ise T&uuml;rkiye cihaz&#305;d&#305;r (24 ay garantili), B/A ise &#304;ngiltere cihaz&#305;d&#305;r, ZD/A ise Fransa/Almanya/&#304;svi&ccedil;re/Hollanda cihaz&#305;d&#305;r... Liste b&ouml;yle gider. Kutuyu &ccedil;evirip alt&#305;na bakman&#305;z yeterli.
+
+&Ouml;rne&#287;in iPhone 6S 16GB Space Gray i&ccedil;in:
+
+MKQJ2LL/A - ABD &ccedil;&#305;k&#305;&#351;l&#305; cihaz
+MKQJ2B/A - &#304;ngiltere/&#304;rlanda
+MKQJ2D/A - Almanya
+MKQJ2E/A - Meksika
+MKQJ2FD/A - Avusturya
+MKQJ2ZD/A - Fransa/Hollanda
+MKQJ2HN/A - Hindistan
+MKQJ2IP/A - &#304;talya (&#351;u anda QL/A)
+MKQJ2J/A - Japonya
+MKQJ2GR/A - Yunanistan
+MKQJ2X/A - Avustralya/Y.Zelanda
+MKQJ2ZA/A - Singapur
+MKQJ2ZP/A - Hong Kong
+MKQJ2AB/A - S. Arabistan, M&#305;s&#305;r, &Uuml;rd&uuml;n &ccedil;&#305;k&#305;&#351;l&#305; cihaz (Facetime yok)
+MKQJ2AE/E - BAE &ccedil;&#305;k&#305;&#351;l&#305; cihaz (Facetime yok)
+...
+...
+MKQJ2TU/A - T&uuml;rkiye &ccedil;&#305;k&#305;&#351;l&#305; cihaz (24 ay Apple T&uuml;rkiye garantili &uuml;r&uuml;n/Vatan, Bimeks, Teknosa, Turkcell, mahalle bakkal&#305;, telefoncu H&uuml;seyin day&#305; nereden al&#305;rsan al fark etmez)
+
+Kodlar stok/lojistik politikalar&#305;na g&ouml;re bazen de&#287;i&#351;mekle birlikte genel olarak bu &#351;ekilde. Ald&#305;&#287;&#305;n&#305;z cihaz&#305;n kutusunun alt&#305;na bak&#305;p g&ouml;rebilirsiniz. Ayn&#305; &#351;ekilde Ayarlar &gt; Genel &gt; Hakk&#305;nda b&ouml;l&uuml;m&uuml;nden de g&ouml;rebilirsiniz.
+
+d43457d7660db1b1595cd3cb7b9a4cb4.jpg
+
+
+
+iPhone 7&#039;nin fiyati hangi ulkede ne kadar?
+Konuya komsuya, bacanaga, mahalle bakkalina sormaya gerek yok. Apple urunlerinin tum dunyadaki fiyatlarini ilgili ulkenin sitesinden (cogunlukla) ogrenebilirsin. Bu baglantiya tikla ulkeyi sec ve acilan sayfadan iPhone linkine tikla: Choose your country or region - Apple Ya da sadece asagidaki linklerdeki /uk/ vb. ulke kodunu degistir. Almanya icin /de/ yap, Fransa icin /fr/ yap, Japonca icin /jp/ yap, Dubai icin /ae/ yap...
+
+Ingiltere iPhone 7 fiyatlari: iPhone 7
+Avustralya iPhone 7 fiyatlari: iPhone 7
+&Ccedil;ekya iPhone 7 fiyatlari: Koupit iPhone 7 a iPhone 7 Plus - Apple (CZ)
+Isvicre iPhone 7 fiyatlari: http://www.apple.com/ch...hop/buy-iphone/iphone-7
+Dubai iPhone 7 fiyatlari: Buy iPhone 7 and iPhone 7 Plus - Apple (AE)
+Almanya iPhone 7 fiyatlari: iPhone 7
+...
+...
+Turkiye iPhone 7 fiyatlari: iPhone (YAKINDA)
+
+iPhone&#039;un kalan garanti s&uuml;resi nas&#305;l sorgulan&#305;r?
+Yeni ald&#305;&#287;&#305;n cihaz&#305;n daha &ouml;nce kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; kontrol etmek i&ccedil;in veya mevcut kendi cihaz&#305;n&#305;n kalan garanti s&uuml;resini &ouml;&#287;renmek i&ccedil;in bu sayfaya cihaz&#305;n serinosunu girmen yeterli: Check Your Service and Support Coverage - Apple Support Yeni ald&#305;&#287;&#305;n cihaz&#305;n kutusunun alt&#305;nda seri no yazar. E&#287;er cihaz daha &ouml;nce SIM kart tak&#305;l&#305;p etkinle&#351;tirilmi&#351;se, sorgunun sonucunda kalan garanti s&uuml;resini g&ouml;r&uuml;rs&uuml;n. Yani cihaz yeniden jelatine sar&#305;l&#305;p s&#305;f&#305;r diye sat&#305;l&#305;yor demektir. O cihazdan uzak dur. A1660/A1661 cihaz&#305;n&#305; sorgulad&#305;&#287;&#305;nda da garanti kapsam&#305;nda g&ouml;r&uuml;n&uuml;rs&uuml;n ama yine de Apple T&uuml;rkiye garanti hizmeti vermez.[/quote]"></td><td align="right"><a href="#1" onclick="
+                     if(typeof addtext == 'function') {
+                         addtext(document.getElementById('post35').value);
+                     }
+                ">[al&#305;nt&#305; yap]</a></td></tr></table><div style="padding-left:10px;">Merhaba arkada&#351;lar.<br>
+<br>
+&#304;phone 7 ve 7 plus&#039;&#305;n &ccedil;&#305;kmas&#305; ile birlikte ve &uuml;lkemizde de vergini dilimin &ccedil;ok olmas&#305; sebebiyle imkan&#305; olan yurtd&#305;&#351;&#305;ndan cihaz almaya y&ouml;neliyor.<br>
+Yurtd&#305;&#351;&#305;ndan cihaz alman&#305;n art&#305;lar&#305;n&#305; ve eksilerini sizler i&ccedil;in s&#305;ralayay&#305;m...<br>
+<br>
+iphone7-gallery1-2016<br>
+<br>
+Yurt D&#305;&#351;&#305;ndan &#304;phone Alman&#305;n Art&#305;lar&#305;;<br>
+<br>
++ &Uuml;cret olarak &ccedil;ok tatminkar. &Ouml;rnegim ABD&#039;den bir &#304;phone 7 plus almak istedi&#287;imiz de $769 buda &#351;uan ki kur&#039;a g&ouml;re 2.230 tl k&uuml;s&uuml;r bir fiyata denk geliyor. Bu cihaz &uuml;lkemiz de 3899 tl band&#305;nda sat&#305;&#351;a sunulaca&#287;&#305;n&#305; d&uuml;&#351;&uuml;n&uuml;rsek.3899-2230: 1669 tl gibi ciddi bir &uuml;cret cebimizde kal&#305;yor. Bu sayede Yurt D&#305;&#351;&#305;ndan &#304;phone Almak mant&#305;kl&#305; bir hal al&#305;yor.<br>
+<br>
++ &#304;kinci el asl&#305;nda bu b&uuml;y&uuml;k bi soru i&#351;areti onuda kendi yorumumla sizlere &#351;&ouml;yle &ouml;zetliyim;<br>
+&#350;imdi &ouml;rne&#287;in 3899 tl &uuml;cret &ouml;deyerek &#304;phone 7 plus 32gb sat&#305;n ald&#305;k. Bu cihaz&#305; 1 sene sonra satmak istedi&#287;imizde 7s &ccedil;&#305;kt&#305;&#287;&#305;nda 3200-3100 tl gibi bir fiyat band&#305;nda satabiliyoruz. 700-600 tl zarar ediyoruz. Fakat 2230 tl ald&#305;&#287;&#305;m&#305;z cihaz&#305; da&#351; &ccedil;atlas&#305;n en d&uuml;&#351;&uuml;k 2400&#039;e sat&#305;yoruz hatta 2700 2600 bu civarlara bile rahatl&#305;kla sat&#305;labiliyor kar bile ediyoruz.ine Bu sayede Yurt D&#305;&#351;&#305;ndan &#304;phone Almak mant&#305;kl&#305; bir hal al&#305;yor. Buradaki p&uuml;f nokta dolar kurunda ve ucuz olan &uuml;lkelerden almaken iyi &ouml;rnek abd.&Ccedil;&uuml;nk&uuml; almanyadan ald&#305;&#287;&#305;m&#305;z zaman 899&#128; &#351;uanki kur ile 3,020 tl geliyor. E&#287;er b&ouml;yle al&#305;p 2500 tl satarsak yine ayn&#305; zarar&#305; etmi&#351; oluruz fakat dedi&#287;im gibi abd den al&#305;p bu fiyatlara satarsak kar&#039;a bile ge&ccedil;iyoruz.<br>
+<br>
++ Son olarak da erken ula&#351;&#305;m cihaz &uuml;lkemizde sat&#305;&#351;a sunulmadan siz alm&#305;&#351; kullanmaya ba&#351;lam&#305;&#351; oluyorsuz.<br>
+<br>
+Yurt D&#305;&#351;&#305;ndan &#304;phone Alman&#305;n Eksileri;<br>
+<br>
+- &Uuml;r&uuml;nde uluslararas&#305; 1 y&#305;l garantisi oluyor ve bu cihaz&#305; t&uuml;rkiye garantili alacak olsan&#305;z 2 y&#305;l garnati s&uuml;reniz olacakt&#305;r.<br>
+<br>
+- Ma&#287;aza da al&#305;r almaz cihaz&#305; herzaman cihaz&#305; a&ccedil;ma taraftar&#305;y&#305;m bir s&#305;k&#305;nt&#305; olabilir diye ama yurtd&#305;&#351;&#305;ndan ba&#351;ka sizin yerinize ald&#305;&#287;&#305; zaman cihaz&#305; bu m&uuml;mk&uuml;n olmuyor az da olsa burada sorun &ccedil;&#305;kabiliyor.<br>
+<br>
+- Satarken ayn&#305; cihaz olmas&#305;na ra&#287;men dandik k&ouml;t&uuml; cihaz muamelesi g&ouml;r&uuml;yor malasef daha zor sat&#305;l&#305;yor.<br>
+<br>
+- Pasaport i&#351;lemleri &uuml;creti Ime&#305; kayd&#305;.<br>
+<br>
+Kay&#305;t i&#351;lemleriyle ilgili gerekli bilgilere buradan ula&#351;abirsiniz;<br>
+.:MCKS-Mobil Cihaz Kayt Sistemi:.<br>
+<br>
+<br>
+iphone7-gallery2-2016<br>
+<br>
+<br>
+Siz yurtd&#305;&#351;&#305;ndan alma imkan&#305;n&#305;z olsa cihaz al&#305;rm&#305;yd&#305;n&#305;z ?<br>
+<br>
+Sizce yurtd&#305;&#351;&#305;ndan cihaz almak mant&#305;kl&#305;m&#305;.. ?<br>
+<br>
+( bu konu rehber olmas&#305; i&ccedil;in a&ccedil;&#305;lm&#305;&#351;t&#305;r l&uuml;tfen konuyu ba&#351;ka taraflara sapt&#305;rmayal&#305;m ki herkese yard&#305;mc&#305; olal&#305;m )<br>
+<br>
+iPhone 7&#039;nin resmi BAE fiyatlari burada: Buy iPhone 7 and iPhone 7 Plus - Apple (AE) Dubai&#039;de (Mall of the Emirates) ve Abu Dabi&#039;de (Yas Mall) birer adet Apple Store mevcut. Buralarda satilan cihazlar AE/A kodludur ve Facetime icermez. Ama cihazlar GSM oldugu icin garantileri Turkiye&#039;de gecerli. Resmi Dubai fiyatlari asagidaki gibi:<br>
+<br>
+iPhone 7 32GB 2599AED= 2125TL<br>
+iPhone 7 128GB 2999AED= 2450TL<br>
+iPhone 7 Plus 32GB 3099AED= 2530 TL<br>
+<br>
+Basliga giren ve son sayfada disinda hicbir sayfayi okumayanlar icin bir kez daha gelsin:<br>
+<br>
+1. ABD&#039;den al&#305;nan iPhone 7 i&ccedil;in A1778, iPhone 7 Plus icin A1784 model kodlu GSM cihazlar&#305;n garantisi T&uuml;rkiye&#039;de ge&ccedil;erli. Cihaz&#305;n sim free olmas&#305; &#351;art de&#287;il (ki &#351;u anda SIM free cihaz mevcut de&#287;il), full price/unlocked olarak al&#305;nmas&#305; yeterli. &#304;&ccedil;indeki AT&amp;T/T-mobile SIM kart&#305; &ccedil;&#305;kar&#305;p kendi SIM kart&#305;nla etkinle&#351;tirmelisin. Bu durum ABD &ccedil;&#305;k&#305;&#351;l&#305; LL/A par&ccedil;a nolu cihazlara &ouml;zel.<br>
+<br>
+2. ABD&#039;de sat&#305;lan A1660 ve A1661 model kodlu CDMA cihazlar ise T&uuml;rkiye&#039;de garanti d&#305;&#351;&#305; oluyor. Bu cihazlar ABD, &Ccedil;in, Porto Riko, Hong Kong, G.Kore, Japonya pazarlar&#305;ndaki operat&ouml;rlere y&ouml;nelik. Cihazlar T&uuml;rkiye&#039;de de &ccedil;al&#305;&#351;&#305;r ama garanti hizmeti alamazs&#305;n. Ayr&#305;ca Apple&#039;&#305;n sitesinde bu GSM/CDMA model ayr&#305;m&#305; i&ccedil;in &uuml;lke &uuml;lke kodlar mevcut. Her sene de yeni cihazlar i&ccedil;in g&uuml;ncelleniyor: View countries with supported LTE networks<br>
+<br>
+3. Arap cihazlar&#305;nda Facetime bulunmaz, suudi krall&#305;&#287;&#305;n&#305;n emriyle yasak (part nosu AB/A ve AE/A ile biten cihazlar). Ama cihazlar GSM&#039;dir, dolay&#305;s&#305;yla garantisi T&uuml;rkiye&#039;de ge&ccedil;erli. Arap &uuml;lkelerindeki telefoncularda &ccedil;ok ciddi seviyede karaborsa avrupa ve ABD cihaz&#305; da bulunuyor. Yani Dubai&#039;den Arabistan&#039;dan Facetime&#039;l&#305; cihaz da alabilirsiniz. Sadece koduna ve model numaras&#305;na dikkat edin. Avrupa &uuml;lkelerinden iPhone al&#305;rken model koduna bakmaya gerek yok. Avrupa cihazlar&#305;n&#305;n hepsinin garantisi TR&#039;de ge&ccedil;erli.<br>
+<br>
+4. Bir iPhone&#039;un hangi &uuml;lke &ccedil;&#305;k&#305;&#351;l&#305; oldu&#287;unu nas&#305;l anlar&#305;z? Kutunun alt&#305;ndaki etikete bakar&#305;z. Etikette seri no, IMEI no ve model no&#039;nun oldu&#287;u yerde bir de Part No vard&#305;r. Her iPhone modelinin part nosu ayn&#305; olmakla birlikte, son k&#305;s&#305;mdaki harfler cihaz&#305;n &uuml;lkesini g&ouml;sterir. LL/A ise ABD cihaz&#305;d&#305;r. TU/A ise T&uuml;rkiye cihaz&#305;d&#305;r (24 ay garantili), B/A ise &#304;ngiltere cihaz&#305;d&#305;r, ZD/A ise Fransa/Almanya/&#304;svi&ccedil;re/Hollanda cihaz&#305;d&#305;r... Liste b&ouml;yle gider. Kutuyu &ccedil;evirip alt&#305;na bakman&#305;z yeterli.<br>
+<br>
+&Ouml;rne&#287;in iPhone 6S 16GB Space Gray i&ccedil;in:<br>
+<br>
+MKQJ2LL/A - ABD &ccedil;&#305;k&#305;&#351;l&#305; cihaz<br>
+MKQJ2B/A - &#304;ngiltere/&#304;rlanda<br>
+MKQJ2D/A - Almanya<br>
+MKQJ2E/A - Meksika<br>
+MKQJ2FD/A - Avusturya<br>
+MKQJ2ZD/A - Fransa/Hollanda<br>
+MKQJ2HN/A - Hindistan<br>
+MKQJ2IP/A - &#304;talya (&#351;u anda QL/A)<br>
+MKQJ2J/A - Japonya<br>
+MKQJ2GR/A - Yunanistan<br>
+MKQJ2X/A - Avustralya/Y.Zelanda<br>
+MKQJ2ZA/A - Singapur<br>
+MKQJ2ZP/A - Hong Kong<br>
+MKQJ2AB/A - S. Arabistan, M&#305;s&#305;r, &Uuml;rd&uuml;n &ccedil;&#305;k&#305;&#351;l&#305; cihaz (Facetime yok)<br>
+MKQJ2AE/E - BAE &ccedil;&#305;k&#305;&#351;l&#305; cihaz (Facetime yok)<br>
+...<br>
+...<br>
+MKQJ2TU/A - T&uuml;rkiye &ccedil;&#305;k&#305;&#351;l&#305; cihaz (24 ay Apple T&uuml;rkiye garantili &uuml;r&uuml;n/Vatan, Bimeks, Teknosa, Turkcell, mahalle bakkal&#305;, telefoncu H&uuml;seyin day&#305; nereden al&#305;rsan al fark etmez)<br>
+<br>
+Kodlar stok/lojistik politikalar&#305;na g&ouml;re bazen de&#287;i&#351;mekle birlikte genel olarak bu &#351;ekilde. Ald&#305;&#287;&#305;n&#305;z cihaz&#305;n kutusunun alt&#305;na bak&#305;p g&ouml;rebilirsiniz. Ayn&#305; &#351;ekilde Ayarlar &gt; Genel &gt; Hakk&#305;nda b&ouml;l&uuml;m&uuml;nden de g&ouml;rebilirsiniz.<br>
+<br>
+d43457d7660db1b1595cd3cb7b9a4cb4.jpg<br>
+<br>
+<br>
+<br>
+iPhone 7&#039;nin fiyati hangi ulkede ne kadar?<br>
+Konuya komsuya, bacanaga, mahalle bakkalina sormaya gerek yok. Apple urunlerinin tum dunyadaki fiyatlarini ilgili ulkenin sitesinden (cogunlukla) ogrenebilirsin. Bu baglantiya tikla ulkeyi sec ve acilan sayfadan iPhone linkine tikla: Choose your country or region - Apple Ya da sadece asagidaki linklerdeki /uk/ vb. ulke kodunu degistir. Almanya icin /de/ yap, Fransa icin /fr/ yap, Japonca icin /jp/ yap, Dubai icin /ae/ yap...<br>
+<br>
+Ingiltere iPhone 7 fiyatlari: iPhone 7<br>
+Avustralya iPhone 7 fiyatlari: iPhone 7<br>
+&Ccedil;ekya iPhone 7 fiyatlari: Koupit iPhone 7 a iPhone 7 Plus - Apple (CZ)<br>
+Isvicre iPhone 7 fiyatlari: http://www.apple.com/ch...hop/buy-iphone/iphone-7<br>
+Dubai iPhone 7 fiyatlari: Buy iPhone 7 and iPhone 7 Plus - Apple (AE)<br>
+Almanya iPhone 7 fiyatlari: iPhone 7<br>
+...<br>
+...<br>
+Turkiye iPhone 7 fiyatlari: iPhone (YAKINDA)<br>
+<br>
+iPhone&#039;un kalan garanti s&uuml;resi nas&#305;l sorgulan&#305;r?<br>
+Yeni ald&#305;&#287;&#305;n cihaz&#305;n daha &ouml;nce kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; kontrol etmek i&ccedil;in veya mevcut kendi cihaz&#305;n&#305;n kalan garanti s&uuml;resini &ouml;&#287;renmek i&ccedil;in bu sayfaya cihaz&#305;n serinosunu girmen yeterli: Check Your Service and Support Coverage - Apple Support Yeni ald&#305;&#287;&#305;n cihaz&#305;n kutusunun alt&#305;nda seri no yazar. E&#287;er cihaz daha &ouml;nce SIM kart tak&#305;l&#305;p etkinle&#351;tirilmi&#351;se, sorgunun sonucunda kalan garanti s&uuml;resini g&ouml;r&uuml;rs&uuml;n. Yani cihaz yeniden jelatine sar&#305;l&#305;p s&#305;f&#305;r diye sat&#305;l&#305;yor demektir. O cihazdan uzak dur. A1660/A1661 cihaz&#305;n&#305; sorgulad&#305;&#287;&#305;nda da garanti kapsam&#305;nda g&ouml;r&uuml;n&uuml;rs&uuml;n ama yine de Apple T&uuml;rkiye garanti hizmeti vermez.</div></td></tr></table><br><div class="forumueberschrift">Cevapla:</div><a name="1"></a><br><form action="topic-1-1-Apple.htm#1" method="post" name="post"><table width="100%" class="forumtabelle"><tr><td></td><td style="font-size:10px;">Nickin:<br><input type="text" name="modulenter[nick]" value="" tabindex="1"></td></tr><tr><td valign="top" align="left"><table width="100" class="forumtabelle" cellspacing="0" cellpadding="2"><tr><td align="center"><a href="#1" onclick="javascript:addtext(':D ');"><img src="../smiles/icon_biggrin.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':) ');"><img src="../smiles/icon_smile.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':( ');"><img src="../smiles/icon_sad.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':o ');"><img src="../smiles/icon_surprised.gif" width="15" height="15" border="0" alt=""></a></td></tr><tr><td align="center"><a href="#1" onclick="javascript:addtext(':shock: ');"><img src="../smiles/icon_eek.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':? ');"><img src="../smiles/icon_confused.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext('8) ');"><img src="../smiles/icon_cool.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':lol: ');"><img src="../smiles/icon_lol.gif" width="15" height="15" border="0" alt=""></a></td></tr><tr><td align="center"><a href="#1" onclick="javascript:addtext(':x ');"><img src="../smiles/icon_mad.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':P ');"><img src="../smiles/icon_razz.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':oops: ');"><img src="../smiles/icon_redface.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':cry: ');"><img src="../smiles/icon_cry.gif" width="15" height="15" border="0" alt=""></a></td></tr><tr><td align="center"><a href="#1" onclick="javascript:addtext(':evil: ');"><img src="../smiles/icon_evil.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':twisted: ');"><img src="../smiles/icon_twisted.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':roll: ');"><img src="../smiles/icon_rolleyes.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':wink: ');"><img src="../smiles/icon_wink.gif" width="15" height="15" border="0" alt=""></a></td></tr><tr><td align="center"><a href="#1" onclick="javascript:addtext(':!: ');"><img src="../smiles/icon_exclaim.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':?: ');"><img src="../smiles/icon_question.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':idea: ');"><img src="../smiles/icon_idea.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':arrow: ');"><img src="../smiles/icon_arrow.gif" width="15" height="15" border="0" alt=""></a></td></tr><tr><td align="center"><a href="#1" onclick="javascript:addtext(':| ');"><img src="../smiles/icon_neutral.gif" width="15" height="15" border="0" alt=""></a></td><td align="center"><a href="#1" onclick="javascript:addtext(':mrgreen: ');"><img src="../smiles/icon_mrgreen.gif" width="15" height="15" border="0" alt=""></a></td></tr></table><br>
+<script language="JavaScript" type="text/javascript">
+// Startup variables
+var imageTag = false;
+var theSelection = false;
+
+// Check for Browser & Platform for PC & IE specific bits
+// More details from: http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html
+var clientPC = navigator.userAgent.toLowerCase(); // Get client info
+var clientVer = parseInt(navigator.appVersion); // Get browser version
+
+var is_ie = ((clientPC.indexOf("msie") != -1) && (clientPC.indexOf("opera") == -1));
+var is_nav = ((clientPC.indexOf('mozilla')!=-1) && (clientPC.indexOf('spoofer')==-1)
+                && (clientPC.indexOf('compatible') == -1) && (clientPC.indexOf('opera')==-1)
+                && (clientPC.indexOf('webtv')==-1) && (clientPC.indexOf('hotjava')==-1));
+var is_moz = 0;
+
+var is_win = ((clientPC.indexOf("win")!=-1) || (clientPC.indexOf("16bit") != -1));
+var is_mac = (clientPC.indexOf("mac")!=-1);
+
+// Helpline messages
+b_help = unescape("Metin koyu olsun: [b]Text[/b] (alt+b)");
+i_help = unescape("Metin el yaz%u0131s%u0131 %u015Feklinde olsun: [i]Text[/i] (alt+i)");
+u_help = unescape("Alt%u0131 %u00E7izili: [u]Text[/u] (alt+u)");
+q_help = unescape("Al%u0131nt%u0131: [quote]Text[/quote] (alt+q)");
+c_help = unescape("Kodu g%u00F6ster: [code]Code[/code] (alt+c)");
+l_help = unescape("Liste: [list]Text[/list] (alt+l)");
+o_help = unescape("S%u0131ralanm%u0131%u015F liste: [list=]Text[/list] (alt+o)");
+p_help = unescape("Resim ekle: [img]http://URL_des_Bildes[/img] (alt+p)");
+w_help = unescape("URL ekle: [url]http://URL[/url] oder [url=http://url]URL Text[/url] (alt+w)");
+a_help = unescape("B%u00FCt%u00FCn a%u00E7%u0131k BBKodlar%u0131n%u0131 kapat");
+s_help = unescape("Metin rengi: [color=red]Text[/color] Ipucu: Renk=#FF0000 da kullanabilirsin");
+f_help = unescape("Metin b%u00FCy%u00FCkl%u00FC%u011F%u00FC: [size=x-small]Kleiner Text[/size]");
+
+// Define the bbCode tags
+bbcode = new Array();
+bbtags = new Array('[b]','[/b]','[i]','[/i]','[u]','[/u]','[quote]','[/quote]','[code]','[/code]','[list]','[/list]','[list=]','[/list]','[img]','[/img]','[url]','[/url]');
+imageTag = false;
+
+// Replacement for arrayname.length property
+function getarraysize(thearray) {
+	for (i = 0; i < thearray.length; i++) {
+		if ((thearray[i] == "undefined") || (thearray[i] == "") || (thearray[i] == null))
+			return i;
+		}
+	return thearray.length;
+}
+
+function addtext(text)
+{
+document.getElementById('forumtext').value=document.getElementById('forumtext').value+text;
+}
+
+// Replacement for arrayname.push(value) not implemented in IE until version 5.5
+// Appends element to the array
+function arraypush(thearray,value) {
+	thearray[ getarraysize(thearray) ] = value;
+}
+
+// Replacement for arrayname.pop() not implemented in IE until version 5.5
+// Removes and returns the last element of an array
+function arraypop(thearray) {
+	thearraysize = getarraysize(thearray);
+	retval = thearray[thearraysize - 1];
+	delete thearray[thearraysize - 1];
+	return retval;
+}
+
+function helpline(help) {
+	document.getElementById('helpbox').value = eval(help + "_help");
+}
+
+function bbstyle(bbnumber) {
+	var txtarea = document.getElementById('forumtext');
+
+	txtarea.focus();
+
+	donotinsert = false;
+	theSelection = false;
+	bblast = 0;
+
+
+	if (bbnumber == -1) { // Close all open tags & default button names
+		while (bbcode[0]) {
+			butnumber = arraypop(bbcode) - 1;
+			txtarea.value += bbtags[butnumber + 1];
+			buttext = eval('document.post.addbbcode' + butnumber + '.value');
+			eval('document.post.addbbcode' + butnumber + '.value ="' + buttext.substr(0,(buttext.length - 1)) + '"');
+		}
+		imageTag = false; // All tags are closed including image tags :D
+		txtarea.focus();
+		return;
+	}
+
+	if ((clientVer >= 4) && is_ie && is_win)
+	{
+		theSelection = document.selection.createRange().text; // Get text selection
+		if (theSelection) {
+			// Add tags around selection
+			document.selection.createRange().text = bbtags[bbnumber] + theSelection + bbtags[bbnumber+1];
+			txtarea.focus();
+			theSelection = '';
+			return;
+		}
+	}
+	else if (txtarea.selectionEnd && (txtarea.selectionEnd - txtarea.selectionStart > 0))
+	{
+		mozWrap(txtarea, bbtags[bbnumber], bbtags[bbnumber+1]);
+		return;
+	}
+
+	// Find last occurance of an open tag the same as the one just clicked
+	for (i = 0; i < bbcode.length; i++) {
+		if (bbcode[i] == bbnumber+1) {
+			bblast = i;
+			donotinsert = true;
+		}
+	}
+
+	if (donotinsert) {		// Close all open tags up to the one just clicked & default button names
+		while (bbcode[bblast]) {
+				butnumber = arraypop(bbcode) - 1;
+				txtarea.value += bbtags[butnumber + 1];
+				buttext = eval('document.post.addbbcode' + butnumber + '.value');
+				eval('document.post.addbbcode' + butnumber + '.value ="' + buttext.substr(0,(buttext.length - 1)) + '"');
+				imageTag = false;
+			}
+			txtarea.focus();
+			return;
+	} else { // Open tags
+
+		if (imageTag && (bbnumber != 14)) {		// Close image tag before adding another
+			txtarea.value += bbtags[15];
+			lastValue = arraypop(bbcode) - 1;	// Remove the close image tag from the list
+			document.post.addbbcode14.value = "Img";	// Return button back to normal state
+			imageTag = false;
+		}
+
+		// Open tag
+		txtarea.value += bbtags[bbnumber];
+		if ((bbnumber == 14) && (imageTag == false)) imageTag = 1; // Check to stop additional tags after an unclosed image tag
+		arraypush(bbcode,bbnumber+1);
+		eval('document.post.addbbcode'+bbnumber+'.value += "*"');
+		txtarea.focus();
+		return;
+	}
+	storeCaret(txtarea);
+}
+
+function bbfontstyle(bbopen, bbclose) {
+	var txtarea = document.getElementById('forumtext');
+
+	if ((clientVer >= 4) && is_ie && is_win) {
+		theSelection = document.selection.createRange().text;
+		if (!theSelection) {
+			txtarea.value += bbopen + bbclose;
+			txtarea.focus();
+			return;
+		}
+		document.selection.createRange().text = bbopen + theSelection + bbclose;
+		txtarea.focus();
+
+		return;
+	}
+	else if (txtarea.selectionEnd && (txtarea.selectionEnd - txtarea.selectionStart > 0))
+	{
+		mozWrap(txtarea, bbopen, bbclose);
+		return;
+	}
+	else
+	{
+		txtarea.value += bbopen + bbclose;
+		txtarea.focus();
+	}
+	storeCaret(txtarea);
+	alert(txtarea.value);
+}
+</script>
+
+	<table width="100" border="0" cellspacing="0" cellpadding="2">
+		  <tr align="center" valign="middle">
+			<td><span>
+
+			  <input type="button" class="button" accesskey="b" name="addbbcode0" value=" B " style="font-weight:bold; width: 30px" onclick="bbstyle(0)" onmouseover="helpline('b')">
+			  </span></td>
+			<td><span>
+			  <input type="button" class="button" accesskey="i" name="addbbcode2" value=" i " style="font-style:italic; width: 30px" onclick="bbstyle(2)" onmouseover="helpline('i')">
+			  </span></td>
+			<td><span>
+			  <input type="button" class="button" accesskey="u" name="addbbcode4" value=" u " style="text-decoration: underline; width: 30px" onclick="bbstyle(4)" onmouseover="helpline('u')">
+			  </span></td></tr>
+</table>
+<table width="100">
+<tr><td>
+<input type="button" class="button" accesskey="q" name="addbbcode6" value="Quote" style="width: 50px" onclick="bbstyle(6)" onmouseover="helpline('q')">
+</td>
+			<td>
+			  <input type="button" class="button" accesskey="c" name="addbbcode8" value="Code" style="width: 40px" onclick="bbstyle(8)" onmouseover="helpline('c')">
+			  </td>
+		  </tr>
+</table>
+<table>
+		  <tr>
+			<td colspan="9">
+
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td><span>&nbsp;Metin rengi:<br>
+<select name="addbbcode18" onchange="bbfontstyle('[color=' + this.form.addbbcode18.options[this.form.addbbcode18.selectedIndex].value + ']', '[/color]');this.selectedIndex=0;" onmouseover="helpline('s')">
+					  <option style="color:black; background-color: #FAFAFA" value="#444444" selected="">Standart</option>
+					  <option style="color:darkred; background-color: #FAFAFA" value="darkred">Koyu k&#305;rm&#305;z&#305;</option>
+					  <option style="color:red; background-color: #FAFAFA" value="red">k&#305;rm&#305;z&#305;</option>
+					  <option style="color:orange; background-color: #FAFAFA" value="orange">Turuncu</option>
+					  <option style="color:brown; background-color: #FAFAFA" value="brown">Kahverengi</option>
+					  <option style="color:yellow; background-color: #FAFAFA" value="yellow">Sari</option>
+					  <option style="color:green; background-color: #FAFAFA" value="green">Ye&#351;il</option>
+					  <option style="color:olive; background-color: #FAFAFA" value="olive">Zeytin</option>
+					  <option style="color:cyan; background-color: #FAFAFA" value="cyan">Cyan</option>
+
+					  <option style="color:blue; background-color: #FAFAFA" value="blue">Mavi</option>
+					  <option style="color:darkblue; background-color: #FAFAFA" value="darkblue">Koyu mavi</option>
+					  <option style="color:indigo; background-color: #FAFAFA" value="indigo">Indigo</option>
+					  <option style="color:violet; background-color: #FAFAFA" value="violet">Leylak</option>
+					  <option style="color:white; background-color: #FAFAFA" value="white">Beyaz</option>
+					  <option style="color:black; background-color: #FAFAFA" value="black">Siyah</option>
+					</select>
+<br>&nbsp;Metin b&#252;y&#252;kl&#252;&#287;&#252;:<br><select name="addbbcode20" onchange="bbfontstyle('[size=' + this.form.addbbcode20.options[this.form.addbbcode20.selectedIndex].value + ']', '[/size]')" onmouseover="helpline('f')">
+					  <option value="7">Minicik</option>
+					  <option value="9">K&#252;&#231;&#252;k</option>
+					  <option value="12" selected="">Normal</option>
+					  <option value="18">B&#252;y&#252;k</option>
+					  <option value="24">Kocaman</option>
+					</select>
+					</span></td>
+				  <td nowrap="nowrap" align="right"></td>
+				</tr>
+			  </table>
+			  </td></tr></table>
+<span class="gensmall"><a href="javascript:bbstyle(-1)" onmouseover="helpline('a')">Tag leri kapat</a></span>
+</td><td valign="top"><input type="text" name="helpbox" id="helpbox" size="65" maxlength="200" style="width:370px; font-size:10px;" class="hilfe" value="Metnin:"><textarea name="modulenter[text]" id="forumtext" style="width:95%;height:250px;" rows="20" cols="20" tabindex="3"></textarea></td></tr></table><input type="hidden" name="mode" value="answer"><div style="padding-left:130px;"><input type="submit" value="Mesaj&#305; yolla" tabindex="4"></div><input type="hidden" name="email" value="AFj2ZQDhZGxfZQR1Zv40YQR4ZwpkYvj1Zmp4Zmp="></form><br><hr style="border:solid 0px;background-color:#C0C0C0;height:1px;"><br>B&#252;t&#252;n konular: 89<br>B&#252;t&#252;n postalar: 103<br>B&#252;t&#252;n kullan&#305;c&#305;lar: 2<br>&#350;u anda Online olan (kay&#305;tl&#305;) kullan&#305;c&#305;lar: Hi&#231;kimse <img src="../smiles/icon_cry.gif" width="15" height="15" border="0" alt="crying smiley"><div class="OUTBRAIN" data-ob-contenturl="https://torco.tr.gg/Forum/topic-1-1-Apple.htm" data-widget-id="AR_1" data-ob-installation-key="DEDER1336F53KG67MGDL4PLCO">&nbsp;</div>				</div>
+				<div id="counter"><span></span></div>
+				<div id="post_content"></div>
+				<div id="below_content"><style type="text/css">* {cursor: url(../cursors/cur-8/cur740.ani), url(../cursors/cur-8/cur740.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/01/22/night-diamond-20.html" target="_blank" title="Night Diamond"><img src="../cursor.png" border="0" alt="Night Diamond" style="position:absolute; top: 0px; right: 0px;"></a></div>				<div id="sidebar_container">
+					<h2 id="sidebar_heading"><span></span></h2>
+					<div id="sidebar_content"></div>
+				</div>
+			</div>
+		</div>
+		</div><div id="alt"><table width="780" height="35" cellspacing="1" cellpadding="1" border="0">     <tbody>         <tr>             <td style="text-align: left;">&#160;Copyright 2022 <a href="https://www.instagram.com/mustfator/" target="_blank" _fcksavedurl="https://www.instagram.com/mustfator/" target="_blank">Mustafa TOR</a> | T&#252;m Haklar&#305; Sakl&#305;d&#305;r. |   <a href="http://www.ipadresi.net" title="ip adresi"><img src="https://in3.sitekodlari.com/ipadresi2.php" border="0" alt="ip adresi"></a>   </td>             <td style="text-align: right;"><a href="../index.htm" _fcksavedurl="/" target="_blank"><img alt="" src="../icons/icojam/blue-bits/32/globe-search-icon.png" _fcksavedurl="https://icons.iconarchive.com/icons/icojam/blue-bits/32/globe-search-icon.png"></a></td>         </tr>     </tbody> </table></div> <div id="alt2"></div></div> <br>
+
+
+
+
+
+
+
+
+
+
+  <div id="&#8221;reko&#8221;"><style type="&#8221;text/css&#8221;"> <!&#8211;				<a id="selfpromotionOverlay" href="https://www.bedava-sitem.com/?c=4000&amp;utm_source=selfpromotion&amp;utm_campaign=overlay&amp;utm_medium=footer" target="_blank" rel="nofollow">
+    Bu web sitesi ücretsiz olarak <b>Bedava-Sitem.com</b> ile olu&#351;turulmu&#351;tur. Siz de kendi web sitenizi kurmak ister misiniz?
+
+    <div class="btn btn-1">Ücretsiz kaydol</div>
+
+</a>
+<style>
+    body {
+        padding-top: 124px;
+    }
+    #forFixedElement {
+        top: 124px;
+    }
+    @media (min-width: 365px) {
+        body {
+            padding-top: 103px;
+        }
+        #forFixedElement {
+            top: 103px;
+        }
+    }
+    @media (min-width: 513px) {
+        body {
+            padding-top: 82px;
+        }
+        #forFixedElement {
+            top: 82px;
+        }
+    }
+    @media (min-width: 936px) {
+        body {
+            padding-top: 61px;
+        }
+        #forFixedElement {
+            top: 61px;
+        }
+    }
+
+    /* General button style */
+    #selfpromotionOverlay .btn {
+        border: none;
+        font-size: inherit;
+        color: inherit;
+        background: none;
+        cursor: pointer;
+        padding: 6px 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin: 0px;
+    }
+
+    /* Button 1 */
+    #selfpromotionOverlay .btn-1, #selfpromotionOverlay .btn-1:visited {
+        background: rgb(0, 85, 204);
+        color: #fff;
+    }
+
+    #selfpromotionOverlay .btn-1:hover {
+        background: #2980b9;
+    }
+
+    #selfpromotionOverlay .btn-1:active {
+        background: #2980b9;
+        top: 2px;
+    }
+
+    #selfpromotionOverlay {
+        font: 400 12px/1.8 "Open Sans", Verdana, sans-serif;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 1s ease;
+        position: fixed;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 1.5em;
+        flex-wrap: nowrap;
+        z-index: 5000;
+        padding: 14px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: rgb(35,35,35);
+        background-color: rgb(246,246,246);
+        border-bottom: 1px solid #5a5a5a;
+    }
+
+    #selfpromotionOverlay:hover {
+        background: white;
+        text-decoration: none;
+    }
+</style>		<div id="extraDiv1"><span></span></div>
+		<div id="extraDiv2"><span></span></div>
+		<div id="extraDiv3"><span></span></div>
+		<div id="extraDiv4"><span></span></div>
+		<div id="extraDiv5"><span></span></div>
+		<div id="extraDiv6"><span></span></div>
+	</div></body>
+</html>
