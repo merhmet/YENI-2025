@@ -310,7 +310,7 @@ class Utilities {
     static convertFloatToString(float) {
         let priceParams = {
             style: "currency",
-            currency: "USD"
+            currency: "EUR"
         };
 
         return float.toLocaleString("en-us", priceParams);
