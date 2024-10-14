@@ -51,45 +51,59 @@
 			<img src="https://d1f8f9xcsvx3ha.cloudfront.net/pinhole/spin.svg" />
 		</div>
 		<!--
-		Example buttons to populate the shopping cart.
+		Example buttons to populate the .
 		-->
 
 		<h1>
-			Demo Shopping Cart
+			Pitta Planet
 		</h1>
 
 <!-- Pulling details about 2 products from the dashboard to the webpage dynamically -->
 <div class="row" style="background-color: whiteSmoke; padding:20px; border-radius: 25px;">
    <!-- First column -->
    <div class="column">
-      <h2>Virtual Product</h2>
-      <p><img src="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png"></img></p>
-      <p class="price">€44.99</p>
+      <h2>Pitta</h2>
+      <p><img src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg"></img></p>
+      <p class="price">€10.00</p>
     
-      <button class="fastspring_btn fastspring_btn-success" data-fsc-item-path-value="virtual-product-1" data-fsc-item-path="virtual-product-1" data-fsc-addthis="virtual-product-1" data-fsc-vpp-display="Virtual Product" data-fsc-vpp-desc="This is a dynamically created virtual product" data-fsc-vpp-image="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png" data-fsc-cart="Modal">Add To Cart</button>
+      <button class="fastspring_btn fastspring_btn-success" 
+data-fsc-item-path-value="virtual-product-1" 
+data-fsc-item-path="virtual-product-1" 
+data-fsc-addthis="virtual-product-1" 
+data-fsc-vpp-display="Bestelde Product" 
+data-fsc-vpp-desc="This is a dynamically created virtual product" data-fsc-vpp-image="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg" 
+data-fsc-cart="Modal">Bestellen</button>
 
   </div> <!-- column -->
 
    <!-- Second column -->
    <div class="column">
-      <h2>Second Product</h2>
-      <p><img src="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png"></img></p>
-      <p class="price">€124.99</p>
-      <button class="fastspring_btn fastspring_btn-success" data-fsc-item-path-value="virtual-product-2" data-fsc-item-path="virtual-product-2" data-fsc-addthis="virtual-product-2" data-fsc-vpp-display="Second Product" data-fsc-vpp-desc="This is a second virtual product" data-fsc-vpp-image="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png" data-fsc-cart="Modal">Add To Cart</button>
+      <h2>Dürüm</h2>
+      <p><img src="https://od.lk/s/OTFfMzExNTY0MjJf/durum.jpg"></img></p>
+      <p class="price">€5.99</p>
+      <button class="fastspring_btn fastspring_btn-success" 
+data-fsc-item-path-value="virtual-product-2" data-fsc-item-path="virtual-product-2" 
+data-fsc-addthis="virtual-product-2" 
+data-fsc-vpp-display="Second Product" data-fsc-vpp-desc="This is a second virtual product" 
+data-fsc-vpp-image="https://od.lk/s/OTFfMzExNTY0MjJf/durum.jpg" 
+data-fsc-cart="Modal">Bestellen</button>
   </div> <!-- column -->
 
    <!-- Third column -->
    <div class="column">
-      <h2>Third Product</h2>
-      <p><img src="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png"></img></p>
-      <p class="price">€399.99</p>
-      <button class="fastspring_btn fastspring_btn-success" data-fsc-item-path-value="virtual-product-3" data-fsc-item-path="virtual-product-3" data-fsc-addthis="virtual-product-3" data-fsc-vpp-display="Third Product" data-fsc-vpp-desc="This is our third virtual product" data-fsc-vpp-image="https://d8y8nchqlnmka.cloudfront.net/5syTLQcMROo/hGsLATk5Te0/download.png" data-fsc-cart="Modal">Add To Cart</button>
+      <h2>Fritten</h2>
+      <p><img src="https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg"></img></p>
+      <p class="price">€10.00</p>
+      <button class="fastspring_btn fastspring_btn-success" 
+data-fsc-item-path-value="virtual-product-3" data-fsc-item-path="virtual-product-3" 
+data-fsc-addthis="virtual-product-3" data-fsc-vpp-display="Third Product" data-fsc-vpp-desc="This is our third virtual product" 
+data-fsc-vpp-image="https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg" data-fsc-cart="Modal">Bestellen</button>
   </div> <!-- column -->
 
 </div> <!-- row -->
 <div class="row" style="border: 8px solid whitesmoke; padding:20px; border-radius: 25px;">
   <div class="column">
-    <button class="fastspring_btn fastspring_btn-success" data-fsc-opencart="Modal">View Cart</button>
+    <button class="fastspring_btn fastspring_btn-success" data-fsc-opencart="Modal">Bestelling Kijken</button>
   </div>
 <div>
 
@@ -102,7 +116,7 @@
       <div class="fsb-modal-content" id="fsb-modal-content">
          <div class="fsb-modal-header" style="background: lightSlateGrey; color: #ffffff;">
             <span id="fsb-close" class="fsb-close">&times;</span>
-            <span class="fsb-cart_title">Shopping Cart</span>
+            <span class="fsb-cart_title">Bestelling Menu</span>
          </div>
          <div class="fsb-modal-body">
             <div id="fsb_error" class="fsb-alert fsb-alert-danger" role="alert">
@@ -114,7 +128,7 @@
                </div>
             </div>
             <div data-fsc-selections-smartdisplay-inverse>
-               <p class="fsb-emptyCart">Your cart is empty.</p>
+               <p class="fsb-emptyCart">Bestelling Leeg.</p>
             </div>
          </div>
       </div>
@@ -287,7 +301,7 @@
 							{{/each}}
 							<div class="fsb-row">
 								<div class="fsb-col-8 fsb-text-right">
-									<p class="fsb-total">Total:</p>
+									<p class="fsb-total">Totaal:</p>
 								</div>
 								<div class="fsb-col-4 fsb-text-right">
 									{{#each order}}
@@ -304,18 +318,12 @@
 							</div>
 							<div class="fsb-row">
 								<div class="fsb-col-12 mt-2">
-									<button id="checkout" data-fsc-selections-smartdisplay class="fastspring_btn fastspring_btn-success" style="float:right;" data-fsc-action="Checkout">
-										Checkout 
+									<button id="Checkout" data-fsc-selections-smartdisplay class="fastspring_btn fastspring_btn-success" style="float:right;" data-fsc-action="Checkout">
+										Betalen
 									</button>
 								</div>
 							</div>
-						</div>						
-						<div class="fsb-col-md-6 fsb-col-12 fsb-order-md-1 fsb-order-12">
-							<div class="fsb-col-12 fsb-text-nowrap fsb-text-center fsb-text-md-left">
-								<label for="couponcode" class="fsb-promocode">Have a promo code?</label><br />
-								<input type="text" id="couponcode" data-fsc-order-promocode class="fsb-form-control" placeholder="Coupon ID" style="display:inline-block; width:200px;">
-								<button class="fastspring_btn fastspring_btn-success" onclick="applycoupon();">Apply</button>
-							</div>							
+											
 						</div>
 					</div>
 					{{#each groups}}

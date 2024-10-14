@@ -28,8 +28,8 @@ function fsaddProd(prod, vppDisplay, vppDesc, vppImage, type) {
     
     switch(prod) {
       case "virtual-product-1":
-        vppPriceUSD = 49.99;
-        vppPriceEUR = 44.99;  
+        vppPriceUSD = 10.00;
+        vppPriceEUR = 10.00;  
         break;
       case "virtual-product-2":
         vppPriceUSD = 149.99;
