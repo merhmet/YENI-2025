@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - WebShop with Vue.js - part 1/4</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" id="app">
+  <h1>WebShop example with Vue.js</h1>
+
+  <div>
+    <!-- Favouites box -->
+    <div class="alert alert-info text-center">
+      <template v-if="favourites > 0">
+					<span><i class="fa fa-heart"></i> {{ favourites }}</span>
+					<hr>
+					<div v-for="iof in itemsOnFavourites" class="mini" :style="{'background-image': 'url('+iof.img+')'}" @click="iof.favourite=false" title="remove"></div>
+					<div class="mini-drop" title="drop all" @click="dropFavourites()"><i class="fa fa-trash"></i></div>
+					<div style="clear: both;"></div>
+				</template>
+      <template v-else>
+					<span class="empty"><i class="fa fa-heart-o"></i></span>
+				</template>
+    </div>
+
+    <!-- basket -->
+    <div class="alert alert-info text-center">
+      <div v-if="total > 0">
+        <span><i class="fa fa-dollar"></i>{{ total }} <i class="fa fa-shopping-basket"></i></span><br />
+        <hr>
+        <template v-for="iob in itemsOnBasket">
+						<div v-for="idx in iob.quantity" class="mini" :style="{'background-image': 'url('+iob.img+')'}" @click="iob.quantity--" title="remove"></div>
+					</template>
+        <div class="mini-drop" title="drop all" @click="dropBasket()"><i class="fa fa-trash"></i></div>
+        <div style="clear: both;"></div>
+      </div>
+      <div v-else>
+        <span class="empty"><i class="fa fa-shopping-basket"></i></span>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div v-for="item in items" class="card" :class="{selected: item.quantity > 0, favourite: item.favourite}">
+    <h1 @click="item.favourite=!item.favourite" title="toggle favourite">
+      {{ item.title }}
+      <span class="favourite">
+					<i class="fa" :class="{ 'fa-heart': item.favourite===true,  'fa-heart-o': item.favourite === false}"></i>
+				</span>
+    </h1>
+    <div class="text-center img">
+      <img :src="item.img" alt="">
+    </div>
+    <div class="info">
+      <p>{{ item.info }}</p>
+    </div>
+    <div class="form-control text-right">
+      <div class="price"><i class="fa fa-dollar"></i>{{ item.price }}</div>
+      <div class="quantity" v-if="item.quantity > 0">x{{ item.quantity }}</div>
+      <button @click="item.quantity=0" :disabled="item.quantity === 0" :class="{disabled: item.quantity === 0}"><i class="fa fa-trash"></i></button>
+      <button @click="item.quantity++"><i class="fa fa-plus"></i></button>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
