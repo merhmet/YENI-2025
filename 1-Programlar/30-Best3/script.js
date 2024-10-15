@@ -58,67 +58,67 @@ const initialState = {
   stock: [
   {
     id: 0,
-    name: 'TC 2017 LS',
-    description: 'VC FlexLight Jersey with spot sublimated Team Canada 2017 logo, from our Team Canada Collection.',
-    price: 34.95,
+    name: 'Pitta Tussen Brood',
+    description: 'Pitta Vlees Tussen Turks Brood.',
+    price: 10.00,
     count: 12,
     img: 'https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg' },
   {
     id: 1,
-    name: 'TC 2017 Shorts',
-    description: 'VC FlexLight Shorts with spot sublimated Team Canada 2017 logo, from our Team Canada Collection.',
-    price: 25.00,
+    name: 'Franse Hamburger',
+    description: 'Franse Hamburger.',
+    price: 11.00,
     count: 7,
     img: 'https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg' },
   {
     id: 2,
-    name: 'TC 2016 Red SS',
-    description: 'VC Ultimate\'s fully sublimated performance jersey, a replica of one of the two official dark jerseys of 2016 Team Canada teams! Sublimated jerseys are made with VC\'s FlexLight performance material – soft, lightweight and moisture wicking.',
-    price: 74.00,
+    name: 'Kapsalon',
+    description: 'Kapsalon , Pitta Met Frieten en Kaas .',
+    price: 13.00,
     count: 11,
     img: 'https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg' },
   {
     id: 3,
-    name: 'TC 2016 Dark SS',
-    description: 'VC Ultimate\'s fully sublimated performance jersey, a replica of one of the two official dark jerseys of 2016 Team Canada teams! Sublimated jerseys are made with VC\'s FlexLight performance material – soft, lightweight and moisture wicking.',
-    price: 35.99,
+    name: 'Frieten ',
+    description: ' Frieten Met Keuze Saus.',
+    price: 5.00,
     count: 13,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/TC2016_SS_front_grande.jpg?v=1460557226' },
+    img: 'https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg' },
   {
     id: 4,
     name: 'TC 2016 Light SS',
-    description: 'Official replica of the 2016 Team Canada light playing jersey. VC spot sublimated jerseys are made with VC\'s FlexLight performance material – soft, lightweight and moisture wicking.',
-    price: 35.99,
+    description: 'Kip Tussen Turks Brood.',
+    price: 14.00,
     count: 16,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/TCsample2_white_front_grande.jpg?v=1480111096' },
+    img: 'https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg' },
   {
     id: 5,
-    name: 'Goat Shorts',
-    description: 'This just in... VC\'s NEW signature \'GOAT\' style athletic shorts now with pockets! Made with our FlexLight material.',
+    name: 'Pitta Met Kaas',
+    description: 'Pitta Met Kaas.',
     price: 29.00,
     count: 4,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/MedGreyPockets_front_grande400x600_grande_888f95c1-0f4d-483f-938e-c686892a855a_grande.jpg?v=1454966549' },
+    img: 'https://od.lk/s/OTFfMzExNTY0NjRf/pitta-kaas.jpg' },
   {
     id: 6,
-    name: 'Friction Gloves',
-    description: 'This is the glove that started it all! Friction Gloves work great in every condition: dry, hot, rain, snow, you name it. They will help you maintain a firm grip on the disc whether you\'re catching or throwing. They eliminate slippage when the disc is wet, keep your hands warm in cold weather, and ease the sting of zippy throws. Whether your goal is to throw with more accuracy, catch tough discs, or just look fly, Frictions will help.  Frictions are not bulky or stiff like other gloves. They are tight fitting and, after a while, you\'ll forget they\'re even on!',
-    price: 33.95,
+    name: 'Kip Kaas',
+    description: ' Kip Met Kaas!',
+    price: 14.00,
     count: 18,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/Gloves_grande.jpg?v=1446586810' },
+    img: 'https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg' },
   {
     id: 7,
-    name: 'TC 2017 Trucker',
-    description: 'Premium meshback cotton front trucker hat. Made by FlexFit, with the official embroidered patch of Team Canada 2017! 47% Cotton / 25% Polyester / 28% Nylon, contrast trucker mesh back, matching plastic snap, hard buckram, matching undervisor. One size fits all',
+    name: 'DÜRÜM ',
+    description: 'DÜRÜM Met of Zonder Frieten',
     price: 15.00,
     count: 15,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/TC2017_Hat_Snapback_BlackWhite_grande.jpg?v=1485538793' },
+    img: 'https://od.lk/s/OTFfMzExNTY0NjFf/durumdoner-02340.jpg.webp' },
   {
     id: 8,
-    name: 'VC Discraft Disc',
-    description: 'Discraft 175 gram Ultrastar disc, hot stamped with the original VC logo.',
-    price: 14.00,
+    name: 'Extra Sausen',
+    description: 'Extra Sausen.',
+    price: 1.00,
     count: 19,
-    img: 'https://cdn.shopify.com/s/files/1/0340/2849/products/Disc_VC_OG_grande_grande_cc0c1695-4247-426a-bd6c-5821da4e42da_grande.png?v=1485469652' }] };
+    img: 'https://od.lk/s/OTFfMzExNTY0NzFf/extraSaus.jpg' }] };
 
 
 
@@ -258,13 +258,13 @@ const reducers = Redux.combineReducers({
 // Header
 const Header = ({ children, cartItems, backButton, cartButton }) => {
   const getBackButton = () => /*#__PURE__*/
-  React.createElement(Link, { to: "/", className: "back-button" }, "< Back to shop");
+  React.createElement(Link, { to: "/", className: "back-button" }, "< Terug Hoofd Pagina");
 
 
 
 
   const getCartButton = () => /*#__PURE__*/
-  React.createElement(Link, { to: "/cart", className: "cart-button" }, "Cart (",
+  React.createElement(Link, { to: "/cart", className: "cart-button" }, "Bestellingen (",
   cartItems, ")");
 
 
@@ -324,7 +324,7 @@ React.createElement("img", {
 React.createElement("h1", { className: "shop-item-name" },
 name), /*#__PURE__*/
 
-React.createElement("h2", { className: "shop-item-price" }, "$",
+React.createElement("h2", { className: "shop-item-price" }, "€",
 price.toFixed(2)))));
 
 
@@ -385,7 +385,7 @@ ShopItems);
 // Shop
 const Shop = () => /*#__PURE__*/
 React.createElement("div", { className: "shop" }, /*#__PURE__*/
-React.createElement("h1", { className: "main-header shop-header" }, "Shop"), /*#__PURE__*/
+React.createElement("h1", { className: "main-header shop-header" }, "Anadolu"), /*#__PURE__*/
 React.createElement(ShopItemsContainer, null));
 
 
@@ -409,7 +409,7 @@ const AddItem = ({ id, count, onSubmit }) => {
         onSubmit(e, id);
       } }, /*#__PURE__*/
 
-    React.createElement("span", { className: "item-qty-label" }, "Qty:"), /*#__PURE__*/
+    React.createElement("span", { className: "item-qty-label" }, "Aantal:"), /*#__PURE__*/
 
 
     React.createElement("select", { className: "item-qty" },
@@ -424,7 +424,7 @@ const AddItem = ({ id, count, onSubmit }) => {
 
     React.createElement("button", {
       className: "item-add-button",
-      type: "submit" }, "Add to cart")));
+      type: "submit" }, "Bestellen")));
 
 
 
@@ -475,7 +475,7 @@ React.createElement("div", { className: "item-details" }, /*#__PURE__*/
 React.createElement("h1", { className: "item-name" },
 name), /*#__PURE__*/
 
-React.createElement("h2", { className: "item-price" }, "$",
+React.createElement("h2", { className: "item-price" }, "€",
 price.toFixed(2)), /*#__PURE__*/
 
 React.createElement("p", { className: "item-desc" },
@@ -527,10 +527,10 @@ name)), /*#__PURE__*/
 
 
 React.createElement("div", { className: "cart-item-value" }, /*#__PURE__*/
-React.createElement("span", { className: "cart-item-price" }, "$",
+React.createElement("span", { className: "cart-item-price" }, "€",
 price.toFixed(2)), /*#__PURE__*/
 
-React.createElement("span", { className: "cart-item-qty" }, "Qty:", /*#__PURE__*/
+React.createElement("span", { className: "cart-item-qty" }, "Aantal:", /*#__PURE__*/
 
 React.createElement("select", {
   className: "cart-item-qty-select",
@@ -576,7 +576,7 @@ CartItem.PropTypes = {
 // CartItems
 const CartItems = ({ cart, onQtyChange, onRemoveClick }) => {
   if (!cart.length) {
-    return /*#__PURE__*/React.createElement("p", { className: "empty-cart" }, "Cart is empty");
+    return /*#__PURE__*/React.createElement("p", { className: "empty-cart" }, "Bestelling is leeg");
   }
 
   return /*#__PURE__*/(
@@ -615,10 +615,10 @@ CartItems.PropTypes = {
 // Total
 const Total = ({ cart }) => /*#__PURE__*/
 React.createElement("div", { className: "cart-total" }, /*#__PURE__*/
-React.createElement("span", { className: "cart-total-label" }, "Total:"), /*#__PURE__*/
+React.createElement("span", { className: "cart-total-label" }, "SubTotaal:"), /*#__PURE__*/
 
 
-React.createElement("span", { className: "cart-total-value" }, "$",
+React.createElement("span", { className: "cart-total-value" }, "€",
 cart.length ? cart.reduce((acc, item) =>
 acc + item.price * item.count,
 0).toFixed(2) : Number(0).toFixed(2)));
@@ -639,7 +639,7 @@ const PayButton = ({ onPayClick }) => /*#__PURE__*/
 React.createElement("button", {
   type: "button",
   className: "cart-pay-button",
-  onClick: () => onPayClick() }, "Pay now");
+  onClick: () => onPayClick() }, "Afsluiten");
 
 
 
@@ -653,7 +653,7 @@ PayButton.PropTypes = {
 // Cart
 const Cart = ({ cart, onQtyChange, onRemoveClick, onPayClick }) => /*#__PURE__*/
 React.createElement("div", { className: "cart" }, /*#__PURE__*/
-React.createElement("h1", { className: "main-header cart-header" }, "My Cart"), /*#__PURE__*/
+React.createElement("h1", { className: "main-header cart-header" }, "Mijn Bestellingen"), /*#__PURE__*/
 React.createElement(CartItems, {
   cart: cart,
   onQtyChange: onQtyChange,
