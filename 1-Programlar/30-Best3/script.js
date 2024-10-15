@@ -258,7 +258,7 @@ const reducers = Redux.combineReducers({
 // Header
 const Header = ({ children, cartItems, backButton, cartButton }) => {
   const getBackButton = () => /*#__PURE__*/
-  React.createElement(Link, { to: "/", className: "back-button" }, "< Terug Hoofd Pagina");
+  React.createElement(Link, { to: "/", className: "back-button" }, "< Terug");
 
 
 
