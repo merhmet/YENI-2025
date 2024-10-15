@@ -18,7 +18,7 @@
 }
 
 img {
-    width: 100%;
+    width: 80%;
 }
 
 body {
@@ -51,7 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 1px 10px;
 }
 
 .logo {
