@@ -68,7 +68,7 @@ const initialState = {
     name: 'Franse Hamburger',
     description: 'Franse Hamburger.',
     price: 11.00,
-    count: 7,
+    count: 10,
     img: 'https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg' },
   {
     id: 2,
