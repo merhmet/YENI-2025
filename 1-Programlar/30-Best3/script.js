@@ -385,7 +385,7 @@ ShopItems);
 // Shop
 const Shop = () => /*#__PURE__*/
 React.createElement("div", { className: "shop" }, /*#__PURE__*/
-React.createElement("h1", { className: "main-header shop-header" }, "Anadolu"), /*#__PURE__*/
+React.createElement("h1", { className: "main-header shop-header" }, ""), /*#__PURE__*/
 React.createElement(ShopItemsContainer, null));
 
 
