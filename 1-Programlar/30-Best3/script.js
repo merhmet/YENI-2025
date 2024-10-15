@@ -264,7 +264,7 @@ const Header = ({ children, cartItems, backButton, cartButton }) => {
 
 
   const getCartButton = () => /*#__PURE__*/
-  React.createElement(Link, { to: "/cart", className: "cart-button" }, "Bestellingen (",
+  React.createElement(Link, { to: "/cart", className: "cart-button" }, "Mandje (",
   cartItems, ")");
 
 
