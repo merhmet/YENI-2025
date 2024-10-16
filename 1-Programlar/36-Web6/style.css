@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.c-container {
+  display: flex;
+  padding: 20px;
+}
+.c-container .c-products {
+  flex-grow: 2;
+}
+.c-container .c-products .c-panel:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+.c-container .c-products .c-panel h3 {
+  color: #333;
+}
+.c-container .c-cart {
+  flex-grow: 1;
+}
+.c-container .c-cart .c-delete {
+  cursor: pointer;
+  padding-top: 55px;
+}
+.c-container .c-cart .c-delete:hover {
+  color: #333;
+}
+.form-group.c-input-quantity {
+  padding-top: 35px;
+}
