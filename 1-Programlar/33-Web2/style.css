@@ -1,0 +1,566 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Microsoft JhengHei";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #ECE9DE;
+}
+
+#Phone {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+  width: 300px;
+  height: 550px;
+  background-color: #1C1C1C;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#Phone #Catalog {
+  background-color: #E9E8F5;
+  height: 100%;
+  border-radius: 30px;
+  bottom: 0;
+  transition: all 1s 0s;
+}
+#Phone #Catalog .top, #Phone #Catalog .page-title {
+  padding: 1rem;
+}
+#Phone #Catalog .top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  user-select: none;
+}
+#Phone #Catalog .top .photo {
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+#Phone #Catalog .top i.fa-magnifying-glass {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.2rem;
+  color: #AFAAB1;
+  z-index: 1;
+}
+#Phone #Catalog .page-title {
+  padding: 0 1rem;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  user-select: none;
+}
+#Phone #Catalog #iPad, #Phone #Catalog #iPhone, #Phone #Catalog #AppleWatch {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  user-select: none;
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 6%;
+  padding: 0.2rem 0;
+  padding-bottom: 0.2rem;
+  border-radius: 8px;
+}
+#Phone #Catalog #iPad:hover, #Phone #Catalog #iPhone:hover, #Phone #Catalog #AppleWatch:hover {
+  background-color: #F68A0A;
+}
+#Phone #Catalog #iPad:hover svg path, #Phone #Catalog #iPad:hover svg circle, #Phone #Catalog #iPhone:hover svg path, #Phone #Catalog #iPhone:hover svg circle, #Phone #Catalog #AppleWatch:hover svg path, #Phone #Catalog #AppleWatch:hover svg circle {
+  fill: #FFFFFF;
+}
+#Phone #Catalog #iPad svg, #Phone #Catalog #iPhone svg, #Phone #Catalog #AppleWatch svg {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+#Phone #Catalog #iPad svg path, #Phone #Catalog #iPad svg circle, #Phone #Catalog #iPhone svg path, #Phone #Catalog #iPhone svg circle, #Phone #Catalog #AppleWatch svg path, #Phone #Catalog #AppleWatch svg circle {
+  fill: #1C1C1C;
+}
+#Phone #Catalog #iPad .active, #Phone #Catalog #iPhone .active, #Phone #Catalog #AppleWatch .active {
+  background-color: #F68A0A;
+}
+#Phone #Catalog #iPad .active svg path, #Phone #Catalog #iPad .active svg circle, #Phone #Catalog #iPhone .active svg path, #Phone #Catalog #iPhone .active svg circle, #Phone #Catalog #AppleWatch .active svg path, #Phone #Catalog #AppleWatch .active svg circle {
+  fill: #FFFFFF;
+}
+#Phone #Catalog #iPad.active, #Phone #Catalog #iPhone.active, #Phone #Catalog #AppleWatch.active {
+  background-color: #F68A0A;
+}
+#Phone #Catalog #iPad.active svg path, #Phone #Catalog #iPad.active svg circle, #Phone #Catalog #iPhone.active svg path, #Phone #Catalog #iPhone.active svg circle, #Phone #Catalog #AppleWatch.active svg path, #Phone #Catalog #AppleWatch.active svg circle {
+  fill: #FFFFFF;
+}
+#Phone #Catalog #Products {
+  left: 0;
+  white-space: nowrap;
+  transition: all 1s 0s;
+}
+#Phone #Catalog #Products .iPad, #Phone #Catalog #Products .iPhone, #Phone #Catalog #Products .iWatch {
+  padding: 1rem;
+  padding-bottom: 0.6rem;
+  white-space: normal;
+  display: inline-block;
+}
+#Phone #Catalog #Products .card {
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.6rem;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  height: 150px;
+  text-align: center;
+}
+#Phone #Catalog #Products .card .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  color: #AFAAB1;
+  font-size: 1rem;
+  z-index: 2;
+}
+#Phone #Catalog #Products .card .row i {
+  z-index: 2;
+}
+#Phone #Catalog #Products .card .row i:nth-child(2) {
+  color: #F68A0A;
+  font-weight: bold;
+}
+#Phone #Catalog #Products .card .row .fa-heart:hover {
+  color: red;
+}
+#Phone #Catalog #Products .card img {
+  width: 50%;
+}
+#Phone #Catalog #Products .card .product, #Phone #Catalog #Products .card .price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#Phone #Catalog #Products .card .product {
+  width: 100%;
+  color: #AFAAB1;
+  bottom: 20%;
+  font-size: 14px;
+  margin: 0;
+}
+#Phone #Catalog #Products .card .price {
+  bottom: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F68A0A;
+}
+#Phone #Catalog #Products .iPad .card:nth-child(2) img {
+  width: 100%;
+}
+#Phone #Cart {
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 200%;
+  display: flex;
+  transition: all 1s 0s;
+}
+#Phone #Cart #ShoppingCart {
+  background-color: #1C1C1C;
+}
+#Phone #Cart #ShoppingCart, #Phone #Cart #CreditCard {
+  height: 90%;
+  width: 100%;
+}
+#Phone #Cart #ShoppingCart .page-title, #Phone #Cart #CreditCard .page-title {
+  margin: 0;
+  padding-left: 2rem;
+  color: #ECE9DE;
+  letter-spacing: 2px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  bottom: 0;
+}
+#Phone #Cart #ShoppingCart .page-title span, #Phone #Cart #CreditCard .page-title span {
+  cursor: pointer;
+  user-select: none;
+}
+#Phone #Cart #ShoppingCart #cart-icon, #Phone #Cart #CreditCard #cart-icon {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  height: 100%;
+  transition: all 1s 0s;
+}
+#Phone #Cart #ShoppingCart #cart-icon i, #Phone #Cart #ShoppingCart #cart-icon .cart-count, #Phone #Cart #CreditCard #cart-icon i, #Phone #Cart #CreditCard #cart-icon .cart-count {
+  color: #F68A0A;
+  transition: all 1s 0s;
+}
+#Phone #Cart #ShoppingCart #cart-icon i, #Phone #Cart #CreditCard #cart-icon i {
+  opacity: 0;
+  margin-top: 0.5rem;
+}
+#Phone #Cart #ShoppingCart #cart-icon .cart-count, #Phone #Cart #CreditCard #cart-icon .cart-count {
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#Phone #Cart #ShoppingCart .container, #Phone #Cart #CreditCard .container {
+  margin-top: 1rem;
+  overflow: hidden;
+  height: 90%;
+}
+#Phone #Cart #ShoppingCart .container .item-row, #Phone #Cart #CreditCard .container .item-row {
+  background-color: #FFFFFF;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  left: 0;
+  border: 1px solid #AFAAB1;
+  transition: all 1s 0s;
+  font-size: 0;
+}
+#Phone #Cart #ShoppingCart .container .item-row .delete-btn, #Phone #Cart #CreditCard .container .item-row .delete-btn {
+  position: absolute;
+  left: -21%;
+  height: 100%;
+  width: 20%;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  border: 1px solid #AFAAB1;
+  box-sizing: content-box;
+}
+#Phone #Cart #ShoppingCart .container .item-row .delete-btn .fa-trash-alt, #Phone #Cart #CreditCard .container .item-row .delete-btn .fa-trash-alt {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#Phone #Cart #ShoppingCart .container .item-row .quantiry, #Phone #Cart #ShoppingCart .container .item-row .price, #Phone #Cart #ShoppingCart .container .item-row .counter, #Phone #Cart #CreditCard .container .item-row .quantiry, #Phone #Cart #CreditCard .container .item-row .price, #Phone #Cart #CreditCard .container .item-row .counter {
+  font-size: 1rem;
+}
+#Phone #Cart #ShoppingCart .container .item-row img, #Phone #Cart #ShoppingCart .container .item-row i, #Phone #Cart #ShoppingCart .container .item-row .quantity, #Phone #Cart #CreditCard .container .item-row img, #Phone #Cart #CreditCard .container .item-row i, #Phone #Cart #CreditCard .container .item-row .quantity {
+  cursor: pointer;
+  user-select: none;
+}
+#Phone #Cart #ShoppingCart .container .item-row .product, #Phone #Cart #ShoppingCart .container .item-row .price, #Phone #Cart #CreditCard .container .item-row .product, #Phone #Cart #CreditCard .container .item-row .price {
+  width: 25%;
+}
+#Phone #Cart #ShoppingCart .container .item-row .price, #Phone #Cart #ShoppingCart .container .item-row .fa-plus, #Phone #Cart #ShoppingCart .container .item-row .fa-minus, #Phone #Cart #CreditCard .container .item-row .price, #Phone #Cart #CreditCard .container .item-row .fa-plus, #Phone #Cart #CreditCard .container .item-row .fa-minus {
+  color: #F68A0A;
+}
+#Phone #Cart #ShoppingCart .container .item-row img, #Phone #Cart #CreditCard .container .item-row img {
+  width: 32px;
+}
+#Phone #Cart #ShoppingCart .container .item-row .product, #Phone #Cart #CreditCard .container .item-row .product {
+  color: #AFAAB1;
+  font-size: 12px;
+}
+#Phone #Cart #ShoppingCart .container .item-row .counter, #Phone #Cart #CreditCard .container .item-row .counter {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Phone #Cart #ShoppingCart .container .item-row .counter i, #Phone #Cart #CreditCard .container .item-row .counter i {
+  border: 1px solid #AFAAB1;
+}
+#Phone #Cart #ShoppingCart .container .item-row .counter .num, #Phone #Cart #CreditCard .container .item-row .counter .num {
+  color: #1C1C1C;
+}
+#Phone #Cart #ShoppingCart .container .item-row .price, #Phone #Cart #CreditCard .container .item-row .price {
+  text-align: right;
+  font-weight: bold;
+}
+#Phone #Cart #ShoppingCart #Cart-logo, #Phone #Cart #CreditCard #Cart-logo {
+  color: #FFFFFF;
+  font-size: 10rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#Phone #Cart #ShoppingCart #Checkout-btn, #Phone #Cart #CreditCard #Checkout-btn {
+  background-color: #F68A0A;
+  color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.7), 0 4px 16px rgba(255, 255, 255, 0.7), 0 -2px 12px rgba(255, 255, 255, 0.7), 0 -4px 16px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  user-select: none;
+}
+#Phone #Cart #ShoppingCart #Checkout-btn .fa-arrow-right, #Phone #Cart #CreditCard #Checkout-btn .fa-arrow-right {
+  transform: translateX(0.8rem);
+}
+#Phone #Cart #CreditCard {
+  background-color: #1C1C1C;
+}
+#Phone #Cart #CreditCard h2 {
+  cursor: pointer;
+  user-select: none;
+}
+#Phone #Cart #CreditCard #ArrowLeft {
+  font-size: 1.2rem;
+  color: #F68A0A;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+#Phone #Cart #CreditCard .container {
+  background-color: #FFFFFF;
+}
+#Phone #Cart #CreditCard .container .card-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  user-select: none;
+}
+#Phone #Cart #CreditCard .container .card-type i {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+  font-size: 2.5rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: #448844;
+}
+#Phone #Cart #CreditCard .container .card-type i:hover {
+  color: #F68A0A;
+}
+#Phone #Cart #CreditCard .container p, #Phone #Cart #CreditCard .container span {
+  color: #AFAAB1;
+  margin: 0;
+  padding: 0 1rem;
+}
+#Phone #Cart #CreditCard .container span {
+  width: 50%;
+  display: inline-block;
+}
+#Phone #Cart #CreditCard .container span.cvv {
+  padding-left: 0;
+}
+#Phone #Cart #CreditCard .container .form-control {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+#Phone #Cart #CreditCard .container .form-control input {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-bottom: 1px solid #AFAAB1;
+  width: 100%;
+  background-color: rgba(68, 136, 68, 0.25);
+  color: #1C1C1C;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+#Phone #Cart #CreditCard .container .form-control input:focus {
+  border-bottom-width: 2px;
+  transition: all 0.2s;
+}
+#Phone #Cart #CreditCard .container .form-control input:focus-visible {
+  outline: none;
+}
+#Phone #Cart #CreditCard .container .form-control #ExpDt {
+  width: 45%;
+}
+#Phone #Cart #CreditCard .container .form-control #CVV {
+  width: 50%;
+}
+#Phone #Cart #CreditCard .container #BuyNow {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  left: 20%;
+  text-align: center;
+  background-color: #448844;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+}
+#Phone #Cart #CreditCard .container #BuyNow i {
+  transform: translateX(0.8rem);
+}
+
+#Bill {
+  list-style-type: none;
+  padding: 0 10px;
+  font-size: 14px;
+  text-align: left;
+}
+#Bill li {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #AFAAB1;
+  border-bottom: 1px solid #AFAAB1;
+  padding: 10px 0.5rem;
+  font-size: 0;
+}
+#Bill li span {
+  display: inline-block;
+  font-size: 1rem;
+}
+#Bill li .num {
+  width: 5%;
+}
+#Bill li .product {
+  width: 40%;
+  text-align: left;
+  font-size: 13px;
+  color: #AFAAB1;
+}
+#Bill li .cal, #Bill li .subtotal, #Bill li .sublabel {
+  color: #F68A0A;
+  font-weight: 900;
+}
+#Bill li .cal {
+  width: 55%;
+  text-align: right;
+}
+#Bill li .sublabel, #Bill li .subtotal {
+  width: 50%;
+}
+#Bill li .subtotal {
+  text-align: right;
+}
+#Bill li.total {
+  color: #F68A0A;
+  font-weight: 900;
+  padding: 10px 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #AFAAB1;
+  border-bottom: 1px solid #AFAAB1;
+}
+
+#guideline {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+#guideline .wrap, #guideline .item {
+  width: 100%;
+  display: inline-block;
+}
+#guideline .wrap {
+  left: 0;
+  white-space: nowrap;
+  font-size: 0;
+  transition: all 1s;
+}
+#guideline .wrap .row {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+}
+#guideline .wrap .item {
+  text-align: center;
+}
+#guideline .wrap .item .subtitle {
+  margin: 0;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#guideline .wrap .item p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  white-space: normal;
+}
+#guideline i {
+  width: 50%;
+  font-size: 2rem;
+  display: inline-block;
+  z-index: 5;
+  color: #F68A0A;
+  cursor: pointer;
+  user-select: none;
+}
+#guideline #Prev {
+  text-align: left;
+}
+#guideline #Next {
+  text-align: right;
+}
+#guideline img {
+  width: 50%;
+}
+
+.swal2-modal {
+  padding: 0 1rem;
+}
+
+#swal-header, #swal-content {
+  padding: 0;
+}
+
+#swal2-title {
+  margin-bottom: 0;
+}
+#swal2-title h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#swal2-html-container {
+  margin: 1rem 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
