@@ -125,7 +125,7 @@ h2 {
 
 .slider {
     position: fixed;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     top: 0;
     overflow: hidden;
