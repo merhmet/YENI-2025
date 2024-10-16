@@ -174,14 +174,14 @@ function updateTotal()
 
   cartItems.forEach(product=>{
     let priceElement=product.querySelector('.cart-price');
-    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+    let price=parseFloat(priceElement.innerHTML.replace("€.",""));
     let qty=product.querySelector('.cart-quantity').value;
     total+=(price*qty);
-    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+    product.querySelector('.cart-amt').innerText="€."+(price*qty);
 
   });
 
-  totalValue.innerHTML='Rs.'+total;
+  totalValue.innerHTML='€.'+total;
 
 
   // Add Product Count in Cart Icon
