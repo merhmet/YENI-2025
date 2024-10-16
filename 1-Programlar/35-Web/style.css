@@ -6,7 +6,7 @@
 }
 
 .heading {
-  background: cadetblue;
+  background: #431621;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ ul.nav-items > li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   text-decoration: none;
 }
 ul.nav-items > li {

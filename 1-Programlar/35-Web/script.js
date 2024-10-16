@@ -29,26 +29,26 @@ $(function () {
         inCart: 0
       },
       {
-        name: "Samsung Galaxy S8",
-        price: 20,
+        name: "Kapsalon",
+        price: 15,
         img:
-          "https://cdn.tgdd.vn/Products/Images/42/91131/samsung-galaxy-s8-plus-hh-600x600-400x400.jpg",
+          "https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg",
         tag: "samsungs8plus",
         inCart: 0
       },
       {
-        name: "Samsung Galaxy S20",
+        name: "Durum",
         price: 10,
         img:
-          "https://cdn.tgdd.vn/Products/Images/42/217935/samsung-galaxy-s20-600x600-hong-400x400.jpg",
+          "https://od.lk/s/OTFfMzExNjIwMjlf/durum.png",
         tag: "samsungs20",
         inCart: 0
       },
       {
-        name: "Samsung Galaxy Note 10",
-        price: 15,
+        name: "Frans Burger",
+        price: 12,
         img:
-          "https://cdn.tgdd.vn/Products/Images/42/215699/samsung-galaxy-note-10-do-600x600-400x400.jpg",
+          "https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg",
         tag: "samsungnote10",
         inCart: 0
       }
@@ -120,8 +120,8 @@ $(function () {
                 <img src=${product.img} alt="${product.tag}">
                 <h3>${product.name}</h3>
                 <h3>${this.getFormatter(product.price)}</h3>
-                <a class="add-cart cart1">Add To Cart</a>
-                <input type="hidden" value="${product.onstock}"/>
+                <a class="add-cart cart1">Bestellen</a>
+                <input type="hidden" value="€{product.onstock}"/>
             </div>`;
     },
     /**
@@ -296,13 +296,13 @@ $(function () {
                 <img src="${product.img}"/>
                 <span class="sm-hide">${product.name}</span>
             </div>
-            <div class="price">${this.getFormatter(product.price)}</div>
+            <div class="price">€{this.getFormatter(product.price)}</div>
             <div class="quantity">
                 <ion-icon class="decrease" name="arrow-dropleft-circle"></ion-icon>
-                <input type="number" value ="${product.inCart}"/> 
+                <input type="number" value ="€{product.inCart}"/> 
                 <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>   
             </div>
-            <div class="total">${this.getFormatter(
+            <div class="total">€{this.getFormatter(
               product.price * product.inCart
             )}</div>
             </div>`;
@@ -315,7 +315,7 @@ $(function () {
       total = Number.isNaN(totalCost) ? 0 : totalCost;
       return `<div class="basketTotalContainer">
                 <h4 class="basketTotalTitle">Basket Total</h4>
-                <h4 class="basketTotal">${this.getFormatter(total)}</h4>
+                <h4 class="basketTotal">€{this.getFormatter(total)}</h4>
             </div>`;
     },
 
@@ -457,7 +457,7 @@ $(function () {
     getFormatter: function (number) {
       const formatter = new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "USD",
+        currency: "EUR",
         minimumFractionDigits: 2
       });
       return formatter.format(number);

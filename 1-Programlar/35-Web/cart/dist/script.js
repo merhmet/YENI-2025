@@ -117,11 +117,11 @@ $(function () {
      */
     renderProduct: function (product) {
       return `<div class="image">
-                <img src=€{product.img} alt="€{product.tag}">
-                <h3>€{product.name}</h3>
-                <h3>€{this.getFormatter(product.price)}</h3>
+                <img src=${product.img} alt="${product.tag}">
+                <h3>${product.name}</h3>
+                <h3>${this.getFormatter(product.price)}</h3>
                 <a class="add-cart cart1">Add To Cart</a>
-                <input type="hidden" value="€{product.onstock}"/>
+                <input type="hidden" value="${product.onstock}"/>
             </div>`;
     },
     /**
