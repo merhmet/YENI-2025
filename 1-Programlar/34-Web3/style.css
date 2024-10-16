@@ -125,7 +125,7 @@ h2 {
 
 .slider {
     position: fixed;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     overflow: hidden;
@@ -166,25 +166,25 @@ h2 {
 }
 
 .name-col {
-  width: 40%;
+  width: 10%;
 }
 .quantity-col {
   width: 5%;
 }
 .price-col {
-  width: 15%;
+  width: 4%;
 }
 
 .updated-price-col {
-    width: 25%;
+    width: 10%;
 }
 
 .update-col {
-    width: 10%
+    width: 1%
 }
 
 .remove-col {
-  width: 5%;
+  width: 1%;
 }
 
 #update {
@@ -212,7 +212,7 @@ h2 {
     border-style: none;
     font-weight: bolder;
     padding: 2% 2.5%;
-    width: 100%;
+    width: 20%;
     height: 30px;
     background: #ff7b67;
     color: #fff1e7;
@@ -238,15 +238,15 @@ h2 {
 }
 
 #promo {
-    width: 10em;
-    padding: 1em 1em;
+    width: 0em;
+    padding: 0em 0em;
     transition: background .5s;
     border-radius: 4px;
 }
 
 #apply-promo, #checkout, .keep-shopping {
     border-style: none;
-    width: 10em;
+    width: 8em;
     padding: 1em 1em;
     background: #7762ff;
     color: white;
