@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - shopping cart</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<div class="header">
+		<div class="active-cart">
+		  <i class="fa-solid fa-cart-shopping"></i>
+		  <div class="leght-cart" animate="false">
+			<p> </p>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="content">
+	  
+		<div class="content-cards">
+		  <template class="cards"> </template>
+		</div>
+		<div class="cart" visible="false">
+		  <div class="productsInCart"> </div>
+		  <div class="calculation">
+			<div class="total">
+			  <div class="total-lab"> Total : </div>
+			  <div class="total-valor"> </div>
+			</div>
+			<div class="items"> </div>
+		  </div>
+	  
+		  <div class="checkout"> Checkout </div>
+		</div>
+	  
+	  </div>
+	  
+	  <script>
+
+	const productsCart = [{
+	"product_id": 1,
+	"product_price": 525.36,
+	"quantity": 1
+	},
+	{
+	"product_id": 2,
+	"product_price": 1738.94,
+	"quantity": 1
+	},
+	{
+	"product_id": 3,
+	"product_price": 4300.83,
+	"quantity": 1
+	},
+	{
+	"product_id": 4,
+	"product_price": 7000,
+	"quantity": 1
+	}]
+
+	const products = [{
+		"id": 1,
+		"name": "Nintendo Switch",
+		"price": 525.36,
+		"description": "The Nintendo Switch is designed to be part of your life, transforming from a home console to a portable console in the blink of an eye. Place your Nintendo Switch on the console's dock for gaming fun on your television Open the stand for screen sharing and multiplayer gaming fun, remove the console from the dock and play with the Joy-Con controllers attached, Joy-Con controllers included allow full in-game flexibility, choose your controller style One or two controllers, vertically or horizontally, attached to the console or not, there are many ways depending on the game.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/nintendo.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/nintendo(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/nintendo(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/nintendo(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/nintendo(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/nintendo(5).jpg",
+		]
+	},
+	{
+		"id": 2,
+		"name": "iPhone 13",
+		"price": 1738.94,
+		"description": "The Apple iPhone 13 is one of the most advanced and complete iOS smartphones out there. It has a large 6.1 inch display with a resolution of 2532x1170 pixels. The features offered by the Apple iPhone 13 are many and innovative. Starting with 5G that allows data transfer and excellent internet browsing. We emphasize the excellent internal memory of 512 GB but without the possibility of expansion.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/iphone.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/iphone(6).jpg",
+		]
+	},
+	{
+		"id": 3,
+		"name": "iPad Pro",
+		"price": 4300.83,
+		"description": "The Apple iPad Pro 12.9 is a medium Touchscreen tablet, ideal for those who don't have many demands but don't give up a good touchscreen display. The functions offered by the Apple iPad Pro 12.9 are more or less the same as those offered by other advanced devices, starting with Wi-Fi and GPS connectivity.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/ipad.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/ipad(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/ipad(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/ipad(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/ipad(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/ipad(5).jpg",
+		]
+	},
+	{
+		"id": 4,
+		"name": "MacBook Pro",
+		"price": 7000.00,
+		"description": "This Macbook Pro is the first to bring major changes in appearance since the 2016 version. Now it is equipped with Apple's proprietary M1 Pro or M1 Max chipset, which promises more performance and performance than the traditional M1, released in 2020.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/macbook.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/mac(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/mac(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/mac(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/mac(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/mac(5).jpg",
+		]
+	},
+	{
+		"id": 5,
+		"name": "Canon EOS Rebel",
+		"price": 499.99,
+		"description": "The Canon Rebel is an entry-level camera, its specifications bring a maximum resolution of 24.2 megapixels, Full HD videos at 30 FPS and ISO ranging from 100 to 12,800. Its technical sheet also has a DIGIC 6 processor, compatibility with EF and EF-S lenses, a battery that promises to last up to 440 photos and Wi-Fi and NFC connection. Its dimensions are 131.9 x 100.9 x 77.8 mm and its weight is 555 grams. The machine's display is 3 inches and is articulated.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/canon.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/canon(6).jpg",
+		]
+	},
+	{
+		"id": 6,
+		"name": "JBL SoundBox",
+		"price": 299.99,
+		"description": "This is a cost-effective JBL model that has the ability to charge the device if necessary, in addition to supporting JBL Connect, which connects multiple speakers for broader audio.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/jbl.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/jbl(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jbl(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jbl(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jbl(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jbl(5).jpg",
+		]
+	},
+	{
+		"id": 7,
+		"name": "Headphone bluetooth",
+		"price": 190.23,
+		"description": "Lightweight, comfortable and with a foldable design, play high-quality sound without the clutter of wires with Bluetooth 5.0 streaming, up to 40 hours of battery life and fast charging: 5 minutes = 2 hours, multipoint connections let you switch from one Bluetooth device to another. another effortlessly, easily control the sound, answer your calls or activate your device's voice assistant with the convenient buttons on your earcup.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/headphone.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(6).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(7).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/headphone(8).jpg",
+		]
+	},
+	{
+		"id": 8,
+		"name": "Earphones bluetooth",
+		"price": 200.71,
+		"description": "Responsive, easy-to-use touch control, compact charging case for up to 18 hours of playtime, smart pairing. Find a Bluetooth device automatically, its bluetooth 5.1 offers total mobility to enjoy everything you want with a frequency response of 20,000 Hz.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/earphone.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/earphone(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/earphone(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/earphone(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/earphone(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/earphone(5).jpg",
+		]
+	},
+	{
+		"id": 9,
+		"name": "Projetor BENQ",
+		"price": 165.41,
+		"description": "Color images: 3400 lumens in white and color, 3LCD technology colors up to three times brighter for true-to-life projections. Native XGA resolution and 4:3 performance. Durable, cost-effective light bulbs: Up to 12,000 hours in eco-mode with HDMI connectivity, HD-quality audio and video over a single cable.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/projector.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/benq(6).jpg",
+		]
+	},
+	{
+		"id": 10,
+		"name": "Electric Coffee Maker",
+		"price": 299.65,
+		"description": "Allows you to program the beginning of your coffee preparation every day, capacity to make 36 cups of 42ml, choosing the intensity for a stronger or weaker coffee, resistant glass cups, superior durability and quality as it has a stainless steel finish and filter permanent nylon, special cleaning cycle, just add water to the reservoir and press a button to clean.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/coffe.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/coffe(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/coffe(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/coffe(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/coffe(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/coffe(5).jpg",
+		]
+	},
+	{
+		"id": 11,
+		"name": "Synthetic Leather Jacket",
+		"price": 129.99,
+		"description": "Smooth leather, soft touch finish. Unique design, studded lapel, notch collar, zip closure, sewn-in padded sleeves, functional pockets, zip cuffs. It is a must-have accessory for everyday use and for the holidays. An ideal gift for your family and friends.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/jacket.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/jacket(6).jpg",
+		]
+	},
+	{
+		"id": 12,
+		"name": "Adidas Sneakers",
+		"price": 103.12,
+		"description": "Inspired by the 70s, the Adidas Grand Court Base 2.0 Shoes have a traditional style and need no comments, their upper is made of soft material, similar to leather, while the sole is rubberized, adding in this new version a robust cupsole that offers grip in the most humid climates.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/adidas.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(6).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(7).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/adidas(8).jpg",
+		]
+	},
+	{
+		"id": 13,
+		"name": "Basketball",
+		"price": 156.04,
+		"description": "Outdoor coating with high durability and excellent grip. Size 7, official and ideal for players aged 12 and up, approved by the International Basketball Federation (FIBA) with the FIBA APPROVED seal engraved on the ball. Engraved logos on lining for added design durability. Weight 650g and circumference 75cm.",
+		"cover": "https://codedbyissa.github.io/shopping-cart/products/basketball.png",
+		"images": [
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(1).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(2).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(3).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(4).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(5).jpg",
+		"https://codedbyissa.github.io/shopping-cart/products/images/basketball(6).jpg",
+		]
+	}];
+
+	  </script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
