@@ -2,201 +2,138 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - shopping cart</title>
+  <title>CodePen - Simple Shopping Cart</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<div>
+      
+        
+        <button id='cart-button' class="trigger cart-button-style">Show Cart</button>
+        
+        
+        <div id="shop">
+            
+            <div class="products ios apple" id="iphone-x">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg">
+                <p class="product-name">Pitta Kebap</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='10'>10</p>
+                <button class="add-to-cart" id='test'>BESTELLEN</button>
+            </div>
+            
+            <div class="products android samsung" id="samsung-s9">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNjIwMjlf/durum.png">
+                <p class="product-name">Durum</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='15'>15</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android google" id="pixel-2">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg">
+                <p class="product-name">Franse Burger</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='12'>12</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android oneplus" id="oneplus-6">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg">
+                <p class="product-name">Pitta Kip</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='13'>13</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products ios apple" id="iphone-8">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg">
+                <p class="product-name">Kapsalon</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='719'>719</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android huawei" id="huawei-p20">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg">
+                <p class="product-name">Schotel</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='20'>20</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android lg" id="lg-g7">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjRf/pitta-kaas.jpg">
+                <p class="product-name"> Kip Kaas</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='699'>699</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android huawei" id="huawei-mate-10-pro">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTk4NzRf/kzlkoen.jpg">
+                <p class="product-name">Kalkoen Stick</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='5'>5</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+        </div>
+        
+    </div>
+        <div id='cart-wrapper' class="slider close">
+            <div id='cart'>
+                <div id="cart-products-wrapper">
+                    <table id="cart-table">
+                    <thead id="cart-table-header">
+                         <th class="name-col">Naam</th> 
+                         <th class="quantity-col">Aantal</th>       
+                         <th class="price-col">Prijs</th>
+                         <th class="updated-price-col">Updated Prijs</th>
+                         <th class="update-col">Update</th>
+                         <th class="remove-col">Verwijderen</th>
+                    </thead>
+                    <tbody id="cart-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id='amount-controls'>
+                <div id="cart-amount-wrapper">
+                    <table>
+                        <tbody>
+                            <tr id='subtotal-wrappper'>
+                                <td id="subtotal-label">Subtotal:</td>
+                                <td id="subtotal">0.00</td>
+                            </tr>
 
-	<div class="header">
-		<div class="active-cart">
-		  <i class="fa-solid fa-cart-shopping"></i>
-		  <div class="leght-cart" animate="false">
-			<p> </p>
-		  </div>
-		</div>
-	  </div>
-	  
-	  <div class="content">
-	  
-		<div class="content-cards">
-		  <template class="cards"> </template>
-		</div>
-		<div class="cart" visible="false">
-		  <div class="productsInCart"> </div>
-		  <div class="calculation">
-			<div class="total">
-			  <div class="total-lab"> Total : </div>
-			  <div class="total-valor"> </div>
-			</div>
-			<div class="items"> </div>
-		  </div>
-	  
-		  <div class="checkout"> Checkout </div>
-		</div>
-	  
-	  </div>
-	  
-	  <script>
+                            <tr id='total-wrapper'>
+                                <td id="total-label">Total:</td>
+                                <td id="total">0.00</td>
+                            </tr>
 
-	const productsCart = [{
-	"product_id": 1,
-	"product_price": 525.36,
-	"quantity": 1
-	},
-	{
-	"product_id": 2,
-	"product_price": 1738.94,
-	"quantity": 1
-	},
-	{
-	"product_id": 3,
-	"product_price": 4300.83,
-	"quantity": 1
-	},
-	{
-	"product_id": 4,
-	"product_price": 7000,
-	"quantity": 1
-	}]
+                            <tr id="promo-checkout">
+                                <td id="promo-wrapper">
+                                    <input id="promo" placeholder="Input Promo Code">
+                                    <button id="apply-promo">Apply Promo</button>
+                                </td>
 
-	const products = [{
-		"id": 1,
-		"name": "Pitta Broodje",
-		"price": 10.00,
-		"description": "Pitta Broodje",
-		"cover": "https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg",
-		]
-	},
-	{
-		"id": 2,
-		"name": "Kip Broodje",
-		"price": 11.00,
-		"description": "Kip Broodje",
-		"cover": "https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg",
-		]
-	},
-	{
-		"id": 3,
-		"name": "iPad Pro",
-		"price": 12.00,
-		"description": "Pitta Kaas",
-		"cover": "https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg",
-		]
-	},
-	{
-		"id": 4,
-		"name": "Durum",
-		"price": 13.00,
-		"description": "Durum Pitta Vlees Met Fijn Brood en Frieten",
-		"cover": "https://od.lk/s/OTFfMzExNjIwMjlf/durum.png",
-		"images": [
-		"https://od.lk/s/OTFfMzExNjIwMjlf/durum.png",
-		]
-	},
-	{
-		"id": 5,
-		"name": "Frans Burger",
-		"price": 14.00,
-		"description": "Frans Brood Met Pitta Vlees of Burger Met Frieten",
-		"cover": "https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg",
-		]
-	},
-	{
-		"id": 6,
-		"name": "Kapsalon",
-		"price": 14.00,
-		"description": "Pitta Vlees Met Kaas en Frieten of Ananas",
-		"cover": "https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg",
-		]
-	},
-	{
-		"id": 7,
-		"name": "Frieten",
-		"price": 5.00,
-		"description": "Frieten met Saus",
-		"cover": "https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg",
-		]
-	},
-	{
-		"id": 8,
-		"name": "Extra Saus",
-		"price": 200.71,
-		"description": "Extra Saus",
-		"cover": "https://od.lk/s/OTFfMzExNTY0NzFf/extraSaus.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTY0NzFf/extraSaus.jpg",
-		]
-	},
-	{
-		"id": 9,
-		"name": "Kalkoen Stick",
-		"price": 2.00,
-		"description": "Kalkoen stick Met Saus of Zonder Saus",
-		"cover": "https://od.lk/s/OTFfMzExNTk4NzRf/kzlkoen.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTk4NzRf/kzlkoen.jpg",
-		]
-	},
-	{
-		"id": 10,
-		"name": "Koude Drank",
-		"price": 2.00,
-		"description": "Koude Drank",
-		"cover": "https://od.lk/s/OTFfMzExNjAzNzZf/Drankgroothandel.be_.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNjAzNzZf/Drankgroothandel.be_.jpg",
-		]
-	},
-	{
-		"id": 11,
-		"name": "Linzen Soep",
-		"price": 3.00,
-		"description": "Linzen Soep Met Krokant Brood",
-		"cover": "https://od.lk/s/OTFfMzExNTk5MjZf/mercimek_corbasi-450x450.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTk5MjZf/mercimek_corbasi-450x450.jpg",
-		]
-	},
-	{
-		"id": 12,
-		"name": "Pitta Schotel",
-		"price": 20.00,
-		"description": "Pitta Schotel ",
-		"cover": "https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg",
-		"images": [
-		"https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg",
-		]
-	},
-	{
-		"id": 13,
-		"name": "Anadolu",
-		"price": 0.00,
-		"description": "Anadolu",
-		"cover": "https://od.lk/s/OTFfMzExNjAwNzlf/anadolu-logo-transparent.png",
-		"images": [
-		"https://od.lk/s/OTFfMzExNjAwNzlf/anadolu-logo-transparent.png",
-		]
-	}];
-
-	  </script>
+                                <td>
+                                    <button id="checkout">Checkout</button>
+                                </td>
+                                
+                                <td>
+                                    <button id="ks" class="keep-shopping">Keep Shopping</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>

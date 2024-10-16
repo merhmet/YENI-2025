@@ -1,541 +1,315 @@
-const contentDiv = document.querySelector(".content");
-const cardsDiv = document.querySelector(".cards");
-const activeCart = document.querySelector(".active-cart");
-const cart = document.querySelector(".cart");
-const productsInCart = document.querySelector(".productsInCart");
-const leghtCart = document.querySelector(".leght-cart");
-const leghtCartP = leghtCart.querySelector("p");
-const items = document.querySelector(".items");
-leghtCartP.innerHTML = productsCart.length; 
-items.innerHTML = productsCart.length + " items";
-const totalValor = document.querySelector(".total-valor");
-var total = productsCart.reduce(getTotal, 0);
-function getTotal(total, item) {
-  return total + item.product_price * item.quantity;
-} // updating the total price
-totalValor.innerHTML = "€" + total.toFixed(2);
-
-if (productsCart.length <= 0) {
-  const instruction = document.createElement("div");
-  instruction.classList.add("instruction");
-  const instructionP = document.createElement("p");
-  instructionP.innerHTML = "Your cart is empty...";
-  instruction.append(instructionP);
-  productsInCart.append(instruction);
-} else {
-  const instruction = document.querySelector(".instruction");
-  if (instruction) {
-    instruction.remove();
-  }
-  const clearCart = document.createElement("div");
-  clearCart.classList.add("clearCart");
-  clearCart.innerHTML = "Verwijder Alles";
-  productsInCart.append(clearCart);
-
-  clearCart.addEventListener("click", () => {
-    productsCart.splice(0, productsCart.length);
-    var total = productsCart.reduce(getTotal, 0);
-    function getTotal(total, item) {
-      return total + item.product_price * item.quantity;
-    } // updating the total price
-    totalValor.innerHTML = "€" + total.toFixed(2);
-    items.innerHTML = productsCart.length + " items";
-    productsInCart.innerHTML = "";
-    const instruction = document.createElement("div");
-    instruction.classList.add("instruction");
-    const instructionP = document.createElement("p");
-    instructionP.innerHTML = "Your cart is empty...";
-    instruction.append(instructionP);
-    productsInCart.append(instruction);
-    leghtCartP.innerHTML = productsCart.length;
-  });
-} // for if the quantity of items in the cart is greater than 0
-
-activeCart.addEventListener("click", () => {
-  if (cart.getAttribute("visible") === "false") {
-    cart.setAttribute("visible", true);
-  } else if (cart.getAttribute("visible") === "true") {
-    cart.setAttribute("visible", false);
-  }
-}); // show and hide shopping cart
-
-const cards = products.map(function (product) {
-  const cardContent = document.createElement("div");
-  const cardcontent_a = document.createElement("div");
-  const cardcontent_b = document.createElement("div");
-  const imgcontent = document.createElement("div");
-  const img = document.createElement("img");
-  img.src = product.cover;
-  const addCart = document.createElement("div");
-  addCart.innerHTML = '<i class="fa-solid fa-cart-plus"></i>';
-  addCart.addEventListener("click", () => {
-    setProductCart(product);
-  }); // event responsible for add an item to the shopping cart
-  const setInfo = document.createElement("div");
-  setInfo.innerHTML = '<i class="fa-solid fa-info"></i>';
-  const price = document.createElement("div");
-  price.innerHTML = "€" + product.price;
-  const name = document.createElement("div");
-  name.innerHTML = product.name;
-
-  cardContent.classList.add("card");
-  cardcontent_a.classList.add("cardcontent-a");
-  cardcontent_b.classList.add("cardcontent-b");
-  imgcontent.classList.add("imgcontent");
-  addCart.classList.add("add-cart");
-  price.classList.add("price");
-  name.classList.add("name");
-  setInfo.classList.add("set-info");
-
-  setInfo.addEventListener("click", () => {
-    const div = document.querySelector(".infos");
-    if (div) {
-      div.remove();
-    }
-    setInfoProduct(product);
-  }); // show and hide items information
-
-  imgcontent.append(img);
-  cardContent.append(imgcontent);
-  cardContent.append(cardcontent_b);
-  cardContent.append(cardcontent_a);
-  cardContent.append(addCart);
-  cardContent.append(setInfo);
-  cardContent.append(price);
-  cardContent.append(name);
-
-  return cardContent;
-}); // load items of array in cards view
-
-cardsDiv.append(...cards); // pinning cards to parent div
-
-const shoppingcart = productsCart.map(function (product) {
-	
-	const item = products.find((item) => item.id === Number(product.product_id));
-
-    const productInCart = document.createElement("div");
-
-    productInCart.classList.add("productInCart");
-
-    const removProductInCart = document.createElement("div");
-    removProductInCart.classList.add("removProductInCart");
-    removProductInCart.addEventListener("click", () => {
-
-      let index = productsCart.findIndex((prod) => prod.product_id === item.id);
-      productsCart.splice(index, 1);
-
-      var total = productsCart.reduce(getTotal, 0);
-      function getTotal(total, item) {
-        return total + item.product_price * item.quantity;
-      } // updating the total price
-      totalValor.innerHTML = "€" + total.toFixed(2);
-
-      items.innerHTML = productsCart.length + " items";
-
-	  leghtCartP.innerHTML = productsCart.length;
-
-	  productInCart.remove();
-
-      if (productsCart.length === 0) {
-
-        const clearCart = document.querySelector(".clearCart");
-        clearCart.remove();
-        const instruction = document.createElement("div");
-        instruction.classList.add("instruction");
-        const instructionP = document.createElement("p");
-        instructionP.innerHTML = "Your cart is empty...";
-        instruction.append(instructionP);
-        productsInCart.append(instruction);
-      } // checking if this was the only item in the shopping cart and if so, adding the alert "Your cart is empty"
-
-    });
-
-    const removProductInCartP = document.createElement("p");
-    removProductInCartP.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
-
-    const productImgDiv = document.createElement("div");
-    productImgDiv.classList.add("productImage");
-
-    const productImg = document.createElement("img");
-    productImg.src = item.cover;
-
-    const productContent = document.createElement("div");
-    productContent.classList.add("productContent");
-
-    const productName = document.createElement("div");
-    productName.classList.add("productName");
-
-    const productNameP = document.createElement("p");
-    productNameP.innerHTML = item.name;
-
-    const productPrice = document.createElement("div");
-    productPrice.classList.add("productPrice");
-
-    const productPriceP = document.createElement("p");
-    productPriceP.innerHTML = "€" + item.price;
-
-    const productQunt = document.createElement("div");
-    productQunt.classList.add("productQunt");
-
-    const productQuntLab = document.createElement("div");
-    productQuntLab.classList.add("productQuntLab");
-    productQuntLab.innerHTML = "1";
-    productQuntLab.setAttribute("data-id", item.id);
-	
-    const productQuntAdd = document.createElement("div");
-    productQuntAdd.classList.add("productQuntAR");
-    productQuntAdd.innerHTML = '<i class="fa-solid fa-square-plus"></i>';
-    productQuntAdd.addEventListener("click", () => {
-
-      const prod = productsCart.find(
-        (prod) => prod.product_id === Number(item.id)
-      );
-      prod.quantity = prod.quantity + 1;
-
-      var total = productsCart.reduce(getTotal, 0);
-      function getTotal(total, item) {
-        return total + item.product_price * item.quantity;
-      } // updating the total price
-
-      totalValor.innerHTML = "€" + total.toFixed(2);
-
-      productQuntLab.innerHTML = prod.quantity;
-
-    }); // event responsible for adding +1 to item quantity	
-	
-    const productQuntRemov = document.createElement("div");
-    productQuntRemov.classList.add("productQuntAR");
-    productQuntRemov.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
-	
-    productQuntRemov.addEventListener("click", () => {
-
-      const prod = productsCart.find(
-        (prod) => prod.product_id === Number(item.id)
-      );
-
-      if (prod.quantity > 1) {
-		
-        prod.quantity = prod.quantity - 1;
-
-        var total = productsCart.reduce(getTotal, 0);
-        function getTotal(total, item) {
-          return total + item.product_price * item.quantity;
-        } // updating the total price
-
-        totalValor.innerHTML = "€" + total.toFixed(2);
-        productQuntLab.innerHTML = prod.quantity;
-      }
-
-    }); // event responsible for removing -1 from item quantity
-	
-    productInCart.append(removProductInCart);
-    removProductInCart.append(removProductInCartP);
-    productInCart.append(productImgDiv);
-    productImgDiv.append(productImg);
-    productInCart.append(productContent);
-    productContent.append(productName);
-    productName.append(productNameP);
-    productName.append(productPrice);
-    productPrice.append(productPriceP);
-    productContent.append(productQunt);
-    productQunt.append(productQuntRemov);
-    productQunt.append(productQuntLab);
-    productQunt.append(productQuntAdd);
-
-  return productInCart;
-}); // load items of array in shoppingcart view
-
-productsInCart.append(...shoppingcart); // pinning shoppingcart to parent div
-
-function setInfoProduct(product) {
-  const infos = document.createElement("div");
-  const close = document.createElement("div");
-  close.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
-  const photos = document.createElement("div");
-
-  const imgs = product.images.map(function (image) {
-    const img = document.createElement("img");
-    img.src = image;
-    img.addEventListener("click", () => {
-      const featuredImage = document.querySelector(".featured");
-      const img = featuredImage.querySelector("img");
-      img.src = image;
-    }); // change featured image
-    return img;
-  });
-
-  const gallery = document.createElement("div");
-  const featured = document.createElement("div");
-  const featuredImg = document.createElement("img");
-  featuredImg.src = product.images[0];
-  const info = document.createElement("div");
-  const info_name = document.createElement("div");
-  const info_name_text = document.createElement("p");
-  info_name_text.innerHTML = product.name;
-  const sales = document.createElement("div");
-  const info_price = document.createElement("div");
-  const info_price_text = document.createElement("p");
-  info_price_text.innerHTML = "Price: €" + product.price;
-  const info_description = document.createElement("div");
-  const info_description_text = document.createElement("p");
-  info_description_text.innerHTML = product.description;
-  const info_add_to_cart = document.createElement("div");
-  const info_add_to_cart_text = document.createElement("p");
-  info_add_to_cart_text.innerHTML = "add to cart";
-  info_add_to_cart.addEventListener("click", () => {
-    setProductCart(product);
-    infos.remove();
-  }); // event responsible for add an item to the shopping cart
-  infos.classList.add("infos");
-  close.classList.add("close-info");
-  gallery.classList.add("gallery");
-  featured.classList.add("featured");
-  photos.classList.add("photos");
-  info.classList.add("info");
-  info_name.classList.add("info-name");
-  info_price.classList.add("info-price");
-  sales.classList.add("sales");
-  info_description.classList.add("info-description");
-  info_add_to_cart.classList.add("info-add_to_cart");
-
-  info_name.append(info_name_text);
-  info_description.append(info_description_text);
-  info_price.append(info_price_text);
-  info_add_to_cart.append(info_add_to_cart_text);
-  info.append(info_name);
-  info.append(info_description);
-  info.append(sales);
-  sales.append(info_price);
-  sales.append(info_add_to_cart);
-  featured.append(featuredImg);
-  photos.append(featured);
-  photos.append(gallery);
-  gallery.append(...imgs);
-  infos.append(close);
-  infos.append(photos);
-  infos.append(info);
-  contentDiv.append(infos);
-
-  close.addEventListener("click", () => {
-    infos.remove();
-  }); // close item information
-} // load item information
-
-function setProductCart(product) {
-
-  leghtCart.setAttribute("animate", "true");
-  setTimeout(function () {
-    leghtCart.setAttribute("animate", "false");
-  }, 500); // creating an animation when adding item to shopping cart
-
-  const hasItem = productsCart.find(
-    (prod) => prod.product_id === Number(product.id)
-  ); // checking if the item already exists in the shopping cart, if it exists just increase the current quantity of this item, otherwise the item is added.
-
-  if (hasItem) {
-
-    hasItem.quantity = hasItem.quantity + 1;
-    const productQuntLab = document.querySelector(`[data-id="${product.id}"]`);
-    productQuntLab.innerHTML = hasItem.quantity;
-    var total = productsCart.reduce(getTotal, 0);
-    function getTotal(total, item) {
-      return total + item.product_price * item.quantity;
-    } // updating the total price
-    totalValor.innerHTML = "€" + total.toFixed(2);
-
-  } else {
-
-    const product_id = product.id;
-    const product_price = product.price;
-    const quantity = 1;
-    productsCart.push({ product_id, product_price, quantity });
-
-    items.innerHTML = productsCart.length + " items";
-	
-    var total = productsCart.reduce(getTotal, 0);
-    function getTotal(total, item) {
-      return total + item.product_price * item.quantity;
-    } // updating the total price
-    totalValor.innerHTML = "€" + total.toFixed(2);
-
-	leghtCartP.innerHTML = productsCart.length;
-
-    if (productsCart.length === 1) {
-      const instruction = document.querySelector(".instruction");
-      if (instruction) {
-        instruction.remove();
-      } // checking if this is the first item to be added to the cart and if so, removing the "Your cart is empty" alert.
-	  
-      const clearCart = document.createElement("div");
-      clearCart.classList.add("clearCart");
-      clearCart.innerHTML = "clear cart";
-      productsInCart.append(clearCart);
-      clearCart.addEventListener("click", () => {
-
-        productsCart.splice(0, productsCart.length);
-        var total = productsCart.reduce(getTotal, 0);
-        function getTotal(total, item) {
-          return total + item.product_price * item.quantity;
-        } // updating the total price
-
-        totalValor.innerHTML = "€" + total.toFixed(2);
-
-        items.innerHTML = productsCart.length + " items";
-		
-        productsInCart.innerHTML = "";
-
-        const instruction = document.createElement("div");
-        instruction.classList.add("instruction");
-
-        const instructionP = document.createElement("p");
-        instructionP.innerHTML = "Your cart is empty...";
-        instruction.append(instructionP);
-
-        productsInCart.append(instruction);
-
-        leghtCartP.innerHTML = productsCart.length;
-
-      });
-    } // event responsible for emptying the cart at once
-
-    const item = products.find((item) => item.id === Number(product.id));
-
-    const productInCart = document.createElement("div");
-
-    productInCart.classList.add("productInCart");
-
-    const removProductInCart = document.createElement("div");
-    removProductInCart.classList.add("removProductInCart");
-    removProductInCart.addEventListener("click", () => {
-
-      let index = productsCart.findIndex((prod) => prod.product_id === item.id);
-      productsCart.splice(index, 1);
-
-      var total = productsCart.reduce(getTotal, 0);
-      function getTotal(total, item) {
-        return total + item.product_price * item.quantity;
-      } // updating the total price
-      totalValor.innerHTML = "€" + total.toFixed(2);
-
-      items.innerHTML = productsCart.length + " items";
-
-	  leghtCartP.innerHTML = productsCart.length;
-
-	  productInCart.remove();
-
-      if (productsCart.length === 0) {
-
-        const clearCart = document.querySelector(".clearCart");
-        clearCart.remove();
-        const instruction = document.createElement("div");
-        instruction.classList.add("instruction");
-        const instructionP = document.createElement("p");
-        instructionP.innerHTML = "Your cart is empty...";
-        instruction.append(instructionP);
-        productsInCart.append(instruction);
-      } // checking if this was the only item in the shopping cart and if so, adding the alert "Your cart is empty"
-
-    });
-
-    const removProductInCartP = document.createElement("p");
-    removProductInCartP.innerHTML = '<i class="fa-regular fa-trash-can"></i>';
-
-    const productImgDiv = document.createElement("div");
-    productImgDiv.classList.add("productImage");
-
-    const productImg = document.createElement("img");
-    productImg.src = item.cover;
-
-    const productContent = document.createElement("div");
-    productContent.classList.add("productContent");
-
-    const productName = document.createElement("div");
-    productName.classList.add("productName");
-
-    const productNameP = document.createElement("p");
-    productNameP.innerHTML = item.name;
-
-    const productPrice = document.createElement("div");
-    productPrice.classList.add("productPrice");
-
-    const productPriceP = document.createElement("p");
-    productPriceP.innerHTML = "€" + item.price;
-
-    const productQunt = document.createElement("div");
-    productQunt.classList.add("productQunt");
-
-    const productQuntLab = document.createElement("div");
-    productQuntLab.classList.add("productQuntLab");
-    productQuntLab.innerHTML = "1";
-    productQuntLab.setAttribute("data-id", item.id);
-	
-    const productQuntAdd = document.createElement("div");
-    productQuntAdd.classList.add("productQuntAR");
-    productQuntAdd.innerHTML = '<i class="fa-solid fa-square-plus"></i>';
-    productQuntAdd.addEventListener("click", () => {
-
-      const prod = productsCart.find(
-        (prod) => prod.product_id === Number(item.id)
-      );
-      prod.quantity = prod.quantity + 1;
-
-      var total = productsCart.reduce(getTotal, 0);
-      function getTotal(total, item) {
-        return total + item.product_price * item.quantity;
-      } // updating the total price
-
-      totalValor.innerHTML = "€" + total.toFixed(2);
-
-      productQuntLab.innerHTML = prod.quantity;
-
-    }); // event responsible for adding +1 to item quantity	
-	
-    const productQuntRemov = document.createElement("div");
-    productQuntRemov.classList.add("productQuntAR");
-    productQuntRemov.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
-	
-    productQuntRemov.addEventListener("click", () => {
-
-      const prod = productsCart.find(
-        (prod) => prod.product_id === Number(item.id)
-      );
-
-      if (prod.quantity > 1) {
-		
-        prod.quantity = prod.quantity - 1;
-
-        var total = productsCart.reduce(getTotal, 0);
-        function getTotal(total, item) {
-          return total + item.product_price * item.quantity;
-        } // updating the total price
-
-        totalValor.innerHTML = "€" + total.toFixed(2);
-        productQuntLab.innerHTML = prod.quantity;
-      }
-
-    }); // event responsible for removing -1 from item quantity
-	
-    productsInCart.append(productInCart);
-    productInCart.append(removProductInCart);
-    removProductInCart.append(removProductInCartP);
-    productInCart.append(productImgDiv);
-    productImgDiv.append(productImg);
-    productInCart.append(productContent);
-    productContent.append(productName);
-    productName.append(productNameP);
-    productName.append(productPrice);
-    productPrice.append(productPriceP);
-    productContent.append(productQunt);
-    productQunt.append(productQuntRemov);
-    productQunt.append(productQuntLab);
-    productQunt.append(productQuntAdd);
-  }
+// Cart Toggle
+let cartToggle = document.getElementById('cart-button');
+let cartToggleCount = 0;
+let cartWrapper = document.getElementById('cart-wrapper');
+let cartElement = document.getElementById('cart');
+let subtotal = document.getElementById('subtotal');
+let total = document.getElementById('total');
+let applyPromoButton = document.querySelector('#apply-promo');
+let addToCartButton = document.querySelectorAll('.add-to-cart');
+
+applyPromoButton.addEventListener('click', applyPromo);
+
+let cartProductQuantity = "<input name='quantity' id='quantity-value' type='number' value='1'>";
+
+let productRemove = "<button class='remove' onclick='removeFromCart(this)'>X</button>";
+
+let updatedPrice;
+let added = [], itemClass = {};
+
+ // Capture HTML cart body
+var cartTableBody = document.getElementById('cart-table-body');
+
+// Cart object model
+let cart = {
+    'items': [],
+    "subtotal": 0,
+	"iphoneDis": 0,
+	"androidDis": 0,
+	"Off5": 0,
+	"finalDis": 0,
+    'total': 0
+};
+
+for (let button of addToCartButton) {
+    button.addEventListener('click', addToCart);
 }
 
-const checkout = document.querySelector(".checkout");
 
-checkout.addEventListener("click", () => {
-	
-	alert(`purchase of €{totalValor.textContent} for €{items.textContent} successfully completed 🛒💸😀`)
+$('.trigger, .keep-shopping').click(function() {
+  $('.slider').toggleClass('close');
+});
 
-  }); // event responsible for checkout
+// Adding products to the shopping cart
+function addToCart(event) {
+    
+    if (added.includes(event.target.parentElement.id)) {
+        duplicateId = '#' + event.target.parentElement.id;
+        
+        cartTableBody.querySelector(duplicateId).querySelector('#quantity-value').value++;
+        return;
+    }
+    
+    // Capture product
+    let product = event.target.parentNode;
+    let productId = product.id;
+    added.unshift(productId);
+    let productName = product.querySelector('.product-name').innerHTML;
+    let productPrice = product.querySelector('.product-price').innerHTML.replace(/[^\d.-]/g, '');
+    productPrice = Number(productPrice);
+    let productUpdatedPrice = productPrice;
+    
+    thisClass = product.classList.value.split(' ');
+/*
+    thisClass = thisClass.replace('products ', '');
+*/
+    
+    itemClass[productId] = thisClass;
+    
+    // Add item to cart javascript model
+    cart.items.push({
+		'product': productId,
+		'productName': productName,
+		'productPrice': productPrice,
+		'productUpdatedPrice': productUpdatedPrice,
+	});
+    
+    
+    // Add a new row for each product
+    let productRow = document.createElement('tr');
+    productRow.setAttribute('id', productId);
+    cartTableBody.appendChild(productRow);
+    
+    // Add five columns to product row
+    for (let num = 0; num <= 6; num++) {
+        let newColumn = document.createElement('td');
+        productRow.appendChild(newColumn);
+    }
+            
+    // Build HTML cart
+    productRow.childNodes[0].innerHTML = productName;
+    productRow.childNodes[1].innerHTML = cartProductQuantity;
+    productRow.childNodes[1].setAttribute('id', 'quantity');
+    productRow.childNodes[2].innerHTML = productPrice;
+    productRow.childNodes[2].setAttribute('id', 'product-price');
+    productRow.childNodes[2].setAttribute('class', 'cart-product-price');
+    productRow.childNodes[3].innerHTML = productPrice;
+    productRow.childNodes[3].setAttribute('id', 'updated-product-price');
+    productRow.childNodes[3].setAttribute('class', 'cart-updated-product-price');
+    productRow.childNodes[4].innerHTML = "<button id='update' onclick='updateQuantity(this)'>Update</button>"
+    productRow.childNodes[5].innerHTML = productRemove;
+    
+    
+    
+    updateSubtotal();
+    updateTotal();
+    
+    $('.slider').toggleClass('close');
+    
+}
+
+function removeFromCart(event) {
+    let parentRow = event.parentNode.parentNode;
+    let parentBody = parentRow.parentNode;
+    let parentRowId = parentRow.id;
+    parentBody.removeChild(parentRow);
+    
+    total.value = (Number(total.value) - parentRow.querySelector('#updated-product-price').innerHTML).toFixed(2);
+    
+    var index = added.indexOf(parentRowId);
+    if (index !== -1) {
+        added.splice(index, 1);
+    }
+    
+    for (let item of cart.items) {
+        if (item.product === parentRowId) cart.items.splice(item, 1);
+    }
+    
+    var subtotalRow = document.getElementById("subtotal");
+	var subtotalRowParent = subtotalRow.parentNode;
+	for (let node of subtotalRowParent.childNodes) {
+		if (node.id === "discountRow") {
+            var discountRow = document.getElementById("discountRow");
+            
+            subtotalRowParent.removeChild(discountRow);
+        }
+
+	}
+
+    cart.finalDis = 0;
+	updateSubtotal();
+	updateTotal();
+
+}
+
+
+function updateQuantity(event) {
+    let parentRow = event.parentNode.parentNode;
+    let parentRowId = parentRow.id;
+    var inputQuantity,productPrice,updatedPrice,totalPrice;
+    
+    for (let node of parentRow.childNodes) {
+        switch (node.id) {
+            case 'quantity':
+                inputQuantity = node.firstChild;
+                break;
+                
+            case 'product-price':
+                productPrice = Number(node.innerHTML);
+                break;
+                
+            case 'updated-product-price':
+                updatedPrice = node;
+                totalPrice = Number(node.innerHTML);
+                console.log(totalPrice);
+        }
+    }
+    
+    let inputQuantityValue = (Number(inputQuantity.value)).toFixed(2);
+    
+    if (inputQuantityValue <= 0) removeFromCart(event);
+    
+    totalPrice = inputQuantity.value * productPrice;
+    updatedPrice.innerHTML = totalPrice;
+    
+    for (let item of cart.items) {
+        if (item.product === parentRowId) item.productUpdatedPrice = totalPrice;
+    }
+    
+    updateSubtotal();
+    updateTotal();
+    console.log(cart);
+}
+
+function applyPromo(event) {
+    let promoInputValue = document.getElementById('promo').value.toUpperCase();
+    let promoInput = document.getElementById('promo');
+    
+    switch (promoInputValue) {
+        case 'IPHONEX15':
+            let price = 0;
+            for (item of cart.items) {
+                if (item.product.includes('iphone-x')) {
+                    price += item.productPrice;
+                    let pro15Dis = (price * 15) / 100;
+                    
+                    cart.iphoneDis = pro15Dis;
+                    cart.finalDis = cart.iphoneDis.toFixed(2);
+                    addDiscountAmount();
+                }
+            }
+            
+            alert('15% Off the iPhone X!');
+            break;
+            
+        case 'ANDROID10':
+            for (item of cart.items) {
+                if (isIncluded('android', itemClass[item.product])) {
+                    let product = cartTableBody.querySelector('#' + item.product);
+                    var productUpdatedPrice = product.querySelector('#updated-product-price').innerHTML;
+                    
+                    productUpdatedPrice = (Number (productUpdatedPrice) * 10) / 100;
+                    
+                    product.querySelector('#updated-product-price').innerHTML = (Number (product.querySelector('#updated-product-price').innerHTML)) - productUpdatedPrice;
+                    
+                }
+            }
+            
+            cart.androidDis = productUpdatedPrice;
+            cart.finalDis = cart.androidDis.toFixed(2);
+
+            addDiscountAmount();
+            
+            alert('10% Off all Android products!');
+
+            break;
+            
+        case '5OFFEVERYTHING':
+            let subtotalDiscount = (cart.subtotal * 5) / 100;
+            
+            cart.Off5 = subtotalDiscount;
+            cart.finalDis = cart.Off5.toFixed(2);
+            addDiscountAmount();
+            
+            alert('5% Off the price of all products combined!');
+            break;
+            
+        case '':
+            alert('Please enter a discount code!');
+            
+            break;
+            
+        default:
+            alert('Invalid Code!');
+    }
+    
+    function addDiscountAmount() {
+        var orderTotalRow = document.getElementById("total-wrapper");
+        var orderTotalRowParent = orderTotalRow.parentNode; 
+        var newRow = document.createElement("tr");
+        orderTotalRowParent.insertBefore(newRow, orderTotalRow); 
+        newRow.setAttribute("id", "discountRow");
+        for(var j = 0; j < 2; j++){ 
+            var newTd = document.createElement("td"); 
+            newRow.appendChild(newTd);
+        }
+        newRow.childNodes[0].innerHTML = "Discount:";
+        newRow.childNodes[1].innerHTML = cart.finalDis;
+        newRow.childNodes[1].setAttribute("id", "discountAmt");
+    
+        updateSubtotal();
+        updateTotal();
+    }
+}
+
+function updateSubtotal() {
+    cart.subtotal = 0;
+    
+    for (let item of cart.items) {
+        cart.subtotal += item.productUpdatedPrice;
+    }
+    
+    subtotal.innerHTML = cart.subtotal.toFixed(2);
+}
+
+function updateTotal() {
+    cart.total = 0;
+    cart.total += (cart.subtotal - cart.finalDis);
+    total.innerHTML = cart.total.toFixed(2);
+}
+
+function isIncluded(input, words) {
+        try {
+            if(!input || words.length == 0) throw 'Invalid Input or words is empty';
+        }
+
+        catch(err) {
+            return `Please provide valid input or add a word to check for`;
+        }
+        
+        let allowed = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+        let count = 0;
+        
+        for (let index = 0; index < input.length; index++) {
+            if(!allowed.includes(input[index])) {
+                input = input.replace(input[index], ' ');
+            }
+        }
+        
+        input = input.split(' ');
+        
+        for (let i = 0; i < input.length; i++) {
+            for (let c = 0; c < 3; c++) {
+                if (input[i] == ' ' || input[i] == '') {
+                    input.splice(i, 1);
+                }
+            }
+        } 
+        
+        for (let word in input) {
+            for (let word2 in words) {
+                if (input[word] == words[word2]) return true;
+            }
+        }
+        return false;
+    }
