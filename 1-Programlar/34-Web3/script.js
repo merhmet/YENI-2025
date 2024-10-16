@@ -13,7 +13,7 @@ var total = productsCart.reduce(getTotal, 0);
 function getTotal(total, item) {
   return total + item.product_price * item.quantity;
 } // updating the total price
-totalValor.innerHTML = "$" + total.toFixed(2);
+totalValor.innerHTML = "€" + total.toFixed(2);
 
 if (productsCart.length <= 0) {
   const instruction = document.createElement("div");
@@ -29,7 +29,7 @@ if (productsCart.length <= 0) {
   }
   const clearCart = document.createElement("div");
   clearCart.classList.add("clearCart");
-  clearCart.innerHTML = "clear cart";
+  clearCart.innerHTML = "Verwijder Alles";
   productsInCart.append(clearCart);
 
   clearCart.addEventListener("click", () => {
@@ -38,7 +38,7 @@ if (productsCart.length <= 0) {
     function getTotal(total, item) {
       return total + item.product_price * item.quantity;
     } // updating the total price
-    totalValor.innerHTML = "$" + total.toFixed(2);
+    totalValor.innerHTML = "€" + total.toFixed(2);
     items.innerHTML = productsCart.length + " items";
     productsInCart.innerHTML = "";
     const instruction = document.createElement("div");
@@ -74,7 +74,7 @@ const cards = products.map(function (product) {
   const setInfo = document.createElement("div");
   setInfo.innerHTML = '<i class="fa-solid fa-info"></i>';
   const price = document.createElement("div");
-  price.innerHTML = "$" + product.price;
+  price.innerHTML = "€" + product.price;
   const name = document.createElement("div");
   name.innerHTML = product.name;
 
@@ -128,7 +128,7 @@ const shoppingcart = productsCart.map(function (product) {
       function getTotal(total, item) {
         return total + item.product_price * item.quantity;
       } // updating the total price
-      totalValor.innerHTML = "$" + total.toFixed(2);
+      totalValor.innerHTML = "€" + total.toFixed(2);
 
       items.innerHTML = productsCart.length + " items";
 
@@ -172,7 +172,7 @@ const shoppingcart = productsCart.map(function (product) {
     productPrice.classList.add("productPrice");
 
     const productPriceP = document.createElement("p");
-    productPriceP.innerHTML = "$" + item.price;
+    productPriceP.innerHTML = "€" + item.price;
 
     const productQunt = document.createElement("div");
     productQunt.classList.add("productQunt");
@@ -197,7 +197,7 @@ const shoppingcart = productsCart.map(function (product) {
         return total + item.product_price * item.quantity;
       } // updating the total price
 
-      totalValor.innerHTML = "$" + total.toFixed(2);
+      totalValor.innerHTML = "€" + total.toFixed(2);
 
       productQuntLab.innerHTML = prod.quantity;
 
@@ -222,7 +222,7 @@ const shoppingcart = productsCart.map(function (product) {
           return total + item.product_price * item.quantity;
         } // updating the total price
 
-        totalValor.innerHTML = "$" + total.toFixed(2);
+        totalValor.innerHTML = "€" + total.toFixed(2);
         productQuntLab.innerHTML = prod.quantity;
       }
 
@@ -275,7 +275,7 @@ function setInfoProduct(product) {
   const sales = document.createElement("div");
   const info_price = document.createElement("div");
   const info_price_text = document.createElement("p");
-  info_price_text.innerHTML = "Price: $" + product.price;
+  info_price_text.innerHTML = "Price: €" + product.price;
   const info_description = document.createElement("div");
   const info_description_text = document.createElement("p");
   info_description_text.innerHTML = product.description;
@@ -341,7 +341,7 @@ function setProductCart(product) {
     function getTotal(total, item) {
       return total + item.product_price * item.quantity;
     } // updating the total price
-    totalValor.innerHTML = "$" + total.toFixed(2);
+    totalValor.innerHTML = "€" + total.toFixed(2);
 
   } else {
 
@@ -356,7 +356,7 @@ function setProductCart(product) {
     function getTotal(total, item) {
       return total + item.product_price * item.quantity;
     } // updating the total price
-    totalValor.innerHTML = "$" + total.toFixed(2);
+    totalValor.innerHTML = "€" + total.toFixed(2);
 
 	leghtCartP.innerHTML = productsCart.length;
 
@@ -378,7 +378,7 @@ function setProductCart(product) {
           return total + item.product_price * item.quantity;
         } // updating the total price
 
-        totalValor.innerHTML = "$" + total.toFixed(2);
+        totalValor.innerHTML = "€" + total.toFixed(2);
 
         items.innerHTML = productsCart.length + " items";
 		
@@ -415,7 +415,7 @@ function setProductCart(product) {
       function getTotal(total, item) {
         return total + item.product_price * item.quantity;
       } // updating the total price
-      totalValor.innerHTML = "$" + total.toFixed(2);
+      totalValor.innerHTML = "€" + total.toFixed(2);
 
       items.innerHTML = productsCart.length + " items";
 
@@ -459,7 +459,7 @@ function setProductCart(product) {
     productPrice.classList.add("productPrice");
 
     const productPriceP = document.createElement("p");
-    productPriceP.innerHTML = "$" + item.price;
+    productPriceP.innerHTML = "€" + item.price;
 
     const productQunt = document.createElement("div");
     productQunt.classList.add("productQunt");
@@ -484,7 +484,7 @@ function setProductCart(product) {
         return total + item.product_price * item.quantity;
       } // updating the total price
 
-      totalValor.innerHTML = "$" + total.toFixed(2);
+      totalValor.innerHTML = "€" + total.toFixed(2);
 
       productQuntLab.innerHTML = prod.quantity;
 
@@ -509,7 +509,7 @@ function setProductCart(product) {
           return total + item.product_price * item.quantity;
         } // updating the total price
 
-        totalValor.innerHTML = "$" + total.toFixed(2);
+        totalValor.innerHTML = "€" + total.toFixed(2);
         productQuntLab.innerHTML = prod.quantity;
       }
 
@@ -536,6 +536,6 @@ const checkout = document.querySelector(".checkout");
 
 checkout.addEventListener("click", () => {
 	
-	alert(`purchase of ${totalValor.textContent} for ${items.textContent} successfully completed 🛒💸😀`)
+	alert(`purchase of €{totalValor.textContent} for €{items.textContent} successfully completed 🛒💸😀`)
 
   }); // event responsible for checkout
