@@ -451,6 +451,7 @@ $(function () {
         }
       });
     },
+
     /**
      * Format currency
      */
