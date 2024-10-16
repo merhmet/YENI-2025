@@ -2,119 +2,212 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Shopping Cart</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.min.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - JS E-Commerce Website</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="Phone">
-  <div class="page" id="Catalog">
-    <div class="top"><img class="photo" src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-woman-avatar-and-emotion-justicon-flat-justicon-2.png"/><i class="fa-solid fa-magnifying-glass" id="SearchBtn"></i></div>
-    <h2 class="page-title">Apple Store</h2>
-    <div class="filter"> 
-      <div class="btn" id="iPad">
-        <svg viewbox="0 0 32 32">
-          <g>
-            <path d="M28,0H4C2.895,0,2,0.895,2,2v28c0,1.105,0.895,2,2,2h24c1.105,0,2-0.895,2-2V2C30,0.895,29.105,0,28,0z M29,29c0,1.105-0.895,2-2,2H5c-1.105,0-2-0.895-2-2V3c0-1.105,0.895-2,2-2h22c1.105,0,2,0.895,2,2V29z"></path>
-            <circle cx="16" cy="29" r="1"></circle>
-            <path d="M26,2H6C4.895,2,4,2.895,4,4v21c0,1.105,0.895,2,2,2h20c1.105,0,2-0.895,2-2V4C28,2.895,27.105,2,26,2z M27,24c0,1.105-0.895,2-2,2H7c-1.105,0-2-0.895-2-2V5c0-1.105,0.895-2,2-2h18c1.105,0,2,0.895,2,2V24z"></path>
-          </g>
-        </svg>
-      </div>
-      <div class="btn" id="iPhone">
-        <svg viewbox="0 0 32 32">
-          <g>
-            <path d="M23,0H9C7.895,0,7,0.895,7,2v28c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V2C25,0.895,24.105,0,23,0z M24,29c0,1.105-0.895,2-2,2H10c-1.105,0-2-0.895-2-2V3c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V29z"></path>
-            <circle cx="16" cy="29" r="1"></circle>
-            <path d="M14.196,3h3.608C17.912,3,18,2.868,18,2.706V2.294C18,2.132,17.912,2,17.804,2h-3.608 C14.088,2,14,2.132,14,2.294v0.412C14,2.868,14.088,3,14.196,3z"></path>
-          </g>
-        </svg>
-      </div>
-      <div class="btn" id="AppleWatch">
-        <svg viewbox="0 0 32 32">
-          <g>
-            <path d="M 23 8 H 9 C 9 8 9 8 9 8 C 7.895 8 7 8.895 7 10 v 14 c 0 1.105 0.895 2 2 2 h 14 c 1.105 0 2 -0.895 2 -2 V 10 C 25 8.895 24.105 8 23 8 z M 24 23 c 0 1.105 -0.895 2 -2 2 H 10 c -1.105 0 -2 -0.895 -2 -2 V 11 c 0 -1.105 0.895 -2 2 -2 h 12 c 1.105 0 2 0.895 2 2 V 23 z M 25 12 C 26 12 26 12 26 13 L 26 15 C 26 16 26 16 25 16 M 11 8 C 12 7 12 5 12 5 C 12 4 12 4 13 4 L 19 4 C 20 4 20 4 20 5 C 20 6 20 7 21 8 M 11 26 C 12 27 12 29 12 29 C 12 30 12 30 13 30 L 19 30 C 20 30 20 30 20 29 C 20 28 20 27 21 26"></path>
-          </g>
-        </svg>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <title>FooDie.</title>
+</head>
+<body>
+<header>
+    <div class="nav">
+
+        <a href="#" class="logo">
+            <ion-icon name="fast-food-outline" id="logo-icon"></ion-icon>
+            FooDie.
+        </a>
+
+        <div class="box">
+            <div class="cart-count">0</div>
+            <ion-icon name="cart-outline" id="cart-icon"><a href="#"  onclick="toggle()"></a></ion-icon>
+        </div>
+
+        <div class="cart">
+            <div class="cart-title">Cart-Item</div>
+            <div class="cart-content">
+
+          <!--      <div class="cart-box">
+                    <img src="pizza.jpg" width="150" height="150" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-food-title">Pizza</div>
+                        <div class="price-box">
+                            <div class="cart-price">Rs.140</div>
+                            <div class="cart-amt">Rs.140</div>
+                        </div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                </div>
+
+
+                <div class="cart-box">
+                    <img src="burger.jpg" width="150" height="150" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-food-title">Burger</div>
+                        <div class="price-box">
+                            <div class="cart-price">Rs.60</div>
+                            <div class="cart-amt">Rs.60</div>
+                        </div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                </div> -->
+
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+            <button class="btn-buy">Place Order</button>
+
+            <ion-icon name="close-outline" id="cart-close" class="popup"><a href="#" onclick="toggle()"></a></ion-icon>
+        </div>
     </div>
-    <div id="Products">
-      <div class="iPad">
-        <div class="card ipad-pro">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://www.apple.com/v/ipad-pro/ah/images/specs/11_in_ipad_pro__dabnmgc7gf42_medium_2x.jpg"/><span class="product">iPad Pro</span><span class="price">$799</span>
-        </div>
-        <div class="card ipad-air"> 
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-202009-gallery-1_FMT_WHH?wid=1436&amp;hei=850&amp;fmt=jpeg&amp;qlt=80&amp;.v=1599002286000"/><span class="product">iPad Air</span><span class="price">$599</span>
-        </div>
-        <div class="card ipad">
-          <div class="row"><i class="fa-regular fa-heart">  </i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2021-hero-landing-wifi?wid=900&amp;hei=1046&amp;fmt=jpeg&amp;qlt=80&amp;.v=1630973863000"/><span class="product">iPad</span><span class="price">$479</span>
-        </div>
-        <div class="card ipad-mini">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-202109?wid=1080&amp;hei=1060&amp;fmt=jpeg&amp;qlt=80&amp;.v=1631751017000"/><span class="product">iPad mini</span><span class="price">$499</span>
-        </div>
-      </div>
-      <div class="iPhone">
-        <div class="card iphone-pro-max">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-family-select?wid=1880&amp;amp;hei=2224&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;.v=1631306948000"/><span class="product">iPhone Pro Max</span><span class="price">$1099</span>
-        </div>
-        <div class="card iphone-pro">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-select?wid=1880&amp;amp;hei=2224&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;.v=1631306948000"/><span class="product">iPhone Pro</span><span class="price">$999</span>
-        </div>
-        <div class="card iphone">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-select-2021?wid=940&amp;amp;hei=1112&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;.v=1631046287000"/>
-          <h5 class="product">iPhone</h5><span class="price">$799</span>
-        </div>
-        <div class="card iphone-mini">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-mini-select-2021?wid=940&amp;amp;hei=1112&amp;amp;fmt=jpeg&amp;amp;qlt=80&amp;amp;.v=1629842691000"/><span class="product">iPhone mini</span><span class="price">$699</span>
-        </div>
-      </div>
-      <div class="iWatch">
-        <div class="card s7"> 
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-s7-202109?wid=460&amp;hei=540&amp;fmt=jpeg&amp;qlt=80&amp;.v=1634933998000"/><span class="product">Apple Watch S7</span><span class="price">$399</span>
-        </div>
-        <div class="card se"> 
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-se-202109?wid=452&amp;hei=536&amp;fmt=jpeg&amp;qlt=80&amp;.v=1632337293000"/><span class="product">Apple Watch SE</span><span class="price">$279</span>
-        </div>
-        <div class="card s3">
-          <div class="row"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-plus"></i></div><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-s3-202109?wid=442&amp;hei=548&amp;fmt=jpeg&amp;qlt=80&amp;.v=1632338059000"/><span class="product">Apple Watch S3</span><span class="price">$199</span>
-        </div>
-      </div>
+</header>
+
+    <div class="banner">
+        <img src="https://previews.dropbox.com/p/thumb/AB8qt_y6KqddnjfUbo11XE7IsosuGXZ1ALcz_XoxPyBoSQCg5CPcen6vzwMc3e7AEyImqSpu0DlWD8O-jtK0sjjjuvJFPA1xnVUqmHxpfBo4h1WcjcV9siT5GwA5cMAj6U9zJenttXbVK9Xl2JltvthXvUBxKFjrhloYTlxEclkXlV84On08BUF1a5d0rdXFbWo4Rmlmywn-UaxqBGYwvqiVAiEBi3_bNzUOarXhQQgZ9xOHL4P4SroYVT2k0GIWcxyw1gXtGN6va5InDbjS3HAKCM3JsfajaEcFHDHeRzHt-EUGyS9THfXlhfMUB5VN5Y7jnlJbDVcwYgZphX4khvcL/p.jpeg" height="400">
+    <div class="heading"><h2>We Serve The Best You Love&hearts;</h2></div>
     </div>
-  </div>
-  <div class="page" id="Cart">
-    <div id="ShoppingCart">
-      <h2 class="page-title"> <span>Cart</span><span id="cart-icon"><i class="fas fa-chevron-circle-up" id="ArrowUp"></i>
-          <div class="cart-count">0</div></span></h2>
-      <div class="container"><i class="fas fa-shopping-cart" id="Cart-logo"></i></div>
-      <div id="Checkout-btn">Check Out<i class="fas fa-arrow-right"></i></div>
+
+<div class="container" id="blur">
+    <div class="control">
+    <div class="btn-group">
+        <button class="btn btn-clicked" data-filter="all">All</button>
+        <button class="btn" data-filter="fast-food">Fast Food</button>
+        <button class="btn" data-filter="desserts">Desserts</button>      
+        <button class="btn" data-filter="juices">Juices</button>
     </div>
-    <div id="CreditCard">
-      <h2 class="page-title">Credit Card<i class="fas fa-chevron-circle-left" id="ArrowLeft"></i></h2>
-      <div class="container">
-        <p>Card Type</p>
-        <div class="card-type"><i class="shadow fab fa-cc-visa"> </i><i class="shadow fab fa-cc-jcb"> </i><i class="shadow fab fa-cc-mastercard"> </i><i class="shadow fab fa-cc-amex"></i></div>
-        <p>Name on Card</p>
-        <div class="form-control">
-          <input id="CardName" type="text" placeholder="Your Name"/>
-        </div>
-        <p>Card Number</p>
-        <div class="form-control">
-          <input id="CardNumber" type="text" placeholder="0000 0000 0000 0000"/>
-        </div><span class="expdt">Expiration Date </span><span class="cvv">CVV</span>
-        <div class="form-control">
-          <input id="ExpDt" type="text" placeholder="mm/yyyy"/>
-          <input id="CVV" type="text" placeholder="123"/>
-        </div>
-        <div class="shadow" id="BuyNow">Buy Now<i class="fas fa-dollar-sign"></i></div>
-      </div>
+    <div class="slide">
+    <input type="search" class="input" placeholder="Search Food" id="search">
+    <button class="btns"><ion-icon name="search"></ion-icon></button>
     </div>
-  </div>
 </div>
+
+    <div class="shop-content">
+
+
+    <div class="food-box">
+    <div class="pic" data-item="fast-food">
+    <img src="https://previews.dropbox.com/p/thumb/AB85OMeITFN8doDdFujlzk5R9llBqf4z6okYzd-ILy4XADUUnZ_C2yMdFfPXyMxIxklAIdlZGKMbk3ipKJuwUtccKbJrAkQM57UojRrA42fV5-le8oRoc11diWAY3aRlVCP8VZIs0SFbVSnktXun6tFkICtSFGyZMsdgU0zVaI75F37-3F4SxMicdXYyWi7cBNuamRE2ZjjZyz8xD2JPhM1uVZbmQwU1Mu3yelfPd3b1fDQhJspP9USLHY6cs4ECD827USntZZXP7fPmvCLG7eL14NwzsA9k8RIHk3JvWW2tOcMiL2s9L615eDk6B65CuP-3huMXsLUdyoAUvjx49ANk/p.jpeg" width="200" height="200">
+    </div>
+    <h2 class="food-title">Pizza</h2>
+    <span class="food-price">Rs.140</span>
+    <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="fast-food">
+            <img src="https://previews.dropbox.com/p/thumb/AB-yQ0AyamaXlWcseItGN1KwAaBUgQ0lwxLfJXB-DUzU2jrJT5WXuBJ_xgg1_vGkRn4jNlUaaqeIaDG211pa3LnfeIrMA_Uu3dIhCeIirVvqawn4KfKuwU1YQ7T8m0xgqytdtjxIpKURc_Z4vuaDVtiKmMcRqhh6ZWZBBQXeW6YFr_3w_D5_IJC5ENhwf6WvuwFj5Nt3-rfHemJJhRaHRvyBynogyQYh_eWjLKY4dUhfGab04W3cs7Lgssb5rsq5P7Wn95Tt8q4JUKtRv9OgGUlgYJxXe9ugNvtcK-0yWu1QoZMK-8-hO9jbfUYhMU7es5ZVzr026Fuo00sG9UChZjyS/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Burger</h2>
+        <span class="food-price">Rs.60</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="fast-food">
+            <img src="https://previews.dropbox.com/p/thumb/AB_H6EuGKxIJKalCs1AZDs7WKKJLeI0ObmLkjjVvqUm05CUCiWxA3b_ung7PWrJQQASLqjJWGainD-lbmwsf9qiPW7WuJgHdfMYbgJVYDnXdBTtJg88gvOXUf30At5PABqh3aLQa3J21l88uc8Rb79-vn0cTX7ZYkwHps1W1E5KmIDscxw6pu09i1LGRlVmruu6vVkY7l3hDo9sNmiPUkjZrtc2MioL7JReH-gSA6BEY3L1TkmEWMdczZTFEScSwbRK4PrTg7csYpJAr-95ryIDZHm1qRPkiZxR3OqsnhlxrBrLQdUa9EJSFG6q43ZquROYc3UofvTtd8KYO9WgFKoDR/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Taco</h2>
+        <span class="food-price">Rs.60</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="fast-food">
+            <img src="https://previews.dropbox.com/p/thumb/AB8w03dmU1LBjPRTiV_pLYV4S6KAP9_NML8PmcVKxIMU2wz5NV8Y-gLNzlHaxlAuvyXmi2IGVvdQvrCnPyHGr9vO9TzBAIULG9HTYqWFpsWPMPdMgJ-odAa-N52JjcJOrcs4bMBJfE4wBG4ktevLSrS5JhnAy8p-oGs7Nj2mgziDeElAt9VpqpOUD7_JaJa38SCpcyRYAyIx2PO3ckes5S1_Gh3WUrKQxaBxes0poZMb4UnzhGt5HoOgg-uZvj2fOEESk0PjsLhh2rJnl3bnTmA0b0g3vD-uG4A5lFYvZSavWuJWw9aq94k70pBcI9xjcgM9L6IT234YuMzgLMDAZRiD5LORLUxN_rCYNPHE14fXrg/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">French Fries</h2>
+        <span class="food-price">Rs.40</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="desserts">
+        <img src="https://previews.dropbox.com/p/thumb/AB_igqthjNtkhe0GgFr00PxZwxYMDkQlYyhnO5MhdpMEGQcBhpdLpvogqmTsUJUAucDkMBOZRc4NBA7_7biAi7MQXJkNvIqklQhL2sYNTFQezqH4qvkT5mObZp7Lojt3HojEhTwcuFEzDJwF7hWS80PnpM9_YoydzKqHh_Wy4rnC1NrbN6CdvPP0SSUlBc6GF8qAY-z83X4Yip-8vfq9m6uPqL3AYki62lOqBv9qG8IhHbvAbj6z0ve9V0nfFMvEn7DU7Gf9DzGUgaF8xc0OZ6lJJzPhyii_s5t_3cw-g-FDas4Kes_l-DMbjPpjxJJNlGAN4KjgQ5DOxdrzlzWTUTfFRuV4BuZ-8qlpe3Py_qiibQ/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Cherry Pie</h2>
+        <span class="food-price">Rs.120</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="desserts">
+        <img src="https://previews.dropbox.com/p/thumb/AB-_-ppHpRXP1BtFY3HEgRh6Ftq19WMJ9pLLS7cVl-ADOjWu4CDZe0GbiPl0-nFZS7EbbDuI6ewT9WVuxudFQ7hNKLXhLotib2hkRNxMDk1zd_IEbxFyp_PAIxIX6AriuDkzrejEAyoQX0RbPRvuux1BTCbtLFEBhGWN21fHQ_uNzprrhHgJYqhVn_0hCYkojJnFQgjLjbOO2K8D-EnNR_K0_8WkBb92E0dX0271hBpchpxqXG-tXXuGZ9GU5jrg1beq_NEN6R7LB1EnEbJKQVsfeixuzuPIeUmG4c0Dp4qqE_cWt_hh79luSrjAN8wX1U_UGvjiHhhgqoIqBw5NbPztSQxiwm5h3MKsv6UYM-oQwQ/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Cookies</h2>
+        <span class="food-price">Rs.60</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="desserts">
+        <img src="https://previews.dropbox.com/p/thumb/AB9ssqXvoIhrtizgrZBM2hXiyMGmmBFp-gNWiOkgdppPpX1de0PbbdX5eE1uXybx5I2-NiFFEIjfs88e19AEl-q1Bb_7vuY7daE_eh57EnSI1eorZOhGnIAOgzueU29QWOOjeUrmT1Mmm4Gp7G-JKa9hXuWYc2Jf_OdQGAzkVE3it2YR_xYWVLhMOcrbbCnEWX9nU7cp3ieD0rICl6LXFPdZjQ8lleq3yrtyeVrtaLo1YSjiVeyM6OhQ71wEI1IFNONhgH8IaOk4T-ZIMHbV-uB0Q20qZ6n4Xxk2KqiwvEOVoZmZ6MOvwSFkf8V6BBGceZsIPtLPtW_oF-Jk4nJ2dsTaZjArNjQyDdu27G394_ZOog/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Brownie</h2>
+        <span class="food-price">Rs.80</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="desserts">
+        <img src="https://previews.dropbox.com/p/thumb/AB-NYQEU_PBqAwyS2XgsJ2AwsytofPXMpGzcKIjNUltP4N96qu8i-1ZW9R_oUDf0mDqCblwbdWl2_CNcY5JIYX6mn22zrUQm_pfvQOVgVnmFjJ2DwrAGOoEveIkSGiUAffJSWKOSIjHFPj1zQEIGFZRfSDJLQefOHReDL0tNMkskjZCUrF5rgOAuOm9GBJq65M7cGpRbEfMC95KgPvTN86jScvv4paAQ2Vk7P1r-rWfXkTJJC6uFNT2TUdjsdSTzTHhfU5ZnZbGh5KWhop8mFVzSIkYOAEJQLKS595xkisCq1oHRq714nSWtPgG8WXevAfx5YMdVt2pcYezbgCViVQ8F-ccYTwD_D0TGqEyR6OS2oQ/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Pudding</h2>
+        <span class="food-price">Rs.90</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+
+    <div class="food-box">
+        <div class="pic" data-item="juices">
+            <img src="https://previews.dropbox.com/p/thumb/AB9C93PSWA-ZV9doeTf8QNQZVIOCRhbXdL6WBtcrkGUGMpT-TUU6oX85it-6oXTMvXYSC7B-pbSUfxCrsAm9DnYqH3-7EVSVVG8qGahWIMoSTs_wi7runX_FT2xLYMOfM5KL4lHdeLK5AALV679YoZ-i-BBeesh1tQQTbTGFREHJYXYpYwUSJAwmx2CqlJkKcSuRvMS9PvH9JYzsgqy0_374owpgpURax2pCyt33yEGYbAO2uMdEX7NSpTA7LR6iYEDjq8cUfWQQpsIlW1X0jS_An0rg3hLIROBMqV4d_zOMHVJhT5XAYxl8gRbMjpvJ22QvxJD_cMZ985I84UG56EsO/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Blueberry Mojito</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="juices">
+            <img src="https://previews.dropbox.com/p/thumb/AB9o8c9Jefd2BjjUDPi1Ay5zmbmnl1UbIdswprFo7snUv8F4qGgtUXwDN0kJfNXI9DYbj-9THS0rMGrtDxyjdSaMtr3iybMEMNGGHwy1LVdnWgOMOGvqlJWxh0nxJsbFCBl0yAJY-hL1Zudgrg2ruiHMA2luorZqo-YnHJuWmgV7_nWIwGNcdZyKAOtkD6ZGcnDfl9PQSVSxwIahCkxnn3ssTVg8cpewOWSJbzsdVdMbM9RZZBm7iCOIW-MjCPpXEzCbyv7Cv-N_RL1ikpyVI24ZWKLr1Ih20HTB0iXVlUzPLgGcqha_ofEWslfXQ9WBD_HmNpX69ijzYwsxU6rR4swypFBmxeclPfVPtqw5SUIqzA/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Raspberry Mojito</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="juices">
+            <img src="https://previews.dropbox.com/p/thumb/AB9ur1BjaUDkuAajug8KD4r6Hh6F40Ri8H_KeV58hBnaXerXZiczeYhEcRB8_vNqbLSRlqbiv1vwgFHiOf0NorawOr3yyyIEFPNunUgE85Ov5pycvzx49UP9ppQPh1uJVNo70VjamuLB6JdLpV4fb2PKV3wsU0hBkyRQ5M8GUcC2YmUC-xIxsNisUVp3g41zV49wwSU5R7EhuUdnaGbe8EXqaltSzTJKTuhcm7LEcxJexWclH-7hKxQ6l3SnGHMKGrg8VK4ZbbFL2D2atq0obVj3OQem3GH5jui-sGpnX6UhfN59EQd4QJVBkxCM1OffNr_PuItvmRlBUd242Uc4iAMZp5aVN-e_3Exi7f2DxgxcKQ/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Watermelon Mojito</h2>
+        <span class="food-price">Rs.80</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+
+    <div class="food-box">
+        <div class="pic" data-item="juices">
+        <img src="https://previews.dropbox.com/p/thumb/AB8JOxFnqoWmQPed_Raep9JHAxSy7543FR4A0ADoDbsjp-GvxtKNHnU-gkUYX0WeAvc-KTnTOCR6i9uBJo6JPQ7_ILvS7YZ1EkwuzVO5Ms6ALIo20kPIhU_crkmtvbyP9ddQEQk-HE-szxscRlSsmTMkxZojcbA3tNsrQ3hR14GW9xbkvekdMpYFeThQL97CaadQOFIveCJsefR8nI3kFpf7o8xqpqP9uQEbogR-mxr24qt7jz2x-Dlkrm3SsbO3MslOEau0Kvts5l2klhh3dIslVq11-UI_Dj1J-uw1kFe7HtpY3Vnr4EhZUlHeofoNzA-uA9O93A78jjKjqekkRknD/p.jpeg" width="200" height="200" class="food-img">
+        </div>
+        <h2 class="food-title">Strawberry Mojito</h2>
+        <span class="food-price">Rs.120</span>
+        <ion-icon name="cart-outline" class="add-cart"></ion-icon>
+    </div>
+</div>
+</div>
+</body>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.0/sweetalert2.min.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
