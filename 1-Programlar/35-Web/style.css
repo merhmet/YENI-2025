@@ -54,7 +54,7 @@ ul.nav-items > li {
 }
 
 ul.nav-items > li:hover {
-  background-color: darkseagreen;
+  background-color: black;
 }
 
 .container{
@@ -75,7 +75,7 @@ ul.nav-items > li:hover {
 .add-cart {
   position: absolute;
   width: 100%;
-  background-color: cadetblue;
+  background-color: white;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   cursor: pointer;

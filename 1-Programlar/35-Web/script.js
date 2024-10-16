@@ -21,10 +21,10 @@ $(function () {
     maxInCart: 100,
     products: [
       {
-        name: "Samsung Galaxy Z",
-        price: 15,
+        name: "Pitta",
+        price: 10,
         img:
-          "https://cdn.tgdd.vn/Products/Images/42/217438/vsmart-active-3-6gb-emerald-green-600x600-400x400.jpg",
+          "https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg",
         tag: "samsungz",
         inCart: 0
       },

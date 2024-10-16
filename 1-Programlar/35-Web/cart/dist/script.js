@@ -22,7 +22,7 @@ $(function () {
     products: [
       {
         name: "Samsung Galaxy Z",
-        price: 15,
+        price: 15 ,
         img:
           "https://cdn.tgdd.vn/Products/Images/42/217438/vsmart-active-3-6gb-emerald-green-600x600-400x400.jpg",
         tag: "samsungz",
@@ -117,11 +117,11 @@ $(function () {
      */
     renderProduct: function (product) {
       return `<div class="image">
-                <img src=${product.img} alt="${product.tag}">
-                <h3>${product.name}</h3>
-                <h3>${this.getFormatter(product.price)}</h3>
+                <img src=€{product.img} alt="€{product.tag}">
+                <h3>€{product.name}</h3>
+                <h3>€{this.getFormatter(product.price)}</h3>
                 <a class="add-cart cart1">Add To Cart</a>
-                <input type="hidden" value="${product.onstock}"/>
+                <input type="hidden" value="€{product.onstock}"/>
             </div>`;
     },
     /**
@@ -456,9 +456,9 @@ $(function () {
      * Format currency
      */
     getFormatter: function (number) {
-      const formatter = new Intl.NumberFormat("en-US", {
+      const formatter = new Intl.NumberFormat("en-EN", {
         style: "currency",
-        currency: "USD",
+        currency: "EUR",
         minimumFractionDigits: 2
       });
       return formatter.format(number);
