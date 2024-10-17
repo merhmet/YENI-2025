@@ -74,25 +74,36 @@ function ProductService() {
   function getProducts() {
 
     return [{
-      libelle: "Pitta Brood",
+      libelle: "Durum ",
+      image: "https://od.lk/s/OTFfMzExNjIwMjlf/durum.png",
+      price: 5.00,
+      done: false
+    }, {
+      libelle: "Frans Hanburger ",
+      image: "https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg",
+      price: 10.00,
+      done: false
+    }, {
+      libelle: "Kapsalon ",
+      image: "https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg",
+      price: 15.00,
+      done: false
+    }, {
+
+      libelle: "Shotel",
+      image: "https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg",
+      price: 20.00,
+
+      done: false
+    }, {
+      libelle: "Pitta Broodje",
       image: "https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg",
       price: 10.00,
       done: false
     }, {
-      libelle: "Kapsalon",
-      image: "https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg",
-      price: 15.00,
-
-      done: false
-    }, {
-      libelle: "Durum ",
-      image: "https://od.lk/s/OTFfMzExNjIwMjlf/durum.png",
-      price: 12.00,
-      done: false
-    }, {
-      libelle: "Pitta Kip ",
-      image: "https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg",
-      price: 13.00,
+      libelle: "Pitta Kip",
+      image: "https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg",
+      price: 8.00,
       done: false
     }]
   }
