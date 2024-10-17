@@ -364,21 +364,21 @@ class Utilities {
 
 //------------------------------------------------- MOCK DATA
 const menuData = [
-    [101, 'Hamburger', 10.99, 0.05, 'https://i.ibb.co/Vq2Ny7x/burger-min.jpg'],
-    [102, 'Fries', 6.99, 0.05, 'https://i.ibb.co/LZj9Z6C/fries-min.jpg'],
-    [103, 'Salad', 9.5, 0.05, 'https://i.ibb.co/yyPbfKy/salad-min.jpg'],
-    [104, 'Pizza', 24.75, 0.05, 'https://i.ibb.co/B2xPpKg/pizza-min.jpg'],
-    [105, 'Cake', 7.0, 0.05, 'https://i.ibb.co/pfXKGPN/cake-min.jpg'],
-    [106, 'Donuts', 5.45, 0.05, 'https://i.ibb.co/8N0N8qs/donuts-min.jpg'],
-    [107, 'Crepes', 12.5, 0.05, 'https://i.ibb.co/Fb8CQnj/crepes-min.jpg'],
-    [108, 'Cupcake', 3.55, 0.05, 'https://i.ibb.co/s38mNCT/cupcake-min.jpg'],
-    [109, 'Sandwich', 8.99, 0.05, 'https://i.ibb.co/GHK7JZT/sandwich-min.jpg'],
-    [110, 'Steak', 26.98, 0.05, 'https://i.ibb.co/Dr7qFyk/steak-min.jpg'],
-    [111, 'Veggie Thali', 13.45, 0.05, 'https://i.ibb.co/QjpPR3M/thali-min.jpg'],
-    [112, 'Sushi', 18.26, 0.05, 'https://i.ibb.co/FnBRhmF/sushi-min.jpg'],
-    [113, 'Chicken Tenders', 6.79, 0.05, 'https://i.ibb.co/z5XX7wq/chickentenders-min.jpg'],
-    [114, 'Sorbet', 5.75, 0.05, 'https://i.ibb.co/z4vdbw4/sorbet-min.jpg'],
-    [115, 'Dumplings', 11.45, 0.05, 'https://i.ibb.co/kckDb4D/dumplings-min.jpg']
+    [101, 'Döner', 10.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg'],
+    [102, 'Kip Pitta', 11.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg'],
+    [103, 'Frans Burger', 12.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg'],
+    [104, 'Kapsalon', 8.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg'],
+    [105, 'Schotel', 20.00, 0.05, 'https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg'],
+    [106, 'Kip Kaas', 11.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjVf/PITTAKIPKAAS.jpg'],
+    [107, 'Pitta Kaas', 11.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjRf/pitta-kaas.jpg'],
+    [108, 'Durum', 9.00, 0.05, 'https://od.lk/s/OTFfMzExNjIwMjlf/durum.png'],
+    [109, 'Frieten', 5.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg'],
+    [110, 'Kalkoen', 2.00, 0.05, 'https://od.lk/s/OTFfMzExNTk4NzRf/kzlkoen.jpg'],
+    [111, 'Corba', 5.00, 0.05, 'https://od.lk/s/OTFfMzExNTk5MjZf/mercimek_corbasi-450x450.jpg'],
+    [112, 'Extra Saus', 1.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NzFf/extraSaus.jpg'],
+    [113, 'Schotel', 20.00, 0.05, 'https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg'],
+    [114, 'Kip Pitta', 11.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg'],
+    [115, 'Frans Burger', 12.00, 0.05, 'https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg']
 ];
 
 const previousSalesData = [
