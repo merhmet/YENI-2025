@@ -1,0 +1,140 @@
+html, body {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0;
+}
+
+#webshop {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main > div {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sidebar, .main {
+  display: table-cell;
+  height: 1px;
+}
+
+.sidebar {
+  max-width: 25%;
+  transform: translateX(0px);
+  background: #ebebeb;
+}
+.sidebar h3 {
+  margin: 10px 20px;
+  color: #9b59b6;
+}
+
+.main {
+  width: 100%;
+  background: #d9c8e0;
+}
+
+.article {
+  border-radius: 1px;
+  margin-top: 20px;
+  flex-grow: 0;
+  flex-basis: 250px;
+  margin: 6px;
+  background: white;
+  color: #281e28;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.article .info {
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+  padding: 10px 10px 3px 10px;
+}
+.article .name {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 5px;
+}
+.article .buy-button {
+  display: block;
+  padding: 0;
+  width: 100%;
+  border: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+button {
+  background: #9b59b6;
+  color: #f0f0f0;
+  transition: background 200ms ease-in-out;
+}
+button:hover {
+  color: #f0f0f0;
+  background: #b07cc6;
+}
+
+.basket {
+  display: table;
+  width: 100%;
+}
+.basket .row {
+  display: table-row;
+  margin: 1px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.07);
+  transition: background 200ms ease-in-out;
+}
+.basket .row .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.basket .row:nth-child(even) {
+  background: rgba(0, 0, 0, 0);
+}
+.basket .row:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.basket .row:hover .options {
+  color: black;
+}
+.basket .name, .basket .price, .basket .options {
+  display: table-cell;
+  padding: 0 10px;
+}
+.basket .price {
+  text-align: right;
+  font-size: 0.9em;
+}
+.basket .options {
+  color: transparent;
+  cursor: default;
+}
+.basket .options .btn {
+  cursor: pointer;
+}
+.basket ul {
+  list-style: none;
+}
+.basket ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 6px;
+}

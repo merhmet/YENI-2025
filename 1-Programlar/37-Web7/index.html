@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Webshop</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="webshop">
+  <div class="sidebar">
+    <h3>Info</h3>
+    <div class="basket">
+      <div class="row" v-for="order in basket.orderItems">
+        <div class="wrapper">
+          <div class="name"><span>{{order.article.name}}</span></div>
+          <div class="price"><span>{{order.article.price}}€</span></div>
+          <div class="options"><span class="btn delete" @click="deleteItem(order)">🚫</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div>
+      <div class="products">
+        <div class="article" v-for="article in articles">
+          <div class="info">
+            <div class="name">{{article.name}}</div>
+            <div class="price">{{article.price}}€</div>
+          </div>
+          <button class="buy-button" @click="addToBasket(article)">Kaufen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
