@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Adrian Rafael Perez Alvarez</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant POS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #2b2b2b;
+            color: white;
+        }
+        #sidebar {
+            width: 80px;
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #sidebar button {
+            margin: 10px 0;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #main-area {
+            flex-grow: 1;
+            display: flex;
+        }
+        #cart-area {
+            width: 300px;
+            background-color: #333333;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #right-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        #tables-area {
+            height: 100px;
+            background-color: #444444;
+            padding: 10px;
+            display: flex;
+            overflow-x: auto;
+        }
+        .table-button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #4b4bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #menu-area {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .category-buttons {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .category-buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #4b4bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #menu-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .menu-item {
+            background-color: #4b4bff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #order-list {
+            margin-top: 20px;
+        }
+        #total {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #pay-buttons {
+            margin-top: 20px;
+        }
+        #pay-buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #4b4bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <button>Order</button>
+        <button>Tabs</button>
+        <button>No Sale</button>
+        <button>Map</button>
+        <button>More</button>
+        <button>Sign Out</button>
+    </div>
+    <div id="main-area">
+        <div id="cart-area">
+            <h2>Order - Table <span id="current-table">1</span></h2>
+            <div id="order-list"></div>
+            <div id="total">Total: $0.00</div>
+            <div id="pay-buttons">
+                <button onclick="pay()">Pay</button>
+                <button>Send</button>
+                <button>Send & Stay</button>
+            </div>
+        </div>
+        <div id="right-area">
+            <div id="tables-area">
+                <!-- Tables will be added here dynamically -->
+            </div>
+            <div id="menu-area">
+                <div class="category-buttons">
+                    <button onclick="showCategory('food')">Food</button>
+                    <button onclick="showCategory('bev')">Bev</button>
+                    <button onclick="showCategory('dessert')">Dessert</button>
+                    <button onclick="showCategory('brunch')">Brunch</button>
+                </div>
+                <div id="menu-items"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuItems = {
+            food: ['Hamburger', 'Pizza', 'Salad', 'Steak'],
+            bev: ['Soda', 'Water', 'Beer', 'Wine'],
+            dessert: ['Ice Cream', 'Cake', 'Pie', 'Brownie'],
+            brunch: ['Pancakes', 'Waffles', 'Omelette', 'French Toast']
+        };
+
+        const prices = {
+            'Hamburger': 10, 'Pizza': 12, 'Salad': 8, 'Steak': 20,
+            'Soda': 2, 'Water': 1, 'Beer': 5, 'Wine': 6,
+            'Ice Cream': 4, 'Cake': 5, 'Pie': 4, 'Brownie': 3,
+            'Pancakes': 8, 'Waffles': 9, 'Omelette': 10, 'French Toast': 8
+        };
+
+        let currentOrder = {};
+        let currentTable = 1;
+
+        function initializeTables() {
+            const tablesArea = document.getElementById('tables-area');
+            for (let i = 1; i <= 10; i++) {
+                const tableButton = document.createElement('button');
+                tableButton.className = 'table-button';
+                tableButton.textContent = `Table ${i}`;
+                tableButton.onclick = () => selectTable(i);
+                tablesArea.appendChild(tableButton);
+            }
+        }
+
+        function selectTable(tableNumber) {
+            currentTable = tableNumber;
+            document.getElementById('current-table').textContent = tableNumber;
+            updateOrderDisplay();
+        }
+
+        function showCategory(category) {
+            const menuItemsDiv = document.getElementById('menu-items');
+            menuItemsDiv.innerHTML = '';
+            menuItems[category].forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'menu-item';
+                itemDiv.textContent = `${item} - $${prices[item]}`;
+                itemDiv.onclick = () => addToOrder(item);
+                menuItemsDiv.appendChild(itemDiv);
+            });
+        }
+
+        function addToOrder(item) {
+            if (!currentOrder[currentTable]) {
+                currentOrder[currentTable] = [];
+            }
+            currentOrder[currentTable].push(item);
+            updateOrderDisplay();
+        }
+
+        function updateOrderDisplay() {
+            const orderList = document.getElementById('order-list');
+            orderList.innerHTML = '';
+            if (currentOrder[currentTable]) {
+                currentOrder[currentTable].forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.textContent = `${item} - $${prices[item]}`;
+                    orderList.appendChild(itemDiv);
+                });
+            }
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let total = 0;
+            if (currentOrder[currentTable]) {
+                total = currentOrder[currentTable].reduce((sum, item) => sum + prices[item], 0);
+            }
+            document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        function pay() {
+            if (currentOrder[currentTable] && currentOrder[currentTable].length > 0) {
+                const total = currentOrder[currentTable].reduce((sum, item) => sum + prices[item], 0);
+                alert(`Payment processed for Table ${currentTable}: $${total.toFixed(2)}`);
+                currentOrder[currentTable] = [];
+                updateOrderDisplay();
+            } else {
+                alert('No items in the current order.');
+            }
+        }
+
+        // Inicializar
+        initializeTables();
+        showCategory('food');
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

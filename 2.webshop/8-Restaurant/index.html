@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Cart</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<body>
+  <div ng-app="App" class="container">
+
+    <div ng-controller="appController as vm " class="c-container">
+
+      <div class="c-products">
+        <div ng-repeat="product in vm.products" class="col-lg-3">
+          <div class="panel panel-default c-panel">
+            <div class="panel-body text-center">
+
+              <img width=200 src="{{product.image}}" />
+              <h3>{{product.libelle}}</h3>
+              <h3><span class="label label-default ">{{product.price | currency:'€ '}}</span></h3>
+              <button ng-if="!product.done" type="button" ng-click="vm.addCart(product)" class="btn btn-default">Bestellen</button>
+              <p ng-if="product.done" class="bg-success"><i class="fa fa-check" aria-hidden="true"></i>Al Besteld </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="c-cart">
+        <div ng-if="vm.client.cart.length >0" class="">
+          <h2 class=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Totaal : <span class="">{{ vm.client.total  | currency:'€ ' }}</span></h2> <br>
+
+          <ul class="list-group">
+            <li ng-repeat="cart in vm.client.cart track by $index" class="list-group-item c-item">
+              <div class="row">
+                <div class="col-lg-7">
+                  <span>{{ cart.libelle}}</span> <br>
+                  <img width=100 src="{{cart.image}}" />
+
+                  <span class="">Prijs: {{ cart.price  | currency:'€ '}} </span>
+                </div>
+                <!--/ cart info  -->
+                <div class="col-lg-3">
+                  <div class="form-group c-input-quantity">
+                    <label for="pwd">Aantal</label>
+                    <input type="number" ng-model="cart.quantity" value="{{ cart.quantity}}" min=1 max=5 class="form-control" />
+                  </div>
+                </div>
+                <!--/ cart input quantity  -->
+                <div class="col-lg-2">
+                  <div class="c-delete text-center">
+                    <button ng-click="vm.deleteProductCart(cart, $index)" type="button" class="btn btn-danger">  <i class="fa fa-trash fa-2x" aria-hidden="true">                    </i></button>
+
+                  </div>
+                  <!--/ cart delete  -->
+                </div>
+              </div>
+              <!--/ row  -->
+            </li>
+          </ul>
+
+
+        </div>
+        <div ng-if="vm.client.cart.length <=0" class="well text-center">
+          <h3>Bestellingen <i class="fa fa-shopping-basket" aria-hidden="true"></i> </h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

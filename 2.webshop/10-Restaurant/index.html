@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple Shopping Cart</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div>
+      
+        
+        <button id='cart-button' class="trigger cart-button-style">Show Cart</button>
+        
+        
+        <div id="shop">
+            
+            <div class="products ios apple" id="iphone-x">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg">
+                <p class="product-name">Pitta Kebap</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='10'>10</p>
+                <button class="add-to-cart" id='test'>BESTELLEN</button>
+            </div>
+            
+            <div class="products android samsung" id="samsung-s9">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNjIwMjlf/durum.png">
+                <p class="product-name">Durum</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='15'>15</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android google" id="pixel-2">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg">
+                <p class="product-name">Franse Burger</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='12'>12</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android oneplus" id="oneplus-6">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg">
+                <p class="product-name">Pitta Kip</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='13'>13</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products ios apple" id="iphone-8">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg">
+                <p class="product-name">Kapsalon</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='719'>719</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android huawei" id="huawei-p20">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg">
+                <p class="product-name">Schotel</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='20'>20</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android lg" id="lg-g7">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTY0NjRf/pitta-kaas.jpg">
+                <p class="product-name"> Kip Kaas</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='699'>699</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+            
+            <div class="products android huawei" id="huawei-mate-10-pro">
+                <img class="product-image" src="https://od.lk/s/OTFfMzExNTk4NzRf/kzlkoen.jpg">
+                <p class="product-name">Kalkoen Stick</p>
+                <p class="product-description"> </p>
+                <p class="product-price" value='5'>5</p>
+                <button class="add-to-cart">BESTELLEN</button>
+            </div>
+        </div>
+        
+    </div>
+        <div id='cart-wrapper' class="slider close">
+            <div id='cart'>
+                <div id="cart-products-wrapper">
+                    <table id="cart-table">
+                    <thead id="cart-table-header">
+                         <th class="name-col">Naam</th> 
+                         <th class="quantity-col">Aantal</th>       
+                         <th class="price-col">Prijs</th>
+                         <th class="updated-price-col">Totaal Prijs</th>
+                         <th class="update-col">Update</th>
+                         <th class="remove-col">Verwijderen</th>
+                    </thead>
+                    <tbody id="cart-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id='amount-controls'>
+                <div id="cart-amount-wrapper">
+                    <table>
+                        <tbody>
+                            <tr id='subtotal-wrappper'>
+                                <td id="subtotal-label">Subtotaal:</td>
+                                <td id="subtotal">0.00</td>
+                            </tr>
+
+                            <tr id='total-wrapper'>
+                                <td id="total-label">Totaal:</td>
+                                <td id="total">0.00</td>
+                            </tr>
+
+                            <tr id="promo-checkout">
+                                <td id="promo-wrapper">
+                                    <input id="promo" placeholder="">
+                                    <button id="apply-promo"></button>
+                                </td>
+
+                                <td>
+                                    <button id="checkout">Uitschrijven</button>
+                                </td>
+                                
+                                <td>
+                                    <button id="ks" class="keep-shopping">Home Pagina</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
