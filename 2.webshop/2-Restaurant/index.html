@@ -119,22 +119,22 @@
 </head>
 <body>
     <div id="sidebar">
-        <button>Order</button>
-        <button>Tabs</button>
-        <button>No Sale</button>
-        <button>Map</button>
-        <button>More</button>
-        <button>Sign Out</button>
+        <button>Menu1</button>
+        <button>Menu2</button>
+        <button>Menu3</button>
+        <button>Menu4</button>
+        <button>Menu5</button>
+        <button>Menu6</button>
     </div>
     <div id="main-area">
         <div id="cart-area">
-            <h2>Order - Table <span id="current-table">1</span></h2>
+            <h2>- Tafel <span id="current-table">1</span></h2>
             <div id="order-list"></div>
-            <div id="total">Total: $0.00</div>
+            <div id="total">Total: €0.00</div>
             <div id="pay-buttons">
-                <button onclick="pay()">Pay</button>
-                <button>Send</button>
-                <button>Send & Stay</button>
+                <button onclick="pay()">Betalen</button>
+            
+              
             </div>
         </div>
         <div id="right-area">
@@ -143,10 +143,10 @@
             </div>
             <div id="menu-area">
                 <div class="category-buttons">
-                    <button onclick="showCategory('food')">Food</button>
-                    <button onclick="showCategory('bev')">Bev</button>
-                    <button onclick="showCategory('dessert')">Dessert</button>
-                    <button onclick="showCategory('brunch')">Brunch</button>
+                    <button onclick="showCategory('food')">Doner</button>
+                    <button onclick="showCategory('bev')">Sulu Yemek</button>
+                    <button onclick="showCategory('dessert')">Izgara</button>
+                    <button onclick="showCategory('brunch')">Icecek</button>
                 </div>
                 <div id="menu-items"></div>
             </div>
@@ -155,17 +155,17 @@
 
     <script>
         const menuItems = {
-            food: ['Hamburger', 'Pizza', 'Salad', 'Steak'],
-            bev: ['Soda', 'Water', 'Beer', 'Wine'],
-            dessert: ['Ice Cream', 'Cake', 'Pie', 'Brownie'],
-            brunch: ['Pancakes', 'Waffles', 'Omelette', 'French Toast']
+            food: ['doner', 'kipburger', 'kapsalon', 'kip brood'],
+            bev: ['kalkoen', 'mercimek', 'pitta kaas', 'kip kaas'],
+            dessert: ['cay', 'ayran', 'kuru fasulye', 'pilav'],
+            brunch: ['schotel', 'nohut', 'yumurta', 'kavurma']
         };
 
         const prices = {
-            'Hamburger': 10, 'Pizza': 12, 'Salad': 8, 'Steak': 20,
-            'Soda': 2, 'Water': 1, 'Beer': 5, 'Wine': 6,
-            'Ice Cream': 4, 'Cake': 5, 'Pie': 4, 'Brownie': 3,
-            'Pancakes': 8, 'Waffles': 9, 'Omelette': 10, 'French Toast': 8
+            'doner': 10, 'kipburger': 12, 'kapsalon': 8, 'kip brood': 20,
+            'kalkoen': 2, 'mercimek': 1, 'pitta kaas': 5, 'kip kaas': 6,
+            'cay': 4, 'ayran': 5, 'kuru fasulye': 4, 'pilav': 3,
+            'schotel': 8, 'nohut': 9, 'yumurta': 10, 'kavurma': 8
         };
 
         let currentOrder = {};
@@ -176,7 +176,7 @@
             for (let i = 1; i <= 10; i++) {
                 const tableButton = document.createElement('button');
                 tableButton.className = 'table-button';
-                tableButton.textContent = `Table ${i}`;
+                tableButton.textContent = `Tafel ${i}`;
                 tableButton.onclick = () => selectTable(i);
                 tablesArea.appendChild(tableButton);
             }
@@ -226,17 +226,17 @@
             if (currentOrder[currentTable]) {
                 total = currentOrder[currentTable].reduce((sum, item) => sum + prices[item], 0);
             }
-            document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+            document.getElementById('total').textContent = `Total: ${total.toFixed(2)}`;
         }
 
         function pay() {
             if (currentOrder[currentTable] && currentOrder[currentTable].length > 0) {
                 const total = currentOrder[currentTable].reduce((sum, item) => sum + prices[item], 0);
-                alert(`Payment processed for Table ${currentTable}: $${total.toFixed(2)}`);
+                alert(`Te Betalen Bedrag  ${currentTable}: $${total.toFixed(2)}`);
                 currentOrder[currentTable] = [];
                 updateOrderDisplay();
             } else {
-                alert('No items in the current order.');
+                alert('Geen bestellingen gevonden');
             }
         }
 
@@ -250,3 +250,4 @@
   
 </body>
 </html>
+
