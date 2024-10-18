@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Webshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .table-button, .pizza-button, .print-button {
+            background-color: #007BFF; /* Bleu */
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .table-button:hover, .pizza-button:hover, .print-button:hover {
+            background-color: #0056b3; /* Darker bleu */
+        }
+        .order-details {
+            margin-top: 20px;
+            display: none;
+            text-align: left;
+        }
+        .order-summary {
+            margin-top: 10px;
+        }
+        .pizza-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .pizza-item {
+            margin: 10px;
+            text-align: center;
+        }
+        .pizza-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+        .price {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Selecteer Tafel</h1>
+    <button class="table-button" onclick="selectTable(1)">Tafel 1</button>
+    <button class="table-button" onclick="selectTable(2)">Tafel 2</button>
+    <button class="table-button" onclick="selectTable(3)">Tafel 3</button>
+    <button class="table-button" onclick="selectTable(4)">Tafel 4</button>
+
+    <div class="order-details" id="order-details">
+        <h2>Bestellingen</h2>
+        <p id="selected-table"></p>
+        <p>Selecteer Menu:</p>
+        
+        <div class="pizza-menu">
+            <div class="pizza-item">
+                <img src="https://od.lk/s/OTFfMzExNjIwMjlf/durum.png" alt="Durum">
+                <p>Durum</p>
+                <p class="price">€10</p>
+                <button class="pizza-button" onclick="addPizza('Durum', 10)">Bestellen</button>
+            </div>
+            <div class="pizza-item">
+                <img src="https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg" alt="Frans Burger">
+                <p>Frans Burger</p>
+                <p class="price">€12</p>
+                <button class="pizza-button" onclick="addPizza('Frans Burger', 12)">Bestellen</button>
+            </div>
+            <div class="pizza-item">
+                <img src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg" alt="Pitta Brood">
+                <p>Pitta Brood</p>
+                <p class="price">€11</p>
+                <button class="pizza-button" onclick="addPizza('Pitta Brood', 11)">Bestellen</button>
+            </div>
+        </div>
+
+        <div class="order-summary" id="order-summary"></div>
+        <button class="print-button" onclick="printOrder()">Print Bestelling</button>
+        <button onclick="placeOrder()">Verwijder Alles</button>
+    </div>
+</div>
+
+<script>
+    let selectedTable = null;
+    let orderItems = [];
+    let totalPrice = 0;
+
+    function selectTable(tableNumber) {
+        selectedTable = tableNumber;
+        document.getElementById('selected-table').textContent = `Je hebt geselecteerd Tafel ${selectedTable}.`;
+        document.getElementById('order-summary').textContent = `Nog geen Bestellingen besteld..`;
+        totalPrice = 0; // Reset total price
+        document.getElementById('order-details').style.display = 'block';
+    }
+
+    function addPizza(pizza, price) {
+        orderItems.push({ pizza, price });
+        totalPrice += price; // Update total price
+        const pizzaNames = orderItems.map(item => item.pizza).join(', ');
+        document.getElementById('order-summary').textContent = `Besteld Menu: ${pizzaNames} | Total: €${totalPrice}`;
+    }
+
+    function placeOrder() {
+        if (selectedTable) {
+            if (orderItems.length > 0) {
+                alert(`Uw bestelling Totaal PRIJS ${selectedTable} !: ${orderItems.map(item => item.pizza).join(', ')} | Total: €${totalPrice}`);
+                resetOrder();
+            } else {
+                alert('Gelieve Selecteer Menu.');
+            }
+        } else {
+            alert('Gelieve Selecteer Tafel.');
+        }
+    }
+
+    function printOrder() {
+        if (selectedTable && orderItems.length > 0) {
+            const printContent = `
+                <h2>Order Summary</h2>
+                <p>Table: ${selectedTable}</p>
+                <p>Pizzas: ${orderItems.map(item => item.pizza).join(', ')}</p>
+                <p>Total: €${totalPrice}</p>
+            `;
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write('<html><head><title>Print Order</title></head><body>');
+            newWindow.document.write(printContent);
+            newWindow.document.write('</body></html>');
+            newWindow.document.close();
+            newWindow.print();
+        } else {
+            alert('Plaats een bestelling voordat u gaat afdrukken.');
+        }
+    }
+
+    function resetOrder() {
+        selectedTable = null;
+        orderItems = [];
+        totalPrice = 0;
+        document.getElementById('order-summary').textContent = '';
+        document.getElementById('order-details').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

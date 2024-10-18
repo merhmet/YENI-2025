@@ -194,7 +194,7 @@
             menuItems[category].forEach(item => {
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'menu-item';
-                itemDiv.textContent = `${item} - €${prices[item]}`;
+                itemDiv.textContent = `${item} - $${prices[item]}`;
                 itemDiv.onclick = () => addToOrder(item);
                 menuItemsDiv.appendChild(itemDiv);
             });
@@ -214,7 +214,7 @@
             if (currentOrder[currentTable]) {
                 currentOrder[currentTable].forEach(item => {
                     const itemDiv = document.createElement('div');
-                    itemDiv.textContent = `${item} - €${prices[item]}`;
+                    itemDiv.textContent = `${item} - $${prices[item]}`;
                     orderList.appendChild(itemDiv);
                 });
             }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pita Restaurant Order System</title>
+</head>
+<body>
+    <header>
+        <h1>Pitta Anadolu</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Selecteer Tafel</h2>
+            <div id="table-list"></div>
+        </section>
+        <section>
+            <h2>Menu</h2>
+            <div id="menu"></div>
+            <div id="cart">
+                <h2>Uw Bestellingen</h2>
+                <ul id="cart-items"></ul>
+                <strong>Total: €<span id="total">0</span></strong>
+                <button id="print-order" class="hidden">Print Bestelling</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="place-order">Verwijder Alles</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
