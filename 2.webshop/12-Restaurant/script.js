@@ -53,7 +53,7 @@ const Item = props => {
 
     React.createElement("div", { className: "action" }, /*#__PURE__*/
     React.createElement("p", null, "€ ", price), /*#__PURE__*/
-    React.createElement("button", { className: "buyButton", onClick: () => buy() }, "Buy")))));
+    React.createElement("button", { className: "buyButton", onClick: () => buy() }, "Bestel")))));
 
 
 
@@ -96,7 +96,7 @@ const Cart = props => {
 
   return /*#__PURE__*/(
     React.createElement("div", { className: "Cart" }, /*#__PURE__*/
-    React.createElement("ul", null, purchases.length === 0 ? "empty (:" : purchases), /*#__PURE__*/
+    React.createElement("ul", null, purchases.length === 0 ? "Leeg (:" : purchases), /*#__PURE__*/
     React.createElement("div", { className: "cartTotal" }, "€ ", total)));
 
 
@@ -109,13 +109,13 @@ React.createElement("li", { onClick: () => props.changeView("shop") }, /*#__PURE
 React.createElement("span", { role: "img", "aria-label": "shop" }, "\uD83C\uDFEA",
 " "), /*#__PURE__*/
 
-React.createElement("span", null, "Shop")), /*#__PURE__*/
+React.createElement("span", null, "Menu")), /*#__PURE__*/
 
 React.createElement("li", { onClick: () => props.changeView("cart") }, /*#__PURE__*/
 React.createElement("span", { role: "img", "aria-label": "shop" }, "\uD83D\uDED2",
 " "), /*#__PURE__*/
 
-React.createElement("span", null, "Cart "), /*#__PURE__*/
+React.createElement("span", null, "Mandje "), /*#__PURE__*/
 React.createElement("span", { className: "cartQuantity" }, props.quantity))));
 
 
