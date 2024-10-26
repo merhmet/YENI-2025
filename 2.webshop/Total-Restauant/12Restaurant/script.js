@@ -65,12 +65,12 @@ $(document).ready(function() {
 		var priceDialog = 0;
 		$("#recipe"+x).children("li").children("input").each(function () {
 			if($(this).is(":checked")){
-				priceDialog+=0;
+				priceDialog+=3;
 			}
 				$("#totalDialog"+x+">span").text(priceDialog);
 			$(this).change(function () {
 				if ($(this).is(":checked")) {
-					priceDialog += 0;
+					priceDialog += 3;
 					console.log(priceDialog);
 					$("#totalDialog"+x+">span").text(priceDialog);
 				}else{
@@ -131,7 +131,7 @@ $(document).ready(function() {
 	$(".listOver").on("click", function () {
 		var orderName = '<h3 class="orderName"><span>' + $(this).parent().siblings(".ui-dialog-titlebar").children("span").text() + '</span><a class="delBtn">&#10008;</a>' +'</h3>';
 		var orderIngredients = '<ul class="orderIngredients"></ul>';
-		var orderPrice = '<h3 class="orderPrice"><span>' + $(this).parent().children(".totalDialog").children("span").text() + '</span>$<h3>'
+		var orderPrice = '<h3 class="orderPrice"><span>' + $(this).parent().children(".totalDialog").children("span").text() + '</span>€<h3>'
 		var horisontalLine = '<hr>';
 		$(".cart").children("#listOfOrders").append("<li>" + orderName + orderIngredients + orderPrice + horisontalLine + "</li>");
 
