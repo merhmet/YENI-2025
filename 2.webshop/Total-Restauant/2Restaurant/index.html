@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <header>
+        <h1>Anadolu</h1>
+    </header>
+
+    <div class="container">
+        <h2>Selecteer Tafel</h2>
+        <div class="table-selector">
+            <select id="tableSelect">
+                <option value="">Kies Tafel</option>
+                <option value="1">Tafel 1</option>
+                <option value="2">Tafel 2</option>
+                <option value="3">Tafel 3</option>
+                <option value="4">Tafel 4</option>
+            </select>
+        </div>
+
+
+        <!-- Menu Section -->
+        <h2>Menu</h2>
+        <div class="menu" id="menu">
+            <button class="menu-item" data-name="Pitta Broodje" data-price="10">Pitta Broodje - €10</button>
+            <button class="menu-item" data-name="Schotel" data-price="20">Schotel - €20</button>
+            <button class="menu-item" data-name="Durum" data-price="10">Durum - €10</button>
+            <button class="menu-item" data-name="Kapsalon" data-price="15">Kapsalon - €15</button>
+        </div>
+      
+<h2>Bestelling voor tafel <span id="currentTable">Geen</span></h2>
+
+        <ul id="orderList">
+            <li>Nog geen bestellingen</li>
+        </ul>
+
+        <!-- Order summary window -->
+        <div id="orderSummary" class="order-summary hidden">
+            <h3>Besteloverzicht voor Tafel <span id="summaryTable">Geen</span></h3>
+            <ul id="summaryOrderList"></ul>
+            <h4>Totaal: €<span id="totalPrice">0</span></h4>
+        </div>
+
+        <!-- Submit Order button -->
+        <button id="submitOrder">Betalen</button>
+
+        <!-- Customer has received order button -->
+        <button id="receivedOrder" class="hidden">Klant heeft de bestelling ontvangen</button>
+
+        <!-- Pay receipt button -->
+        <button id="payReceipt" class="hidden">Betaal het ontvangstbewijs</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

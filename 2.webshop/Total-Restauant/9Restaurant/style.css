@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFBF00; /* Updated background color */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.menu {
+    text-align: left;
+}
+
+/* Rest of the CSS remains unchanged */
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 5px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.order-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+#place-order {
+    background-color: #DE3163;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#place-order:hover {
+    background-color: #FF7F50;
+}

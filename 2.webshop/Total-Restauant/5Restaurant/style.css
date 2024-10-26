@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.menu, .order {
+    display: inline-block;
+    margin: 0px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu {
+    width: 45%;
+}
+
+.order {
+    width: 45%;
+}
+
+h1 {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    text-align: left;
+}
+
+.pizza-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: px 10px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}

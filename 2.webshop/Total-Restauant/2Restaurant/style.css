@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+header h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #34495e;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 45%;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    background-color: #2980b9;
+}
+
+#orderList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#orderList li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#submitOrder {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#submitOrder:hover {
+    background-color: #27ae60;
+}
+
+.hidden {
+    display: none;
+}
+
+#receivedOrder {
+    background-color: #e67e22;
+    color: white;
+}
+
+#receivedOrder:hover {
+    background-color: #d35400;
+}
+
+.order-summary {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.order-summary h3,
+.order-summary h4 {
+    text-align: center;
+}
+
+#payReceipt {
+    background-color: #27ae60;
+    color: white;
+}
+
+#payReceipt:hover {
+    background-color: #2ecc71;
+}

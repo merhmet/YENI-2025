@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - pizza order form js</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <script type="text/javascript">
+      const pizzaOrder = [["fc", 0, 0],["haw", 0, 0],["pep", 0, 0],["cs", 0, 0],["bm", 0, 0],["hc", 0, 0],["vl", 0, 0],["ml", 0, 0],["sl", 0, 0]];
+      const addOrder = [["tea", 0],["fry", 0],["mojo", 0],["spag", 0],["carbo", 0],["lasa", 0],["mac", 0],["chi", 0]];
+      var totalQuantity = 0;
+      var totalPrice = 0;
+      
+      function add(pizza) {
+        pizzaQuantity = parseInt(document.getElementById(pizza+"quantity").value);
+        if(isNaN(pizzaQuantity) || (pizzaQuantity <= 0)) {
+          alert("Please input quantity");
+        } else {
+          if(document.getElementById(String(pizza)+"10").checked) {
+             for(flavor in pizzaOrder) {
+               if(pizzaOrder[flavor][0] == pizza) {
+                 pizzaOrder[flavor][1] += pizzaQuantity;
+                 totalQuantity += pizzaQuantity;
+               }
+              document.getElementById("view").value = "View Cart (" + totalQuantity + ")";
+             }
+          } else if(document.getElementById(String(pizza)+"14").checked) {
+            for(flavor in pizzaOrder) {
+               if(pizzaOrder[flavor][0] == pizza) {
+                 pizzaOrder[flavor][2] += pizzaQuantity;
+                 totalQuantity += pizzaQuantity;
+               }
+              document.getElementById("view").value = "View Cart (" + totalQuantity + ")";
+             }
+          } else {
+            alert("Please select size");
+          }
+        }
+      }
+      
+      function addon(item) {
+        itemQuantity = parseInt(document.getElementById(item+"quantity").value);
+        if((isNaN(itemQuantity)) || (itemQuantity <= 0)) {
+          alert("Please input quantity");
+        }else {
+          for(order in addOrder) {
+            if(addOrder[order][0] == item) {
+              addOrder[order][1] += itemQuantity;
+              totalQuantity += itemQuantity
+            }
+          }
+          document.getElementById("view").value = "View Cart (" + totalQuantity + ")";
+        }
+      }
+      
+      function cart() {
+        document.getElementById("cartmodal").style.display = "block";
+        for(item in pizzaOrder) {
+          if(pizzaOrder[item][0] == "fc") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rfc10").innerHTML = '10" Four Cheese Pizza x' + pizzaOrder[item][1];
+              document.getElementById("rfc10p").innerHTML = "€" + pizzaOrder[item][1]*8;
+              totalPrice += pizzaOrder[item][1]*8;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rfc14").innerHTML = '14" Four Cheese Pizza x' + pizzaOrder[item][2];
+              document.getElementById("rfc14p").innerHTML = "€" + pizzaOrder[item][2]*12;
+              totalPrice += pizzaOrder[item][2]*12;
+            }
+          }else if(pizzaOrder[item][0] == "haw") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rhaw10").innerHTML = '10" Hawaiian Pizza x' + pizzaOrder[item][1];
+              document.getElementById("rhaw10p").innerHTML = "€" + pizzaOrder[item][1]*7;
+              totalPrice += pizzaOrder[item][1]*7;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rhaw14").innerHTML = '14" Hawaiian Pizza x' + pizzaOrder[item][2];
+              document.getElementById("rhaw14p").innerHTML = "€" + pizzaOrder[item][2]*11;
+              totalPrice += pizzaOrder[item][2]*11;
+            }
+          }else if(pizzaOrder[item][0] == "pep") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rpep10").innerHTML = '10" Pepperoni Pizza x' + pizzaOrder[item][1];
+              document.getElementById("rpep10p").innerHTML = "€" + pizzaOrder[item][1]*7;
+              totalPrice += pizzaOrder[item][1]*7;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rpep14").innerHTML = '14" Pepperoni Pizza x' + pizzaOrder[item][2];
+              document.getElementById("rpep14p").innerHTML = "€" + pizzaOrder[item][2]*11;
+              totalPrice += pizzaOrder[item][2]*11;
+            }
+          }else if(pizzaOrder[item][0] == "cs") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rcs10").innerHTML = '10" Creamy Spinach x' + pizzaOrder[item][1];
+              document.getElementById("rcs10p").innerHTML = "€" + pizzaOrder[item][1]*8;
+              totalPrice += pizzaOrder[item][1]*8;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rcs14").innerHTML = '14" Creamy Spinach x' + pizzaOrder[item][2];
+              document.getElementById("rcs14p").innerHTML = "€" + pizzaOrder[item][2]*12;
+              totalPrice += pizzaOrder[item][2]*12;
+            }
+          }else if(pizzaOrder[item][0] == "bm") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rbm10").innerHTML = '10" Bacon Mushroom x' + pizzaOrder[item][1];
+              document.getElementById("rbm10p").innerHTML = "€" + pizzaOrder[item][1]*7;
+              totalPrice += pizzaOrder[item][1]*7;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rbm14").innerHTML = '14" Bacon Mushroom x' + pizzaOrder[item][2];
+              document.getElementById("rbm14p").innerHTML = "€" + pizzaOrder[item][2]*11;
+              totalPrice += pizzaOrder[item][2]*11;
+            }
+          }else if(pizzaOrder[item][0] == "hc") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rhc10").innerHTML = '10" Ham and Cheese x' + pizzaOrder[item][1];
+              document.getElementById("rhc10p").innerHTML = "€" + pizzaOrder[item][1]*7;
+              totalPrice += pizzaOrder[item][1]*7;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rhc14").innerHTML = '14" Ham and Cheese x' + pizzaOrder[item][2];
+              document.getElementById("rhc14p").innerHTML = "€" + pizzaOrder[item][2]*11;
+              totalPrice += pizzaOrder[item][2]*11;
+            }
+          }else if(pizzaOrder[item][0] == "vl") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rvl10").innerHTML = '10" Veggie Lover x' + pizzaOrder[item][1];
+              document.getElementById("rvl10p").innerHTML = "€" + pizzaOrder[item][1]*7;
+              totalPrice += pizzaOrder[item][1]*7;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rvl14").innerHTML = '14" Veggie Lover x' + pizzaOrder[item][2];
+              document.getElementById("rvl14p").innerHTML = "€" + pizzaOrder[item][2]*11;
+              totalPrice += pizzaOrder[item][2]*11;
+            }
+          }else if(pizzaOrder[item][0] == "ml") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rml10").innerHTML = '10" Meat Lover x' + pizzaOrder[item][1];
+              document.getElementById("rml10p").innerHTML = "€" + pizzaOrder[item][1]*8;
+              totalPrice += pizzaOrder[item][1]*8;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rml14").innerHTML = '14" Meat Lover x' + pizzaOrder[item][2];
+              document.getElementById("rml14p").innerHTML = "€" + pizzaOrder[item][2]*12;
+              totalPrice += pizzaOrder[item][2]*12;
+            }
+          }else if(pizzaOrder[item][0] == "sl") {
+            if(pizzaOrder[item][1] > 0) {
+              document.getElementById("rsl10").innerHTML = '10" Seafood Lover x' + pizzaOrder[item][1];
+              document.getElementById("rsl10p").innerHTML = "€" + pizzaOrder[item][1]*8;
+              totalPrice += pizzaOrder[item][1]*8;
+            }
+            if(pizzaOrder[item][2] > 0) {
+              document.getElementById("rsl14").innerHTML = '14" Seafood Lover x' + pizzaOrder[item][2];
+              document.getElementById("rsl14p").innerHTML = "€" + pizzaOrder[item][2]*12;
+              totalPrice += pizzaOrder[item][2]*12;
+            }
+          }
+        }
+        for(item in addOrder) {
+          if(addOrder[item][1] > 0) {
+            document.getElementById("addon").innerHTML = "*Additionals";
+          }
+          if((addOrder[item][0] == "tea") && (addOrder[item][1] > 0)) {
+            document.getElementById("rtea").innerHTML = "Iced Tea x" + addOrder[item][1];
+            document.getElementById("rteap").innerHTML = "€" + addOrder[item][1]*0.75;
+            totalPrice += addOrder[item][1]*0.75;
+          }
+          if((addOrder[item][0] == "fry") && (addOrder[item][1] > 0)) {
+            document.getElementById("rfry").innerHTML = "Fries x" + addOrder[item][1];
+            document.getElementById("rfryp").innerHTML = "€" + addOrder[item][1]*1.5;
+            totalPrice += addOrder[item][1]*1.5;
+          }
+          if((addOrder[item][0] == "mojo") && (addOrder[item][1] > 0)) {
+            document.getElementById("rmojo").innerHTML = "Mojos x" + addOrder[item][1];
+            document.getElementById("rmojop").innerHTML = "€" + addOrder[item][1]*2;
+            totalPrice += addOrder[item][1]*2;
+          }
+          if((addOrder[item][0] == "spag") && (addOrder[item][1] > 0)) {
+            document.getElementById("rspag").innerHTML = "Spaghetti x" + addOrder[item][1];
+            document.getElementById("rspagp").innerHTML = "€" + addOrder[item][1]*2.5;
+            totalPrice += addOrder[item][1]*2.5;
+          }
+          if((addOrder[item][0] == "carbo") && (addOrder[item][1] > 0)) {
+            document.getElementById("rcarbo").innerHTML = "Carbonara x" + addOrder[item][1];
+            document.getElementById("rcarbop").innerHTML = "€" + addOrder[item][1]*2.5;
+            totalPrice += addOrder[item][1]*2.5;
+          }
+          if((addOrder[item][0] == "lasa") && (addOrder[item][1] > 0)) {
+            document.getElementById("rlasa").innerHTML = "Lasagna x" + addOrder[item][1];
+            document.getElementById("rlasap").innerHTML = "€" + addOrder[item][1]*2.75;
+            totalPrice += addOrder[item][1]*2.75;
+          }
+          if((addOrder[item][0] == "mac") && (addOrder[item][1] > 0)) {
+            document.getElementById("rmac").innerHTML = "Mac and Cheese x" + addOrder[item][1];
+            document.getElementById("rmacp").innerHTML = "€" + addOrder[item][1]*2.5;
+            totalPrice += addOrder[item][1]*2.5;
+          }
+          if((addOrder[item][0] == "chi") && (addOrder[item][1] > 0)) {
+            document.getElementById("rchi").innerHTML = "Fried Chicken x" + addOrder[item][1];
+            document.getElementById("rchip").innerHTML = "€" + addOrder[item][1]*1;
+            totalPrice += addOrder[item][1]*1;
+          }
+        }
+        document.getElementById("totalp").innerHTML = "€" + totalPrice;
+      }
+      
+      function hide() {
+        document.getElementById("cartmodal").style.display = "none";
+      }
+      
+      function place() {
+        if(totalPrice == 0) {
+          alert("Please add some items first");
+        }else {
+          document.getElementById("cartmodal").style.display = "none";
+          alert("Order Placed! Thank You for Ordering.");
+        }
+        reset()
+      }
+      
+      function reset() {
+        const pizzaReseter = document.getElementsByTagName("input");
+        for(item in pizzaOrder) {
+          document.getElementById("r"+pizzaOrder[item][0]+"10").innerHTML = '';
+          document.getElementById("r"+pizzaOrder[item][0]+"14").innerHTML = '';
+          document.getElementById("r"+pizzaOrder[item][0]+"10p").innerHTML = '';
+          document.getElementById("r"+pizzaOrder[item][0]+"14p").innerHTML = '';
+          for(quant in pizzaReseter) {
+            if(pizzaReseter[quant].id== (pizzaOrder[item][0] + "quantity")) {
+              pizzaReseter[quant].value = '';
+            }
+          }
+          pizzaOrder[item][1] = 0;
+          pizzaOrder[item][2] = 0;
+        }
+        
+        const addReseter = document.getElementsByTagName("input");
+        for(item in addOrder) {
+          document.getElementById("r"+addOrder[item][0]).innerHTML = '';
+          document.getElementById("r"+addOrder[item][0]+"p").innerHTML = '';
+          for(quant in addReseter) {
+            if(addReseter[quant].id== (addOrder[item][0] + "quantity")) {
+              addReseter[quant].value = '';
+            }
+          }
+          addOrder[item][1] = 0;
+          addOrder[item][2] = 0;
+        }
+        totalPrice = 0;
+        totalQuantity = 0;
+        document.getElementById("view").value = "View Cart (" + totalQuantity + ")";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>VIZZA</h1>
+      <p>Vian's Pizza</p>
+    </div>
+    <div class="container-fluid menu">
+      <div class="row">
+        <div class="col col1 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg" />
+            </div>
+            <p>FOUR CHEESE PIZZA</p>
+            <p>Mozzarella, parmesan, cheddar and feta cheese. A cheese lover's true love.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="fc" id="fc10" value='10' />
+                <label>10" Pizza (€8)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="fc" id="fc14" value='14' />
+                <label>14" Pizza (€12)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="fcquantity" id="fcquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="fcadd" id="fcadd" value="Add to Cart" onclick="add('fc')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col2 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg">
+            </div>
+            <p>HAWAIIAN PIZZA</p>
+            <p>Say 'Aloha' to the all-time favorite with double layers of ham and pineapple.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="haw" id="haw10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="haw" id="haw14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="hawquantity" id="hawquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="hawadd" id="hawadd" value="Add to Cart" onclick="add('haw')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col3 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg">
+            </div>
+            <p>PEPPERONI PIZZA</p>
+            <p>Feel the nostalgia with a true classic, pepperoni and mozzarella
+  cheese on signature pizza sauce.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="pep" id="pep10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="pep" id="pep14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="pepquantity" id="pepquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="pepadd" id="pepadd" value="Add to Cart" onclick="add('pep')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col4 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg" id="center">
+            </div>
+            <p>CREAMY SPINACH</p>
+            <p>Spread the joy when you spread the cream cheese with spinach all over.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="cs" id="cs10" value='10' />
+                <label>10" Pizza (€8)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="cs" id="cs14" value='14' />
+                <label>14" Pizza (€12)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="quantity" id="csquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="csadd" id="csadd" value="Add to Cart" onclick="add('cs')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col5 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://content.instructables.com/FGW/IRHD/HO7XHVQ0/FGWIRHDHO7XHVQ0.jpg?auto=webp&fit=bounds&frame=1&height=1024&width=1024" id="center">
+            </div>
+            <p>BACON MUSHROOM</p>
+            <p>Indulge in the delight of toasted bacon, mushroom, mozzarella cheese with signature sauce.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="bm" id="bm10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="bm" id="bm14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="quantity" id="bmquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="bmadd" id="bmadd" value="Add to Cart" onclick="add('bm')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col6 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://amici.ph/cdn/shop/products/HAMANDTWOCHEESE_1200x.jpg?v=1660810090" id="center">
+            </div>
+            <p>HAM AND CHEESE</p>
+            <p>Stay simple but delicious with pizza sauce, mozzarella cheese and ham</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="hm" id="hm10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="hm" id="hm14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="hmquantity" id="hmquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="hmadd" id="hmadd" value="Add to Cart" onclick="add('hm')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col7 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://darbysliquorstore.com/wp-content/uploads/2023/06/Veggie-Lover.jpg" id="center">
+            </div>
+            <p>VEGGIE LOVER</p>
+            <p>A healthy pleasure of bell peppers, mushrooms, onions and juicy pineapples on a double layer of mozzarella cheese.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="vl" id="vl10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="vl" id="vl14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="vlquantity" id="vlquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="vladd" id="vladd" value="Add to Cart" onclick="add('vl')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col8 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://halo-pg.com/wp-content/uploads/2021/10/Ultimate-Stuffed-Meatlovers-Pizza-1.jpg" id="center">
+            </div>
+            <p>MEAT LOVER</p>
+            <p>Enjoy a protein-packed serving of bacon, beef, ham, italian sausage, pepperoni and seasoned pork.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="ml" id="ml10" value='10' />
+                <label>10" Pizza (€8)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="ml" id="ml14" value='14' />
+                <label>14" Pizza (€12)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="mlquantity" id="mlquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="mladd" id="mladd" value="Add to Cart" onclick="add('ml')" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col9 col-md-4 col-6">
+          <div class="card">
+            <div class="item">
+              <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/mxqivbsj/cdb0c0b0-e22b-4eba-a778-3a8ce431c582.jpg" id="center">
+            </div>
+            <p>SEAFOOD LOVER</p>
+            <p>Feel the sea breeze with lobster, scallop, shrimp, creamy alfredo, butter crumb topping.</p>
+            <div class="row">
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="sl" id="sl10" value='10' />
+                <label>10" Pizza (€7)</label>
+              </div>
+              <div class="col col-md-6 col-12">
+                <input type="radio" name="sl" id="sl14" value='14' />
+                <label>14" Pizza (€11)</label>
+              </div>
+              <div class="col col-12">
+                <input type="number" name="slquantity" id="slquantity" placeholder="Quantity" min="0" />
+                <input type="button" name="sladd" id="sladd" value="Add to Cart" onclick="add('sl')" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h4>Additionals</h4>
+      <div class="row r2">
+        <div class="col col1 col-md-3 col-4">
+          <label>Iced Tea (€0.75)</label>
+          <input type="number" name="quantity" id="teaquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="teaadd" value="Add to Cart" onclick="addon('tea')" />
+        </div>
+        <div class="col col2 col-md-3 col-4">
+          <label>Fries (€1.5)</label>
+          <input type="number" name="quantity" id="fryquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="fryadd" value="Add to Cart" onclick="addon('fry')" />
+        </div>
+        <div class="col col3 col-md-3 col-4">
+          <label>Mojos (€2)</label>
+          <input type="number" name="quantity" id="mojoquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="mojoadd" value="Add to Cart" onclick="addon('mojo')" />
+        </div>
+        <div class="col col4 col-md-3 col-4">
+          <label>Spaghetti (€2.5)</label>
+          <input type="number" name="quantity" id="spagquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="spagadd" value="Add to Cart" onclick="addon('spag')" />
+        </div>
+        <div class="col col5 col-md-3 col-4">
+          <label>Carbonara (€2.5)</label>
+          <input type="number" name="quantity" id="carboquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="carboadd" value="Add to Cart" onclick="addon('carbo')" />
+        </div>
+        <div class="col col6 col-md-3 col-4">
+          <label>Lasagna (€2.75)</label>
+          <input type="number" name="quantity" id="lasaquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="lasaadd" value="Add to Cart" onclick="addon('lasa')" />
+        </div>
+        <div class="col col7 col-md-3 col-4">
+          <label>Mac and Cheese (€2.5)</label>
+          <input type="number" name="quantity" id="macquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="macadd" value="Add to Cart" onclick="addon('mac')" />
+        </div>
+        <div class="col col8 col-md-3 col-4">
+          <label>Fried Chicken (€1)</label>
+          <input type="number" name="quantity" id="chiquantity" min="0" placeholder="Quantity" />
+          <br />
+          <input type="button" name="add" id="chiadd" value="Add to Cart" onclick="addon('chi')" />
+        </div>
+      </div>
+      
+      <div class="row r3">
+        <div class="col col-12">
+          <input type="button" name="reset" id="reset" value="Reset" onclick="reset()"/>
+          <input type="button" name="view" id="view" value="View Cart (0)" onclick ="cart()" />
+        </div>
+      </div>
+      
+      <div id="cartmodal">
+        <div id="cartcontent">
+          <p id="close" onclick="hide()">x</p>
+          <h3>Cart</h3>
+          <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <td>Item(s)</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <div>
+            <tbody id="tbody">
+              <tr>
+                <td>
+                  <p id="rfc10"></p>
+                  <p id="rfc14"></p>
+                  <p id="rhaw10"></p>
+                  <p id="rhaw14"></p>
+                  <p id="rpep10"></p>
+                  <p id="rpep14"></p>
+                  <p id="rcs10"></p>
+                  <p id="rcs14"></p>
+                  <p id="rbm10"></p>
+                  <p id="rbm14"></p>
+                  <p id="rhc10"></p>
+                  <p id="rhc14"></p>
+                  <p id="rvl10"></p>
+                  <p id="rvl14"></p>
+                  <p id="rml10"></p>
+                  <p id="rml14"></p>
+                  <p id="rsl10"></p>
+                  <p id="rsl14"></p>
+                </td>
+                <td>
+                  <p id="rfc10p"></p>
+                  <p id="rfc14p"></p>
+                  <p id="rhaw10p"></p>
+                  <p id="rhaw14p"></p>
+                  <p id="rpep10p"></p>
+                  <p id="rpep14p"></p>
+                  <p id="rcs10p"></p>
+                  <p id="rcs14p"></p>
+                  <p id="rbm10p"></p>
+                  <p id="rbm14p"></p>
+                  <p id="rhc10p"></p>
+                  <p id="rhc14p"></p>
+                  <p id="rvl10p"></p>
+                  <p id="rvl14p"></p>
+                  <p id="rml10p"></p>
+                  <p id="rml14p"></p>
+                  <p id="rsl10p"></p>
+                  <p id="rsl14p"></p>
+                </td>
+              </tr>
+              <tr>
+                <td id="addon"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p id="rtea"></p>
+                  <p id="rfry"></p>
+                  <p id="rmojo"></p>
+                  <p id="rspag"></p>
+                  <p id="rcarbo"></p>
+                  <p id="rlasa"></p>
+                  <p id="rmac"></p>
+                  <p id="rchi"></p>
+                </td>
+                <td>
+                  <p id="rteap"></p>
+                  <p id="rfryp"></p>
+                  <p id="rmojop"></p>
+                  <p id="rspagp"></p>
+                  <p id="rcarbop"></p>
+                  <p id="rlasap"></p>
+                  <p id="rmacp"></p>
+                  <p id="rchip"></p>
+                </td>
+              </tr>
+            </tbody>
+            <tfooter>
+              <tr>
+                <td id="totalt">Total Price</td>
+                <td id="totalp"></td>
+              </tr>
+            </tfooter>
+          </table>
+          </div>
+          <input type="button" id="placeorder" value="Place Order" onclick="place()" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

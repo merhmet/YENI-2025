@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3e413d;
+    margin: 0;
+    padding: 0;
+  
+}
+
+header {
+    text-align: center;
+    background-color: #137f8d;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+img{
+  height: 125px;
+  width: 129px;
+  object-fit: cover;
+  border-radious: 5px 5px 0 0;
+}
+
+.kk {
+  font-weight: none;
+  color:gray;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item:hover {
+    background-color: #e0e0e0;
+}
+
+.order-summary {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#selected-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#total-amount {
+    font-weight: bold;
+}
+
+button#proceed-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button#proceed-btn:hover {
+    background-color: #45a049;
+}
+
+.confirmation {
+    display: none;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Add these styles at the end of your existing CSS code */
+
+.service-rating {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#service-rating {
+    width: 80%;
+}
+
+#selected-rating {
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,95 @@
+/* set body and section */
+body{
+	background-color: #EDEDED;
+}
+section{
+  margin-bottom: 60px;
+}
+/* set position title and total price */
+.title, #total{
+	float: left;
+	font-size: 24px;
+}
+/*to clear format*/
+.clear{
+	clear: both;
+}
+/*set main wrapper*/
+.main{
+	margin:70px;
+	text-align: center;
+}
+/*set wrapper item*/
+.frame-item{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	text-align: center;
+}
+/*set icon frame size*/
+.frame-item-1, .frame-item-2, .frame-item-3{
+ position: relative;
+ border: solid 3px black;
+ width: 300px;
+ height: 320px;
+ float: left;
+ margin: 20px;
+ margin-top: 3px;
+ padding: 5px;
+}
+/*set icon size*/
+.thumb-icon{
+ position: relative;
+ width: 300px;
+ height: 200px;
+}
+/*set position item name*/
+.item-name{
+	position: absolute;
+	left: 30px;
+	font-size: 24px;
+	bottom: 60px;
+}
+/*set position price*/
+.item-prize{
+	position: absolute;
+	left: 30px;
+	font-size: 24px;
+	bottom: 20px;
+}
+/*set radio item*/
+input[type=radio]{
+  width: 35px;
+  height: 35px;
+}
+.item{
+	position: absolute;
+	bottom: 10px;
+  left: 135px;
+}
+/*set size position*/
+.size{
+	float: left;
+	margin-right: 80px;
+}
+.label{
+	float: left;
+  margin-left:5px;
+	margin-top: 5px; 
+	margin-right: 70px;
+}
+/*set toppings position*/
+td{
+	text-align: left;
+}
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+/* set total price position */
+#total{
+  margin-top: 50px;
+  margin-left: -30px;
+}

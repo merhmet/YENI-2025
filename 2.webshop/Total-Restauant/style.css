@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100;1,200;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/* NAVBAR */
+    
+    .nav-buttons {
+        margin-left: 30%;
+    }
+    
+    body {
+        font-family: "poppins", sans-serif;
+    }
+
+    
+    body h1 {
+        color: #DAAB2D;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 100;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    
+    h5 {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    
+    h6 {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    
+    .navbar {
+        font-size: 18px;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        top: 0;
+        left: 0;
+        box-shadow: 0 4px goldenrod;
+        background-color: black; 
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0 10px;
+        color: white;
+        transition: 0.4s ease;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar i:hover,
+    .navbar-light .navbar-nav .nav-link.active .navbar i:hover {
+        color: #DAAB2D;
+    }
+    
+    .navbar i {
+        font-size: 1.2rem;
+        padding: 0 0.7px;
+        transition: 0.4s ease;
+        cursor: pointer;
+        margin-left: 20px;
+        color: white;
+    }
+
+    .brand {
+        color: #f4f4f4; 
+        text-transform: uppercase;
+        font-weight: 100;
+        user-select: none;
+
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    
+/* BANNER*/
+
+#banner {
+background-color: white; 
+  color: #fff; 
+  text-align: center;
+  padding: 50px 0; 
+}
+
+#banner h4 {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+#banner h1 {
+  font-size: 28px; 
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 100;
+}
+
+#banner button {
+  font-size: 15px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: #f4f4f4;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  overflow: hidden;
+} 
+
+#banner button:hover {
+  background-color: black;
+  color: #fff; 
+}
+
+/* HOME */
+  
+
+/* SIDEBAR */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 162px;
+    left: 0px;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* CSS for main content */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* CSS for search bar */
+.search-container {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.search-input {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input input[type="text"] {
+    padding-right: 30px; /* Adjust padding to make space for the icon */
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.search-input i {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust the right position as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* CSS for individual countries */
+.country {
+    margin-bottom: 10px;
+}
+
+#countryList {
+    /* Add padding or margin to create space */
+    padding-top: 10px;
+}
+
+#countryList > h2 {
+    /* Style the EUROPE list item */
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    user-select: none;
+    text-shadow: 2px 2px 5px goldenrod; 
+}
+
+.scrollable-list {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: -20px; /* Adjust to remove the extra space at the top */
+}
+
+.footer.one {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.footer.one p {
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.footer.one .golden-underline-heading {
+  border-bottom: 2px solid #ffd700; /* Adjust underline color as needed */
+  padding-bottom: 5px;
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.footer.one ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; /* Remove margin bottom for the ul */
+}
+
+.footer.one ul li {
+  margin-bottom: 5px;
+}
+
+.footer.one ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer.one ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer.one .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.footer.one .row [class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer.one .row [class^="col-"] a {
+  color: #fff; /* Change to desired social media link color */
+  text-decoration: none;
+}
+
+.footer.one .row [class^="col-"] a:hover {
+  text-decoration: underline;
+}
+
+.footer.one img {
+  max-width: 40px; /* Adjust max width of social media icons */
+  max-height: 40px; /* Adjust max height of social media icons */
+}
+
+.copyright p {
+  font-size: 14px; /* Adjust font size as needed */
+  text-align: center;
+  margin-bottom: 0; /* Remove margin bottom for the copyright text */
+}
+
+
+/* WHATSAPP */
+    
+.whatsapp-chat {
+  position: fixed;
+  bottom: 155px;
+  right: 30px;
+  z-index: 9999;
+  animation: floating 2s ease-in-out infinite;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: auto;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  /* Adjust this value to control tooltip distance */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.whatsapp-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whatsapp-icon:hover .tooltip-arrow {
+  display: block;
+}
+
+
+/* BACKTOTOP */
+    
+.scrollToTop.filling {
+  opacity: 1;
+}
+
+.scrollToTop {
+  width: 45px;
+  height: 45px;
+  z-index: 999999;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: goldenrod;
+  border: 1px solid black;
+  border-radius: 0;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  border-color: #DAAB2D;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  opacity: 0;
+  outline: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.scrollToTop:hover {
+  color: white;
+  background-color:goldenrod;
+  text-align: center;
+}
+
+.scrollToTop .fa-chevron-up {
+  color: black;
+  text-align: center;
+}
+
+.fa {
+  display: inline-block;
+  font: 14px fontawesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* ESCORT.HTML */
+
+
+ /* CART */
+    
+ .cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart th {
+  text-align: left;
+  padding: 5px 10px;
+  color: goldenrod;
+  background-color: black;
+}
+
+.cart td {
+  padding: 10px 20px;
+}
+
+.cart td img {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+.cart td input {
+  width: 82px;
+  height: 30px;
+  padding: 0px;
+  background-color: white;
+}
+
+.cart td a {
+  color: goldenrod;
+}
+
+.cart .remove-btn {
+  color: black;
+  text-decoration: none;
+  background-color: none;
+  border: none;
+  width: 100px;
+  border: 2px solid goldenrod;
+  transition: 0.6s ease;
+}
+
+.cart .edit-btn {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  border: 2px solid goldenrod;
+}
+
+.cart .product-info p {
+  margin: 3px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-total table {
+  width: 100%;
+  max-width: 500px;
+  border-top: 3px solid goldenrod;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-btn {
+  font-size: 15px;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: black;
+  background: #f4f4f4;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  overflow: hidden;
+}
+
+.checkout-btn:hover {
+  background-color: black;
+  color: #fff; 
+}
+
+ /* ACCOUNT */
+    
+ #account-form {
+  width: 80%;
+  height: 100%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#account-form h3 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+#account-form label {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+#account-form input {
+  width: 70%;
+  margin: 25px auto;
+}
+
+#change-pass-btn {
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+#change-pass-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+#account-form #orders-btn,
+#logout-btn {
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 45px;
+}
+
+#account-form #orders-btn,
+#logout-btn:hover {
+  background-color: #F8665E;
+}
+
+#account-form #account-btn {
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: 6px solid goldenrod;
+  background-color: white;
+  color: black;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 45px;
+}
+
+#account-form #account-btn:hover {
+  background-color: goldenrod;
+}
+
+#register-form #login-url {
+  color: goldenrod;
+}
+
+#orders-btn {
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: 2px solid green;
+  background-color: white;
+  color: black;
+  padding: 13px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 45px;
+}
+
+#orders-btn:hover {
+  background-color: #9FF086;
+}
+
+.account-info p {
+  text-transform: lowercase;
+}
+
+.account-info p span {
+  color: red;
+}
