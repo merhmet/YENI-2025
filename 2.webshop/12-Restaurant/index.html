@@ -2,18 +2,233 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bazar React Shopping Cart</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+  <title>CodePen - Online Restaurant Order - jQuery</title>
+  <script src="https://use.fontawesome.com/7488f3a572.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="root"></div>
+<!-- Some images will show error in console due not having 'https' in the url,  nothing to worry about -->
+<input type="checkbox" id="cartToggle" name="toggle" />
+
+    <!-- Menu -->
+    <nav class="navbar">
+      <h2 id="logo">Anadolu</h2>
+      <div>
+        <label for="cartToggle" class="toggleCart btnStyle btnStyle2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        <span class="num"></span>
+</label>
+      </div>
+    </nav><!-- End of Navigation -->
+
+    <div class="body-content">
+
+    <!-- Cart -->
+    <nav class="cart">
+      <h3>List of orders: <span>0€</span></h3>
+      <ol id="listOfOrders">
+      </ol>
+      <a class="btnStyle btnStyle3 finishOrder">Beëindig de bestelling</a>
+    </nav>
+
+      <div class="recipe-menu">
+
+        <!-- Recipe 1 -->
+        <div class="recipe">
+          <p class="name">Pitta Broodje</p>
+          <img src="https://od.lk/s/OTFfMzExNTY0MjFf/pitta.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartHamburger">Bestellen</a>
+          <p class="price"><span>15</span>€</p>
+          <div id="checkOrderHamburger" title="Pitta Broodje">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe1">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog1">Total: <span>15</span>€</h4>
+          </div>
+        </div>
+
+        <!-- Recipe 2 -->
+        <div class="recipe">
+          <p class="name">Kip Broodje</p>
+          <img src="https://od.lk/s/OTFfMzExNTY0NjJf/Pita-kipshoarma-4-1024x683.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartMacaroni">Bestellen</a>
+          <p class="price"><span>15</span>€</p>
+          <div id="checkOrderMacaroni" title="Kip Broodje">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe2">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog2">Total: <span>15</span>€</h4>
+          </div>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div class="recipe">
+          <p class="name">Frans Burger</p>
+          <img src="https://od.lk/s/OTFfMzExNTY0NjZf/FRANSHAMBURGER.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Bestellen</a>
+          <p class="price"><span>18</span>€</p>
+          <div id="checkOrderPizza" title="Frans Burger">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe3">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog3">Total: <span>15</span>€</h4>
+          </div>
+        </div>
+
+        <!-- Recipe 4 -->
+        <div class="recipe">
+          <p class="name">Kapsalon</p>
+          <img src="https://od.lk/s/OTFfMzExNTY0NjNf/Kapsalon_Amstelveen.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartSalad">Bestellen</a>
+          <p class="price"><span>9</span>€</p>
+          <div id="checkOrderSalad" title="Kapsalon">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe4">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog4">Total: <span>9</span>€</h4>
+          </div>
+        </div>
+
+        <!-- Recipe 5 -->
+        <div class="recipe">
+          <p class="name">Schotel</p>
+          <img src="https://od.lk/s/OTFfMzExNTk4MjBf/shoarma-schotel.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartSpaghetti">Bestellen</a>
+          <p class="price"><span>12</span>€</p>
+          <div id="checkOrderSpaghetti" title="Schotel">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe5">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog5">Total: <span>12</span>€</h4>
+          </div>
+        </div>
+
+        <!-- Recipe 6 -->
+        <div class="recipe">
+          <p class="name">Frieten</p>
+          <img src="https://od.lk/s/OTFfMzExNTY0MjNf/fritten.jpg">
+          <a class="btnStyle3 btnStyle addToCart" id="addToCartRisotto">Bestellen</a>
+          <p class="price"><span>9</span>€</p>
+          <div id="checkOrderRisotto" title="Frieten">
+            <h3 class="listHeading">Extra's:</h3>
+            <ul class="listOfIngredients" id="recipe6">
+               <li><input type="checkbox" value>Zonder Frieten</li>
+              <li><input type="checkbox" value>Met Frieten</li>
+              <li><input type="checkbox" value>Zonder Saus</li>
+              <li><input type="checkbox" value>Extra Vlees</li>
+              <li><input type="checkbox" value>Brood Crocant</li>
+            </ul>
+            <a class="btnStyle listOver">Klik OK</a>
+            <h4 class="totalDialog" id="totalDialog6">Totaal: <span>9</span>€</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="finishOrderDialog" title="Bevestig bestelling">
+      <div id="finalOrderList">
+
+
+
+
+
+
+
+<head>
+    <title>Javascript print() Method</title>
+</head>
+<body>
+
+    <button onclick="printpage()" style="color:white;
+                   background-color: red; 
+                   font-weight: bold;">Printen
+    </button>
+    <script>
+        function printpage() {
+            window.print();
+        }
+    </script>
+
+
+
+
+
+
+        <h3>Uw bestellingen:</h3>
+        <ol></ol>
+      </div>
+      <div id="buyerInfo">
+
+         <a class="btnStyle order">Order!</a>
+<head>
+    <title>Javascript print() Method</title>
+</head>
+<body>
+
+    <button onclick="printpage()" style="color:white;
+                   background-color: red; 
+                   font-weight: bold;">Printen
+    </button>
+    <script>
+        function printpage() {
+            window.print();
+        }
+    </script>
+
+
+
+<div>
+<input type="button" value="Print this form" onclick="window.print()">
+</div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <div id="thanksMessage">
+      <h1>Bedankt voor de bestelling</h1>
+      <h3>Wij maken het klaar </h3>
+    </div>
 <!-- partial -->
-  <script src='https://unpkg.com/react/umd/react.development.js'></script>
-<script src='https://unpkg.com/react-dom/umd/react-dom.development.js'></script>
-<script src='https://unpkg.com/bazar@0.4.1/dist/bazar.umd.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>

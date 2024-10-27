@@ -1,181 +1,206 @@
-function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}const { Component } = React;
-
-// Empty bazar store is initialized on first import.
-const { register, poke } = bazar;
-
-const colors = [
-{ name: "Pitta Brood", hex: "#FDFF8D", text: "black", price: 10 },
-{ name: "Pitta Kip", hex: "#4D1310", text: "white", price: 11 },
-{ name: "Kapsalon", hex: "#EF5678", text: "black", price: 15 },
-{ name: "Kip Burger", hex: "#4342B6", text: "white", price: 12 },
-{ name: "Kip Kaas", hex: "#3CAF49", text: "black", price: 13 },
-{ name: "Pitta Kaas", hex: "#F99484", text: "black", price: 13 },
-{ name: "Durum", hex: "#95BE67", text: "black", price: 12 },
-{ name: "Schotel", hex: "#DF3034", text: "white", price: 20 },
-{ name: "Kipcorn", hex: "#97ECC2", text: "black", price: 2 },
-{ name: "Kalkoen Stick ", hex: "#B560CA", text: "white", price: 2 },
-{ name: "Extra Saus ", hex: "#0D0702", text: "white", price: 2 },
-{ name: "Cay", hex: "#4DA8AB", text: "white", price: 1 },
-{ name: "Koffie", hex: "#757A86", text: "white", price: 3 },
-{ name: "Dranken", hex: "#FEC4E4", text: "black", price: 3 },
-{ name: "Anadolu", hex: "#67C3D8", text: "white", price: 0 },
-{ name: "Anadolu", hex: "#413323", text: "white", price: 0 },
-{ name: "Anadolu", hex: "#9865C2", text: "white", price: 0 },
-{ name: "Anadolu", hex: "#5A525E", text: "black", price: 0 },
-{ name: "Anadolu", hex: "#2920A2", text: "white", price: 0 },
-{ name: "Anadolu", hex: "#356132", text: "white", price: 0 }];
-
-
-
-
-
-
-
-
-
-
-
-const Item = props => {
-  const { name, price, hex, text } = props.color;
-
-  const buy = () =>
-  poke("App", {
-    name,
-    type: "increment" });
-
-
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "brick" }, /*#__PURE__*/
-    React.createElement("div", { className: "content" }, /*#__PURE__*/
-    React.createElement("div", { className: "color", style: { color: text } }, /*#__PURE__*/
-    React.createElement("div", { className: "palette", style: { background: hex } }), /*#__PURE__*/
-    React.createElement("h1", null, name)), /*#__PURE__*/
-
-    React.createElement("div", { className: "action" }, /*#__PURE__*/
-    React.createElement("p", null, "€ ", price), /*#__PURE__*/
-    React.createElement("button", { className: "buyButton", onClick: () => buy() }, "Bestel")))));
-
-
-
-
-
-
-};
-
-const Shop = props => {
-  const items = () => {
-    return props.colors.map((color, index) => {
-      return /*#__PURE__*/React.createElement(Item, { color: color, key: index });
-    });
-  };
-
-  return /*#__PURE__*/React.createElement("div", { className: "wall" }, items());
-};
-
-const Cart = props => {
-  let total = 0;
-  const purchases = props.items.map((item, index) => {
-    const { name, hex, price, quantity } = item;
-    const currentImport = quantity * price;
-    total += currentImport;
-    return /*#__PURE__*/(
-      React.createElement("li", { key: index }, /*#__PURE__*/
-      React.createElement("span", { className: "cartColor", style: { background: hex } }, name), /*#__PURE__*/
-      React.createElement("span", { className: "cartColorQty" }, " x", item.quantity), /*#__PURE__*/
-      React.createElement("button", { onClick: () => poke("App", { name, type: "increment" }) }, "\u2795"), /*#__PURE__*/
-
-
-      React.createElement("button", { onClick: () => poke("App", { name, type: "decrement" }) }, "\u2796"), /*#__PURE__*/
-
-
-      React.createElement("span", { className: "cartColorImport" }, " €", currentImport), /*#__PURE__*/
-      React.createElement("button", { onClick: () => poke("App", { name, type: "remove" }) }, "\uD83D\uDDD1")));
-
-
-  });
-
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "Cart" }, /*#__PURE__*/
-    React.createElement("ul", null, purchases.length === 0 ? "Leeg (:" : purchases), /*#__PURE__*/
-    React.createElement("div", { className: "cartTotal" }, "€ ", total)));
-
-
-};
-
-const Navbar = (props) => /*#__PURE__*/
-React.createElement("div", { className: "navBar" }, /*#__PURE__*/
-React.createElement("ul", null, /*#__PURE__*/
-React.createElement("li", { onClick: () => props.changeView("shop") }, /*#__PURE__*/
-React.createElement("span", { role: "img", "aria-label": "shop" }, "\uD83C\uDFEA",
-" "), /*#__PURE__*/
-
-React.createElement("span", null, "Menu")), /*#__PURE__*/
-
-React.createElement("li", { onClick: () => props.changeView("cart") }, /*#__PURE__*/
-React.createElement("span", { role: "img", "aria-label": "shop" }, "\uD83D\uDED2",
-" "), /*#__PURE__*/
-
-React.createElement("span", null, "Mandje "), /*#__PURE__*/
-React.createElement("span", { className: "cartQuantity" }, props.quantity))));
-
-
-
-
-
-class App extends Component {
-  constructor(props) {
-    super(props);_defineProperty(this, "changeView",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    where => this.setState({ view: where }));this.state = { colors: colors.map(e => ({ ...e, quantity: 0 })) };register({ id: "App", sync: () => this.state, onPoke: arg => {const { name, type } = arg;console.log('poked', name);const { colors } = this.state;this.setState({ colors: colors.map(e => {const { quantity } = e;return e.name === name ? { ...e, quantity: (() => {if (type === "increment") return quantity + 1;else if (type === "remove") return 0;return quantity - 1;})() } : e;}) });} });this.changeView = this.changeView.bind(this);}
-
-  render() {
-    const { view = "shop", colors } = this.state;
-
-    const quantity = colors.map(e => e.quantity).reduce((a, b) => a + b);
-
-    const inCart = colors.filter(e => e.quantity > 0);
-
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "App" }, /*#__PURE__*/
-      React.createElement(Navbar, { changeView: this.changeView, quantity: quantity }),
-      view === "shop" ? /*#__PURE__*/React.createElement(Shop, { colors: colors }) : /*#__PURE__*/React.createElement(Cart, { items: inCart })));
-
-
-  }}
-
-
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
+$(document).ready(function() {
+  
+
+	$( "a" ).click(function( event ) {
+  		event.preventDefault();
+	});
+
+	var numOfOrders = 0;
+	$(".num").text(numOfOrders);
+
+	// hide dialogs on start
+	$("#thanksMessage, #checkOrderHamburger, #checkOrderMacaroni, #checkOrderPizza, #checkOrderSalad, #checkOrderSpaghetti, #checkOrderRisotto, #finishOrderDialog").hide();
+
+	// open dialog on click
+	$("#addToCartHamburger").on("click", function () {
+		$("#checkOrderHamburger").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	$("#addToCartMacaroni").on("click", function () {
+		$("#checkOrderMacaroni").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	$("#addToCartPizza").on("click", function () {
+		$("#checkOrderPizza").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	$("#addToCartSalad").on("click", function () {
+		$("#checkOrderSalad").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	$("#addToCartSpaghetti").on("click", function () {
+		$("#checkOrderSpaghetti").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	$("#addToCartRisotto").on("click", function () {
+		$("#checkOrderRisotto").dialog({
+				hide: "blind",
+            	show : "blind",
+            	width: "400px",
+              closeText: "X"});
+	})
+
+	// increase/decrease the price of order if an item is added/removed
+	function checkboxChange(x) {
+		var priceDialog = 0;
+		$("#recipe"+x).children("li").children("input").each(function () {
+			if($(this).is(":checked")){
+				priceDialog+=0;
+			}
+				$("#totalDialog"+x+">span").text(priceDialog);
+			$(this).change(function () {
+				if ($(this).is(":checked")) {
+					priceDialog += 0;
+					console.log(priceDialog);
+					$("#totalDialog"+x+">span").text(priceDialog);
+				}else{
+					priceDialog += 0;
+					$("#totalDialog"+x+">span").text(priceDialog);
+				}
+			})
+		});
+	}
+
+
+
+	$(".addIngredient").on("click", function () {
+		// Creates input field and two buttons for adding an ingrediant that's not on the list
+		var inputIng = '<input type="text" id="newIngredient">';
+		var confirmInput = '<a class="btnStyle3 btnStyle confirmInput">&#10004;</a>';
+		var cancelInput = '<a class="btnStyle3 btnStyle cancelInput">&#10008;</a>';
+		var inputWrap = '<div class="addIngredientWrap">' + inputIng + confirmInput + cancelInput + '</div>'
+		$(this).parent().children("ul").after(inputWrap);
+    $("#newIngredient").focus();
+    $("#newIngredient").attr("placeholder", "separate ingredients with a comma");
+
+		// Confirm button adds the new ingrediant to the list of ingrediants
+		$(".addIngredientWrap > .confirmInput").on("click", function () {
+			if ($("#newIngredient").val() != "") {
+        //split takes the value of the input and splits it into separate array elements after every comma
+				var newIngredient = ($(".addIngredientWrap input").val()).split(",");
+				var newCheckbox = '<input type="checkbox" checked>';
+        
+        for (var i = 0; i < newIngredient.length; i++){
+         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  </li>");
+        }
+				
+
+				$('#recipe1').children('li').click(checkboxChange(1));
+				$('#recipe2').children('li').click(checkboxChange(2));
+				$('#recipe3').children('li').click(checkboxChange(3));
+				$('#recipe3').children('li').click(checkboxChange(4));
+				$('#recipe3').children('li').click(checkboxChange(5));
+				$('#recipe3').children('li').click(checkboxChange(6));
+
+				$(this).parent().remove();
+			}else{
+				$("#newIngredient").attr("placeholder", "Please add ingrediant");
+			}
+		});
+		// Remove button hides the input
+		$(".addIngredientWrap > .cancelInput").on("click", function () {
+			$(this).parent().remove();
+		})
+	})// add ingredient button
+
+	$(".listOver").on("click", function () {
+		var orderName = '<h3 class="orderName"><span>' + $(this).parent().siblings(".ui-dialog-titlebar").children("span").text() + '</span><a class="delBtn">&#10008;</a>' +'</h3>';
+		var orderIngredients = '<ul class="orderIngredients"></ul>';
+		var orderPrice = '<h3 class="orderPrice"><span>' + $(this).parent().children(".totalDialog").children("span").text() + '</span>€<h3>'
+		var horisontalLine = '<hr>';
+		$(".cart").children("#listOfOrders").append("<li>" + orderName + orderIngredients + orderPrice + horisontalLine + "</li>");
+
+		$(this).parent().children("ul").children().children("input:checked").each(function () {
+			var selectedIngredient = $(this).parent().text();
+			$(".orderIngredients").last().append("<li>" + selectedIngredient + "</li>");
+		})
+
+		// opens the cart side menu
+		if ($('#cartToggle').prop('checked')) {
+			$("#cartToggle").prop("checked", true);
+		}else{
+			$("#cartToggle").prop("checked", true);
+		}
+
+		$(this).parent(".ui-dialog-content").dialog("close");
+
+		numOfOrders = $("#listOfOrders").children().length;
+		$(".num").text(numOfOrders);
+
+		// display total price in cart orders
+		var totalOrderPrice = 0;
+		$("#listOfOrders").children("li").children(".orderPrice").children("span").each(function () {
+			var price = parseFloat($(this).text());
+			totalOrderPrice += price;
+			$(".cart > h3 > span").text(totalOrderPrice + "€");
+		});
+
+		// remove order from cart
+		$(".delBtn").on("click", function () {
+			var removePrice = $(this).parent().parent().children(".orderPrice").children("span").text();
+			totalOrderPrice -= removePrice;
+			$(".cart > h3 > span").text(totalOrderPrice + "€");
+
+			$(this).parents("li").remove();
+			numOfOrders = $("#listOfOrders").children().length;
+			$(".num").text(numOfOrders);
+		})
+	}); // List over (done button)
+
+	$(".finishOrder").on("click", function () {
+     $("#finalOrderList > ol").children().remove();
+		$(".orderName").children("span").each(function(){
+			var finalOrder = '<li>' + $(this).text() + '</li>';
+			$("#finalOrderList > ol").append(finalOrder);
+		})
+
+		$("#finishOrderDialog").dialog({
+			hide: "blind",
+	    	show : "blind",
+	    	width: "500px",
+        closeText: "X"
+	    });
+	})
+
+	$(".order").on("click", function () {
+		var name = $("#buyerName").val();
+		var number = $("#buyerNumber").val();
+		var address = $("#buyerAddress").val();
+
+		if (name != "" && number != "" && address != "") {
+			$("#finishOrderDialog").dialog("close");
+			$("#buyerInfo").children("p").remove();
+			$("#thanksMessage").dialog({
+				hide: "blind",
+		    	show : "blind",
+		    	width: "400px"
+		    });
+		    setTimeout(function(){
+		    	$("#thanksMessage").dialog("close");
+		    }, 3000);
+		}else{
+			$("#buyerInfo").append('<p>Fill up all the inputs</p>');
+		}
+	})
+
+})

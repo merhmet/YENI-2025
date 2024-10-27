@@ -1,195 +1,360 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,800");
-body {
-  font-family: "Nunito Sans", sans-serif;
-  background: #f9f9f9;
+/*Scroll Design*/
+::-webkit-scrollbar {
+	z-index: 100;
+      width: 5px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+      background-color: #452732 ;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #000;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #000;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+/* Style CSS */
+*{
+	margin: 0px;
+	padding: 0px;
 }
 
-.Cart {
-  max-width: 800px;
-  display: block;
-  margin: auto;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
+input{
+  outline-color: #C98474;
 }
 
-.Cart ul {
-  list-style-type: none;
+.navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #A7D2CB;
+    border-radius: 0px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-.Cart li {
-  max-width: 400px;
-  padding-top: 10px;
-  margin-bottom: 30px;
+.btnStyle{
+	background-color: #C98474;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+	padding: 7px 10px;
+	letter-spacing: .1em;
+	border-radius: 3px;
+	z-index: 1;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
 }
 
-.Cart li, .Cart button {
-  margin-right: 10px;
+.btnStyle:hover{
+	background-color: #874C62;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.05);
 }
 
-.Cart button {
-  cursor: pointer;
-  float: right;
-  border: none;
-  border-radius: 4px;
-  background: #D8D8D8;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  transform: translatey(-5px);
+.btnStyle2{
+	background-color: #874C62;
 }
 
-.cartTotal {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  color: #0e5c2c;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 48px;
-  background: #a2bb98;
-  border: 10px solid #0e5c2c;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  border-radius: 6px 0 0 0;
-  padding: 10px 20px;
+.btnStyle2:hover{
+	background-color: #C98474;
 }
 
-.cartColor {
-  min-width: 90px;
-  padding: 10px 20px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+.btnStyle3{
+	background-color: #A7D2CB;
 }
 
-.cartColorQty,
-.cartColorImport {
-  width: 80px;
-  float: right;
+.btnStyle3:hover{
+	background-color: #F2D388;
 }
 
-.wall {
-  /* columns:4;
-  column-gap: 1em; */
-  max-width: 800px;
-  display: block;
-  margin: auto;
-  padding-top: 60px;
+.toggleCart{
+	position: relative;
 }
 
-.brick {
-  margin: 20px;
-  height: 180px;
-  width: 150px;
-  margin-bottom: 1em;
-  clear: both;
-  background: #fff;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s;
-  border-radius: 6px;
-  display: inline-block;
+.fa-circle {
+    font-size: 21px !important;
+    color: #C98474 ;
 }
 
-.brick:hover {
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2) !important;
+.num {
+    font-size: 12px;
+    padding: 3px 6px;
+    color: #fff;
 }
 
-.color {
-  grid-area: color;
-  position: relative;
-  height: 120px !important;
+.num, .fa-circle {
+    position: absolute;
+    right: -9px;
+    top: -9px;
 }
 
-.content {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". color ." ". action .";
+.cart{
+	width: 200px;
+	position: fixed;
+	top: 60px;
+	bottom: 0px;
+	right: -300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	z-index: 1;
+	background-color: #874C62;
+	padding: 30px;
+	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
+
+	transition: all 0.25s ease-in-out;
 }
 
-.action {
-  /* border: 1px solid red; */
-  grid-area: action;
-  display: grid;
-  grid-template-columns: auto auto;
+.cart h2{
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-.action p {
-  /* padding: 0; */
-  font-weight: 800;
-  margin: auto;
+#cartToggle{ 
+	display: none;
 }
 
-.buyButton {
-  cursor: pointer;
-  font-weight: 800;
-  color: #fff;
-  width: 68px;
-  height: 25px;
-  background: linear-gradient(270deg, #ff3d00 -13.97%, #ffa800 105.15%);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  border: none;
-  position: relative;
-  top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
-  transition: box-shadow 0.2s;
+/*where the magic happens*/
+#cartToggle:checked ~ div.body-content > .cart{
+	right: 0px;
 }
 
-.color h1 {
-  position: absolute;
-  z-index: 2;
-  font-size: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -100%);
+#cartToggle:checked ~ div.body-content{
+	right: 100px;
 }
 
-.palette {
-  /* border: 1px solid red; */
-  position: absolute;
-  height: 140px;
-  width: 140px;
-  left: 5px;
-  top: -10px;
-  background: #fdff8d;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+#cartToggle:checked ~ div.body-content > .cart > a.finishOrder{
+	right: 5px;
 }
 
-button:focus {
-  outline: 0;
+.body-content{
+	position: relative;
+	right: 0px;
+	width: 80%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+
+	transition: all .2s ease-in-out;
 }
 
-button:active {
-  box-shadow: none;
+/* orders */
+
+.recipe-menu{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.navBar {
-  position: fixed;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  text-align: right;
-  right: 0;
-  top: 0;
-  background: #fff;
-  z-index: 999;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 0 6px;
+.recipe{
+	background-image: url('http://mariecatribs.com/assets/styles/images/drawn-frame-big.png');
+	background-size: 100% 100%;
+	padding: 10px;
+  margin-bottom: 40px;
+	width: 300px;
+	position: relative;
 }
 
-.navBar li {
-  position: relative;
-  display: inline-block;
-  padding-right: 50px;
-  cursor: pointer;
+.recipe img{
+	width: 100%;
+	height: 80%;
 }
 
-.navBar li:hover {
-  font-style: italic;
+.name{
+    font-size: 23px;
+    text-align: center;
 }
 
-.cartQuantity {
-  padding: 0px 5px;
-  border-radius: 6px;
-  color: #000;
-  background: linear-gradient(270deg, #ff3d00 -13.97%, #ffa800 105.15%);
+.price {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 15px;
+}
+
+.recipe:hover > .addToCart{
+	opacity: 1;
+}
+
+.addToCart {
+	opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    transition: all .2s ease-in-out;
+}
+
+.checkOrder{
+	padding: 50px;
+}
+
+.checkOrder {
+    padding: 29px 50px !important;
+}
+
+.listHeading {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.listOfIngredients{
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.listOfIngredients input{
+	margin: 0px 5px;
+}
+
+.addIngredientWrap{
+	display: flex;
+	margin: 5px 0;
+}
+
+.addIngredientWrap input{
+	width: 60%;
+}
+
+.addIngredientWrap a{
+	padding: 2px 6px;
+	margin: 0 5px;
+	font-size: 15px;
+}
+
+.cancelInput{
+	background-color: #B33232;
+}
+
+.orderName {
+    padding: 13px 0px 8px 0px;
+}
+
+.orderPrice{
+	float: right;
+}
+
+hr {
+    margin: 25px 0 5px 0;
+}
+
+.delBtn {
+    float: right;
+    color: #F2D388;
+    cursor: pointer;
+}
+
+.totalDialog{
+	display: inline-block;
+	float: right;
+}
+
+.cart > h2 > span{
+	margin-left: 15px
+}
+
+.finishOrder {
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    right: -265px;
+    z-index: 2;
+    padding: 6px 28px;
+    border-radius: 0;
+    text-align: center;
+}
+
+#finishOrderDialog{
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#finalOrderList{
+	width: 40%;
+}
+
+#finalOrderList h3{
+	text-align: center;
+}
+
+#finalOrderList ol{
+	margin: 10px 15px;
+}
+
+#buyerInfo {
+    width: 60%;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#buyerInfo input {
+    margin: 5px 0;
+    padding: 3px;
+    width: 90%;
+}
+
+#buyerInfo .order{
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+    text-align:center;
+}
+
+#buyerInfo input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+#thanksMessage{
+	padding: 20px;
+}
+
+/* Dialog Style */
+.ui-dialog {
+    z-index: 2;
+  	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  padding: 30px;
+}
+
+.ui-draggable-handle {
+    position: absolute;
+    background-color: #A7D2CB;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999;
+}
+
+.ui-button {
+    background-color: #874C62;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+    float: right;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.ui-button:hover{
+  background-color: #C98474;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.05);
 }
