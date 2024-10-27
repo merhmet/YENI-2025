@@ -65,28 +65,23 @@ $(document).ready(function() {
 		var priceDialog = 0;
 		$("#recipe"+x).children("li").children("input").each(function () {
 			if($(this).is(":checked")){
-				priceDialog+=3;
+				priceDialog+=0;
 			}
 				$("#totalDialog"+x+">span").text(priceDialog);
 			$(this).change(function () {
 				if ($(this).is(":checked")) {
-					priceDialog += 3;
+					priceDialog += 0;
 					console.log(priceDialog);
 					$("#totalDialog"+x+">span").text(priceDialog);
 				}else{
-					priceDialog -= 0;
+					priceDialog += 0;
 					$("#totalDialog"+x+">span").text(priceDialog);
 				}
 			})
 		});
 	}
 
-	$('#recipe1').children('li').click(checkboxChange(1));
-	$('#recipe2').children('li').click(checkboxChange(2));
-	$('#recipe3').children('li').click(checkboxChange(3));
-	$('#recipe3').children('li').click(checkboxChange(4));
-	$('#recipe3').children('li').click(checkboxChange(5));
-	$('#recipe3').children('li').click(checkboxChange(6));
+
 
 	$(".addIngredient").on("click", function () {
 		// Creates input field and two buttons for adding an ingrediant that's not on the list
@@ -106,7 +101,7 @@ $(document).ready(function() {
 				var newCheckbox = '<input type="checkbox" checked>';
         
         for (var i = 0; i < newIngredient.length; i++){
-         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  (+0€)</li>");
+         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  </li>");
         }
 				
 
